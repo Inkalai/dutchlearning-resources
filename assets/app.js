@@ -287,8 +287,10 @@
         matchesLevel(r) &&
         matchesText(r);
     });
+    // An unknown maximum (null) sorts after every known price.
+    var maxCost = function (r) { return r.cost[1] === null ? Infinity : r.cost[1]; };
     var byName = function (a, b) { return a.name.localeCompare(b.name); };
-    if (state.sort === "price") list.sort(function (a, b) { return a.cost[0] - b.cost[0] || a.cost[1] - b.cost[1] || byName(a, b); });
+    if (state.sort === "price") list.sort(function (a, b) { return a.cost[0] - b.cost[0] || maxCost(a) - maxCost(b) || byName(a, b); });
     else if (state.sort === "name") list.sort(byName);
     else list.sort(function (a, b) { return score(b) - score(a) || a.cost[0] - b.cost[0] || byName(a, b); });
     return list;
@@ -303,13 +305,14 @@
   function priceBlock(r) {
     var min = r.cost[0], max = r.cost[1];
     var amount;
-    if (max === 0) amount = t("card.free");
+    if (max === null) amount = min === 0 ? t("card.freePlus") : euro(min) + "+";
+    else if (max === 0) amount = t("card.free");
     else if (min === 0) amount = t("card.free") + " – " + euro(max);
     else if (min === max) amount = euro(min);
     else amount = euro(min) + "–" + euro(max);
     return el("div", { class: "price" }, [
       el("span", { class: "amount" + (min === 0 ? " free" : ""), text: amount }),
-      max === 0 ? null : el("span", { class: "per", text: t("card.perMonth") })
+      max === 0 || (max === null && min === 0) ? null : el("span", { class: "per", text: t("card.perMonth") })
     ]);
   }
 

@@ -73,6 +73,7 @@ window.I18N = {
     "results.empty.cta": "Suggest it",
 
     "card.free": "Free",
+    "card.freePlus": "Free + paid",
     "card.perMonth": "per month",
     "card.reachesGoal": "Takes you to {level}",
     "card.reaches": "Goes up to {level}",
@@ -211,6 +212,7 @@ window.I18N = {
     "results.empty.cta": "推薦給我",
 
     "card.free": "免費",
+    "card.freePlus": "免費＋付費",
     "card.perMonth": "每月",
     "card.reachesGoal": "可帶你到 {level}",
     "card.reaches": "最高到 {level}",

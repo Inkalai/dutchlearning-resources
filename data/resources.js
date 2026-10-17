@@ -13,7 +13,8 @@
   formats     any of "self" (self-paced), "inperson", "online" (live online class)
   focus       any of "speaking", "listening", "reading", "writing", "grammar", "exam"
   levels      [from, to] using A0 A1 A2 B1 B2 C1 C2
-  cost        [min, max] typical euros per month; [0, 0] means free
+  cost        [min, max] typical euros per month; [0, 0] means free;
+              use null for max when the paid price is unknown
   hours       [min, max] typical hours per month the resource expects
   url         main link
   instagram / youtube   optional profile links
@@ -243,15 +244,17 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A0", "C1"],
-    cost: [20, 90],
+    cost: [0, 72],
     hours: [16, 48],
-    url: "https://onderwijs.vlaanderen.be/nl/volwassenenonderwijs",
+    url: "https://www.vlaanderen.be/onderwijs-en-vorming/school-en-studiekosten/kosten-volwassenenonderwijs",
     note: {
       en: "Flemish government-funded adult education centres (Centra voor Volwassenenonderwijs) offer full NT2 courses at subsidised prices. Your Huis van het Nederlands or Atlas can refer you.",
       zh: "法蘭德斯政府補助的成人教育中心（CVO）提供完整的 NT2 荷語課程，學費有補貼。可透過 Huis van het Nederlands 或 Atlas 轉介。"
     },
-    price: { en: "Subsidised fee per lesson hour; reductions for jobseekers and newcomers.", zh: "依上課時數收取補貼後學費；求職者與新移民享減免。" },
-    review: true
+    price: {
+      en: "€1.50 per lesson hour at the first level (max €180 in total), €0.60 per hour at higher levels, €0.30 with some reductions. Free with an inburgering contract or certificate. Books are extra.",
+      zh: "第一級每上課時數 €1.50（總額上限 €180），較高級別每小時 €0.60，部分減免者每小時 €0.30。持有融入合約或證明者免費。教材另計。"
+    }
   },
   {
     id: "vdab-nederlands",
@@ -284,10 +287,9 @@ window.RESOURCES = [
     hours: [2, 8],
     url: "https://www.oefenkansen.be/",
     note: {
-      en: "A Flemish directory of informal practice activities: no lessons, just chances to use your Dutch in clubs, cafés and volunteering.",
-      zh: "法蘭德斯的練習機會目錄：不是上課，而是在社團、咖啡館和志工活動中實際使用荷語。"
-    },
-    review: true
+      en: "A free Flemish guide to informal practice opportunities: no lessons, just ideas and places to use your Dutch in clubs, cafés and volunteering.",
+      zh: "法蘭德斯的免費練習機會指南：不是上課，而是提供在社團、咖啡館和志工活動中使用荷語的點子與地點。"
+    }
   },
   {
     id: "volksuniversiteit",
@@ -457,16 +459,19 @@ window.RESOURCES = [
     region: "NL",
     cities: ["Den Haag"],
     formats: ["inperson", "online"],
-    focus: ["speaking", "listening", "grammar"],
+    focus: ["speaking", "listening", "writing", "grammar"],
     levels: ["A0", "B2"],
-    cost: [200, 600],
-    hours: [12, 40],
-    url: "https://www.directdutch.com/",
+    cost: [240, 1395],
+    hours: [12, 60],
+    url: "https://directdutch.com/courses/",
     note: {
-      en: "A private language school in The Hague focused on expats, with small group courses and private lessons.",
-      zh: "位於海牙、以外派人士為主的私人語言學校，提供小班課與一對一課程。"
+      en: "A private language school in The Hague for expats, with in-person and online group courses from A0 to B2, a B1+ writing course and two-week intensives.",
+      zh: "位於海牙、以外派人士為主的私人語言學校，提供 A0 到 B2 的實體與線上團體課、B1+ 寫作課，以及兩週密集班。"
     },
-    review: true
+    price: {
+      en: "A1 or A2 in person €645 for 7 weeks. B1 online or B2 €780 for 12 weeks. A2+ and B1+ writing €480 for 8 weeks. Two-week intensives €865–€1,395. Course material included.",
+      zh: "A1 或 A2 實體課 7 週 €645。B1 線上或 B2 課程 12 週 €780。A2+ 與 B1+ 寫作課 8 週 €480。兩週密集班 €865–€1,395。皆含教材。"
+    }
   },
   {
     id: "koentact",
@@ -477,14 +482,17 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "grammar"],
     levels: ["A0", "B2"],
-    cost: [150, 500],
-    hours: [12, 40],
-    url: "https://www.koentact.nl/",
+    cost: [320, 975],
+    hours: [20, 33],
+    url: "https://koentact.nl/",
     note: {
-      en: "An Amsterdam language school with small conversational group courses and intensives.",
-      zh: "阿姆斯特丹的語言學校，以小班會話課與密集班為主。"
+      en: "An Amsterdam language school with small group courses (5–12 students), a conversation course and one-week intensives (max 6 students).",
+      zh: "阿姆斯特丹的語言學校，提供小班團體課（5–12 人）、會話課，以及一週密集班（最多 6 人）。"
     },
-    review: true
+    price: {
+      en: "Morning or evening group course €525 (8 lessons + 2 field trips over 4 weeks). Conversation course (A2–B1) €320. Intensive week €975 (33 hours in 6 days). Discount when you prepay 3 courses.",
+      zh: "早上或晚上團體班 €525（4 週內 8 堂課＋2 次校外教學）。會話課（A2–B1）€320。一週密集班 €975（6 天共 33 小時）。一次預付 3 期有折扣。"
+    }
   },
   {
     id: "futurelearn-rug",
@@ -603,14 +611,17 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["listening", "speaking"],
     levels: ["A0", "B2"],
-    cost: [5, 25],
+    cost: [0, null],
     hours: [2, 20],
     url: "https://www.dutchpod101.com/",
     note: {
       en: "Audio and video lessons organised by level, with transcripts and vocabulary lists. Good for learning on a commute.",
       zh: "依程度分類的音訊與影片課程，附逐字稿和單字表，適合通勤時學習。"
     },
-    review: true
+    price: {
+      en: "Free account to start. Check the website for the paid service.",
+      zh: "可免費註冊開始使用。付費方案請至官網查看。"
+    }
   },
   {
     id: "coffee-break-dutch",
@@ -709,18 +720,21 @@ window.RESOURCES = [
     kind: "creator",
     region: "online",
     cities: [],
-    formats: ["self"],
+    formats: ["self", "online"],
     focus: ["listening", "grammar", "speaking"],
     levels: ["A0", "B1"],
-    cost: [0, 30],
+    cost: [0, null],
     hours: [1, 20],
-    url: "https://learndutch.org/",
+    url: "https://www.learndutch.org/",
     youtube: "https://www.youtube.com/results?search_query=learn+dutch+bart+de+pau",
     note: {
-      en: "One of the biggest Dutch-learning YouTube channels (200K+ subscribers): an animated soap opera, culture interviews and grammar videos. Premium courses on his website.",
-      zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站上有付費進階課程。"
+      en: "One of the biggest Dutch-learning YouTube channels (200K+ subscribers): an animated soap opera, culture interviews and grammar videos. Free online lessons on his website, plus premium courses and virtual classrooms.",
+      zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站有免費線上課程，另有付費進階課程與線上教室。"
     },
-    price: { en: "YouTube is free; premium grammar course is paid.", zh: "YouTube 免費；進階文法課程需付費。" },
+    price: {
+      en: "YouTube and basic lessons are free. Premium courses are sold as one-year licences (VAT added in the EU); check the shop for current prices.",
+      zh: "YouTube 和基礎課程免費。進階課程以一年授權販售（歐盟需另加增值稅），最新價格請至官網商店查看。"
+    },
     review: true
   },
   {
@@ -729,18 +743,21 @@ window.RESOURCES = [
     kind: "creator",
     region: "online",
     cities: [],
-    formats: ["self", "online"],
+    formats: ["self"],
     focus: ["listening", "speaking", "grammar"],
     levels: ["A0", "B1"],
-    cost: [0, 50],
-    hours: [1, 15],
-    url: "https://www.youtube.com/results?search_query=dutchies+to+be",
+    cost: [0, 35],
+    hours: [4, 15],
+    url: "https://www.learndutchwithkim.com/course/courses",
+    youtube: "https://www.youtube.com/results?search_query=dutchies+to+be",
     note: {
-      en: "Kim teaches Dutch through acted, funny everyday scenes followed by the grammar behind them. 10–15 minute videos, plus online courses on her website.",
-      zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。影片約 10–15 分鐘，網站上另有線上課程。"
+      en: "Kim teaches Dutch through acted, funny everyday scenes followed by the grammar behind them. Free YouTube videos, plus self-paced 3-month courses per level with lifetime access.",
+      zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。YouTube 影片免費，另有各級三個月自學課程，可終身觀看。"
     },
-    price: { en: "Videos free; online courses paid.", zh: "影片免費；線上課程需付費。" },
-    review: true
+    price: {
+      en: "One-time: A1 or A2 course €79, B1 €99, A2 + B1 €159, A0–B1 package €199. Online community membership about $15–20 a month. Live lessons not included.",
+      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 $15–20。不含直播課。"
+    }
   },
   {
     id: "easy-dutch",
@@ -769,18 +786,20 @@ window.RESOURCES = [
     region: "online",
     cities: [],
     formats: ["self"],
-    focus: ["exam", "reading", "grammar"],
-    levels: ["A1", "B1"],
-    cost: [0, 30],
-    hours: [1, 10],
-    url: "https://www.instagram.com/learn_dutch_now/",
+    focus: ["exam", "reading", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [0, 60],
+    hours: [4, 20],
+    url: "https://learndutchnow.shop/",
     instagram: "https://www.instagram.com/learn_dutch_now/",
     note: {
-      en: "A large Instagram account (130K+ followers) with bite-sized vocabulary posts and study materials for passing the Dutch exams.",
-      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文與通過荷語考試的學習資料。"
+      en: "A large Instagram account (130K+ followers) with bite-sized vocabulary posts, plus downloadable courses and exam packs for the inburgering exam (A2) and Staatsexamen NT2 (B1).",
+      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。"
     },
-    price: { en: "Posts free; study materials paid.", zh: "貼文免費；學習資料需付費。" },
-    review: true
+    price: {
+      en: "One-time, lifetime access, priced in USD: Starter course $89, B1 course $88, both $162, A2 exam pack $172, single exam parts from $30.",
+      zh: "一次付清、終身使用，以美元計價：入門課程 $89、B1 課程 $88、兩者合購 $162、A2 考試包 $172，單科考試資料 $30 起。"
+    }
   },
   {
     id: "learn-dutch-with-yas",
@@ -790,14 +809,18 @@ window.RESOURCES = [
     cities: [],
     formats: ["self", "online"],
     focus: ["speaking", "grammar"],
-    levels: ["A0", "C1"],
-    cost: [0, 150],
-    hours: [1, 12],
-    url: "https://www.instagram.com/learndutchwithyas/",
+    levels: ["A0", "C2"],
+    cost: [0, null],
+    hours: [4, 12],
+    url: "https://learndutchwithyas.com/learn-dutch/dutch-mastery-group-classes",
     instagram: "https://www.instagram.com/learndutchwithyas/",
     note: {
-      en: "Yasmine is a Dutch teacher for all levels who shares tips on Instagram and offers lessons.",
-      zh: "Yasmine 是教授各級程度的荷語老師，在 Instagram 分享學習技巧，也有開課。"
+      en: "Yasmine teaches all levels: 13-week live online group classes (max 6 students), B2+ conversation classes, self-paced courses and private packages of 8 one-hour lessons.",
+      zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 8 堂一小時的一對一套裝課。"
+    },
+    price: {
+      en: "Instagram tips are free. Check the website for class prices.",
+      zh: "Instagram 內容免費。課程價格請至官網查看。"
     },
     review: true
   },
@@ -808,17 +831,20 @@ window.RESOURCES = [
     region: "online",
     cities: [],
     formats: ["self", "online"],
-    focus: ["speaking", "listening"],
-    levels: ["A1", "B2"],
-    cost: [0, 150],
-    hours: [1, 12],
-    url: "https://www.instagram.com/your.dutchfriend/",
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B1"],
+    cost: [0, 85],
+    hours: [4, 15],
+    url: "https://yourdutchfriend.org/",
     instagram: "https://www.instagram.com/your.dutchfriend/",
     note: {
-      en: "Charlotte posts everyday spoken Dutch on Instagram as \"your Dutch friend\".",
-      zh: "Charlotte 以「你的荷蘭朋友」身分在 Instagram 分享日常口語荷語。"
+      en: "Charlotte posts everyday spoken Dutch on Instagram as \"your Dutch friend\" and runs self-paced video courses (A0–A1, A1–A2, A2–B1) and live online group classes.",
+      zh: "Charlotte 以「你的荷蘭朋友」身分在 Instagram 分享日常口語荷語，並開設自學影片課程（A0–A1、A1–A2、A2–B1）和線上團體直播課。"
     },
-    review: true
+    price: {
+      en: "Video course €250 per level (one-time, often on sale for €199). Group classes €200 for a pack of 10. Grammar e-book €12.50.",
+      zh: "影片課程每級 €250（一次付清，常有 €199 特價）。團體課 10 堂 €200。文法電子書 €12.50。"
+    }
   },
   {
     id: "going-dutch",
@@ -826,17 +852,20 @@ window.RESOURCES = [
     kind: "creator",
     region: "online",
     cities: [],
-    formats: ["self"],
-    focus: ["reading", "listening"],
-    levels: ["A1", "B2"],
-    cost: [0, 0],
-    hours: [1, 8],
-    url: "https://www.instagram.com/goingdutchcommunity/",
+    formats: ["self", "online", "inperson"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [0, 285],
+    hours: [8, 40],
+    url: "https://www.goingdutchcommunity.com/store",
     instagram: "https://www.instagram.com/goingdutchcommunity/",
     note: {
-      en: "A large Instagram community (230K+ followers) about Dutch language and life in the Netherlands.",
-      zh: "大型 Instagram 社群（超過 23 萬追蹤），主題是荷語與荷蘭生活。"
+      en: "A large Instagram community (230K+ followers) with a paid \"Road to Dutch Fluency\" subscription that includes daily live classes at different levels, plus in-person events.",
+      zh: "大型 Instagram 社群（超過 23 萬追蹤），付費訂閱「Road to Dutch Fluency」包含每日不同程度的直播課，另有實體活動。"
     },
-    review: true
+    price: {
+      en: "Subscription €119 a month. 6-month package with 24 private classes €1,699. Speed Dutching evenings €5; Texel summer school €950.",
+      zh: "訂閱每月 €119。含 24 堂私人課的 6 個月套裝 €1,699。Speed Dutching 活動 €5；Texel 暑期營 €950。"
+    }
   }
 ];
