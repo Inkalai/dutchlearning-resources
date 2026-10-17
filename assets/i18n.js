@@ -126,8 +126,8 @@ window.I18N = {
     "suggest.required": "Add a name and a link so I can find the resource.",
 
     "about.title": "Hi, I'm Inka",
-    "about.body1": "I moved to the Netherlands since 2019 and have been learning dutch on and off. On Instagram at @dutchlearning I pick up learning Dutch again and hope to empower more Dutch learners like me reaching the goal.",
-    "about.body2": "A lot of readers asked me: where should I start, and what's worth paying for? The thing is, same resource does not suit everyone. That's why I make this website. It collects free and paid options and lets you filter them by your own budget, level and schedule.",
+    "about.body1": "I moved to the Netherlands in 2019 and have been learning Dutch on and off ever since. On Instagram at @dutchlearning, I'm picking up Dutch again, and I hope to help more learners like me reach their goals.",
+    "about.body2": "A lot of readers ask me: where should I start, and what's worth paying for? The thing is, the same resource doesn't suit everyone. That's why I made this website. It collects free and paid options and lets you filter them by your own budget, level and schedule.",
     "about.instagram": "Follow @dutchlearning",
     "about.blog": "Read my Mandarin blog",
     "support.title": "Did this save you time?",
