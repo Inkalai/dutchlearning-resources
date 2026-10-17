@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
   // 2. Or create a free form at https://formspree.io and paste its URL here,
   //    e.g. "https://formspree.io/f/abcdwxyz". Submissions then arrive by
   //    email and visitors don't need any account.
-  formEndpoint: "",
+  formEndpoint: "https://formspree.io/f/mppqbnyy",
   githubRepo: "Inkalai/dutchlearning-resources",
 
   // Date shown as "Last checked" in the footer.
