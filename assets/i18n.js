@@ -6,8 +6,8 @@ window.I18N = {
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
     "nav.about": "About",
-    "kofi.short": "Ko-fi",
-    "kofi.button": "Support me on Ko-fi",
+    "kofi.short": "Support this website",
+    "kofi.button": "Support this website",
 
     "hero.title": "Find your way into Dutch",
     "hero.lead": "Libraries, city halls, courses, apps and teachers from Instagram and YouTube, free and paid, in the Netherlands, Belgium and online. Tell me where you are and where you want to go.",
@@ -144,8 +144,8 @@ window.I18N = {
     "nav.find": "找資源",
     "nav.suggest": "推薦資源",
     "nav.about": "關於我",
-    "kofi.short": "Ko-fi",
-    "kofi.button": "在 Ko-fi 支持我",
+    "kofi.short": "贊助我",
+    "kofi.button": "贊助我",
 
     "hero.title": "找到你的荷語學習路線",
     "hero.lead": "圖書館、市政府、課程、App，還有 Instagram 與 YouTube 上的老師，免費和付費都有，涵蓋荷蘭、比利時與線上。告訴我你現在的程度和想達到的目標。",
