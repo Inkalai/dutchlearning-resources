@@ -126,8 +126,8 @@ window.I18N = {
     "suggest.required": "Add a name and a link so I can find the resource.",
 
     "about.title": "Hi, I'm Inka",
-    "about.body1": "I moved to the Netherlands for my master's and have been learning, living and working in Dutch ever since. On Instagram at @dutchlearning I share the Dutch I wish someone had taught me earlier.",
-    "about.body2": "Learners keep asking me the same question: where should I start, and what's worth paying for? This list is my answer. It collects free and paid options and lets you filter them by your own budget, level and schedule.",
+    "about.body1": "I moved to the Netherlands since 2019 and have been learning dutch on and off. On Instagram at @dutchlearning I pick up learning Dutch again and hope to empower more Dutch learners like me reaching the goal.",
+    "about.body2": "A lot of readers asked me: where should I start, and what's worth paying for? The thing is, same resource does not suit everyone. That's why I make this website. It collects free and paid options and lets you filter them by your own budget, level and schedule.",
     "about.instagram": "Follow @dutchlearning",
     "about.blog": "Read my Mandarin blog",
     "support.title": "Did this save you time?",
@@ -264,8 +264,8 @@ window.I18N = {
     "suggest.required": "請填寫名稱和連結，我才找得到這個資源。",
 
     "about.title": "嗨，我是 Inka",
-    "about.body1": "我因為念碩士搬到荷蘭，之後一路用荷語生活、工作到現在。我在 Instagram @dutchlearning 分享那些我希望早點有人教我的荷語。",
-    "about.body2": "很多人問我同樣的問題：該從哪裡開始？哪些值得花錢？這份清單就是我的回答。它整理了免費和付費的選項，讓你依照自己的預算、程度和時間來篩選。",
+    "about.body1": "我從 2019 年搬到荷蘭，斷斷續續地學荷語。在 Instagram @dutchlearning，我重新開始學荷語，也希望幫助更多像我一樣的荷語學習者達成目標。",
+    "about.body2": "很多讀者問我：該從哪裡開始？哪些值得花錢？其實，同一個資源不一定適合每個人。所以我做了這個網站。它整理了免費和付費的選項，讓你依照自己的預算、程度和時間來篩選。",
     "about.instagram": "追蹤 @dutchlearning",
     "about.blog": "看我的中文部落格",
     "support.title": "這份清單幫你省了時間嗎？",
