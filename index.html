@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dutch learning resources | @dutchlearning</title>
+  <meta name="description" content="Free and paid ways to learn Dutch in the Netherlands, Belgium and online, filtered by budget, level, time and the way you like to learn.">
+  <link rel="icon" href="assets/favicon.png">
+  <meta property="og:title" content="Dutch learning resources | @dutchlearning">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#finder" data-i18n="nav.find">Find resources</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="@dutchlearning">
+        <img src="assets/logo.png" alt="" width="48" height="48">
+        <span>@dutchlearning</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#finder" data-i18n="nav.find">Find resources</a>
+        <a href="#suggest" data-i18n="nav.suggest">Suggest a resource</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="langToggle" data-i18n="lang.switch">中文</button>
+        <a class="btn btn-kofi js-kofi" href="https://ko-fi.com/inka31" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 5h13a3 3 0 0 1 3 3v1a4 4 0 0 1-4 4h-.2A6 6 0 0 1 10 18H8a6 6 0 0 1-6-6V7a2 2 0 0 1 2-2Zm12 2v4a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1h-1Zm-4.6 2.2c-.6-.6-1.6-.6-2.2 0l-.2.2-.2-.2c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2L9 13.8l2.4-2.4c.6-.6.6-1.6 0-2.2Z"/></svg>
+          <span data-i18n="kofi.short">Ko-fi</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <h1 data-i18n="hero.title">Find your way into Dutch</h1>
+        <p class="lead" data-i18n="hero.lead"></p>
+
+        <fieldset class="route" id="route">
+          <legend data-i18n="route.legend">Your Dutch level</legend>
+          <ol class="route-line" id="routeLine"></ol>
+          <p class="route-hint" id="routeHint" aria-live="polite"></p>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="finder" id="finder" aria-labelledby="resultsCount">
+      <div class="wrap finder-grid">
+        <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="filters">
+          <span data-i18n="filters.show">Show filters</span>
+          <span class="badge" id="activeCount" hidden></span>
+        </button>
+
+        <aside class="filters" id="filters">
+          <h2 class="visually-hidden" data-i18n="filters.title">Filters</h2>
+
+          <div class="field">
+            <label for="search" data-i18n="filters.search">Search by name</label>
+            <input type="search" id="search" data-i18n-placeholder="filters.searchPlaceholder">
+          </div>
+
+          <fieldset class="field">
+            <legend data-i18n="filters.budget">Budget per month</legend>
+            <div class="seg" id="budget"></div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend data-i18n="filters.hours">Time per month</legend>
+            <div class="seg" id="hours"></div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend data-i18n="filters.format">How you like to learn</legend>
+            <div class="chips" id="formats"></div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend data-i18n="filters.focus">What you want to practise</legend>
+            <div class="chips" id="focus"></div>
+          </fieldset>
+
+          <div class="field">
+            <label for="place" data-i18n="filters.place">Where you live</label>
+            <select id="place"></select>
+          </div>
+
+          <button type="button" class="link-btn" id="clearFilters" data-i18n="filters.clear">Clear filters</button>
+        </aside>
+
+        <div class="results">
+          <div class="results-bar">
+            <h2 id="resultsCount" aria-live="polite"></h2>
+            <label class="sort">
+              <span data-i18n="results.sort">Sort</span>
+              <select id="sort">
+                <option value="match" data-i18n="sort.match">Best match</option>
+                <option value="price" data-i18n="sort.price">Lowest price</option>
+                <option value="name" data-i18n="sort.name">Name</option>
+              </select>
+            </label>
+          </div>
+          <ul class="result-list" id="resultList"></ul>
+          <div class="empty" id="empty" hidden>
+            <h3 data-i18n="results.empty.title">Nothing fits all your filters yet</h3>
+            <p data-i18n="results.empty.body"></p>
+            <a class="btn btn-outline" href="#suggest" data-i18n="results.empty.cta">Suggest it</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggest" id="suggest" aria-labelledby="suggestTitle">
+      <div class="wrap suggest-grid">
+        <div>
+          <h2 id="suggestTitle" data-i18n="suggest.title">Suggest a resource</h2>
+          <p data-i18n="suggest.lead"></p>
+        </div>
+        <form id="suggestForm" class="suggest-form" novalidate>
+          <div class="field">
+            <label for="s-name" data-i18n="suggest.name">Resource name</label>
+            <input id="s-name" name="name" required autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="s-url" data-i18n="suggest.url">Link</label>
+            <input id="s-url" name="url" type="url" inputmode="url" required placeholder="https://">
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="s-kind" data-i18n="suggest.kind">Type</label>
+              <select id="s-kind" name="kind"></select>
+            </div>
+            <div class="field">
+              <label for="s-cost" data-i18n="suggest.cost">Price per month</label>
+              <input id="s-cost" name="cost" data-i18n-placeholder="suggest.costPlaceholder">
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="s-from" data-i18n="suggest.levelFrom">From level</label>
+              <select id="s-from" name="levelFrom" class="js-levels"></select>
+            </div>
+            <div class="field">
+              <label for="s-to" data-i18n="suggest.levelTo">To level</label>
+              <select id="s-to" name="levelTo" class="js-levels"></select>
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend data-i18n="suggest.formats">Format</legend>
+            <div class="chips" id="s-formats"></div>
+          </fieldset>
+          <fieldset class="field">
+            <legend data-i18n="suggest.focus">Focus</legend>
+            <div class="chips" id="s-focus"></div>
+          </fieldset>
+          <div class="field">
+            <label for="s-place" data-i18n="suggest.place">City or online</label>
+            <input id="s-place" name="place" data-i18n-placeholder="suggest.placePlaceholder">
+          </div>
+          <div class="field">
+            <label for="s-why" data-i18n="suggest.why">Why do you recommend it?</label>
+            <textarea id="s-why" name="why" rows="4"></textarea>
+          </div>
+          <div class="field">
+            <label for="s-contact" data-i18n="suggest.contact">Your name or Instagram (optional)</label>
+            <input id="s-contact" name="contact" autocomplete="off">
+          </div>
+          <label class="check">
+            <input type="checkbox" name="isTeacher" value="yes">
+            <span data-i18n="suggest.isTeacher">I'm the teacher or organiser</span>
+          </label>
+          <p class="form-note" id="formNote"></p>
+          <button type="submit" class="btn btn-primary" id="suggestSubmit"></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="wrap about-grid">
+        <img class="about-logo" src="assets/logo.png" alt="Inka" width="200" height="200">
+        <div class="about-text">
+          <h2 id="aboutTitle" data-i18n="about.title">Hi, I'm Inka</h2>
+          <p data-i18n="about.body1"></p>
+          <p data-i18n="about.body2"></p>
+          <p class="about-links">
+            <a class="js-instagram" href="https://www.instagram.com/dutchlearning/" target="_blank" rel="noopener" data-i18n="about.instagram">Follow @dutchlearning</a>
+            <a class="js-blog" href="#" target="_blank" rel="noopener" data-i18n="about.blog" hidden>Read my Mandarin blog</a>
+          </p>
+        </div>
+        <div class="support">
+          <h3 data-i18n="support.title">Did this save you time?</h3>
+          <p data-i18n="support.body"></p>
+          <a class="btn btn-kofi js-kofi" href="https://ko-fi.com/inka31" target="_blank" rel="noopener" data-i18n="kofi.button">Support me on Ko-fi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p data-i18n="footer.note"></p>
+      <p id="updated"></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="data/resources.js"></script>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
