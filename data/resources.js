@@ -809,7 +809,7 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["speaking", "grammar"],
     levels: ["A0", "C2"],
-    cost: [0, null],
+    cost: [0, 140],
     hours: [4, 12],
     url: "https://learndutchwithyas.com/learn-dutch/dutch-mastery-group-classes",
     instagram: "https://www.instagram.com/learndutchwithyas/",
@@ -818,10 +818,9 @@ window.RESOURCES = [
       zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 8 堂一小時的一對一套裝課。"
     },
     price: {
-      en: "Instagram tips are free. Check the website for class prices.",
-      zh: "Instagram 內容免費。課程價格請至官網查看。"
-    },
-    review: true
+      en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €350 excl. VAT paid at once, or 3 × €130 or 6 × €70 in instalments.",
+      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €350（未稅），或分期 3 × €130、6 × €70。"
+    }
   },
   {
     id: "your-dutch-friend",
