@@ -189,15 +189,17 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["reading"],
     levels: ["A2", "B1"],
-    cost: [0, 8],
+    cost: [4, 10],
     hours: [1, 10],
-    url: "https://www.wablieft.be/",
+    url: "https://wablieft.be/nl/abonnement",
     note: {
       en: "A Flemish newspaper written in clear, simple Dutch. Good weekly reading practice if you live in Belgium or want Flemish vocabulary.",
       zh: "以清楚簡單的荷語撰寫的法蘭德斯報紙。住在比利時或想學比利時荷語詞彙的人，很適合每週閱讀練習。"
     },
-    price: { en: "Some articles free online; subscription for the full paper.", zh: "部分文章可免費線上閱讀；完整報紙需訂閱。" },
-    review: true
+    price: {
+      en: "Wablieft Start (every two weeks) €48 a year. Weekly paper about €85–110 a year.",
+      zh: "Wablieft Start（雙週刊）每年 €48。週刊紙本每年約 €85–110。"
+    }
   },
   {
     id: "huis-nederlands-brussel",
@@ -315,35 +317,41 @@ window.RESOURCES = [
     kind: "university",
     region: "NL",
     cities: ["Amsterdam"],
-    formats: ["inperson", "online"],
+    formats: ["self", "inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
-    levels: ["A0", "C1"],
-    cost: [150, 400],
-    hours: [12, 40],
-    url: "https://www.uvatalen.nl/",
+    levels: ["A0", "B2"],
+    cost: [100, 410],
+    hours: [10, 40],
+    url: "https://www.uvatalen.nl/nederlands",
     note: {
-      en: "The University of Amsterdam's language centre, open to everyone. Structured courses from beginner to advanced, plus intensive and exam-prep options.",
-      zh: "阿姆斯特丹大學語言中心，對所有人開放。從入門到高級的系統化課程，也有密集班與考試準備班。"
+      en: "The University of Amsterdam's language centre, open to everyone. Courses from beginner to B2, e-learning, writing and fluency courses, and Staatsexamen preparation.",
+      zh: "阿姆斯特丹大學語言中心，對所有人開放。提供入門到 B2 的課程、線上自學、寫作與流利度課程，以及國家考試準備班。"
     },
-    review: true
+    price: {
+      en: "Per course: e-learning from €195, Staatsexamen prep and Fluency Skills from €485, Writing Skills from €710, Beginners intensive (A0–A2) from €815. Materials €30–48 extra.",
+      zh: "每期課程：線上自學 €195 起，國家考試準備班與流利度課程 €485 起，寫作課 €710 起，入門密集班（A0–A2）€815 起。教材另計 €30–48。"
+    }
   },
   {
     id: "babel-utrecht",
-    name: "Babel (Utrecht University)",
-    kind: "university",
+    name: "Babel (Utrecht)",
+    kind: "school",
     region: "NL",
     cities: ["Utrecht"],
-    formats: ["inperson", "online"],
-    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    formats: ["self", "inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A0", "C1"],
-    cost: [150, 350],
-    hours: [12, 30],
-    url: "https://babel.nl/",
+    cost: [110, 540],
+    hours: [8, 40],
+    url: "https://www.babel.nl/cursus/",
     note: {
-      en: "Utrecht University's language and communication centre. Dutch courses for students, staff and the public.",
-      zh: "烏特勒支大學的語言中心，荷語課程開放給學生、教職員和一般大眾。"
+      en: "A language school in Utrecht with Dutch courses from beginner to C1, in the classroom or a virtual classroom, plus conversation courses, e-learning and Staatsexamen training.",
+      zh: "烏特勒支的語言學校，提供入門到 C1 的荷語課程（實體或線上教室），另有會話課、線上自學和國家考試訓練。"
     },
-    review: true
+    price: {
+      en: "Per course: e-learning from €225, conversation €295, A0–A1 €550, advanced 9-week courses €795, full A0–A2 or B1–B2 €1,075, Staatsexamen training €565–590.",
+      zh: "每期課程：線上自學 €225 起、會話課 €295、A0–A1 €550、9 週高級課程 €795、完整 A0–A2 或 B1–B2 €1,075、國家考試訓練 €565–590。"
+    }
   },
   {
     id: "eur-language-centre",
@@ -389,14 +397,17 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A0", "C2"],
-    cost: [100, 300],
+    cost: [0, 320],
     hours: [16, 40],
-    url: "https://www.ilt.kuleuven.be/",
+    url: "https://ilt.kuleuven.be/cursus/nt2_prijs_voorwaarden.php",
     note: {
-      en: "KU Leuven's Institute for Living Languages teaches Dutch at every level, including academic Dutch for university entry.",
-      zh: "魯汶大學現代語言學院提供各級荷語課程，包含申請大學所需的學術荷語。"
+      en: "KU Leuven's Institute for Living Languages teaches Dutch in six levels in small groups, plus pronunciation and online writing classes and a summer course. Open to adults outside the university.",
+      zh: "魯汶大學現代語言學院以小班教授六個級別的荷語，另有發音課、線上寫作課和暑期課程，校外成人也能報名。"
     },
-    review: true
+    price: {
+      en: "Per module: €300 (levels 1–3) or €320 (levels 4–6) for external students, €175–195 for KU Leuven students and staff, syllabus included. Summer course €460–480. Free for Erasmus students.",
+      zh: "每個模組：校外學員 €300（1–3 級）或 €320（4–6 級），KU Leuven 學生與教職員 €175–195，含講義。暑期課程 €460–480。Erasmus 學生免費。"
+    }
   },
   {
     id: "ugent-uct",
@@ -406,15 +417,18 @@ window.RESOURCES = [
     cities: ["Gent"],
     formats: ["inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
-    levels: ["A0", "C1"],
-    cost: [100, 300],
+    levels: ["A1", "C1"],
+    cost: [200, 588],
     hours: [16, 40],
-    url: "https://www.uct.ugent.be/",
+    url: "https://www.uct.ugent.be/en",
     note: {
-      en: "Ghent University's language centre. Dutch courses for international students, staff and residents, plus ITNA exam preparation.",
-      zh: "根特大學語言中心，為國際學生、教職員與居民開設荷語課，也有 ITNA 考試準備。"
+      en: "Ghent University's language centre teaches Dutch from level 1 (A1) to level 6 (C1), as intensive day courses or evening courses, open to residents as well as students.",
+      zh: "根特大學語言中心教授 1 級（A1）到 6 級（C1）荷語，有密集日間班和晚間班，居民與學生皆可報名。"
     },
-    review: true
+    price: {
+      en: "Per course: €588 standard, €520 for UGent staff and PhD students, €400 for UGent students.",
+      zh: "每期課程：一般學員 €588、UGent 教職員與博士生 €520、UGent 學生 €400。"
+    }
   },
   {
     id: "linguapolis",
@@ -425,32 +439,38 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A0", "C1"],
-    cost: [100, 300],
-    hours: [16, 40],
-    url: "https://www.uantwerpen.be/linguapolis",
+    cost: [150, 735],
+    hours: [16, 45],
+    url: "https://www.uantwerpen.be/en/centres/linguapolis/language-courses/languages/dutch/tariffs-and-subsidies2/",
     note: {
-      en: "The University of Antwerp's language institute, with Dutch courses for students, expats and professionals.",
-      zh: "安特衛普大學語言中心，為學生、外派人士與上班族開設荷語課程。"
+      en: "The University of Antwerp's language institute, with Dutch courses for students, expats and professionals, plus a one-year academic Dutch programme.",
+      zh: "安特衛普大學語言中心，為學生、外派人士與上班族開設荷語課程，另有一年制學術荷語預科。"
     },
-    review: true
+    price: {
+      en: "Standard rate €545 for a 45-hour course, €735 for 90 hours (2025–2026). A Flemish training voucher can cover up to €125; level 1 may qualify for a Flemish grant.",
+      zh: "一般價格：45 小時課程 €545、90 小時 €735（2025–2026）。法蘭德斯培訓券最多可抵 €125；第 1 級可能申請法蘭德斯獎助。"
+    }
   },
   {
     id: "regina-coeli",
     name: "Regina Coeli",
     kind: "school",
     region: "NL",
-    cities: ["Vught"],
+    cities: ["Vught", "Eindhoven"],
     formats: ["inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A0", "C1"],
-    cost: [2000, 6000],
-    hours: [40, 160],
-    url: "https://www.reginacoeli.nl/",
+    cost: [570, 5315],
+    hours: [16, 50],
+    url: "https://www.reginacoeli.com/language-courses/fees.html",
     note: {
-      en: "A well-known residential language institute: full-immersion one-to-one training for a week or more. Often paid for by employers.",
-      zh: "知名的住宿式語言學校：一對一全沉浸式訓練，一次一週以上。通常由公司支付。"
+      en: "A well-known residential language institute in Vught: full-immersion training, mostly one-to-one, often paid for by employers. Also runs small evening groups at High Tech Campus Eindhoven.",
+      zh: "位於 Vught 的知名住宿式語言學校：以一對一為主的全沉浸式訓練，通常由公司支付。另在恩荷芬 High Tech Campus 開設小班晚間課。"
     },
-    review: true
+    price: {
+      en: "Intensive week (5 days) €5,315 excl. VAT, overnight stay extra. Evening course in Eindhoven €1,135 excl. VAT for 12 two-hour lessons over 6 weeks, groups of 5.",
+      zh: "一週密集班（5 天）€5,315（未稅），住宿另計。恩荷芬晚間課 12 堂 × 2 小時、為期 6 週、5 人小班，€1,135（未稅）。"
+    }
   },
   {
     id: "direct-dutch",
@@ -513,22 +533,25 @@ window.RESOURCES = [
     price: { en: "Free to audit; paid upgrade for unlimited access and a certificate.", zh: "旁聽免費；付費升級可無限期觀看並取得證書。" }
   },
   {
-    id: "delftx",
-    name: "Dutch for Beginners (TU Delft)",
-    kind: "course",
-    region: "online",
-    cities: [],
-    formats: ["self"],
-    focus: ["reading", "listening", "grammar"],
-    levels: ["A0", "A2"],
-    cost: [0, 0],
-    hours: [4, 20],
-    url: "https://www.edx.org/school/delftx",
+    id: "tudelft",
+    name: "TU Delft Dutch courses",
+    kind: "university",
+    region: "NL",
+    cities: ["Delft"],
+    formats: ["self", "inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "C1"],
+    cost: [0, 455],
+    hours: [4, 40],
+    url: "https://www.tudelft.nl/tbm/itav/onderwijs/nederlands-nt2/nederlandse-cursussen",
     note: {
-      en: "TU Delft runs a free Dutch MOOC a few times a year on edX, aimed at international students and staff.",
-      zh: "台夫特理工大學每年在 edX 開設數次免費荷語 MOOC，主要對象為國際學生與教職員。"
+      en: "TU Delft's language centre runs Dutch courses from beginner to advanced, a summer school, NT2 State Exam preparation and a free online beginners course. Open to non-students too.",
+      zh: "台夫特理工大學語言中心開設入門到高級的荷語課程、暑期班、NT2 國家考試準備，以及免費的線上入門課程，非學生也能報名。"
     },
-    review: true
+    price: {
+      en: "Online beginners course free. Semi-intensive courses €445–€485, advanced intensive €910, summer school €550 per level (materials extra). Some levels free for TU Delft students in English-taught programmes.",
+      zh: "線上入門課程免費。半密集課程 €445–€485，高級密集班 €910，暑期班每級 €550（教材另計）。就讀英語授課學程的 TU Delft 學生部分級別免費。"
+    }
   },
   {
     id: "staatsexamen-nt2",
@@ -622,25 +645,6 @@ window.RESOURCES = [
       en: "Free account to start. Check the website for the paid service.",
       zh: "可免費註冊開始使用。付費方案請至官網查看。"
     }
-  },
-  {
-    id: "coffee-break-dutch",
-    name: "Coffee Break Dutch",
-    kind: "podcast",
-    region: "online",
-    cities: [],
-    formats: ["self"],
-    focus: ["listening", "speaking"],
-    levels: ["A0", "A2"],
-    cost: [0, 15],
-    hours: [2, 10],
-    url: "https://coffeebreaklanguages.com/",
-    note: {
-      en: "A friendly beginner podcast from Radio Lingua: a teacher and a learner work through Dutch together, episode by episode.",
-      zh: "Radio Lingua 製作的入門播客：老師和學生一集一集一起學荷語，輕鬆易懂。"
-    },
-    price: { en: "Episodes free; paid course notes and bonus material.", zh: "節目免費；講義和額外內容需付費。" },
-    review: true
   },
   {
     id: "italki",
@@ -764,19 +768,21 @@ window.RESOURCES = [
     kind: "creator",
     region: "online",
     cities: [],
-    formats: ["self"],
-    focus: ["listening"],
+    formats: ["self", "online"],
+    focus: ["listening", "speaking"],
     levels: ["A2", "C1"],
-    cost: [0, 10],
+    cost: [0, 25],
     hours: [1, 10],
     url: "https://www.youtube.com/@EasyDutch",
     youtube: "https://www.youtube.com/@EasyDutch",
     note: {
-      en: "Street interviews with real Dutch people, subtitled in Dutch and English. Great for hearing how people actually talk.",
-      zh: "街頭訪問真實的荷蘭人，附荷文與英文字幕。最能聽到荷蘭人平常怎麼說話。"
+      en: "Street interviews with real Dutch people, subtitled in Dutch and English. Great for hearing how people actually talk. Paid memberships add podcasts, transcripts and conversation sessions.",
+      zh: "街頭訪問真實的荷蘭人，附荷文與英文字幕，最能聽到荷蘭人平常怎麼說話。付費會員另有 Podcast、逐字稿與會話練習。"
     },
-    price: { en: "Free on YouTube; Patreon for transcripts and extras.", zh: "YouTube 免費；Patreon 提供逐字稿等額外內容。" },
-    review: true
+    price: {
+      en: "Videos are free on YouTube. Memberships: Basic €5, Podcast €10, Audio and Video €12, Conversation €25 a month.",
+      zh: "YouTube 影片免費。會員方案：基本 €5、Podcast €10、音訊與影片 €12、會話 €25（每月）。"
+    }
   },
   {
     id: "learn-dutch-now",
