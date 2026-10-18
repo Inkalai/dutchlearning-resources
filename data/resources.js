@@ -723,7 +723,7 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["listening", "grammar", "speaking"],
     levels: ["A0", "B1"],
-    cost: [0, null],
+    cost: [0, 200],
     hours: [1, 20],
     url: "https://www.learndutch.org/",
     youtube: "https://www.youtube.com/results?search_query=learn+dutch+bart+de+pau",
@@ -732,10 +732,9 @@ window.RESOURCES = [
       zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站有免費線上課程，另有付費進階課程與線上教室。"
     },
     price: {
-      en: "YouTube and basic lessons are free. Premium courses are sold as one-year licences (VAT added in the EU); check the shop for current prices.",
-      zh: "YouTube 和基礎課程免費。進階課程以一年授權販售（歐盟需另加增值稅），最新價格請至官網商店查看。"
-    },
-    review: true
+      en: "YouTube and basic lessons are free. Premium #dutchgrammar course €49 for one year (discounted from €79, plus VAT in the EU). Live course €495 per level (intro + 9 sessions), book extra.",
+      zh: "YouTube 和基礎課程免費。進階課程 #dutchgrammar 一年 €49（原價 €79，歐盟需另加增值稅）。直播課每級 €495（介紹課＋9 堂），教材另計。"
+    }
   },
   {
     id: "dutchies-to-be",
