@@ -223,6 +223,67 @@
     var n = activeFilterCount();
     $("activeCount").textContent = n;
     $("activeCount").hidden = n === 0;
+    var count = $("resultList").children.length;
+    $("filtersClose").textContent = count === 1 ? t("filters.doneOne") : t("filters.done", { n: count });
+  }
+
+  /* ---------- Mobile menu and filter sheet ---------- */
+
+  var mobile = window.matchMedia("(max-width: 860px)");
+
+  function setMenu(open) {
+    $("mainNav").classList.toggle("open", open);
+    $("brand").setAttribute("aria-expanded", String(open));
+  }
+
+  function setFilterSheet(open, returnToResults) {
+    $("filters").classList.toggle("open", open);
+    $("filtersToggle").setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("sheet-open", open && mobile.matches);
+    updateFiltersToggleLabel();
+    if (open && mobile.matches) $("filtersClose").focus();
+    if (!open && returnToResults) {
+      $("finder").scrollIntoView();
+      $("filtersToggle").focus({ preventScroll: true });
+    }
+  }
+
+  function syncMobileMode() {
+    var brand = $("brand");
+    if (mobile.matches) {
+      brand.setAttribute("aria-controls", "mainNav");
+      brand.setAttribute("aria-label", t("nav.menu"));
+      brand.setAttribute("aria-expanded", String($("mainNav").classList.contains("open")));
+    } else {
+      setMenu(false);
+      setFilterSheet(false);
+      brand.removeAttribute("aria-controls");
+      brand.removeAttribute("aria-expanded");
+      brand.setAttribute("aria-label", "@dutchlearning");
+    }
+  }
+
+  function setupMobile() {
+    // On phones the logo opens the menu instead of jumping to the top.
+    $("brand").addEventListener("click", function (e) {
+      if (!mobile.matches) return;
+      e.preventDefault();
+      setMenu(!$("mainNav").classList.contains("open"));
+    });
+    $("mainNav").addEventListener("click", function (e) {
+      if (e.target.closest("a")) setMenu(false);
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".site-header")) setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      if ($("mainNav").classList.contains("open")) { setMenu(false); $("brand").focus(); }
+      if ($("filters").classList.contains("open") && mobile.matches) setFilterSheet(false, true);
+    });
+    $("filtersClose").addEventListener("click", function () { setFilterSheet(false, true); });
+    mobile.addEventListener("change", syncMobileMode);
+    syncMobileMode();
   }
 
   /* ---------- Matching ---------- */
@@ -502,6 +563,7 @@
 
   function renderAll() {
     applyStaticText();
+    syncMobileMode();
     renderRoute();
     renderFilters();
     renderSuggestForm();
@@ -542,12 +604,11 @@
     });
 
     $("filtersToggle").addEventListener("click", function () {
-      var open = $("filters").classList.toggle("open");
-      this.setAttribute("aria-expanded", String(open));
-      updateFiltersToggleLabel();
+      setFilterSheet(!$("filters").classList.contains("open"));
     });
 
     setupSuggestForm();
+    setupMobile();
     renderAll();
   }
 

@@ -18,11 +18,12 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top" aria-label="@dutchlearning">
+      <a class="brand" id="brand" href="#top" aria-label="@dutchlearning">
         <img src="assets/logo.png" alt="" width="48" height="48">
-        <span>@dutchlearning</span>
+        <span class="brand-name">@dutchlearning</span>
+        <svg class="brand-caret" aria-hidden="true" viewBox="0 0 12 8" width="12" height="8"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
       </a>
-      <nav class="nav" aria-label="Main">
+      <nav class="nav" id="mainNav" aria-label="Main">
         <a href="#finder" data-i18n="nav.find">Find resources</a>
         <a href="#suggest" data-i18n="nav.suggest">Suggest a resource</a>
         <a href="#about" data-i18n="nav.about">About</a>
@@ -59,7 +60,10 @@
         </button>
 
         <aside class="filters" id="filters">
-          <h2 class="visually-hidden" data-i18n="filters.title">Filters</h2>
+          <div class="filters-head">
+            <h2 data-i18n="filters.title">Filters</h2>
+            <button type="button" class="btn btn-primary" id="filtersClose"></button>
+          </div>
 
           <div class="field">
             <label for="search" data-i18n="filters.search">Search by name</label>
