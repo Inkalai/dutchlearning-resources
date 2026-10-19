@@ -1328,5 +1328,28 @@ window.RESOURCES = [
       en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €645 for 10 one-hour lessons (€322.50 each for a duo).",
       zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €645（雙人課每人 €322.50）。"
     }
+  },
+  {
+    id: "nederlands-zonder-stress",
+    name: "Hallo Nederlands zonder stress",
+    kind: "creator",
+    categories: ["instagram", "courses", "tutors"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [100, 160],
+    hours: [4, 6],
+    url: "https://tidycal.com/hallonederlandszonderstress",
+    instagram: "https://www.instagram.com/dutchwithoutstress/",
+    note: {
+      en: "A Dutch teacher offering private lessons for B1–B2 learners and an 8-week intensive small-group course for beginners. Book directly through the online calendar.",
+      zh: "荷語老師，提供 B1–B2 一對一課程，以及給初學者的 8 週密集小班課。可直接透過線上行事曆預約。"
+    },
+    price: {
+      en: "Private lessons B1–B2 €160 a month (4 bookings). Intensive beginners' small-group course €195 for 8 weeks of 1.5-hour classes.",
+      zh: "B1–B2 一對一課每月 €160（4 堂）。初學者密集小班課 8 週、每堂 1.5 小時，共 €195。"
+    }
   }
 ];
