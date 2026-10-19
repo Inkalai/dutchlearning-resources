@@ -9,7 +9,7 @@
   kind        library | government | school | university | app | course |
               tutors | creator | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
-              youtube, app, tutors, courses, news, tv, meetups
+              youtube, app, tutors, courses, news, tv
   region      "NL", "BE", "NL+BE" or "online"
   cities      cities with in-person sessions, [] if none
   formats     any of "self" (self-paced), "inperson", "online" (live online class)
@@ -48,7 +48,7 @@ window.RESOURCES = [
     id: "taalcafe",
     name: "Taalcafé",
     kind: "community",
-    categories: ["meetups", "library"],
+    categories: ["library"],
     region: "NL+BE",
     cities: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Antwerpen", "Gent", "Brussel"],
     formats: ["inperson"],
@@ -122,7 +122,7 @@ window.RESOURCES = [
     id: "het-begint-met-taal",
     name: "Het Begint met Taal",
     kind: "community",
-    categories: ["meetups"],
+    categories: [],
     region: "NL",
     cities: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Leiden"],
     formats: ["inperson"],
@@ -296,7 +296,7 @@ window.RESOURCES = [
     id: "oefenkansen-be",
     name: "Oefenkansen",
     kind: "community",
-    categories: ["meetups"],
+    categories: [],
     region: "BE",
     cities: ["Antwerpen", "Gent", "Brussel", "Leuven"],
     formats: ["inperson"],
@@ -742,7 +742,7 @@ window.RESOURCES = [
     id: "meetup-exchange",
     name: "Dutch language exchange meetups",
     kind: "community",
-    categories: ["meetups"],
+    categories: [],
     region: "NL+BE",
     cities: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Brussel", "Antwerpen", "Gent"],
     formats: ["inperson"],
