@@ -836,7 +836,7 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["exam", "reading", "listening", "grammar"],
     levels: ["A0", "B2"],
-    cost: [0, 60],
+    cost: [0, 65],
     hours: [4, 20],
     url: "https://learndutchnow.shop/",
     instagram: "https://www.instagram.com/learn_dutch_now/",
@@ -845,8 +845,8 @@ window.RESOURCES = [
       zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。"
     },
     price: {
-      en: "One-time, lifetime access, priced in USD: Starter course $89, B1 course $88, both $162, A2 exam pack $172, single exam parts from $30.",
-      zh: "一次付清、終身使用，以美元計價：入門課程 $89、B1 課程 $88、兩者合購 $162、A2 考試包 $172，單科考試資料 $30 起。"
+      en: "One-time, lifetime access: Starter course €75, B1 course €75, both €135, Starter course + A2 exam package €199, single exam parts from €24.99.",
+      zh: "一次付清、終身使用：入門課程 €75、B1 課程 €75、兩者合購 €135、入門課程＋A2 考試包 €199，單科考試資料 €24.99 起。"
     }
   },
   {
