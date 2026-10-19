@@ -983,5 +983,279 @@ window.RESOURCES = [
       en: "Online course €599 per 12-week module. Inburgering courses €16.25 per hour (DUO loan possible). Free \"Verbeter je Nederlands\" courses if you aren't required to do inburgering: Rotterdam (10–20 weeks), Leiden (12 months), and Flevoland online, Almere or Lelystad (40 weeks). Morning, afternoon or evening classes.",
       zh: "線上課程每 12 週模組 €599。融入課程每小時 €16.25（可申請 DUO 貸款）。非融入義務者可免費參加「Verbeter je Nederlands」課程：鹿特丹（10–20 週）、萊登（12 個月），以及 Flevoland 線上、Almere 或 Lelystad（40 週）。上午、下午或晚上上課。"
     }
+  },
+  {
+    id: "dutch-approach",
+    name: "Dutch Approach",
+    kind: "school",
+    categories: ["school", "courses"],
+    region: "online",
+    cities: ["Taipei"],
+    formats: ["online", "inperson"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    levels: ["A0", "A2"],
+    cost: [130, 130],
+    hours: [8, 8],
+    url: "https://dutch-approach.nl/online-beginner-1-nld/",
+    note: {
+      en: "Small-group Dutch courses online (4–6 students) and in a Taipei classroom near Da'an MRT (4–8 students): 10 weekly 2-hour classes per level. A good fit for Mandarin speakers in Taiwan.",
+      zh: "線上小班（4–6 人）與台北教室（近大安捷運站，4–8 人）的荷語課程，每級 10 週、每週一堂 2 小時。很適合在台灣的華語學習者。"
+    },
+    price: {
+      en: "An older enrolment page lists Beginner 1 at €299 (NT$9,900) plus €25 (NT$1,000) for book and website. Check the website for current Taipei and online prices.",
+      zh: "較早的報名頁顯示初級 1 學費 €299（NT$9,900），另加教材與網站費 €25（NT$1,000）。台北與線上課程最新價格請至官網查看。"
+    },
+    review: true
+  },
+  {
+    id: "learn-with-lucas",
+    name: "Learn with Lucas / Nederlessen",
+    kind: "creator",
+    categories: ["instagram", "youtube", "courses", "practice"],
+    region: "online",
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "listening", "grammar", "exam"],
+    levels: ["A1", "B2"],
+    cost: [12, 219],
+    hours: [4, 12],
+    url: "https://www.nederlessen.nl/",
+    youtube: "https://www.youtube.com/@realdutchwithlucas",
+    note: {
+      en: "Lucas runs online Dutch courses, small speaking groups, a live speaking café and private speaking coaching, including help for inburgering and the Staatsexamen NT2.",
+      zh: "Lucas 開設線上荷語課程、小班口說課、線上口說咖啡館與一對一口說輔導，也協助準備融入考試與國家考試 NT2。"
+    },
+    price: {
+      en: "Supported speaking café €11.99 a month (1 evening a week) or €19.99 (2 evenings). Private speaking coaching from €219. Online course and small-group prices are on the website.",
+      zh: "口說咖啡館每月 €11.99（每週 1 晚）或 €19.99（每週 2 晚）。一對一口說輔導 €219 起。線上課程與小班課價格請至官網查看。"
+    }
+  },
+  {
+    id: "vivo-dutch",
+    name: "Vivo Dutch (Vivian)",
+    kind: "creator",
+    categories: ["instagram", "youtube", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "listening", "grammar", "exam"],
+    levels: ["A0", "B1"],
+    cost: [0, 155],
+    hours: [4, 20],
+    url: "https://www.vivodutch.com/",
+    instagram: "https://www.instagram.com/vivodutch/",
+    youtube: "https://www.youtube.com/@vivodutch",
+    note: {
+      en: "Vivian, a certified teacher since 2015 and former inburgering exam assessor, shares free lessons on Instagram (60K followers) and YouTube and runs 10-week online courses for A1, A2 and B1.",
+      zh: "Vivian 自 2015 年起為合格荷語教師，曾任融入考試評分員。在 Instagram（6 萬追蹤）與 YouTube 分享免費教學，並開設 A1、A2、B1 的 10 週線上課程。"
+    },
+    price: {
+      en: "Online course per level: DIY €187, DIY Plus €237, Premium with live classes €357 (excl. VAT, 3 installments possible). Colloquial Dutch course €37.",
+      zh: "每級線上課程：DIY €187、DIY Plus €237、含直播課的 Premium €357（未稅，可分 3 期）。口語荷語課程 €37。"
+    }
+  },
+  {
+    id: "jedutchy",
+    name: "JeDutchy",
+    kind: "creator",
+    categories: ["instagram", "courses", "practice"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "grammar", "writing", "exam"],
+    levels: ["A0", "C1"],
+    cost: [100, 650],
+    hours: [4, 15],
+    url: "https://jedutchy.com/",
+    instagram: "https://www.instagram.com/jedutchy/",
+    note: {
+      en: "A certified Dutch teacher offering online group courses, private lessons, a conversation-training subscription and an inburgering masterclass.",
+      zh: "合格荷語教師，提供線上團體課、一對一課程、會話訓練訂閱與融入考試大師班。"
+    },
+    price: {
+      en: "Group courses €650. Private lessons 5 × 1 h €395 or 10 × 1 h €575, trial lesson €25. Conversation training €100 a month (8 sessions). Inburgering masterclass €100.",
+      zh: "團體課 €650。一對一課 5 × 1 小時 €395 或 10 × 1 小時 €575，試聽課 €25。會話訓練每月 €100（8 堂）。融入考試大師班 €100。"
+    }
+  },
+  {
+    id: "dutch-speaking-academy",
+    name: "Dutch Speaking Academy",
+    kind: "creator",
+    categories: ["instagram", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "listening", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [15, 1850],
+    hours: [2, 30],
+    url: "https://dutchspeakingacademy.nl/",
+    note: {
+      en: "Speaking-focused video courses (beginners, inburgering A2, grammar, Dutch for parents, Dutch for social life), group conversation programmes and 1:1 coaching.",
+      zh: "以口說為主的影片課程（入門、融入考試 A2、文法、給家長的荷語、社交荷語），另有團體會話課程與一對一教練。"
+    },
+    price: {
+      en: "Video courses: inburgering A2 €47, Beginners €147, Dutch for Parents or Grammar €333, Dutch for Social Life €444. Group conversation course about €3,333. 1:1 programme from €5,555 for 3 months. Speaking challenge €15.",
+      zh: "影片課程：融入考試 A2 €47、入門 €147、給家長的荷語或文法 €333、社交荷語 €444。團體會話課程約 €3,333。一對一課程 3 個月 €5,555 起。口說挑戰 €15。"
+    }
+  },
+  {
+    id: "easy-dutch-learning",
+    name: "Easy Dutch Learning (Sanne)",
+    kind: "creator",
+    categories: ["instagram", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["self"],
+    focus: ["speaking", "listening", "reading", "grammar", "exam"],
+    levels: ["A0", "C1"],
+    cost: [0, 100],
+    hours: [4, 20],
+    url: "https://easydutchlearning.nl/",
+    instagram: "https://www.instagram.com/easydutchlearning/",
+    note: {
+      en: "Sanne shares Dutch tips on Instagram (42K followers) and sells self-paced online courses for every level from A1 to C1, including NT2 and inburgering exam preparation, with a students' Instagram community.",
+      zh: "Sanne 在 Instagram（4.2 萬追蹤）分享荷語技巧，並販售 A1 到 C1 各級自學線上課程，包含 NT2 與融入考試準備，學員可加入 Instagram 學習社群。"
+    },
+    price: {
+      en: "One-time per level: A1–B2 €245, C1 €199 (the homepage shows €297). All five levels €1,485. Kids' courses €397. No subscription.",
+      zh: "每級一次付清：A1–B2 €245、C1 €199（首頁顯示 €297）。五級全套 €1,485。兒童課程 €397。無訂閱制。"
+    }
+  },
+  {
+    id: "hart-voor-nederlands",
+    name: "Hart voor Nederlands",
+    kind: "creator",
+    categories: ["instagram", "courses", "practice"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "reading", "grammar"],
+    levels: ["A1", "C1"],
+    cost: [90, 600],
+    hours: [4, 20],
+    url: "https://hartvoornederlands.com/",
+    note: {
+      en: "A Dutch teacher offering private and duo lessons, B2 group courses, an online book club, conversation clubs and a podcast.",
+      zh: "荷語教師，提供一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。"
+    },
+    price: {
+      en: "Private lessons: 10 h €737, 15 h €981, 20 h €1,190 (book extra). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
+      zh: "一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。"
+    }
+  },
+  {
+    id: "sociataal",
+    name: "SociaTaal",
+    kind: "creator",
+    categories: ["instagram", "youtube", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [69, 290],
+    hours: [4, 24],
+    url: "https://www.sociataal.com/",
+    youtube: "https://www.youtube.com/c/LearnDutchOfficial",
+    note: {
+      en: "Interactive online group courses in small groups (4–6 students, two 2-hour live classes a week for 6 weeks), flexible courses and self-study grammar and vocabulary courses.",
+      zh: "互動式線上小班課（4–6 人，每週兩堂 2 小時直播課，為期 6 週）、彈性課程，以及文法和單字自學課程。"
+    },
+    price: {
+      en: "Group course €289 all-in. Flexible course €149. Grammar Essentials A1 €89 or A2 €69. Vocabulary course A1 €69.",
+      zh: "團體課全包 €289。彈性課程 €149。文法精華 A1 €89、A2 €69。A1 單字課程 €69。"
+    }
+  },
+  {
+    id: "your-dutch-teacher",
+    name: "Your Dutch Teacher (Emeraude)",
+    kind: "creator",
+    categories: ["instagram", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [199, 600],
+    hours: [12, 12],
+    url: "https://yourdutchteacher.nl/",
+    note: {
+      en: "Emeraude has taught Dutch since 2009. Small online groups of 3–6 students meet twice a week for 1.5 hours, one level in 4 weeks. Tailor-made private classes too.",
+      zh: "Emeraude 自 2009 年起教荷語。線上小班 3–6 人，每週兩次、每次 1.5 小時，4 週完成一個級別。也有客製化私人課程。"
+    },
+    price: {
+      en: "Group course €199 per level (4 weeks). Tailor-made lessons €62.50 an hour, with discounts for 10 or 20 classes.",
+      zh: "團體課每級 €199（4 週）。客製化課程每小時 €62.50，10 或 20 堂套裝有折扣。"
+    }
+  },
+  {
+    id: "active-dutch",
+    name: "Active Dutch",
+    kind: "school",
+    categories: ["instagram", "youtube", "courses", "practice"],
+    region: "NL",
+    cities: ["Alphen aan den Rijn"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [0, 1200],
+    hours: [6, 15],
+    url: "https://activedutch.nl/",
+    instagram: "https://www.instagram.com/activedutch/",
+    note: {
+      en: "Dutch for expats in Alphen aan den Rijn and online: a beginners' group course, private lessons, the Keep Talking Dutch conversation club, plus a free trial lesson and a free 5-day speaking challenge.",
+      zh: "為外派人士開設的荷語課程，在 Alphen aan den Rijn 與線上上課：入門團體課、一對一課程、Keep Talking Dutch 會話俱樂部，另有免費試聽課與 5 天免費口說挑戰。"
+    },
+    price: {
+      en: "Beginners' group course €635 plus book. Keep Talking Dutch €145 for a month (4 sessions), €250 for 2 months, €350 for 3. Private lessons 10 × 90 min €1,200.",
+      zh: "入門團體課 €635，教材另計。Keep Talking Dutch 1 個月（4 堂）€145、2 個月 €250、3 個月 €350。一對一課 10 堂 × 90 分鐘 €1,200。"
+    }
+  },
+  {
+    id: "dutch-today",
+    name: "Dutch Today (Martijn)",
+    kind: "creator",
+    categories: ["youtube"],
+    region: "online",
+    cities: [],
+    formats: ["self"],
+    focus: ["listening", "reading"],
+    levels: ["A2", "B2"],
+    cost: [0, 5],
+    hours: [1, 10],
+    url: "https://www.youtube.com/@dutchtoday",
+    youtube: "https://www.youtube.com/@dutchtoday",
+    note: {
+      en: "Martijn's weekly Dutch lessons on YouTube and the podcast \"Dutch Today: leer Nederlands met Martijn\", with episodes marked by level.",
+      zh: "Martijn 每週在 YouTube 和 Podcast「Dutch Today: leer Nederlands met Martijn」發布荷語課程，每集標示程度。"
+    },
+    price: {
+      en: "Free on YouTube and podcast apps. Patreon about $5 a month for transcripts, exercises, word lists and extra episodes.",
+      zh: "YouTube 與 Podcast 免費。Patreon 每月約 $5，提供逐字稿、練習、單字表與額外集數。"
+    }
+  },
+  {
+    id: "master-dutch",
+    name: "Master Dutch (Kees)",
+    kind: "creator",
+    categories: ["instagram", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "grammar"],
+    levels: ["A1", "B2"],
+    cost: [130, 130],
+    hours: [6, 6],
+    url: "https://masterdutch.com/",
+    note: {
+      en: "Kees teaches online group classes at A1, A2, B1 and B+ with his Three Pillar Method: 8 weekly 90-minute sessions per course.",
+      zh: "Kees 以「三支柱教學法」開設 A1、A2、B1、B+ 線上團體課：每期 8 週、每週一堂 90 分鐘。"
+    },
+    price: {
+      en: "€255 per 8-week course (2025 listing).",
+      zh: "每期 8 週課程 €255（2025 年資料）。"
+    },
+    review: true
   }
 ];
