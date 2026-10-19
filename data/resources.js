@@ -201,7 +201,7 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["reading"],
     levels: ["A2", "B1"],
-    cost: [4, 10],
+    cost: [2, 2],
     hours: [1, 10],
     url: "https://wablieft.be/nl/abonnement",
     note: {
@@ -209,8 +209,8 @@ window.RESOURCES = [
       zh: "以清楚簡單的荷語撰寫的法蘭德斯報紙。住在比利時或想學比利時荷語詞彙的人，很適合每週閱讀練習。"
     },
     price: {
-      en: "Wablieft Start (every two weeks) €48 a year. Weekly paper about €85–110 a year.",
-      zh: "Wablieft Start（雙週刊）每年 €48。週刊紙本每年約 €85–110。"
+      en: "Digital subscription €20 a year, covering Wablieft and Wablieft Start. Paper copies can no longer be ordered.",
+      zh: "數位訂閱每年 €20，含 Wablieft 與 Wablieft Start。紙本已停止訂購。"
     }
   },
   {
@@ -464,7 +464,7 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A0", "C1"],
-    cost: [150, 735],
+    cost: [150, 750],
     hours: [16, 45],
     url: "https://www.uantwerpen.be/en/centres/linguapolis/language-courses/languages/dutch/tariffs-and-subsidies2/",
     note: {
@@ -472,8 +472,8 @@ window.RESOURCES = [
       zh: "安特衛普大學語言中心，為學生、外派人士與上班族開設荷語課程，另有一年制學術荷語預科。"
     },
     price: {
-      en: "Standard rate €545 for a 45-hour course, €735 for 90 hours (2025–2026). A Flemish training voucher can cover up to €125; level 1 may qualify for a Flemish grant.",
-      zh: "一般價格：45 小時課程 €545、90 小時 €735（2025–2026）。法蘭德斯培訓券最多可抵 €125；第 1 級可能申請法蘭德斯獎助。"
+      en: "Standard rate €555 for a 45-hour course, €750 for 90 hours (2026–2027). A Flemish training voucher can cover up to €125; level 1 may qualify for a Flemish grant.",
+      zh: "一般價格：45 小時課程 €555、90 小時 €750（2026–2027）。法蘭德斯培訓券最多可抵 €125；第 1 級可能申請法蘭德斯獎助。"
     }
   },
   {
