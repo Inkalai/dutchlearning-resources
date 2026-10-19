@@ -433,7 +433,7 @@
     var meta = el("p", { class: "meta" }, [
       el("span", { text: t("kind." + r.kind) }),
       el("span", { text: placeText(r) }),
-      el("span", { text: t("card.timeNeeded", { min: r.hours[0], max: r.hours[1] }) })
+      el("span", { text: r.hours[0] === r.hours[1] ? t("card.timeExact", { n: r.hours[0] }) : t("card.timeNeeded", { min: r.hours[0], max: r.hours[1] }) })
     ]);
 
     var tags = el("ul", { class: "tags" });

@@ -87,6 +87,7 @@ window.I18N = {
     "card.unreviewed": "Not yet reviewed by Inka",
     "card.online": "Online",
     "card.timeNeeded": "{min}–{max} h a month",
+    "card.timeExact": "{n} h a month",
     "card.placeSep": ": ",
 
     "filters.categories": "Show only",
@@ -242,6 +243,7 @@ window.I18N = {
     "card.unreviewed": "Inka 尚未審核",
     "card.online": "線上",
     "card.timeNeeded": "每月 {min}–{max} 小時",
+    "card.timeExact": "每月 {n} 小時",
     "card.placeSep": "：",
 
     "filters.categories": "只顯示",
