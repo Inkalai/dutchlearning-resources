@@ -24,7 +24,6 @@
     focus: new Set(),
     categories: new Set(),
     place: "any",
-    q: "",
     sort: "match"
   };
 
@@ -216,7 +215,6 @@
     if (state.hours !== Infinity) n++;
     n += state.formats.size + state.focus.size + state.categories.size;
     if (state.place !== "any") n++;
-    if (state.q) n++;
     return n;
   }
 
@@ -304,19 +302,13 @@
     return r.region === "online" || (r.cities || []).indexOf(city) > -1;
   }
 
-  // A resource fits if you can start it at your current level and it still has something to teach you.
+  // A resource fits if it covers any part of your route: it still has something to teach you
+  // and doesn't start beyond your goal. Ones that start above your current level rank lower.
   function matchesLevel(r) {
     var from = lv(r.levels[0]), to = lv(r.levels[1]);
-    if (from > state.cur) return false;
+    if (from > Math.max(state.cur, state.target)) return false;
     if (state.cur === LEVELS.length - 1) return to === state.cur;
     return to > state.cur || (state.target === state.cur && to >= state.cur);
-  }
-
-  function matchesText(r) {
-    if (!state.q) return true;
-    var q = state.q.toLowerCase();
-    var hay = [r.name, r.note.en, r.note.zh, t("kind." + r.kind), (r.cities || []).join(" "), r.levels.join(" ")].join(" ").toLowerCase();
-    return hay.indexOf(q) > -1;
   }
 
   function intersects(list, set) {
@@ -332,6 +324,7 @@
     // Prefer resources pitched at your route over very broad ones.
     s -= Math.max(0, state.cur - lv(r.levels[0])) * 0.3;
     s -= Math.max(0, to - state.target) * 0.3;
+    s -= Math.max(0, lv(r.levels[0]) - state.cur) * 3;
     // Advice desks that only refer you elsewhere sit below actual learning.
     if (r.hours[1] <= 2) s -= 2;
     if (state.formats.size) s += r.formats.filter(function (f) { return state.formats.has(f); }).length;
@@ -349,8 +342,7 @@
         intersects(r.focus, state.focus) &&
         intersects(r.categories || [], state.categories) &&
         matchesPlace(r) &&
-        matchesLevel(r) &&
-        matchesText(r);
+        matchesLevel(r);
     });
     // An unknown maximum (null) sorts after every known price.
     var maxCost = function (r) { return r.cost[1] === null ? Infinity : r.cost[1]; };
@@ -392,6 +384,7 @@
     });
     var reachesGoal = to >= state.target;
     var label = reachesGoal ? t("card.reachesGoal", { level: LEVELS[state.target] }) : t("card.reaches", { level: r.levels[1] });
+    if (from > state.cur) label = t("card.startsAt", { level: r.levels[0] });
     return el("div", { class: "levelbar" }, [
       ol,
       el("span", { class: "visually-hidden", text: t("card.levels", { from: r.levels[0], to: r.levels[1] }) }),
@@ -595,15 +588,13 @@
       renderAll();
     });
 
-    $("search").addEventListener("input", function (e) { state.q = e.target.value.trim(); renderResults(); });
     $("place").addEventListener("change", function (e) { state.place = e.target.value; renderResults(); });
     $("sort").addEventListener("change", function (e) { state.sort = e.target.value; renderResults(); });
 
     $("clearFilters").addEventListener("click", function () {
       state.budget = Infinity; state.hours = Infinity;
       state.formats.clear(); state.focus.clear(); state.categories.clear();
-      state.place = "any"; state.q = "";
-      $("search").value = "";
+      state.place = "any";
       renderFilters(); renderResults();
     });
 
