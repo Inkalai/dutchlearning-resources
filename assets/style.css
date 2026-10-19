@@ -192,6 +192,10 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .chips button[aria-pressed="true"] { background: var(--teal-soft); border-color: var(--teal); color: #11606a; }
 .seg button:hover, .chips button:hover { border-color: var(--muted); }
 
+.results { min-width: 0; }
+.quick { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+.quick-label { font-weight: 700; font-size: 14px; }
+.quick-chips button[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: #fff; }
 .results-bar {
   display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   border-bottom: 2px solid var(--ink); padding-bottom: 12px;
@@ -326,6 +330,10 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 }
 
 @media (max-width: 640px) {
+  /* Category tags scroll sideways instead of wrapping into many rows. */
+  .quick-chips { flex: 1 1 100%; min-width: 0; flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 6px; scrollbar-width: none; }
+  .quick-chips::-webkit-scrollbar { display: none; }
+  .quick-chips button { flex: none; }
   .brand span { display: none; }
   .station .desc { display: none; }
   .station .code { font-size: 1.15rem; }

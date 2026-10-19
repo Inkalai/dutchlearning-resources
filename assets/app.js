@@ -10,6 +10,7 @@
   var HOURS = [4, 10, 20, 40, Infinity];
   var FORMATS = ["self", "inperson", "online"];
   var FOCUS = ["speaking", "listening", "reading", "writing", "grammar", "exam"];
+  var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "news", "tv", "meetups"];
   var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "media", "podcast", "community"];
 
   var state = {
@@ -21,6 +22,7 @@
     hours: Infinity,
     formats: new Set(),
     focus: new Set(),
+    categories: new Set(),
     place: "any",
     q: "",
     sort: "match"
@@ -175,6 +177,7 @@
 
     renderChipSet($("formats"), FORMATS, "format.", state.formats);
     renderChipSet($("focus"), FOCUS, "focus.", state.focus);
+    renderChipSet($("categories"), CATEGORIES, "cat.", state.categories);
     renderPlace();
     updateFiltersToggleLabel();
   }
@@ -211,7 +214,7 @@
     var n = 0;
     if (state.budget !== Infinity) n++;
     if (state.hours !== Infinity) n++;
-    n += state.formats.size + state.focus.size;
+    n += state.formats.size + state.focus.size + state.categories.size;
     if (state.place !== "any") n++;
     if (state.q) n++;
     return n;
@@ -344,6 +347,7 @@
         r.hours[0] <= state.hours &&
         intersects(r.formats, state.formats) &&
         intersects(r.focus, state.focus) &&
+        intersects(r.categories || [], state.categories) &&
         matchesPlace(r) &&
         matchesLevel(r) &&
         matchesText(r);
@@ -597,7 +601,7 @@
 
     $("clearFilters").addEventListener("click", function () {
       state.budget = Infinity; state.hours = Infinity;
-      state.formats.clear(); state.focus.clear();
+      state.formats.clear(); state.focus.clear(); state.categories.clear();
       state.place = "any"; state.q = "";
       $("search").value = "";
       renderFilters(); renderResults();
