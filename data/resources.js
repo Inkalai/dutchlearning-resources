@@ -9,7 +9,7 @@
   kind        library | government | school | university | app | course |
               tutors | creator | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
-              youtube, app, tutors, news, tv, meetups
+              youtube, app, tutors, courses, news, tv, meetups
   region      "NL", "BE", "NL+BE" or "online"
   cities      cities with in-person sessions, [] if none
   formats     any of "self" (self-paced), "inperson", "online" (live online class)
@@ -546,7 +546,7 @@ window.RESOURCES = [
     id: "futurelearn-rug",
     name: "Introduction to Dutch (University of Groningen)",
     kind: "course",
-    categories: ["school", "app"],
+    categories: ["school", "app", "courses"],
     region: "online",
     cities: [],
     formats: ["self"],
@@ -761,7 +761,7 @@ window.RESOURCES = [
     id: "bart-de-pau",
     name: "Learn Dutch with Bart de Pau",
     kind: "creator",
-    categories: ["youtube"],
+    categories: ["youtube", "courses"],
     region: "online",
     cities: [],
     formats: ["self", "online"],
@@ -784,7 +784,7 @@ window.RESOURCES = [
     id: "dutchies-to-be",
     name: "Dutchies to be (Kim)",
     kind: "creator",
-    categories: ["youtube"],
+    categories: ["youtube", "courses"],
     region: "online",
     cities: [],
     formats: ["self"],
@@ -830,7 +830,7 @@ window.RESOURCES = [
     id: "learn-dutch-now",
     name: "Learn Dutch Now",
     kind: "creator",
-    categories: ["instagram"],
+    categories: ["instagram", "courses"],
     region: "online",
     cities: [],
     formats: ["self"],
@@ -853,7 +853,7 @@ window.RESOURCES = [
     id: "learn-dutch-with-yas",
     name: "Learn Dutch with Yas",
     kind: "creator",
-    categories: ["instagram"],
+    categories: ["instagram", "courses"],
     region: "online",
     cities: [],
     formats: ["self", "online"],
@@ -876,7 +876,7 @@ window.RESOURCES = [
     id: "your-dutch-friend",
     name: "Learn Dutch with Charlotte",
     kind: "creator",
-    categories: ["instagram"],
+    categories: ["instagram", "courses"],
     region: "online",
     cities: [],
     formats: ["self", "online"],
@@ -899,7 +899,7 @@ window.RESOURCES = [
     id: "going-dutch",
     name: "Going Dutch Community",
     kind: "creator",
-    categories: ["instagram", "youtube"],
+    categories: ["instagram", "youtube", "courses"],
     region: "online",
     cities: [],
     formats: ["self", "online", "inperson"],
