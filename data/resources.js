@@ -917,5 +917,71 @@ window.RESOURCES = [
       en: "Subscription €119 a month. 6-month package with 24 private classes €1,699. Speed Dutching evenings €5; Texel summer school €950.",
       zh: "訂閱每月 €119。含 24 堂私人課的 6 個月套裝 €1,699。Speed Dutching 活動 €5；Texel 暑期營 €950。"
     }
+  },
+  {
+    id: "abc-dutch",
+    name: "ABC Dutch",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    cities: ["Den Haag", "Rotterdam"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [135, 1245],
+    hours: [8, 80],
+    url: "https://www.abcdutch.com/",
+    note: {
+      en: "A language school in The Hague and Rotterdam with evening and day group courses, intensive weeks, summer courses and civic integration exam preparation. Private lessons in person or on Zoom.",
+      zh: "位於海牙與鹿特丹的語言學校，提供晚間與日間團體課、密集週課程、暑期班和融入考試準備。另有實體或 Zoom 一對一課。"
+    },
+    price: {
+      en: "Group courses €270–295, civic integration exam courses €275–330, day courses €225–335. Rotterdam intensive A2 €275 a week or €1,245 for 5 weeks. Private lessons on request.",
+      zh: "團體課 €270–295，融入考試課程 €275–330，日間課程 €225–335。鹿特丹 A2 密集班每週 €275，5 週套裝 €1,245。一對一課程價格請洽詢。"
+    }
+  },
+  {
+    id: "sagenn",
+    name: "Sagènn Educatie",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    cities: ["Rotterdam", "Zaandam", "Alphen aan den Rijn"],
+    formats: ["inperson"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [0, 615],
+    hours: [16, 50],
+    url: "https://www.sagenn.nl/educatie",
+    note: {
+      en: "An adult education provider with Dutch courses from A0 to B2, literacy classes, civic integration routes and Staatsexamen preparation. Each course ends with a level test.",
+      zh: "成人教育機構，提供 A0 到 B2 的荷語課程、識字班、融入考試路線和國家考試準備。每期課程結束都有程度測驗。"
+    },
+    price: {
+      en: "Free in some regions (Rotterdam Rijnmond, Zaanstreek-Waterland, Holland Rijnland) if you aren't required to do inburgering. Otherwise paid per month by lessons per week, roughly €299–615 including materials.",
+      zh: "非融入義務者在部分地區（鹿特丹大區、Zaanstreek-Waterland、Holland Rijnland）可免費上課。其他依每週堂數按月收費，約 €299–615，含教材。"
+    }
+  },
+  {
+    id: "nltraining",
+    name: "NLtraining",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    cities: ["Utrecht", "Almere", "Lelystad", "Amsterdam", "Rotterdam", "Zwolle", "Zoetermeer"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [0, 260],
+    hours: [8, 40],
+    url: "https://www.nltraining.nl/cursussen",
+    note: {
+      en: "Dutch courses at every level in several cities and online, including free municipality-funded courses for people who aren't required to do inburgering, and paid inburgering courses.",
+      zh: "在多個城市與線上開設各級荷語課程，包括由市政府出資、給非融入義務者的免費課程，以及付費的融入課程。"
+    },
+    price: {
+      en: "Free WEB courses in Rotterdam, Zoetermeer, Almere, Lelystad and Zwolle, and a free 40-week course in Flevoland. Inburgering courses €16.25 per hour (DUO loan possible). Online course €599 per 12-week module.",
+      zh: "鹿特丹、Zoetermeer、Almere、Lelystad 與 Zwolle 有免費 WEB 課程，Flevoland 有 40 週免費課程。融入課程每小時 €16.25（可申請 DUO 貸款）。線上課程每 12 週模組 €599。"
+    }
   }
 ];
