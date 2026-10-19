@@ -1358,21 +1358,21 @@ window.RESOURCES = [
     kind: "creator",
     categories: ["instagram", "tutors", "courses"],
     region: "online",
-    cities: [],
-    formats: ["online"],
-    focus: ["speaking", "listening", "grammar"],
+    cities: ["Den Haag", "Leiden", "Delft", "Alphen aan den Rijn"],
+    formats: ["online", "inperson"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A1", "B2"],
     cost: [475, null],
-    hours: [4, 12],
+    hours: [3, 8],
     url: "https://www.diveintodutch.nl/",
     instagram: "https://www.instagram.com/diveintodutch/",
     note: {
-      en: "Personal Dutch coaching with a clear structure, ongoing guidance and space to practise, planned around your work schedule and daily life. Small-group lessons are also available.",
-      zh: "結構清楚的個人荷語教練課程，持續陪伴並提供充分練習空間，配合你的工作與生活安排。另有小班課。"
+      en: "A calm, structured 4-month 1:1 coaching programme: 14 online sessions of 50 minutes (or 12 plus 2 coffee sessions in The Hague, Leiden, Delft or Alphen aan den Rijn), homework, a weekly check-in, group meet-ups with other students, the Taalcompleet book with its online platform, and access to the Dive into Dutch Club. Small-group lessons too.",
+      zh: "平穩、有結構的 4 個月一對一教練課程：14 堂 50 分鐘線上課（或 12 堂線上課加 2 次在海牙、萊登、台夫特或 Alphen aan den Rijn 的咖啡課），附作業、每週一次進度確認、學員聚會、Taalcompleet 課本與線上練習平台，以及 Dive into Dutch Club 會員資格。另有小班課。"
     },
     price: {
-      en: "1-on-1 programme: 4 months from €1,899. Small-group prices on request.",
-      zh: "一對一課程：4 個月 €1,899 起。小班課價格請洽詢。"
+      en: "1:1 programme: 4 months from €1,899, including book and club access. Coffee sessions cost extra. Small-group prices on request.",
+      zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課價格請洽詢。"
     }
   }
 ];
