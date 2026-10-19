@@ -61,7 +61,8 @@ window.I18N = {
     "place.online": "Online only",
     "place.NL": "Netherlands",
     "place.BE": "Belgium",
-    "place.cities": "Cities",
+    "place.TW": "Taiwan",
+    "place.citiesIn": "Cities in {country}",
 
     "results.count": "{n} resources fit your route",
     "results.countOne": "1 resource fits your route",
@@ -113,7 +114,8 @@ window.I18N = {
     "kind.community": "Practice group",
     "region.NL": "Netherlands",
     "region.BE": "Belgium",
-    "region.NL+BE": "Netherlands and Belgium",
+    "region.TW": "Taiwan",
+    "list.sep": ", ",
     "region.online": "Online",
 
     "suggest.title": "Suggest a resource",
@@ -214,7 +216,8 @@ window.I18N = {
     "place.online": "僅線上",
     "place.NL": "荷蘭",
     "place.BE": "比利時",
-    "place.cities": "城市",
+    "place.TW": "台灣",
+    "place.citiesIn": "{country}城市",
 
     "results.count": "有 {n} 個資源符合你的路線",
     "results.countOne": "有 1 個資源符合你的路線",
@@ -266,7 +269,8 @@ window.I18N = {
     "kind.community": "練習社群",
     "region.NL": "荷蘭",
     "region.BE": "比利時",
-    "region.NL+BE": "荷蘭與比利時",
+    "region.TW": "台灣",
+    "list.sep": "、",
     "region.online": "線上",
 
     "suggest.title": "推薦資源",

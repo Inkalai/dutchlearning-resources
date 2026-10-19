@@ -11,6 +11,8 @@
   var FORMATS = ["self", "inperson", "online"];
   var FOCUS = ["speaking", "listening", "reading", "writing", "grammar", "exam"];
   var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
+  var COUNTRIES = ["NL", "BE", "TW"];
+  var CITY_COUNTRIES = window.CITY_COUNTRIES || {};
   var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "media", "podcast", "community"];
 
   var state = {
@@ -191,21 +193,33 @@
     });
   }
 
-  function cities() {
-    var all = {};
-    DATA.forEach(function (r) { (r.cities || []).forEach(function (c) { all[c] = true; }); });
-    return Object.keys(all).sort();
+  // Cities grouped by country; a city's country comes from CITY_COUNTRIES, default the Netherlands.
+  function citiesByCountry() {
+    var groups = {};
+    DATA.forEach(function (r) {
+      (r.cities || []).forEach(function (c) {
+        var country = CITY_COUNTRIES[c] || "NL";
+        (groups[country] = groups[country] || {})[c] = true;
+      });
+    });
+    return COUNTRIES.filter(function (k) { return groups[k]; }).map(function (k) {
+      return { country: k, cities: Object.keys(groups[k]).sort() };
+    });
   }
+
+  function regionsOf(r) { return r.region.split("+"); }
 
   function renderPlace() {
     var sel = $("place");
     sel.innerHTML = "";
-    ["any", "online", "NL", "BE"].forEach(function (v) {
+    ["any", "online"].concat(COUNTRIES).forEach(function (v) {
       sel.appendChild(el("option", { value: v, text: t("place." + v) }));
     });
-    var group = el("optgroup", { label: t("place.cities") });
-    cities().forEach(function (c) { group.appendChild(el("option", { value: "city:" + c, text: c })); });
-    sel.appendChild(group);
+    citiesByCountry().forEach(function (g) {
+      var group = el("optgroup", { label: t("place.citiesIn", { country: t("place." + g.country) }) });
+      g.cities.forEach(function (c) { group.appendChild(el("option", { value: "city:" + c, text: c })); });
+      sel.appendChild(group);
+    });
     sel.value = state.place;
   }
 
@@ -297,7 +311,7 @@
     var p = state.place;
     if (p === "any") return true;
     if (p === "online") return isOnline(r);
-    if (p === "NL" || p === "BE") return r.region === p || r.region === "NL+BE" || r.region === "online";
+    if (COUNTRIES.indexOf(p) > -1) return r.region === "online" || regionsOf(r).indexOf(p) > -1;
     var city = p.slice(5);
     return r.region === "online" || (r.cities || []).indexOf(city) > -1;
   }
@@ -394,7 +408,7 @@
 
   function placeText(r) {
     if (r.region === "online") return t("region.online");
-    var region = t("region." + r.region);
+    var region = regionsOf(r).map(function (x) { return t("region." + x); }).join(t("list.sep"));
     var c = r.cities || [];
     if (!c.length) return region;
     var shown = c.slice(0, 4).join(", ") + (c.length > 4 ? " +" + (c.length - 4) : "");

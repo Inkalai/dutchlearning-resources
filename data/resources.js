@@ -10,7 +10,7 @@
               tutors | creator | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
               youtube, app, tutors, courses, practice, news, tv
-  region      "NL", "BE", "NL+BE" or "online"
+  region      "NL", "BE", "TW", "online", or several joined with + (e.g. "NL+BE")
   cities      cities with in-person sessions, [] if none
   formats     any of "self" (self-paced), "inperson", "online" (live online class)
   focus       any of "speaking", "listening", "reading", "writing", "grammar", "exam"
@@ -24,6 +24,12 @@
   note        short description { en: "...", zh: "..." }
   price       optional price detail { en: "...", zh: "..." }
 */
+// Country of each city outside the Netherlands (cities not listed here count as Netherlands).
+window.CITY_COUNTRIES = {
+  "Antwerpen": "BE", "Gent": "BE", "Brussel": "BE", "Leuven": "BE",
+  "Taipei": "TW", "Tainan": "TW"
+};
+
 window.RESOURCES = [
   {
     id: "taalhuis",
@@ -989,7 +995,7 @@ window.RESOURCES = [
     name: "Dutch Approach",
     kind: "school",
     categories: ["school", "courses"],
-    region: "NL",
+    region: "NL+TW",
     cities: ["Amsterdam", "Eindhoven", "Taipei", "Tainan"],
     formats: ["online", "inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
