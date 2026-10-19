@@ -10,7 +10,7 @@
   var HOURS = [4, 10, 20, 40, Infinity];
   var FORMATS = ["self", "inperson", "online"];
   var FOCUS = ["speaking", "listening", "reading", "writing", "grammar", "exam"];
-  var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "news", "tv"];
+  var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
   var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "media", "podcast", "community"];
 
   var state = {
