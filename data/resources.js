@@ -1089,6 +1089,7 @@ window.RESOURCES = [
     cost: [15, 1850],
     hours: [2, 30],
     url: "https://dutchspeakingacademy.nl/",
+    instagram: "https://www.instagram.com/the.dutchspeakingacademy/",
     note: {
       en: "Speaking-focused video courses (beginners, inburgering A2, grammar, Dutch for parents, Dutch for social life), group conversation programmes and 1:1 coaching.",
       zh: "以口說為主的影片課程（入門、融入考試 A2、文法、給家長的荷語、社交荷語），另有團體會話課程與一對一教練。"
@@ -1134,6 +1135,7 @@ window.RESOURCES = [
     cost: [90, 600],
     hours: [4, 20],
     url: "https://hartvoornederlands.com/",
+    instagram: "https://www.instagram.com/hartvoornederlands/",
     note: {
       en: "A Dutch teacher offering private and duo lessons, B2 group courses, an online book club, conversation clubs and a podcast.",
       zh: "荷語教師，提供一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。"
@@ -1156,6 +1158,7 @@ window.RESOURCES = [
     cost: [69, 290],
     hours: [4, 24],
     url: "https://www.sociataal.com/",
+    instagram: "https://www.instagram.com/sociataal/",
     youtube: "https://www.youtube.com/c/LearnDutchOfficial",
     note: {
       en: "Interactive online group courses in small groups (4–6 students, two 2-hour live classes a week for 6 weeks), flexible courses and self-study grammar and vocabulary courses.",
@@ -1179,6 +1182,7 @@ window.RESOURCES = [
     cost: [199, 600],
     hours: [12, 12],
     url: "https://yourdutchteacher.nl/",
+    instagram: "https://www.instagram.com/yourdutchteacher/",
     note: {
       en: "Emeraude has taught Dutch since 2009. Small online groups of 3–6 students meet twice a week for 1.5 hours, one level in 4 weeks. Tailor-made private classes too.",
       zh: "Emeraude 自 2009 年起教荷語。線上小班 3–6 人，每週兩次、每次 1.5 小時，4 週完成一個級別。也有客製化私人課程。"
@@ -1244,16 +1248,17 @@ window.RESOURCES = [
     formats: ["online"],
     focus: ["speaking", "grammar"],
     levels: ["A1", "B2"],
-    cost: [130, null],
+    cost: [15, 480],
     hours: [6, 20],
     url: "https://masterdutch.com/group-classes/",
+    instagram: "https://www.instagram.com/master_dutch_/",
     note: {
-      en: "Kees teaches with his Three Pillar Method in three formats: group classes (A1 to B+, max. 8 people, 8 weekly 90-minute sessions), 1-on-1 lessons and an all-in-one package.",
-      zh: "Kees 以「三支柱教學法」提供三種方案：團體課（A1 到 B+，最多 8 人，8 週、每週一堂 90 分鐘）、一對一課程，以及全方位套裝。"
+      en: "Kees teaches with his Three Pillar Method in three formats: group classes (A1 to B+, max. 8 people, 8 weekly 90-minute sessions), 1-on-1 lesson packs and an all-in-one subscription.",
+      zh: "Kees 以「三支柱教學法」提供三種方案：團體課（A1 到 B+，最多 8 人，8 週、每週一堂 90 分鐘）、一對一課程套裝，以及全方位訂閱方案。"
     },
     price: {
-      en: "Group classes €255 per 8-week course. Check the website for 1-on-1 and all-in-one prices.",
-      zh: "團體課每期 8 週 €255。一對一與全方位套裝價格請至官網查看。"
+      en: "Group classes €255 per 8-week course. 1-on-1 lessons: 4-hour pack €260, 16-hour pack €960. All-in-one subscription €14.95 a month.",
+      zh: "團體課每期 8 週 €255。一對一課：4 小時套裝 €260、16 小時套裝 €960。全方位訂閱方案每月 €14.95。"
     }
   },
   {
@@ -1269,6 +1274,7 @@ window.RESOURCES = [
     cost: [0, 250],
     hours: [2, 16],
     url: "https://www.nederlessen.nl/",
+    instagram: "https://www.instagram.com/nederlessen/",
     note: {
       en: "Joram teaches small online groups (max. 4) and private speaking lessons, including help with inburgering and the Staatsexamen NT2. He also sells self-study PDFs: graded story readers with grammar (A1–B1+), speaking guides, a verb guide and a KNM exam practice book, plus free cheat sheets.",
       zh: "Joram 開設線上小班（最多 4 人）與一對一口說課，也協助準備融入考試與國家考試 NT2。另販售自學 PDF：附文法的分級故事讀本（A1–B1+）、口說指南、動詞指南與 KNM 考試練習書，還有免費速查表。"
@@ -1298,6 +1304,29 @@ window.RESOURCES = [
     price: {
       en: "Group courses from €350 (books extra). Summer intensives €350 for 24 hours up to €1,159 for 96 hours. Inburgering courses €17 an hour. Individual lessons in packages of 5 or more.",
       zh: "團體課 €350 起（教材另計）。暑期密集班 24 小時 €350 到 96 小時 €1,159。融入課程每小時 €17。一對一課以 5 堂以上套裝購買。"
+    }
+  },
+  {
+    id: "better-understanding",
+    name: "Better Understanding",
+    kind: "creator",
+    categories: ["instagram", "courses", "tutors"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    levels: ["A1", "B2"],
+    cost: [300, 645],
+    hours: [10, 12],
+    url: "https://betterunderstanding.nl/",
+    instagram: "https://www.instagram.com/betterunderstandingnl/",
+    note: {
+      en: "Online Dutch group courses from A1 to B2 in groups of 3–6 (9 weeks, two 1.5-hour classes a week), private and duo lessons, and in-company training.",
+      zh: "A1 到 B2 的線上荷語小班課，每班 3–6 人（9 週、每週兩堂 1.5 小時），另有一對一、雙人課程與企業內訓。"
+    },
+    price: {
+      en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €645 for 10 one-hour lessons (€322.50 each for a duo).",
+      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €645（雙人課每人 €322.50）。"
     }
   }
 ];
