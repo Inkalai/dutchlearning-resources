@@ -1351,5 +1351,28 @@ window.RESOURCES = [
       en: "Private lessons B1–B2 €160 a month (4 bookings). Intensive beginners' small-group course €195 for 8 weeks of 1.5-hour classes.",
       zh: "B1–B2 一對一課每月 €160（4 堂）。初學者密集小班課 8 週、每堂 1.5 小時，共 €195。"
     }
+  },
+  {
+    id: "dive-into-dutch",
+    name: "Dive into Dutch",
+    kind: "creator",
+    categories: ["instagram", "tutors", "courses"],
+    region: "online",
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A1", "B2"],
+    cost: [475, null],
+    hours: [4, 12],
+    url: "https://www.diveintodutch.nl/",
+    instagram: "https://www.instagram.com/diveintodutch/",
+    note: {
+      en: "Personal Dutch coaching with a clear structure, ongoing guidance and space to practise, planned around your work schedule and daily life. Small-group lessons are also available.",
+      zh: "結構清楚的個人荷語教練課程，持續陪伴並提供充分練習空間，配合你的工作與生活安排。另有小班課。"
+    },
+    price: {
+      en: "1-on-1 programme: 4 months from €1,899. Small-group prices on request.",
+      zh: "一對一課程：4 個月 €1,899 起。小班課價格請洽詢。"
+    }
   }
 ];
