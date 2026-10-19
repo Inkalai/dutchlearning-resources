@@ -303,17 +303,31 @@
 
   /* ---------- Matching ---------- */
 
-  function isOnline(r) {
-    return r.region === "online" || r.formats.indexOf("online") > -1;
-  }
+  function countryOfCity(c) { return CITY_COUNTRIES[c] || "NL"; }
 
-  function matchesPlace(r) {
+  // Whether a resource offers format f where the visitor lives. In-person classes count only in
+  // the resource's own cities or countries; self-study and online classes from online providers
+  // work anywhere, while local providers' online options stay with their own country.
+  function availableIn(r, f) {
     var p = state.place;
     if (p === "any") return true;
-    if (p === "online") return isOnline(r);
-    if (COUNTRIES.indexOf(p) > -1) return r.region === "online" || regionsOf(r).indexOf(p) > -1;
-    var city = p.slice(5);
-    return r.region === "online" || (r.cities || []).indexOf(city) > -1;
+    var regions = regionsOf(r);
+    var online = regions.indexOf("online") > -1;
+    var cities = r.cities || [];
+    var city = p.indexOf("city:") === 0 ? p.slice(5) : null;
+    var country = city ? countryOfCity(city) : p;
+    if (f === "inperson") {
+      if (p === "online") return false;
+      if (city) return cities.indexOf(city) > -1;
+      return cities.some(function (c) { return countryOfCity(c) === country; }) ||
+        (!online && regions.indexOf(country) > -1);
+    }
+    return online || p === "online" || regions.indexOf(country) > -1;
+  }
+
+  function matchesPlaceAndFormat(r) {
+    var wanted = state.formats.size ? Array.from(state.formats) : r.formats;
+    return wanted.some(function (f) { return r.formats.indexOf(f) > -1 && availableIn(r, f); });
   }
 
   // A resource fits if it covers any part of your route: it still has something to teach you
@@ -352,10 +366,9 @@
     var list = DATA.filter(function (r) {
       return r.cost[0] <= state.budget &&
         r.hours[0] <= state.hours &&
-        intersects(r.formats, state.formats) &&
         intersects(r.focus, state.focus) &&
         intersects(r.categories || [], state.categories) &&
-        matchesPlace(r) &&
+        matchesPlaceAndFormat(r) &&
         matchesLevel(r);
     });
     // An unknown maximum (null) sorts after every known price.
