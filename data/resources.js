@@ -989,45 +989,44 @@ window.RESOURCES = [
     name: "Dutch Approach",
     kind: "school",
     categories: ["school", "courses"],
-    region: "online",
-    cities: ["Taipei"],
+    region: "NL",
+    cities: ["Amsterdam", "Eindhoven", "Taipei", "Tainan"],
     formats: ["online", "inperson"],
-    focus: ["speaking", "listening", "reading", "writing", "grammar"],
-    levels: ["A0", "A2"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
     cost: [130, 130],
     hours: [8, 8],
-    url: "https://dutch-approach.nl/online-beginner-1-nld/",
+    url: "https://dutch-approach.nl/netherlands/",
     note: {
-      en: "Small-group Dutch courses online (4–6 students) and in a Taipei classroom near Da'an MRT (4–8 students): 10 weekly 2-hour classes per level. A good fit for Mandarin speakers in Taiwan.",
-      zh: "線上小班（4–6 人）與台北教室（近大安捷運站，4–8 人）的荷語課程，每級 10 週、每週一堂 2 小時。很適合在台灣的華語學習者。"
+      en: "Small-group Dutch courses from beginner to B2, online and in classrooms in Amsterdam, Eindhoven, Taipei and Tainan: 10 weekly 2-hour classes per level, plus CNaVT exam preparation. Teaching in English and Mandarin, a good fit for learners from Taiwan.",
+      zh: "從入門到 B2 的荷語小班課，可線上或在阿姆斯特丹、恩荷芬、台北、台南的教室上課：每級 10 週、每週一堂 2 小時，另有 CNaVT 荷語檢定準備。以英文與中文教學，很適合來自台灣的學習者。"
     },
     price: {
-      en: "An older enrolment page lists Beginner 1 at €299 (NT$9,900) plus €25 (NT$1,000) for book and website. Check the website for current Taipei and online prices.",
-      zh: "較早的報名頁顯示初級 1 學費 €299（NT$9,900），另加教材與網站費 €25（NT$1,000）。台北與線上課程最新價格請至官網查看。"
-    },
-    review: true
+      en: "€299 per 10-week course, plus €28 for textbook and website. In Taiwan NT$9,900 per course. Check the course pages for the current term.",
+      zh: "每期 10 週課程 €299，另加課本與網站費 €28。台灣課程每期 NT$9,900。最新學期資訊請見各課程頁面。"
+    }
   },
   {
     id: "learn-with-lucas",
-    name: "Learn with Lucas / Nederlessen",
+    name: "Learn with Lucas",
     kind: "creator",
-    categories: ["instagram", "youtube", "courses", "practice"],
+    categories: ["youtube", "courses", "practice"],
     region: "online",
     cities: [],
     formats: ["self", "online"],
     focus: ["speaking", "listening", "grammar", "exam"],
     levels: ["A1", "B2"],
-    cost: [12, 219],
+    cost: [12, 100],
     hours: [4, 12],
-    url: "https://www.nederlessen.nl/",
+    url: "https://learnwithlucas.com/nl/",
     youtube: "https://www.youtube.com/@realdutchwithlucas",
     note: {
-      en: "Lucas runs online Dutch courses, small speaking groups, a live speaking café and private speaking coaching, including help for inburgering and the Staatsexamen NT2.",
-      zh: "Lucas 開設線上荷語課程、小班口說課、線上口說咖啡館與一對一口說輔導，也協助準備融入考試與國家考試 NT2。"
+      en: "Lucas runs online Dutch courses, a live supported-speaking café in the evenings and private lessons for speaking, grammar or the inburgering exam. Free videos on YouTube.",
+      zh: "Lucas 開設線上荷語課程、晚間線上口說咖啡館，以及口說、文法或融入考試的一對一課程。YouTube 有免費影片。"
     },
     price: {
-      en: "Supported speaking café €11.99 a month (1 evening a week) or €19.99 (2 evenings). Private speaking coaching from €219. Online course and small-group prices are on the website.",
-      zh: "口說咖啡館每月 €11.99（每週 1 晚）或 €19.99（每週 2 晚）。一對一口說輔導 €219 起。線上課程與小班課價格請至官網查看。"
+      en: "Speaking café €11.99 a month (1 evening a week) or €19.99 (2 evenings), cheaper per year. Private lessons from €28. Online course prices on the website.",
+      zh: "口說咖啡館每月 €11.99（每週 1 晚）或 €19.99（每週 2 晚），年繳更便宜。一對一課 €28 起。線上課程價格請至官網查看。"
     }
   },
   {
@@ -1239,23 +1238,66 @@ window.RESOURCES = [
     id: "master-dutch",
     name: "Master Dutch (Kees)",
     kind: "creator",
-    categories: ["instagram", "courses"],
+    categories: ["instagram", "courses", "tutors"],
     region: "online",
     cities: [],
     formats: ["online"],
     focus: ["speaking", "grammar"],
     levels: ["A1", "B2"],
-    cost: [130, 130],
-    hours: [6, 6],
-    url: "https://masterdutch.com/",
+    cost: [130, null],
+    hours: [6, 20],
+    url: "https://masterdutch.com/group-classes/",
     note: {
-      en: "Kees teaches online group classes at A1, A2, B1 and B+ with his Three Pillar Method: 8 weekly 90-minute sessions per course.",
-      zh: "Kees 以「三支柱教學法」開設 A1、A2、B1、B+ 線上團體課：每期 8 週、每週一堂 90 分鐘。"
+      en: "Kees teaches with his Three Pillar Method in three formats: group classes (A1 to B+, max. 8 people, 8 weekly 90-minute sessions), 1-on-1 lessons and an all-in-one package.",
+      zh: "Kees 以「三支柱教學法」提供三種方案：團體課（A1 到 B+，最多 8 人，8 週、每週一堂 90 分鐘）、一對一課程，以及全方位套裝。"
     },
     price: {
-      en: "€255 per 8-week course (2025 listing).",
-      zh: "每期 8 週課程 €255（2025 年資料）。"
+      en: "Group classes €255 per 8-week course. Check the website for 1-on-1 and all-in-one prices.",
+      zh: "團體課每期 8 週 €255。一對一與全方位套裝價格請至官網查看。"
+    }
+  },
+  {
+    id: "nederlessen",
+    name: "Nederlessen (Joram)",
+    kind: "creator",
+    categories: ["instagram", "courses", "app"],
+    region: "online",
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "reading", "grammar", "exam"],
+    levels: ["A1", "B2"],
+    cost: [0, 250],
+    hours: [2, 16],
+    url: "https://www.nederlessen.nl/",
+    note: {
+      en: "Joram teaches small online groups (max. 4) and private speaking lessons, including help with inburgering and the Staatsexamen NT2. He also sells self-study PDFs: graded story readers with grammar (A1–B1+), speaking guides, a verb guide and a KNM exam practice book, plus free cheat sheets.",
+      zh: "Joram 開設線上小班（最多 4 人）與一對一口說課，也協助準備融入考試與國家考試 NT2。另販售自學 PDF：附文法的分級故事讀本（A1–B1+）、口說指南、動詞指南與 KNM 考試練習書，還有免費速查表。"
     },
-    review: true
+    price: {
+      en: "Small group €249 for 8 sessions. Private speaking lessons from €219. Self-study PDFs €5–9.99 (KNM book €9.99), with two free guides.",
+      zh: "小班課 8 堂 €249。一對一口說課 €219 起。自學 PDF €5–9.99（KNM 書 €9.99），另有兩份免費指南。"
+    }
+  },
+  {
+    id: "dutch-first",
+    name: "Dutch First",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    cities: ["Utrecht"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [175, 1159],
+    hours: [8, 96],
+    url: "https://dutchfirst.nl/",
+    note: {
+      en: "A language school in Utrecht with group courses from beginner to B1, intensive summer courses, conversation courses, inburgering courses and individual lessons in class or on Zoom.",
+      zh: "位於烏特勒支的語言學校，提供入門到 B1 的團體課、暑期密集班、會話課、融入課程，以及實體或 Zoom 一對一課。"
+    },
+    price: {
+      en: "Group courses from €350 (books extra). Summer intensives €350 for 24 hours up to €1,159 for 96 hours. Inburgering courses €17 an hour. Individual lessons in packages of 5 or more.",
+      zh: "團體課 €350 起（教材另計）。暑期密集班 24 小時 €350 到 96 小時 €1,159。融入課程每小時 €17。一對一課以 5 堂以上套裝購買。"
+    }
   }
 ];
