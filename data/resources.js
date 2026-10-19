@@ -927,7 +927,7 @@ window.RESOURCES = [
     cities: ["Den Haag", "Rotterdam"],
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
-    levels: ["A0", "B2"],
+    levels: ["A0", "C1"],
     cost: [135, 1245],
     hours: [8, 80],
     url: "https://www.abcdutch.com/",
@@ -946,7 +946,7 @@ window.RESOURCES = [
     kind: "school",
     categories: ["school"],
     region: "NL",
-    cities: ["Rotterdam", "Zaandam", "Alphen aan den Rijn"],
+    cities: ["Rotterdam", "Zaandam", "Alphen aan den Rijn", "Gouda", "Utrecht", "Haarlem", "'s-Hertogenbosch"],
     formats: ["inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A0", "B2"],
@@ -958,8 +958,8 @@ window.RESOURCES = [
       zh: "成人教育機構，提供 A0 到 B2 的荷語課程、識字班、融入考試路線和國家考試準備。每期課程結束都有程度測驗。"
     },
     price: {
-      en: "Free in some regions (Rotterdam Rijnmond, Zaanstreek-Waterland, Holland Rijnland) if you aren't required to do inburgering. Otherwise paid per month by lessons per week, roughly €299–615 including materials.",
-      zh: "非融入義務者在部分地區（鹿特丹大區、Zaanstreek-Waterland、Holland Rijnland）可免費上課。其他依每週堂數按月收費，約 €299–615，含教材。"
+      en: "€415 a month for 2 lessons a week, €515 for 3, €615 for 4, from 3 months. Includes intake test, personal advice and materials. Labour market orientation course €315 a month. DUO loan possible if you're required to do inburgering. Free lessons if you aren't, in Alphen aan den Rijn, Midden-Holland, Midden-Utrecht, Zaanstreek-Waterland, Zuid-Kennemerland/IJmond, Rotterdam Rijnmond and Noordoost-Brabant.",
+      zh: "每月 €415（每週 2 堂）、€515（3 堂）、€615（4 堂），至少報名 3 個月，含入學測驗、個人諮詢與教材。荷蘭就業市場導向課程每月 €315。融入義務者可申請 DUO 貸款。非融入義務者在 Alphen aan den Rijn、Midden-Holland、Midden-Utrecht、Zaanstreek-Waterland、Zuid-Kennemerland/IJmond、鹿特丹大區與 Noordoost-Brabant 可免費上課。"
     }
   },
   {
@@ -968,7 +968,7 @@ window.RESOURCES = [
     kind: "school",
     categories: ["school"],
     region: "NL",
-    cities: ["Utrecht", "Almere", "Lelystad", "Amsterdam", "Rotterdam", "Zwolle", "Zoetermeer"],
+    cities: ["Rotterdam", "Leiden", "Almere", "Lelystad", "Zwolle", "Gouda", "Hoorn", "Zaandam", "Barendrecht", "Hellevoetsluis", "Spijkenisse"],
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A0", "B2"],
@@ -980,8 +980,8 @@ window.RESOURCES = [
       zh: "在多個城市與線上開設各級荷語課程，包括由市政府出資、給非融入義務者的免費課程，以及付費的融入課程。"
     },
     price: {
-      en: "Free WEB courses in Rotterdam, Zoetermeer, Almere, Lelystad and Zwolle, and a free 40-week course in Flevoland. Inburgering courses €16.25 per hour (DUO loan possible). Online course €599 per 12-week module.",
-      zh: "鹿特丹、Zoetermeer、Almere、Lelystad 與 Zwolle 有免費 WEB 課程，Flevoland 有 40 週免費課程。融入課程每小時 €16.25（可申請 DUO 貸款）。線上課程每 12 週模組 €599。"
+      en: "Online course €599 per 12-week module. Inburgering courses €16.25 per hour (DUO loan possible). Free \"Verbeter je Nederlands\" courses if you aren't required to do inburgering: Rotterdam (10–20 weeks), Leiden (12 months), and Flevoland online, Almere or Lelystad (40 weeks). Morning, afternoon or evening classes.",
+      zh: "線上課程每 12 週模組 €599。融入課程每小時 €16.25（可申請 DUO 貸款）。非融入義務者可免費參加「Verbeter je Nederlands」課程：鹿特丹（10–20 週）、萊登（12 個月），以及 Flevoland 線上、Almere 或 Lelystad（40 週）。上午、下午或晚上上課。"
     }
   }
 ];
