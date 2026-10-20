@@ -805,8 +805,8 @@ window.RESOURCES = [
       zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。YouTube 影片免費，另有各級三個月自學課程，可終身觀看。"
     },
     price: {
-      en: "One-time: A1 or A2 course €79, B1 €99, A2 + B1 €159, A0–B1 package €199. Online community membership about $15–20 a month. Live lessons not included.",
-      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 $15–20。不含直播課。"
+      en: "One-time: A1 or A2 course €79, B1 €99, A2 + B1 €159, A0–B1 package €199. Online community membership about €15–17 a month (billed in US dollars). Live lessons not included.",
+      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 €15–17（以美元計費）。不含直播課。"
     }
   },
   {
@@ -1008,8 +1008,8 @@ window.RESOURCES = [
       zh: "從入門到 B2 的荷語小班課，可線上或在阿姆斯特丹、恩荷芬、台北、台南的教室上課：每級 10 週、每週一堂 2 小時，另有 CNaVT 荷語檢定準備。以英文與中文教學，很適合來自台灣的學習者。"
     },
     price: {
-      en: "€299 per 10-week course, plus €28 for textbook and website. In Taiwan NT$9,900 per course. Check the course pages for the current term.",
-      zh: "每期 10 週課程 €299，另加課本與網站費 €28。台灣課程每期 NT$9,900。最新學期資訊請見各課程頁面。"
+      en: "€299 per 10-week course, plus €28 for textbook and website. In Taiwan about €270 per course (NT$9,900). Check the course pages for the current term.",
+      zh: "每期 10 週課程 €299，另加課本與網站費 €28。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。"
     }
   },
   {
@@ -1240,8 +1240,8 @@ window.RESOURCES = [
       zh: "Martijn 每週在 YouTube 和 Podcast「Dutch Today: leer Nederlands met Martijn」發布荷語課程，每集標示程度。"
     },
     price: {
-      en: "Free on YouTube and podcast apps. Patreon about $5 a month for transcripts, exercises, word lists and extra episodes.",
-      zh: "YouTube 與 Podcast 免費。Patreon 每月約 $5，提供逐字稿、練習、單字表與額外集數。"
+      en: "Free on YouTube and podcast apps. Patreon €5 a month for transcripts, exercises, word lists and extra episodes.",
+      zh: "YouTube 與 Podcast 免費。Patreon 每月 €5，提供逐字稿、練習、單字表與額外集數。"
     }
   },
   {
