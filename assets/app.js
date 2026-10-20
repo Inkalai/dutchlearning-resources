@@ -455,6 +455,37 @@
     return region + t("card.placeSep") + shown;
   }
 
+  /* ---------- Logos ---------- */
+
+  // Sites whose icon would show the platform rather than the teacher, so they get initials instead.
+  var PLATFORM_HOSTS = ["youtube.com", "instagram.com", "tidycal.com", "facebook.com", "patreon.com"];
+
+  function initials(name) {
+    var words = name.replace(/\(.*?\)/g, "").split(/[\s\/&-]+/).filter(function (w) { return /^[A-Za-z0-9À-ž]/.test(w); });
+    return words.slice(0, 2).map(function (w) { return w.charAt(0).toUpperCase(); }).join("") || name.charAt(0);
+  }
+
+  // A resource's own `logo`, else its website icon, else a monogram in the colour of its kind.
+  function resourceLogo(r) {
+    var box = el("span", { class: "logo logo-" + r.kind, "aria-hidden": "true" }, [
+      el("span", { class: "logo-initials", text: initials(r.name) })
+    ]);
+    var src = r.logo;
+    if (!src) {
+      var host = "";
+      try { host = new URL(r.url).hostname.replace(/^www\./, ""); } catch (e) { /* keep initials */ }
+      var platform = PLATFORM_HOSTS.some(function (h) { return host === h || host.slice(-h.length - 1) === "." + h; });
+      if (host && !platform) src = "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(host) + "&sz=64";
+    }
+    if (src) {
+      var img = el("img", { src: src, alt: "", loading: "lazy", width: "40", height: "40" });
+      // The icon service returns a tiny generic globe when a site has no icon; keep initials then.
+      img.addEventListener("load", function () { if (img.naturalWidth > 16) box.classList.add("has-img"); });
+      box.appendChild(img);
+    }
+    return box;
+  }
+
   function resultItem(r) {
     var lang = state.lang;
     var meta = el("p", { class: "meta" }, [
@@ -475,7 +506,10 @@
     ]);
 
     var body = el("div", null, [
-      el("h3", null, [el("a", { href: r.url, target: "_blank", rel: "noopener", text: r.name })]),
+      el("div", { class: "result-head" }, [
+        resourceLogo(r),
+        el("h3", null, [el("a", { href: r.url, target: "_blank", rel: "noopener", text: r.name })])
+      ]),
       meta,
       el("p", { class: "note", text: r.note[lang] || r.note.en }),
       r.price ? el("p", { class: "price-note", text: r.price[lang] || r.price.en }) : null,

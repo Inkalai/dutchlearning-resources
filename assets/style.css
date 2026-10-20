@@ -93,7 +93,6 @@ p { margin: 0 0 1em; }
 .filters-entry { display: none; }
 .filters-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .filters-foot .btn { display: none; }
-.multi { font-weight: 400; font-size: 13px; color: var(--muted); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a {
   color: var(--ink); text-decoration: none; padding: 8px 14px; border-radius: 999px; font-weight: 500;
@@ -236,7 +235,23 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .price .amount { display: block; font-size: 1.6rem; font-weight: 800; line-height: 1.05; }
 .price .amount.free { color: var(--teal); }
 .price .per { font-size: 13px; color: var(--muted); font-family: var(--body); }
-.result h3 { font-size: 1.35rem; margin: 0 0 4px; }
+.result h3 { font-size: 1.35rem; margin: 0; }
+.result-head { display: flex; align-items: center; gap: 12px; margin: 0 0 6px; }
+.logo {
+  position: relative; flex: none; width: 40px; height: 40px; border-radius: 10px; overflow: hidden;
+  display: grid; place-items: center; background: var(--peach-deep); color: #7a4a33;
+  font: 800 15px/1 var(--display);
+}
+.logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6px; background: var(--paper); opacity: 0; }
+.logo.has-img { box-shadow: inset 0 0 0 1px var(--line); }
+.logo.has-img img { opacity: 1; }
+.logo.has-img .logo-initials { visibility: hidden; }
+.logo-creator { background: #fde0d2; color: #b2441a; }
+.logo-school, .logo-university { background: var(--teal-soft); color: #11606a; }
+.logo-government, .logo-library { background: #e8eef7; color: #2f4f7f; }
+.logo-app, .logo-course, .logo-podcast, .logo-tutors { background: #efe9f7; color: #5b3f8a; }
+.logo-media { background: #f3ece7; color: #6e625b; }
+.logo-community { background: #e6f2e4; color: #3d6b36; }
 .result h3 a { color: var(--ink); text-decoration: none; }
 .result h3 a:hover { color: var(--orange-ink); text-decoration: underline; }
 .meta { font-size: 14px; color: var(--muted); margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 4px 14px; }

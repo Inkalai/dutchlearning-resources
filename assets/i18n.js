@@ -91,7 +91,6 @@ window.I18N = {
     "card.placeSep": ": ",
 
     "filters.categories": "Resource type",
-    "filters.multi": "Select all that apply",
     "filters.entryHint": "Budget, time, how you learn and resource type",
     "cat.library": "Libraries",
     "cat.government": "Government",
@@ -249,7 +248,6 @@ window.I18N = {
     "card.placeSep": "：",
 
     "filters.categories": "資源類型",
-    "filters.multi": "可選擇多項",
     "filters.entryHint": "預算、時間、學習方式與資源類型",
     "cat.library": "圖書館",
     "cat.government": "政府資源",

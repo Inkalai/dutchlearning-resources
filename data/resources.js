@@ -20,6 +20,8 @@
   hours       [min, max] typical hours per month the resource expects
   url         main link
   instagram / youtube   optional profile links
+  logo        optional image path or URL for the logo (e.g. "assets/logos/abc.png");
+              without it the site shows the website's icon, or the name's initials
   review      true = not yet reviewed by Inka; shows a "Not yet reviewed" note
   note        short description { en: "...", zh: "..." }
   price       optional price detail { en: "...", zh: "..." }
