@@ -20,6 +20,7 @@
     cur: 1,
     target: 3,
     picking: false,
+    routeTouched: false,
     budget: Infinity,
     hours: Infinity,
     formats: new Set(),
@@ -130,6 +131,7 @@
 
     var hint = $("routeHint");
     if (state.picking) hint.textContent = t("route.hint.pickTarget");
+    else if (!state.routeTouched) hint.textContent = t("route.hint.start");
     else hint.textContent = t("route.hint.done", { cur: LEVELS[state.cur], target: LEVELS[state.target] });
   }
 
@@ -145,6 +147,8 @@
       state.picking = false;
     }
     storage("route", state.cur + "," + state.target);
+    state.routeTouched = true;
+    $("route").classList.remove("attention");
     renderRoute();
     renderResults();
   }
@@ -183,10 +187,20 @@
     updateFiltersToggleLabel();
   }
 
+  // Multi-select chips carry a small checkbox so people can tell they may pick several.
+  function multiChip(label, pressed, onClick) {
+    var b = el("button", { type: "button", class: "multi-chip", "aria-pressed": String(pressed) }, [
+      el("span", { class: "box", "aria-hidden": "true" }),
+      document.createTextNode(label)
+    ]);
+    b.addEventListener("click", onClick);
+    return b;
+  }
+
   function renderChipSet(container, values, prefix, set) {
     container.innerHTML = "";
     values.forEach(function (v) {
-      container.appendChild(segButton(t(prefix + v), set.has(v), function () {
+      container.appendChild(multiChip(t(prefix + v), set.has(v), function () {
         if (set.has(v)) set.delete(v); else set.add(v);
         renderFilters(); renderResults();
       }));
@@ -233,11 +247,11 @@
   }
 
   function updateFiltersToggleLabel() {
-    var open = $("filters").classList.contains("open");
-    $("filtersToggle").firstElementChild.textContent = t(open ? "filters.hide" : "filters.show");
     var n = activeFilterCount();
-    $("activeCount").textContent = n;
-    $("activeCount").hidden = n === 0;
+    document.querySelectorAll(".js-active-count").forEach(function (b) {
+      b.textContent = n;
+      b.hidden = n === 0;
+    });
     var count = $("resultList").children.length;
     $("filtersClose").textContent = count === 1 ? t("filters.doneOne") : t("filters.done", { n: count });
   }
@@ -253,13 +267,13 @@
 
   function setFilterSheet(open, returnToResults) {
     $("filters").classList.toggle("open", open);
-    $("filtersToggle").setAttribute("aria-expanded", String(open));
+    document.querySelectorAll(".js-open-filters").forEach(function (b) { b.setAttribute("aria-expanded", String(open)); });
     document.body.classList.toggle("sheet-open", open && mobile.matches);
     updateFiltersToggleLabel();
     if (open && mobile.matches) $("filtersClose").focus();
     if (!open && returnToResults) {
       $("finder").scrollIntoView();
-      $("filtersToggle").focus({ preventScroll: true });
+      document.querySelector("#filtersEntry .js-open-filters").focus({ preventScroll: true });
     }
   }
 
@@ -297,6 +311,16 @@
       if ($("filters").classList.contains("open") && mobile.matches) setFilterSheet(false, true);
     });
     $("filtersClose").addEventListener("click", function () { setFilterSheet(false, true); });
+
+    // The floating filter button appears only once the filter section has scrolled out of view.
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        var e = entries[0];
+        $("filtersToggle").classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top < 0);
+      }).observe($("filtersEntry"));
+    } else {
+      $("filtersToggle").classList.add("show");
+    }
     mobile.addEventListener("change", syncMobileMode);
     syncMobileMode();
   }
@@ -496,7 +520,7 @@
     var set = formChoices[container.id];
     container.innerHTML = "";
     values.forEach(function (v) {
-      container.appendChild(segButton(t(prefix + v), set.has(v), function () {
+      container.appendChild(multiChip(t(prefix + v), set.has(v), function () {
         if (set.has(v)) set.delete(v); else set.add(v);
         renderFormChips(container, values, prefix);
       }));
@@ -599,7 +623,19 @@
     if (saved.length === 2 && saved.every(function (n) { return n >= 0 && n < LEVELS.length; }) && saved[0] <= saved[1]) {
       state.cur = saved[0];
       state.target = saved[1];
+      state.routeTouched = true;
     }
+  }
+
+  // Until someone sets their own route, the level stations blink once when they come into view.
+  function setupRouteAttention() {
+    if (state.routeTouched || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      if (!state.routeTouched) $("route").classList.add("attention");
+    }, { threshold: 0.6 });
+    io.observe($("route"));
   }
 
   function init() {
@@ -625,13 +661,14 @@
       renderFilters(); renderResults();
     });
 
-    $("filtersToggle").addEventListener("click", function () {
-      setFilterSheet(!$("filters").classList.contains("open"));
+    document.querySelectorAll(".js-open-filters").forEach(function (b) {
+      b.addEventListener("click", function () { setFilterSheet(!$("filters").classList.contains("open")); });
     });
 
     setupSuggestForm();
     setupMobile();
     renderAll();
+    setupRouteAttention();
   }
 
   init();

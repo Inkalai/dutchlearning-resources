@@ -90,6 +90,10 @@ p { margin: 0 0 1em; }
 .brand img { width: 48px; height: 48px; }
 .brand-caret { display: none; }
 .filters-head { display: none; }
+.filters-entry { display: none; }
+.filters-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.filters-foot .btn { display: none; }
+.multi { font-weight: 400; font-size: 13px; color: var(--muted); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a {
   color: var(--ink); text-decoration: none; padding: 8px 14px; border-radius: 999px; font-weight: 500;
@@ -154,6 +158,21 @@ p { margin: 0 0 1em; }
 
 .route-hint { margin: 18px 0 0; font-weight: 500; }
 
+/* Until a visitor sets their route, the stations blink once to show they can be tapped. */
+.route.attention .station .dot { animation: station-blink 1.1s ease-in-out 2; }
+.route.attention .route-line li:nth-child(2) .dot { animation-delay: .08s; }
+.route.attention .route-line li:nth-child(3) .dot { animation-delay: .16s; }
+.route.attention .route-line li:nth-child(4) .dot { animation-delay: .24s; }
+.route.attention .route-line li:nth-child(5) .dot { animation-delay: .32s; }
+.route.attention .route-line li:nth-child(6) .dot { animation-delay: .4s; }
+.route.attention .route-line li:nth-child(7) .dot { animation-delay: .48s; }
+.route.attention .route-hint { animation: hint-blink 1.1s ease-in-out 2; }
+@keyframes station-blink {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(242, 107, 42, 0); }
+  50% { transform: scale(1.25); box-shadow: 0 0 0 8px rgba(242, 107, 42, .25); }
+}
+@keyframes hint-blink { 50% { color: var(--orange-ink); } }
+
 /* Finder */
 .finder { padding: 48px 0 72px; }
 .finder-grid {
@@ -190,12 +209,16 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips button { padding: 7px 12px; border-radius: 999px; }
 .chips button[aria-pressed="true"] { background: var(--teal-soft); border-color: var(--teal); color: #11606a; }
+.multi-chip { display: inline-flex; align-items: center; gap: 7px; }
+.multi-chip .box {
+  flex: none; width: 15px; height: 15px; border: 1.5px solid #b3a49b; border-radius: 4px; background: var(--paper);
+}
+.multi-chip[aria-pressed="true"] .box {
+  border-color: var(--teal); background: var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3 4.7-5' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
 .seg button:hover, .chips button:hover { border-color: var(--muted); }
 
 .results { min-width: 0; }
-.quick { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
-.quick-label { font-weight: 700; font-size: 14px; }
-.quick-chips button[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: #fff; }
 .results-bar {
   display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   border-bottom: 2px solid var(--ink); padding-bottom: 12px;
@@ -294,9 +317,17 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   .header-actions .btn-kofi { padding: 9px 12px; }
   .brand { gap: 6px; }
   .finder-grid { grid-template-columns: 1fr; gap: 20px; }
-  /* Floating filter button, visible while scrolling. */
+  /* Inline filter section right under the level route. */
+  .filters-entry {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    padding: 16px; border: 2px solid var(--ink); border-radius: var(--radius); background: var(--paper);
+  }
+  .filters-entry h2 { margin: 0 0 2px; font-size: 1.3rem; }
+  .filters-entry p { margin: 0; font-size: 14px; color: var(--muted); }
+  .filters-entry .btn { flex: none; }
+  /* Floating filter button, shown once the filter section has scrolled away. */
   .filters-toggle {
-    display: inline-flex; align-items: center; gap: 8px;
+    display: none; align-items: center; gap: 8px;
     position: fixed; z-index: 30; bottom: 16px; left: 50%; transform: translateX(-50%);
     font: 700 15px var(--body); color: #fff; background: var(--ink);
     border: 0; border-radius: 999px; padding: 13px 22px; cursor: pointer;
@@ -308,6 +339,7 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
             mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 3h14M4 8h8M6.5 13h3' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
   }
   body.sheet-open { overflow: hidden; }
+  .filters-toggle.show { display: inline-flex; }
   body.sheet-open .filters-toggle { display: none; }
   .site-footer { padding-bottom: 96px; }
   .badge { background: var(--orange); color: #fff; border-radius: 999px; font-size: 12px; padding: 1px 8px; }
@@ -315,25 +347,26 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   .filters { display: none; }
   .filters.open {
     display: block; position: fixed; inset: 0; z-index: 40;
-    max-height: none; overflow: auto; padding: 0 16px 32px;
+    max-height: none; overflow: auto; padding: 0 16px;
     background: var(--peach);
   }
+  /* Show-results button sits in the bottom-right corner of the sheet. */
+  .filters-foot {
+    position: sticky; bottom: 0; margin: 8px -16px 0; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: var(--peach); border-top: 1px solid var(--line);
+  }
+  .filters-foot .btn { display: inline-flex; }
   .filters-head {
     display: flex; align-items: center; justify-content: space-between; gap: 12px;
     position: sticky; top: 0; z-index: 1; margin: 0 -16px 20px; padding: 14px 16px;
     background: var(--peach); border-bottom: 1px solid var(--line);
   }
   .filters-head h2 { margin: 0; font-size: 1.5rem; }
-  .filters-head .btn { padding: 10px 16px; font-size: 14px; }
   .suggest-grid { grid-template-columns: 1fr; gap: 24px; }
   .suggest-grid > div:first-child { position: static; }
 }
 
 @media (max-width: 640px) {
-  /* Category tags scroll sideways instead of wrapping into many rows. */
-  .quick-chips { flex: 1 1 100%; min-width: 0; flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 6px; scrollbar-width: none; }
-  .quick-chips::-webkit-scrollbar { display: none; }
-  .quick-chips button { flex: none; }
   .brand span { display: none; }
   .station .desc { display: none; }
   .station .code { font-size: 1.15rem; }

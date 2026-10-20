@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20261020">
+  <link rel="stylesheet" href="assets/style.css?v=20261020b">
 </head>
 <body>
   <a class="skip" href="#finder" data-i18n="nav.find">Find resources</a>
@@ -54,17 +54,31 @@
 
     <section class="finder" id="finder" aria-labelledby="resultsCount">
       <div class="wrap finder-grid">
-        <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="filters">
+        <div class="filters-entry" id="filtersEntry">
+          <div>
+            <h2 data-i18n="filters.title">Filters</h2>
+            <p data-i18n="filters.entryHint">Budget, time, how you learn, resource type and where you live</p>
+          </div>
+          <button type="button" class="btn btn-primary js-open-filters" aria-expanded="false" aria-controls="filters">
+            <span data-i18n="filters.show">Show filters</span>
+            <span class="badge js-active-count" hidden></span>
+          </button>
+        </div>
+
+        <button type="button" class="filters-toggle js-open-filters" id="filtersToggle" aria-expanded="false" aria-controls="filters">
           <span data-i18n="filters.show">Show filters</span>
-          <span class="badge" id="activeCount" hidden></span>
+          <span class="badge js-active-count" hidden></span>
         </button>
 
         <aside class="filters" id="filters">
           <div class="filters-head">
             <h2 data-i18n="filters.title">Filters</h2>
-            <button type="button" class="btn btn-primary" id="filtersClose"></button>
           </div>
 
+          <fieldset class="field">
+            <legend><span data-i18n="filters.categories">Resource type</span> <span class="multi" data-i18n="filters.multi">choose any</span></legend>
+            <div class="chips" id="categories"></div>
+          </fieldset>
 
           <fieldset class="field">
             <legend data-i18n="filters.budget">Budget per month</legend>
@@ -77,12 +91,12 @@
           </fieldset>
 
           <fieldset class="field">
-            <legend data-i18n="filters.format">How you like to learn</legend>
+            <legend><span data-i18n="filters.format">How you like to learn</span> <span class="multi" data-i18n="filters.multi">choose any</span></legend>
             <div class="chips" id="formats"></div>
           </fieldset>
 
           <fieldset class="field">
-            <legend data-i18n="filters.focus">What you want to practise</legend>
+            <legend><span data-i18n="filters.focus">What you want to practise</span> <span class="multi" data-i18n="filters.multi">choose any</span></legend>
             <div class="chips" id="focus"></div>
           </fieldset>
 
@@ -91,14 +105,13 @@
             <select id="place"></select>
           </div>
 
-          <button type="button" class="link-btn" id="clearFilters" data-i18n="filters.clear">Clear filters</button>
+          <div class="filters-foot">
+            <button type="button" class="link-btn" id="clearFilters" data-i18n="filters.clear">Clear filters</button>
+            <button type="button" class="btn btn-primary" id="filtersClose"></button>
+          </div>
         </aside>
 
         <div class="results">
-          <div class="quick" role="group" aria-labelledby="quickLabel">
-            <span id="quickLabel" class="quick-label" data-i18n="filters.categories">Show only</span>
-            <div class="chips quick-chips" id="categories"></div>
-          </div>
           <div class="results-bar">
             <h2 id="resultsCount" aria-live="polite"></h2>
             <label class="sort">
@@ -214,9 +227,9 @@
     </div>
   </footer>
 
-  <script src="config.js?v=20261020"></script>
-  <script src="data/resources.js?v=20261020"></script>
-  <script src="assets/i18n.js?v=20261020"></script>
-  <script src="assets/app.js?v=20261020"></script>
+  <script src="config.js?v=20261020b"></script>
+  <script src="data/resources.js?v=20261020b"></script>
+  <script src="assets/i18n.js?v=20261020b"></script>
+  <script src="assets/app.js?v=20261020b"></script>
 </body>
 </html>
