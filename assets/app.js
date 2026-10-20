@@ -183,6 +183,10 @@
     renderChipSet($("formats"), FORMATS, "format.", state.formats);
     renderChipSet($("focus"), FOCUS, "focus.", state.focus);
     renderChipSet($("categories"), CATEGORIES, "cat.", state.categories);
+    // Where you live only matters for in-person classes, so it shows once that format is chosen.
+    var inPerson = state.formats.has("inperson");
+    if (!inPerson) state.place = "any";
+    $("placeField").hidden = !inPerson;
     renderPlace();
     updateFiltersToggleLabel();
   }
@@ -226,7 +230,7 @@
   function renderPlace() {
     var sel = $("place");
     sel.innerHTML = "";
-    ["any", "online"].concat(COUNTRIES).forEach(function (v) {
+    ["any"].concat(COUNTRIES).forEach(function (v) {
       sel.appendChild(el("option", { value: v, text: t("place." + v) }));
     });
     citiesByCountry().forEach(function (g) {
@@ -341,12 +345,11 @@
     var city = p.indexOf("city:") === 0 ? p.slice(5) : null;
     var country = city ? countryOfCity(city) : p;
     if (f === "inperson") {
-      if (p === "online") return false;
       if (city) return cities.indexOf(city) > -1;
       return cities.some(function (c) { return countryOfCity(c) === country; }) ||
         (!online && regions.indexOf(country) > -1);
     }
-    return online || p === "online" || regions.indexOf(country) > -1;
+    return online || regions.indexOf(country) > -1;
   }
 
   function matchesPlaceAndFormat(r) {
