@@ -7,7 +7,7 @@
   id          unique short name, letters/numbers/dashes only
   name        resource name (shown as-is in both languages)
   kind        library | government | school | university | app | course |
-              tutors | creator | media | podcast | community
+              tutors | creator | ai | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
               youtube, app, tutors, courses, practice, news, tv
   region      "NL", "BE", "TW", "online", or several joined with + (e.g. "NL+BE")
@@ -1386,7 +1386,7 @@ window.RESOURCES = [
   {
     id: "zeg-maar-nederlands",
     name: "Zeg maar Nederlands",
-    kind: "creator",
+    kind: "ai",
     categories: ["youtube"],
     region: "online",
     cities: [],

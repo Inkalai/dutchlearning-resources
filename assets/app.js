@@ -13,7 +13,7 @@
   var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
   var COUNTRIES = ["NL", "BE", "TW"];
   var CITY_COUNTRIES = window.CITY_COUNTRIES || {};
-  var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "media", "podcast", "community"];
+  var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "ai", "media", "podcast", "community"];
 
   var state = {
     lang: initialLang(),
