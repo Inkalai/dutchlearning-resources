@@ -137,6 +137,7 @@
 
   // First tap sets where you are now, second tap sets your goal.
   function pickLevel(i) {
+    $("tapHint").hidden = true;
     if (!state.picking) {
       state.cur = i;
       state.target = i;
@@ -673,6 +674,19 @@
     }
   }
 
+  // On a first visit, once the route is on screen, a finger shows the two taps (A1, then B1).
+  function setupTapHint() {
+    var hint = $("tapHint");
+    if (state.cur !== null || !("IntersectionObserver" in window)) return;
+    hint.addEventListener("animationend", function (e) { if (e.elapsedTime >= 5) hint.hidden = true; });
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      if (state.cur === null) hint.hidden = false;
+    }, { threshold: 0.6 });
+    io.observe($("route"));
+  }
+
   function init() {
     restoreRoute();
     applyLinks();
@@ -695,6 +709,8 @@
       state.place = "any";
       renderFilters(); renderResults();
     });
+
+    setupTapHint();
 
     $("routeBannerBtn").addEventListener("click", function () {
       $("route").scrollIntoView({ block: "center" });
