@@ -11,7 +11,7 @@ window.I18N = {
 
     "hero.title": "Find your way into Dutch",
     "hero.lead": "Libraries, city halls, courses, apps and teachers from Instagram and YouTube, free and paid, in the Netherlands, Belgium and online. Tell me where you are and where you want to go.",
-    "route.legend": "Your Dutch level",
+    "route.legend": "Choose your Dutch level and your goal",
     "route.hint.start": "Tap your current level first, then tap your goal.",
     "route.hint.pickTarget": "Now tap the level you want to reach.",
     "route.hint.done": "From {cur} to {target}. Tap a level to change your route.",
@@ -168,7 +168,7 @@ window.I18N = {
 
     "hero.title": "找到你的荷語學習路線",
     "hero.lead": "圖書館、市政府、課程、App，還有 Instagram 與 YouTube 上的老師，免費和付費都有，涵蓋荷蘭、比利時與線上。告訴我你現在的程度和想達到的目標。",
-    "route.legend": "你的荷語程度",
+    "route.legend": "選擇你的荷語程度與目標",
     "route.hint.start": "先點選你目前的程度，再點選你的目標。",
     "route.hint.pickTarget": "再點選你想達到的程度。",
     "route.hint.done": "從 {cur} 到 {target}。點選任一程度即可更改路線。",
