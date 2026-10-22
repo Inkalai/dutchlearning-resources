@@ -1382,5 +1382,25 @@ window.RESOURCES = [
       en: "1:1 programme: 4 months from €1,899, including book and club access. Coffee sessions cost extra. Small-group prices on request.",
       zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課價格請洽詢。"
     }
+  },
+  {
+    id: "zeg-maar-nederlands",
+    name: "Zeg maar Nederlands",
+    kind: "creator",
+    categories: ["youtube"],
+    region: "online",
+    cities: [],
+    formats: ["self"],
+    focus: ["listening", "speaking"],
+    levels: ["A1", "C1"],
+    cost: [0, 0],
+    hours: [1, 10],
+    url: "https://www.youtube.com/@ZegmaarNederlands",
+    youtube: "https://www.youtube.com/@ZegmaarNederlands",
+    note: {
+      en: "A YouTube channel about how Dutch people really speak in everyday life: recognisable dialogues, practical language tips, clear lessons and Dutch culture, presented by Ling, Sam, Marieke, Jenny, Mateo and friends. For beginners to advanced learners.",
+      zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化，由 Ling、Sam、Marieke、Jenny、Mateo 等人主持。適合初學者到進階學習者。"
+    },
+    price: { en: "Free on YouTube.", zh: "YouTube 免費觀看。" }
   }
 ];
