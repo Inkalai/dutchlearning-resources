@@ -128,11 +128,6 @@
       li.appendChild(btn);
       line.appendChild(li);
     });
-
-    var hint = $("routeHint");
-    if (state.picking) hint.textContent = t("route.hint.pickTarget");
-    else if (state.cur === null) hint.textContent = t("route.hint.pickCurrent");
-    else hint.textContent = t("route.hint.done", { cur: LEVELS[state.cur], target: LEVELS[state.target] });
   }
 
   // First tap sets where you are now, second tap sets your goal.
@@ -538,6 +533,7 @@
     if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
     else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
     $("routeBanner").hidden = !noRoute;
+    $("routeHint").textContent = t(list.length === 1 ? "route.countOne" : "route.count", { n: list.length });
     $("empty").hidden = list.length > 0;
     updateFiltersToggleLabel();
   }
@@ -674,11 +670,11 @@
     }
   }
 
-  // On a first visit, once the route is on screen, a finger shows the two taps (A1, then B1).
+  // On a first visit, once the route is on screen, a finger slides between A0 and B1 for
+  // 5 seconds and then rests on A0 until the visitor taps a level.
   function setupTapHint() {
     var hint = $("tapHint");
     if (state.cur !== null || !("IntersectionObserver" in window)) return;
-    hint.addEventListener("animationend", function (e) { if (e.elapsedTime >= 5) hint.hidden = true; });
     var io = new IntersectionObserver(function (entries) {
       if (!entries[0].isIntersecting) return;
       io.disconnect();
