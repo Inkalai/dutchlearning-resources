@@ -489,6 +489,13 @@
     return box;
   }
 
+  // Name the main link after the platform when it points to YouTube or Instagram.
+  function mainLinkLabel(url) {
+    if (/^https?:\/\/([^/]+\.)?youtube\.com\//.test(url)) return t("card.youtube");
+    if (/^https?:\/\/([^/]+\.)?instagram\.com\//.test(url)) return t("card.instagram");
+    return t("card.visit");
+  }
+
   function resultItem(r) {
     var lang = state.lang;
     var meta = el("p", { class: "meta" }, [
@@ -502,7 +509,7 @@
     r.focus.forEach(function (f) { tags.appendChild(el("li", { text: t("focus." + f) })); });
 
     var links = el("p", { class: "links" }, [
-      el("a", { href: r.url, target: "_blank", rel: "noopener", text: t("card.visit") }),
+      el("a", { href: r.url, target: "_blank", rel: "noopener", text: mainLinkLabel(r.url) }),
       r.instagram && r.instagram !== r.url ? el("a", { href: r.instagram, target: "_blank", rel: "noopener", text: t("card.instagram") }) : null,
       r.youtube && r.youtube !== r.url ? el("a", { href: r.youtube, target: "_blank", rel: "noopener", text: t("card.youtube") }) : null,
       r.review ? el("span", { class: "unreviewed", text: t("card.unreviewed") }) : null

@@ -208,7 +208,7 @@ window.I18N = {
     "hours.20": "20 小時",
     "hours.40": "40 小時",
     "hours.any": "不限",
-    "format.self": "線上資源",
+    "format.self": "自學",
     "format.inperson": "實體課",
     "format.online": "線上教學",
     "focus.speaking": "口說",
