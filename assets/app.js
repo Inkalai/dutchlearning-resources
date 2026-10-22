@@ -17,10 +17,10 @@
 
   var state = {
     lang: initialLang(),
-    cur: 1,
-    target: 3,
+    // No route until the visitor picks one; all resources show until then.
+    cur: null,
+    target: null,
     picking: false,
-    routeTouched: false,
     budget: Infinity,
     hours: Infinity,
     formats: new Set(),
@@ -99,7 +99,7 @@
   function renderRoute() {
     var line = $("routeLine");
     line.innerHTML = "";
-    line.classList.toggle("picking", state.picking);
+    line.classList.toggle("picking", state.picking || state.cur === null);
     LEVELS.forEach(function (code, i) {
       var li = el("li");
       if (!state.picking) {
@@ -131,7 +131,7 @@
 
     var hint = $("routeHint");
     if (state.picking) hint.textContent = t("route.hint.pickTarget");
-    else if (!state.routeTouched) hint.textContent = t("route.hint.start");
+    else if (state.cur === null) hint.textContent = t("route.hint.pickCurrent");
     else hint.textContent = t("route.hint.done", { cur: LEVELS[state.cur], target: LEVELS[state.target] });
   }
 
@@ -147,8 +147,6 @@
       state.picking = false;
     }
     storage("route", state.cur + "," + state.target);
-    state.routeTouched = true;
-    $("route").classList.remove("attention");
     renderRoute();
     renderResults();
   }
@@ -360,6 +358,7 @@
   // A resource fits if it covers any part of your route: it still has something to teach you
   // and doesn't start beyond your goal. Ones that start above your current level rank lower.
   function matchesLevel(r) {
+    if (state.cur === null) return true;
     var from = lv(r.levels[0]), to = lv(r.levels[1]);
     if (from > Math.max(state.cur, state.target)) return false;
     if (state.cur === LEVELS.length - 1) return to === state.cur;
@@ -373,13 +372,15 @@
 
   function score(r) {
     var to = lv(r.levels[1]);
-    var span = Math.max(1, state.target - state.cur);
-    var coverage = Math.min(1, Math.max(0, (Math.min(to, state.target) - state.cur) / span));
-    var s = coverage * 10;
-    // Prefer resources pitched at your route over very broad ones.
-    s -= Math.max(0, state.cur - lv(r.levels[0])) * 0.3;
-    s -= Math.max(0, to - state.target) * 0.3;
-    s -= Math.max(0, lv(r.levels[0]) - state.cur) * 3;
+    var s = 0;
+    if (state.cur !== null) {
+      var span = Math.max(1, state.target - state.cur);
+      s += Math.min(1, Math.max(0, (Math.min(to, state.target) - state.cur) / span)) * 10;
+      // Prefer resources pitched at your route over very broad ones.
+      s -= Math.max(0, state.cur - lv(r.levels[0])) * 0.3;
+      s -= Math.max(0, to - state.target) * 0.3;
+      s -= Math.max(0, lv(r.levels[0]) - state.cur) * 3;
+    }
     // Advice desks that only refer you elsewhere sit below actual learning.
     if (r.hours[1] <= 2) s -= 2;
     if (state.formats.size) s += r.formats.filter(function (f) { return state.formats.has(f); }).length;
@@ -430,12 +431,18 @@
   function levelBar(r) {
     var from = lv(r.levels[0]), to = lv(r.levels[1]);
     var ol = el("ol", { "aria-hidden": "true" });
+    var hasRoute = state.cur !== null;
     LEVELS.forEach(function (code, i) {
       var cls = [];
       if (i >= from && i <= to) cls.push("has");
-      if (i >= state.cur && i <= state.target) cls.push("mine");
+      if (hasRoute && i >= state.cur && i <= state.target) cls.push("mine");
       ol.appendChild(el("li", { class: cls.join(" "), text: code }));
     });
+    if (!hasRoute) {
+      return el("div", { class: "levelbar" }, [
+        ol, el("span", { class: "reach partial", text: t("card.levels", { from: r.levels[0], to: r.levels[1] }) })
+      ]);
+    }
     var reachesGoal = to >= state.target;
     var label = reachesGoal ? t("card.reachesGoal", { level: LEVELS[state.target] }) : t("card.reaches", { level: r.levels[1] });
     if (from > state.cur) label = t("card.startsAt", { level: r.levels[0] });
@@ -526,7 +533,10 @@
     var ul = $("resultList");
     ul.innerHTML = "";
     list.forEach(function (r) { ul.appendChild(resultItem(r)); });
-    $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
+    var noRoute = state.cur === null;
+    if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
+    else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
+    $("routeBanner").hidden = !noRoute;
     $("empty").hidden = list.length > 0;
     updateFiltersToggleLabel();
   }
@@ -660,19 +670,7 @@
     if (saved.length === 2 && saved.every(function (n) { return n >= 0 && n < LEVELS.length; }) && saved[0] <= saved[1]) {
       state.cur = saved[0];
       state.target = saved[1];
-      state.routeTouched = true;
     }
-  }
-
-  // Until someone sets their own route, the level stations blink once when they come into view.
-  function setupRouteAttention() {
-    if (state.routeTouched || !("IntersectionObserver" in window)) return;
-    var io = new IntersectionObserver(function (entries) {
-      if (!entries[0].isIntersecting) return;
-      io.disconnect();
-      if (!state.routeTouched) $("route").classList.add("attention");
-    }, { threshold: 0.6 });
-    io.observe($("route"));
   }
 
   function init() {
@@ -698,6 +696,12 @@
       renderFilters(); renderResults();
     });
 
+    $("routeBannerBtn").addEventListener("click", function () {
+      $("route").scrollIntoView({ block: "center" });
+      var first = document.querySelector("#routeLine .station");
+      if (first) first.focus({ preventScroll: true });
+    });
+
     document.querySelectorAll(".js-open-filters").forEach(function (b) {
       b.addEventListener("click", function () { setFilterSheet(!$("filters").classList.contains("open")); });
     });
@@ -705,7 +709,6 @@
     setupSuggestForm();
     setupMobile();
     renderAll();
-    setupRouteAttention();
   }
 
   init();
