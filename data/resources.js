@@ -1398,8 +1398,8 @@ window.RESOURCES = [
     url: "https://www.youtube.com/@ZegmaarNederlands",
     youtube: "https://www.youtube.com/@ZegmaarNederlands",
     note: {
-      en: "A YouTube channel about how Dutch people really speak in everyday life: recognisable dialogues, practical language tips, clear lessons and Dutch culture, presented by Ling, Sam, Marieke, Jenny, Mateo and friends. For beginners to advanced learners.",
-      zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化，由 Ling、Sam、Marieke、Jenny、Mateo 等人主持。適合初學者到進階學習者。"
+      en: "A YouTube channel about how Dutch people really speak in everyday life: recognisable dialogues, practical language tips, clear lessons and Dutch culture. The content is AI-generated: the presenters (Ling, Sam, Marieke, Jenny, Mateo and friends) are not real teachers. For beginners to advanced learners.",
+      zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化。內容由 AI 生成：主持人（Ling、Sam、Marieke、Jenny、Mateo 等）並非真人老師。適合初學者到進階學習者。"
     },
     price: { en: "Free on YouTube.", zh: "YouTube 免費觀看。" }
   }
