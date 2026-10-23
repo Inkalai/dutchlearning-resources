@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-labelledby="t3">
+  <title id="t3">A traveller with a backpack walks a winding path towards a windmill through Dutch tulip fields</title>
+  <!-- Flat shapes, no outlines. The sky is the banner's own peach background. -->
+
+  <!-- Sun and clouds -->
+  <circle cx="440" cy="92" r="46" fill="#f8d78a" opacity=".7"/>
+  <g fill="#fffaf5">
+    <rect x="62" y="84" width="104" height="26" rx="13"/><circle cx="96" cy="84" r="20"/><circle cx="126" cy="78" r="24"/>
+    <rect x="444" y="196" width="96" height="22" rx="11"/><circle cx="476" cy="196" r="16"/><circle cx="502" cy="190" r="20"/>
+  </g>
+
+  <!-- Birds -->
+  <g stroke="#1d4e5f" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M330 52 q8 -8 14 0 q6 -8 14 0"/>
+    <path d="M366 72 q6 -6 11 0 q5 -6 11 0"/>
+  </g>
+
+  <defs>
+    <linearGradient id="edgeFade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".14" stop-color="#fff" stop-opacity="1"/>
+      <stop offset=".86" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottomFade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset=".86" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeBottom"><rect x="0" y="0" width="560" height="380" fill="url(#bottomFade)"/></mask>
+    <mask id="fadeSides"><rect x="0" y="0" width="560" height="380" fill="url(#edgeFade)"/></mask>
+  </defs>
+  <g mask="url(#fadeBottom)"><g mask="url(#fadeSides)">
+  <!-- Landscape -->
+  <path d="M0 330 C90 300 170 306 250 322 C340 340 430 300 560 312 V380 H0 Z" fill="#cfe5c4"/>
+  <path d="M0 352 C120 336 230 344 330 356 C420 366 500 350 560 346 V380 H0 Z" fill="#b5d8a6"/>
+  <!-- tulip field rows -->
+  <g>
+    <path d="M0 362 C80 352 150 352 230 360 L232 368 C150 360 80 360 0 370 Z" fill="#f26b2a"/>
+    <path d="M0 372 C80 362 150 362 232 370 L234 378 C150 370 80 370 0 380 Z" fill="#f3c86a"/>
+    <path d="M330 366 C420 372 490 360 560 356 V364 C490 368 420 380 332 374 Z" fill="#ee8e76"/>
+  </g>
+  </g></g>
+  <!-- winding path towards the windmill -->
+  <path d="M110 380 C190 346 300 346 392 326 C436 316 466 314 490 316 L492 321 C466 321 440 326 404 334 C322 354 226 366 176 380 Z" fill="#f1e2cc"/>
+  <!-- windmill -->
+  <g>
+    <path d="M478 316 L484 262 H500 L506 316 Z" fill="#ee8e76"/>
+    <path d="M480 262 H504 L492 248 Z" fill="#1d4e5f"/>
+    <g fill="#1d4e5f">
+      <rect x="490" y="216" width="5" height="40" rx="2" transform="rotate(30 492 256)"/>
+      <rect x="490" y="216" width="5" height="40" rx="2" transform="rotate(120 492 256)"/>
+      <rect x="490" y="216" width="5" height="40" rx="2" transform="rotate(210 492 256)"/>
+      <rect x="490" y="216" width="5" height="40" rx="2" transform="rotate(300 492 256)"/>
+    </g>
+    <circle cx="492" cy="256" r="4" fill="#fffaf5"/>
+  </g>
+
+
+  <!-- Traveller walking along the path with a backpack -->
+  <g transform="translate(304 342) scale(1.3) translate(-304 -342)">
+    <!-- back leg -->
+    <path d="M300 300 L297 320 L293 339" stroke="#173f4d" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="296" cy="341" rx="7.5" ry="3.8" fill="#2b2420"/>
+    <!-- back arm -->
+    <path d="M298 266 L294 284 L292 298" stroke="#2795a2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- backpack with a rolled mat -->
+    <rect x="272" y="258" width="22" height="38" rx="7" fill="#f26b2a"/>
+    <rect x="270" y="252" width="26" height="9" rx="4.5" fill="#f3c86a"/>
+    <rect x="276" y="278" width="14" height="10" rx="3" fill="#e85d1e"/>
+    <!-- jacket -->
+    <path d="M290 262 Q300 254 310 262 L314 304 H290 Z" fill="#2fa5b3"/>
+    <!-- front leg -->
+    <path d="M304 300 L309 320 L311 339" stroke="#1d4e5f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <ellipse cx="315" cy="341" rx="7.5" ry="3.8" fill="#2b2420"/>
+    <!-- head, hair and cap -->
+    <rect x="298" y="246" width="9" height="12" rx="4" fill="#e8b48f"/>
+    <circle cx="304" cy="240" r="11" fill="#e8b48f"/>
+    <path d="M293 240 C292 230 298 226 305 226 C311 226 315 230 315 234 L297 236 Z" fill="#1f2a30"/>
+    <path d="M294 232 C296 224 312 222 316 230 L322 232 L316 234 Z" fill="#ee8e76"/>
+    <circle cx="310" cy="241" r="1.6" fill="#1f2a30"/>
+    <!-- front arm swinging forward -->
+    <path d="M308 266 L312 283 L316 296" stroke="#2fa5b3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="317" cy="298" r="4.5" fill="#e8b48f"/>
+  </g>
+</svg>
