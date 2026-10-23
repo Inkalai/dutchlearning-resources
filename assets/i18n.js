@@ -176,7 +176,7 @@ window.I18N = {
     "hero.lead": "圖書館、市政府、課程、App，還有 Instagram 與 YouTube 上的老師，免費和付費都有，涵蓋荷蘭、比利時與線上。告訴我你現在的程度和想達到的目標。",
     "route.legend": "在路線上點選你目前的程度與目標",
     "route.legendGoal": "現在點選你想達到的目標",
-    "route.legendDone": "你想從 {cur} 進步到 {target}",
+    "route.legendDone": "你想從 {cur} 達到 {target}",
     "route.count": "共有 {n} 個資源符合你的路線。使用篩選條件縮小搜尋範圍。",
     "route.countOne": "共有 1 個資源符合你的路線。使用篩選條件縮小搜尋範圍。",
     "route.now": "現在",
