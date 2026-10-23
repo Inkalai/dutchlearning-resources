@@ -113,6 +113,9 @@
         if (i === state.target && state.target !== state.cur) li.classList.add("is-target");
       } else if (i === state.cur) {
         li.classList.add("is-current");
+      } else if (i > state.cur) {
+        // Levels above the current one blink for 5 seconds to prompt the goal tap.
+        li.classList.add("goal-option");
       }
       var flag = "";
       if (i === state.cur) flag = t("route.now");
