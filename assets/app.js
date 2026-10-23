@@ -100,6 +100,8 @@
     var line = $("routeLine");
     line.innerHTML = "";
     line.classList.toggle("picking", state.picking || state.cur === null);
+    // After the first tap, the title asks for the goal so the second tap isn't forgotten.
+    document.querySelector("#route legend").textContent = t(state.picking ? "route.legendGoal" : "route.legend");
     LEVELS.forEach(function (code, i) {
       var li = el("li");
       if (!state.picking) {
@@ -540,7 +542,9 @@
     if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
     else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
     $("routeBanner").hidden = !noRoute;
-    $("routeHint").textContent = t(list.length === 1 ? "route.countOne" : "route.count", { n: list.length });
+    var routeDone = state.cur !== null && !state.picking;
+    $("routeHint").hidden = !routeDone;
+    $("routeHint").textContent = routeDone ? t(list.length === 1 ? "route.countOne" : "route.count", { n: list.length }) : "";
     $("empty").hidden = list.length > 0;
     updateFiltersToggleLabel();
   }
