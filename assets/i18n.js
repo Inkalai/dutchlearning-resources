@@ -126,7 +126,7 @@ window.I18N = {
     "region.online": "Online",
 
     "suggest.title": "Suggest a resource",
-    "suggest.lead": "Teachers are welcome to suggest their own classes. I check every suggestion before it goes on the list.",
+    "suggest.lead": "Do you know other resources that are not on the list? You are super welcome to suggest a missing resource. Your sharing can help other Dutch learners tremendously. I check every suggestion before it goes on the list.",
     "suggest.name": "Resource name",
     "suggest.url": "Link",
     "suggest.kind": "Type",
@@ -288,7 +288,7 @@ window.I18N = {
     "region.online": "線上",
 
     "suggest.title": "推薦資源",
-    "suggest.lead": "歡迎老師推薦自己的課程。每一則推薦我都會先確認，再加入清單。",
+    "suggest.lead": "你知道清單上還沒有的資源嗎？非常歡迎推薦給我！你的分享能大大幫助其他荷語學習者。每一則推薦我都會先確認，再加入清單。",
     "suggest.name": "資源名稱",
     "suggest.url": "連結",
     "suggest.kind": "類型",
