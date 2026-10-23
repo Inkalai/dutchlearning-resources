@@ -101,7 +101,10 @@
     line.innerHTML = "";
     line.classList.toggle("picking", state.picking || state.cur === null);
     // After the first tap, the title asks for the goal so the second tap isn't forgotten.
-    document.querySelector("#route legend").textContent = t(state.picking ? "route.legendGoal" : "route.legend");
+    var legend = t("route.legend");
+    if (state.picking) legend = t("route.legendGoal");
+    else if (state.cur !== null) legend = t("route.legendDone", { cur: LEVELS[state.cur], target: LEVELS[state.target] });
+    document.querySelector("#route legend").textContent = legend;
     LEVELS.forEach(function (code, i) {
       var li = el("li");
       if (!state.picking) {
