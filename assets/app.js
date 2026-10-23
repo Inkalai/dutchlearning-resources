@@ -10,6 +10,7 @@
   var HOURS = [4, 10, 20, 40, Infinity];
   var FORMATS = ["self", "inperson", "online"];
   var FOCUS = ["speaking", "listening", "reading", "writing", "grammar", "exam"];
+  var VARIANTS = ["nl", "be"];
   var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
   var COUNTRIES = ["NL", "BE", "TW"];
   var CITY_COUNTRIES = window.CITY_COUNTRIES || {};
@@ -26,6 +27,7 @@
     formats: new Set(),
     focus: new Set(),
     categories: new Set(),
+    variants: new Set(),
     place: "any",
     sort: "match"
   };
@@ -185,6 +187,7 @@
     renderChipSet($("formats"), FORMATS, "format.", state.formats);
     renderChipSet($("focus"), FOCUS, "focus.", state.focus);
     renderChipSet($("categories"), CATEGORIES, "cat.", state.categories);
+    renderChipSet($("variants"), VARIANTS, "variant.", state.variants);
     // Where you live only matters for in-person classes, so it shows once that format is chosen.
     var inPerson = state.formats.has("inperson");
     if (!inPerson) state.place = "any";
@@ -247,7 +250,7 @@
     var n = 0;
     if (state.budget !== Infinity) n++;
     if (state.hours !== Infinity) n++;
-    n += state.formats.size + state.focus.size + state.categories.size;
+    n += state.formats.size + state.focus.size + state.categories.size + state.variants.size;
     if (state.place !== "any") n++;
     return n;
   }
@@ -400,6 +403,7 @@
         r.hours[0] <= state.hours &&
         intersects(r.focus, state.focus) &&
         intersects(r.categories || [], state.categories) &&
+        intersects(r.variants || ["nl"], state.variants) &&
         matchesPlaceAndFormat(r) &&
         matchesLevel(r);
     });
@@ -515,6 +519,7 @@
     var tags = el("ul", { class: "tags" });
     r.formats.forEach(function (f) { tags.appendChild(el("li", { class: "fmt", text: t("format." + f) })); });
     r.focus.forEach(function (f) { tags.appendChild(el("li", { text: t("focus." + f) })); });
+    if ((r.variants || []).indexOf("be") > -1) tags.appendChild(el("li", { class: "variant", text: t("variant.be") }));
 
     var links = el("p", { class: "links" }, [
       el("a", { href: r.url, target: "_blank", rel: "noopener", text: mainLinkLabel(r.url) }),
@@ -718,7 +723,7 @@
 
     $("clearFilters").addEventListener("click", function () {
       state.budget = Infinity; state.hours = Infinity;
-      state.formats.clear(); state.focus.clear(); state.categories.clear();
+      state.formats.clear(); state.focus.clear(); state.categories.clear(); state.variants.clear();
       state.place = "any";
       renderFilters(); renderResults();
     });
