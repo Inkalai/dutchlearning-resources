@@ -1491,5 +1491,26 @@ window.RESOURCES = [
       en: "Free basics. Plus from €7.99 a month. Premium €12.99 a month, €29.99 for 3 months, or €69.99–89.99 a year (App Store, Netherlands).",
       zh: "基本功能免費。Plus 每月 €7.99 起。Premium 每月 €12.99、3 個月 €29.99，或每年 €69.99–89.99（荷蘭 App Store）。"
     }
+  },
+  {
+    id: "dutch-in-utrecht",
+    name: "Dutch in Utrecht",
+    kind: "school",
+    categories: ["school", "courses"],
+    region: "NL",
+    variants: ["nl"],
+    cities: ["Utrecht"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B2"],
+    cost: [null, null],
+    hours: [4, 12],
+    url: "http://dutchinutrecht.nl/",
+    note: {
+      en: "A Dutch teacher offering in-person classes in Utrecht and live online lessons.",
+      zh: "在烏特勒支開設實體課程，也提供線上直播課的荷語老師。"
+    },
+    price: { en: "Check the website for prices.", zh: "價格請至官網查看。" },
+    review: true
   }
 ];

@@ -84,6 +84,7 @@ window.I18N = {
 
     "card.free": "Free",
     "card.freePlus": "Free + paid",
+    "card.priceUnknown": "See website",
     "card.perMonth": "per month",
     "card.reachesGoal": "Takes you to {level}",
     "card.reaches": "Goes up to {level}",
@@ -252,6 +253,7 @@ window.I18N = {
 
     "card.free": "免費",
     "card.freePlus": "免費＋付費",
+    "card.priceUnknown": "請見官網",
     "card.perMonth": "每月",
     "card.reachesGoal": "可帶你到 {level}",
     "card.reaches": "最高到 {level}",

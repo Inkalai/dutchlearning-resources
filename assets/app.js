@@ -398,7 +398,7 @@
 
   function filtered() {
     var list = DATA.filter(function (r) {
-      return r.cost[0] <= state.budget &&
+      return minCost(r) <= state.budget &&
         r.hours[0] <= state.hours &&
         intersects(r.focus, state.focus) &&
         intersects(r.categories || [], state.categories) &&
@@ -409,9 +409,9 @@
     // An unknown maximum (null) sorts after every known price.
     var maxCost = function (r) { return r.cost[1] === null ? Infinity : r.cost[1]; };
     var byName = function (a, b) { return a.name.localeCompare(b.name); };
-    if (state.sort === "price") list.sort(function (a, b) { return a.cost[0] - b.cost[0] || maxCost(a) - maxCost(b) || byName(a, b); });
+    if (state.sort === "price") list.sort(function (a, b) { return minCost(a) - minCost(b) || maxCost(a) - maxCost(b) || byName(a, b); });
     else if (state.sort === "name") list.sort(byName);
-    else list.sort(function (a, b) { return score(b) - score(a) || a.cost[0] - b.cost[0] || byName(a, b); });
+    else list.sort(function (a, b) { return score(b) - score(a) || minCost(a) - minCost(b) || byName(a, b); });
     return list;
   }
 
@@ -421,8 +421,12 @@
     return "€" + n.toLocaleString(state.lang === "zh" ? "zh-TW" : "en-GB");
   }
 
+  // Unknown prices ([null, null]) only show when the budget filter is "Any".
+  function minCost(r) { return r.cost[0] === null ? Infinity : r.cost[0]; }
+
   function priceBlock(r) {
     var min = r.cost[0], max = r.cost[1];
+    if (min === null) return el("div", { class: "price" }, [el("span", { class: "amount unknown", text: t("card.priceUnknown") })]);
     var amount;
     if (max === null) amount = min === 0 ? t("card.freePlus") : euro(min) + "+";
     else if (max === 0) amount = t("card.free");

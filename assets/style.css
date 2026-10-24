@@ -251,6 +251,7 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .price { font-family: var(--display); }
 .price .amount { display: block; font-size: 1.6rem; font-weight: 800; line-height: 1.05; }
 .price .amount.free { color: var(--teal); }
+.price .amount.unknown { font-size: 1.15rem; color: var(--muted); }
 .price .per { font-size: 13px; color: var(--muted); font-family: var(--body); }
 .result h3 { font-size: 1.35rem; margin: 0; }
 .result-head { display: flex; align-items: center; gap: 12px; margin: 0 0 6px; }
