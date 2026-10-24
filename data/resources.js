@@ -1488,8 +1488,8 @@ window.RESOURCES = [
       zh: "為住在荷蘭的人設計的 App，涵蓋 A0 到 C1：循序課程、單字遊戲、每日複習的單字卡、Podcast 與文化測驗。Premium 另有 AI 語音對話、發音評分與融入考試練習。為獨立 App，非 DUO 官方；介面提供多種語言。"
     },
     price: {
-      en: "Free basics. Plus €7.99 a month or €39.99 a year. Premium €12.99 a month or about €70–90 a year (App Store, Netherlands).",
-      zh: "基本功能免費。Plus 每月 €7.99 或每年 €39.99。Premium 每月 €12.99 或每年約 €70–90（荷蘭 App Store）。"
+      en: "Free basics. Plus from €7.99 a month. Premium €12.99 a month, €29.99 for 3 months, or €69.99–89.99 a year (App Store, Netherlands).",
+      zh: "基本功能免費。Plus 每月 €7.99 起。Premium 每月 €12.99、3 個月 €29.99，或每年 €69.99–89.99（荷蘭 App Store）。"
     }
   }
 ];
