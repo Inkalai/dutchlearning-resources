@@ -1496,7 +1496,7 @@ window.RESOURCES = [
     id: "dutch-in-utrecht",
     name: "Dutch in Utrecht",
     kind: "school",
-    categories: ["school", "courses", "tutors"],
+    categories: ["tutors"],
     region: "NL",
     variants: ["nl"],
     cities: ["Utrecht"],
