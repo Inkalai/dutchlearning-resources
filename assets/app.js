@@ -14,7 +14,6 @@
   var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
   var COUNTRIES = ["NL", "BE", "TW"];
   var CITY_COUNTRIES = window.CITY_COUNTRIES || {};
-  var KINDS = ["library", "government", "school", "university", "app", "course", "tutors", "creator", "ai", "media", "podcast", "community"];
 
   var state = {
     lang: initialLang(),
@@ -563,12 +562,6 @@
   /* ---------- Suggest form ---------- */
 
   function renderSuggestForm() {
-    var kind = $("s-kind");
-    var keep = kind.value;
-    kind.innerHTML = "";
-    KINDS.forEach(function (k) { kind.appendChild(el("option", { value: k, text: t("kind." + k) })); });
-    if (keep) kind.value = keep;
-
     document.querySelectorAll(".js-levels").forEach(function (sel, idx) {
       var prev = sel.value;
       sel.innerHTML = "";
@@ -576,11 +569,12 @@
       sel.value = prev || (idx === 0 ? "A0" : "B1");
     });
 
+    renderFormChips($("s-types"), CATEGORIES.concat(["ai"]), "cat.");
     renderFormChips($("s-formats"), FORMATS, "format.");
     renderFormChips($("s-focus"), FOCUS, "focus.");
   }
 
-  var formChoices = { "s-formats": new Set(), "s-focus": new Set() };
+  var formChoices = { "s-types": new Set(), "s-formats": new Set(), "s-focus": new Set() };
 
   function renderFormChips(container, values, prefix) {
     var set = formChoices[container.id];
@@ -598,7 +592,8 @@
     return {
       name: (fd.get("name") || "").trim(),
       url: (fd.get("url") || "").trim(),
-      kind: fd.get("kind"),
+      pricingUrl: (fd.get("pricingUrl") || "").trim(),
+      types: Array.from(formChoices["s-types"]).map(function (c) { return t("cat." + c); }).join(", "),
       cost: (fd.get("cost") || "").trim(),
       levels: fd.get("levelFrom") + "–" + fd.get("levelTo"),
       formats: Array.from(formChoices["s-formats"]).join(", "),
@@ -615,7 +610,8 @@
     var body = [
       "**Name:** " + s.name,
       "**Link:** " + s.url,
-      "**Type:** " + s.kind,
+      "**Pricing page:** " + (s.pricingUrl || "-"),
+      "**Resource type:** " + (s.types || "-"),
       "**Price per month:** " + (s.cost || "-"),
       "**Levels:** " + s.levels,
       "**Format:** " + (s.formats || "-"),
@@ -658,6 +654,7 @@
       }).then(function (res) {
         if (!res.ok) throw new Error(res.status);
         form.reset();
+        formChoices["s-types"].clear();
         formChoices["s-formats"].clear();
         formChoices["s-focus"].clear();
         renderSuggestForm();

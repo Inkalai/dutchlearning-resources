@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20261024b">
+  <link rel="stylesheet" href="assets/style.css?v=20261024c">
 </head>
 <body>
   <a class="skip" href="#finder" data-i18n="nav.find">Find resources</a>
@@ -43,7 +43,7 @@
       <div class="wrap">
         <h1 data-i18n="hero.title">Find your way into Dutch</h1>
         <p class="lead" data-i18n="hero.lead"></p>
-        <img class="hero-art" src="assets/hero-traveller.svg?v=20261024b" alt="" width="560" height="380">
+        <img class="hero-art" src="assets/hero-traveller.svg?v=20261024c" alt="" width="560" height="380">
 
         <fieldset class="route" id="route">
           <legend data-i18n="route.legend">Tap your current level and the goal on the route</legend>
@@ -159,15 +159,17 @@
             <label for="s-url" data-i18n="suggest.url">Link</label>
             <input id="s-url" name="url" type="url" inputmode="url" required placeholder="https://">
           </div>
-          <div class="row">
-            <div class="field">
-              <label for="s-kind" data-i18n="suggest.kind">Type</label>
-              <select id="s-kind" name="kind"></select>
-            </div>
-            <div class="field">
-              <label for="s-cost" data-i18n="suggest.cost">Price per month</label>
-              <input id="s-cost" name="cost" data-i18n-placeholder="suggest.costPlaceholder">
-            </div>
+          <div class="field">
+            <label for="s-pricing" data-i18n="suggest.pricingUrl">Pricing page (optional)</label>
+            <input id="s-pricing" name="pricingUrl" type="url" inputmode="url" placeholder="https://">
+          </div>
+          <fieldset class="field">
+            <legend data-i18n="suggest.kind">Resource type</legend>
+            <div class="chips" id="s-types"></div>
+          </fieldset>
+          <div class="field">
+            <label for="s-cost" data-i18n="suggest.cost">Price per month</label>
+            <input id="s-cost" name="cost" data-i18n-placeholder="suggest.costPlaceholder">
           </div>
           <div class="row">
             <div class="field">
@@ -238,9 +240,9 @@
     </div>
   </footer>
 
-  <script src="config.js?v=20261024b"></script>
-  <script src="data/resources.js?v=20261024b"></script>
-  <script src="assets/i18n.js?v=20261024b"></script>
-  <script src="assets/app.js?v=20261024b"></script>
+  <script src="config.js?v=20261024c"></script>
+  <script src="data/resources.js?v=20261024c"></script>
+  <script src="assets/i18n.js?v=20261024c"></script>
+  <script src="assets/app.js?v=20261024c"></script>
 </body>
 </html>
