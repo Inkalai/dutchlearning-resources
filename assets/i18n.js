@@ -166,7 +166,7 @@ window.I18N = {
     "support.body": "The list is free and has no ads. If it helped you, you can buy me a coffee on Ko-fi. It keeps me researching new resources.",
 
     "footer.note": "Prices and schedules change. Always check the provider's website before you sign up.",
-    "footer.updated": "Last checked {date}",
+    "footer.updated": "Last update {date}",
     "footer.contact": "Contact me",
     "footer.copyright": "© 2026 Inka (@dutchlearning). All rights reserved.",
     "lang.switch": "中文"
@@ -338,7 +338,7 @@ window.I18N = {
     "support.body": "這份清單免費、沒有廣告。如果它幫到你，歡迎在 Ko-fi 請我喝杯咖啡，讓我能繼續研究新資源。",
 
     "footer.note": "價格與課表可能變動，報名前請先到官方網站確認。",
-    "footer.updated": "最後確認日期：{date}",
+    "footer.updated": "最近更新日期：{date}",
     "footer.contact": "聯絡我",
     "footer.copyright": "© 2026 Inka (@dutchlearning)。版權所有。",
     "lang.switch": "English"
