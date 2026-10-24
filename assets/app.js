@@ -485,7 +485,7 @@
 
   // A resource's own `logo`, else its website icon, else a monogram in the colour of its kind.
   function resourceLogo(r) {
-    var box = el("span", { class: "logo logo-" + r.kind, "aria-hidden": "true" }, [
+    var box = el("span", { class: "logo logo-" + (r.kind || "tutors"), "aria-hidden": "true" }, [
       el("span", { class: "logo-initials", text: initials(r.name) })
     ]);
     var src = r.logo;
@@ -514,7 +514,7 @@
   function resultItem(r) {
     var lang = state.lang;
     var meta = el("p", { class: "meta" }, [
-      el("span", { text: t("kind." + r.kind) }),
+      r.kind ? el("span", { text: t("kind." + r.kind) }) : null,
       el("span", { text: placeText(r) }),
       el("span", { text: r.hours[0] === r.hours[1] ? t("card.timeExact", { n: r.hours[0] }) : t("card.timeNeeded", { min: r.hours[0], max: r.hours[1] }) })
     ]);

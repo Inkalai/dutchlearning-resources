@@ -6,7 +6,7 @@
 
   id          unique short name, letters/numbers/dashes only
   name        resource name (shown as-is in both languages)
-  kind        library | government | school | university | app | course |
+  kind        optional label: library | government | school | university | app | course |
               tutors | creator | ai | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
               youtube, app, tutors, courses, practice, news, tv
@@ -1495,7 +1495,6 @@ window.RESOURCES = [
   {
     id: "dutch-in-utrecht",
     name: "Dutch in Utrecht",
-    kind: "school",
     categories: ["tutors"],
     region: "NL",
     variants: ["nl"],
