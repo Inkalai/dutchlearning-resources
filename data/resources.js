@@ -1496,21 +1496,23 @@ window.RESOURCES = [
     id: "dutch-in-utrecht",
     name: "Dutch in Utrecht",
     kind: "school",
-    categories: ["school", "courses"],
+    categories: ["school", "courses", "tutors"],
     region: "NL",
     variants: ["nl"],
     cities: ["Utrecht"],
     formats: ["inperson", "online"],
-    focus: ["speaking", "listening", "grammar"],
-    levels: ["A0", "B2"],
-    cost: [null, null],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "C2"],
+    cost: [110, 360],
     hours: [4, 12],
     url: "http://dutchinutrecht.nl/",
     note: {
-      en: "A Dutch teacher offering in-person classes in Utrecht and live online lessons.",
-      zh: "在烏特勒支開設實體課程，也提供線上直播課的荷語老師。"
+      en: "A Dutch teacher offering classes at every level, in person in Utrecht or live online: beginner and intermediate courses, custom courses built around your needs, and inburgering exam preparation. Learn alone or with friends.",
+      zh: "在烏特勒支實體授課、也提供線上直播課的荷語老師，涵蓋所有程度：初級與中級課程、依需求量身打造的課程，以及融入考試準備。可單獨上課，也可與朋友一起上。"
     },
-    price: { en: "Check the website for prices.", zh: "價格請至官網查看。" },
-    review: true
+    price: {
+      en: "€27.50 an hour for beginner, intermediate and inburgering courses; €30 an hour for custom courses. The second and third student in a group get 40% off.",
+      zh: "初級、中級與融入考試課程每小時 €27.50；客製化課程每小時 €30。兩人以上同班，第二與第三位學員享 6 折優惠。"
+    }
   }
 ];
