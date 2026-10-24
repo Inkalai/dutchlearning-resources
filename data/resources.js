@@ -1468,5 +1468,28 @@ window.RESOURCES = [
       zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化。內容由 AI 生成：主持人（Ling、Sam、Marieke、Jenny、Mateo 等）並非真人老師。適合初學者到進階學習者。"
     },
     price: { en: "Free on YouTube.", zh: "YouTube 免費觀看。" }
+  },
+  {
+    id: "strooptaal",
+    name: "StroopTaal",
+    kind: "app",
+    categories: ["app"],
+    region: "online",
+    variants: ["nl"],
+    cities: [],
+    formats: ["self"],
+    focus: ["speaking", "listening", "reading", "grammar", "exam"],
+    levels: ["A0", "C1"],
+    cost: [0, 13],
+    hours: [2, 20],
+    url: "https://strooptaal.app/",
+    note: {
+      en: "An app for people living in the Netherlands, covering A0 to C1: a lesson path, word games, flashcards with daily reviews, podcasts and a culture quiz. Premium adds AI voice conversations, pronunciation scores and inburgering exam practice. Independent, not run by DUO; the interface is available in several languages.",
+      zh: "為住在荷蘭的人設計的 App，涵蓋 A0 到 C1：循序課程、單字遊戲、每日複習的單字卡、Podcast 與文化測驗。Premium 另有 AI 語音對話、發音評分與融入考試練習。為獨立 App，非 DUO 官方；介面提供多種語言。"
+    },
+    price: {
+      en: "Free basics. Plus €7.99 a month or €39.99 a year. Premium €12.99 a month or about €70–90 a year (App Store, Netherlands).",
+      zh: "基本功能免費。Plus 每月 €7.99 或每年 €39.99。Premium 每月 €12.99 或每年約 €70–90（荷蘭 App Store）。"
+    }
   }
 ];
