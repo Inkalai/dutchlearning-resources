@@ -167,7 +167,7 @@ window.I18N = {
 
     "footer.note": "Prices and schedules change. Always check the provider's website before you sign up.",
     "footer.updated": "Last checked {date}",
-    "footer.contact": "Spotted a mistake? Contact me",
+    "footer.contact": "Contact me",
     "footer.copyright": "© 2026 Inka (@dutchlearning). All rights reserved.",
     "lang.switch": "中文"
   },
@@ -339,7 +339,7 @@ window.I18N = {
 
     "footer.note": "價格與課表可能變動，報名前請先到官方網站確認。",
     "footer.updated": "最後確認日期：{date}",
-    "footer.contact": "發現錯誤？聯絡我",
+    "footer.contact": "聯絡我",
     "footer.copyright": "© 2026 Inka (@dutchlearning)。版權所有。",
     "lang.switch": "English"
   }
