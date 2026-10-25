@@ -695,6 +695,15 @@
 
   // On a first visit, once the route is on screen, a finger slides between A0 and B1 for
   // 5 seconds and then rests on A0 until the visitor taps a level.
+  // Light deterrent only: blocks right-click saving and dragging of the brand images.
+  function protectImages() {
+    document.querySelectorAll(".js-protect").forEach(function (img) {
+      img.draggable = false;
+      img.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+      img.addEventListener("dragstart", function (e) { e.preventDefault(); });
+    });
+  }
+
   function setupTapHint() {
     var hint = $("tapHint");
     if (state.cur !== null || !("IntersectionObserver" in window)) return;
@@ -730,6 +739,7 @@
     });
 
     setupTapHint();
+    protectImages();
 
     $("routeBannerBtn").addEventListener("click", function () {
       $("route").scrollIntoView({ block: "center" });
