@@ -1051,7 +1051,7 @@ window.RESOURCES = [
     formats: ["online", "inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A0", "B2"],
-    cost: [130, 130],
+    cost: [148, 148],
     hours: [8, 8],
     url: "https://dutch-approach.nl/netherlands/",
     note: {
@@ -1059,8 +1059,8 @@ window.RESOURCES = [
       zh: "從入門到 B2 的荷語小班課，可線上或在阿姆斯特丹、恩荷芬、台北、台南的教室上課：每級 10 週、每週一堂 2 小時，另有 CNaVT 荷語檢定準備。以英文與中文教學，很適合來自台灣的學習者。"
     },
     price: {
-      en: "€299 per 10-week course, plus €28 for textbook and website. In Taiwan about €270 per course (NT$9,900). Check the course pages for the current term.",
-      zh: "每期 10 週課程 €299，另加課本與網站費 €28。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。"
+      en: "€339 per 10-week course, plus €30.50 for textbook and website. In Taiwan about €270 per course (NT$9,900). Check the course pages for the current term.",
+      zh: "每期 10 週課程 €339，另加課本與網站費 €30.50。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。"
     }
   },
   {
