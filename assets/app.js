@@ -551,6 +551,8 @@
     var ul = $("resultList");
     ul.innerHTML = "";
     list.forEach(function (r) { ul.appendChild(resultItem(r)); });
+    $("resultsFoot").hidden = list.length === 0;
+    $("emailList").href = emailListHref(list);
     var noRoute = state.cur === null;
     if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
     else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
@@ -563,6 +565,14 @@
     $("routeHint").textContent = routeDone ? t(list.length === 1 ? "route.countOne" : "route.count", { n: list.length }) : "";
     $("empty").hidden = list.length > 0;
     updateFiltersToggleLabel();
+  }
+
+  // A mailto link with the current results, in the order shown, as name + link pairs.
+  function emailListHref(list) {
+    var lines = [t("email.intro"), ""];
+    list.forEach(function (r) { lines.push(r.name, r.url, ""); });
+    lines.push(t("email.footer"), location.origin + location.pathname);
+    return "mailto:?subject=" + encodeURIComponent(t("email.subject")) + "&body=" + encodeURIComponent(lines.join("\r\n"));
   }
 
   /* ---------- Suggest form ---------- */

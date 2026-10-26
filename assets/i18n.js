@@ -82,6 +82,10 @@ window.I18N = {
     "results.empty.title": "Nothing fits all your filters yet",
     "results.empty.body": "Try a different level route, a higher budget or more time per month, or clear a filter. Know a resource that should be here?",
     "results.empty.cta": "Suggest it",
+    "results.email": "Email me this list",
+    "email.subject": "My Dutch learning resources",
+    "email.intro": "Here are the Dutch learning resources I found:",
+    "email.footer": "Find more on @dutchlearning's resource finder:",
 
     "card.free": "Free",
     "card.freePlus": "Free + paid",
@@ -244,6 +248,10 @@ window.I18N = {
     "results.empty.title": "目前沒有資源符合所有條件",
     "results.empty.body": "試著更改程度路線、提高預算、增加每月時間，或清除部分篩選。知道應該列在這裡的資源嗎？",
     "results.empty.cta": "推薦給我",
+    "results.email": "把這份清單寄給我",
+    "email.subject": "我的荷語學習資源",
+    "email.intro": "這是我找到的荷語學習資源：",
+    "email.footer": "更多資源請見 @dutchlearning 的荷語資源網站：",
 
     "card.free": "免費",
     "card.freePlus": "免費＋付費",
