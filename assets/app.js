@@ -554,7 +554,10 @@
     var noRoute = state.cur === null;
     if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
     else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
-    $("routeBanner").hidden = !noRoute;
+    // Also nudge visitors who picked their current level but not yet a goal.
+    $("routeBanner").hidden = !noRoute && !state.picking;
+    $("routeBannerText").textContent = t(noRoute ? "results.noRoute" : "results.noGoal");
+    $("routeBannerBtn").textContent = t(noRoute ? "results.noRouteBtn" : "results.noGoalBtn");
     var routeDone = state.cur !== null && !state.picking;
     $("routeHint").hidden = !routeDone;
     $("routeHint").textContent = routeDone ? t(list.length === 1 ? "route.countOne" : "route.count", { n: list.length }) : "";
@@ -695,8 +698,9 @@
 
     $("routeBannerBtn").addEventListener("click", function () {
       $("route").scrollIntoView({ block: "center" });
-      var first = document.querySelector("#routeLine .station");
-      if (first) first.focus({ preventScroll: true });
+      var stations = document.querySelectorAll("#routeLine .station");
+      var next = stations[state.picking ? state.cur + 1 : 0];
+      if (next) next.focus({ preventScroll: true });
     });
 
     document.querySelectorAll(".js-open-filters").forEach(function (b) {
