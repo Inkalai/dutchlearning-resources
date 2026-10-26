@@ -233,7 +233,7 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   background: var(--peach); border-left: 4px solid var(--orange);
 }
 .route-banner[hidden] { display: none; }
-.results-foot { display: flex; justify-content: flex-start; padding: 24px 0 8px; }
+.results-foot { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 12px; padding: 24px 0 8px; }
 .results-foot[hidden] { display: none; }
 .route-banner p { margin: 0; font-weight: 500; }
 .route-banner .btn { padding: 9px 16px; font-size: 14px; }

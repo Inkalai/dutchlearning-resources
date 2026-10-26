@@ -553,6 +553,7 @@
     list.forEach(function (r) { ul.appendChild(resultItem(r)); });
     $("resultsFoot").hidden = list.length === 0;
     $("emailList").href = emailListHref(list);
+    shownList = list;
     var noRoute = state.cur === null;
     if (noRoute) $("resultsCount").textContent = list.length === 1 ? t("results.countOneAll") : t("results.countAll", { n: list.length });
     else $("resultsCount").textContent = list.length === 1 ? t("results.countOne") : t("results.count", { n: list.length });
@@ -567,12 +568,43 @@
     updateFiltersToggleLabel();
   }
 
-  // A mailto link with the current results, in the order shown, as name + link pairs.
-  function emailListHref(list) {
+  // The current results, in the order shown, as name + link pairs for emailing or copying.
+  function listText(list) {
     var lines = [t("email.intro"), ""];
     list.forEach(function (r) { lines.push(r.name, r.url, ""); });
     lines.push(t("email.footer"), location.origin + location.pathname);
-    return "mailto:?subject=" + encodeURIComponent(t("email.subject")) + "&body=" + encodeURIComponent(lines.join("\r\n"));
+    return lines.join("\r\n");
+  }
+
+  function emailListHref(list) {
+    return "mailto:?subject=" + encodeURIComponent(t("email.subject")) + "&body=" + encodeURIComponent(listText(list));
+  }
+
+  var shownList = [];
+
+  function copyList() {
+    var text = listText(shownList);
+    var btn = $("copyList");
+    function done(ok) {
+      btn.textContent = t(ok ? "results.copied" : "results.copyFailed");
+      clearTimeout(copyList.timer);
+      copyList.timer = setTimeout(function () { btn.textContent = t("results.copy"); }, 2500);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallbackCopy(text)); });
+    } else done(fallbackCopy(text));
+  }
+
+  function fallbackCopy(text) {
+    var area = el("textarea", { readonly: "" });
+    area.value = text;
+    area.style.position = "fixed"; area.style.opacity = "0";
+    document.body.appendChild(area);
+    area.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    area.remove();
+    return ok;
   }
 
   /* ---------- Suggest form ---------- */
@@ -704,6 +736,7 @@
     });
 
     setupTapHint();
+    $("copyList").addEventListener("click", copyList);
     protectImages();
 
     $("routeBannerBtn").addEventListener("click", function () {
