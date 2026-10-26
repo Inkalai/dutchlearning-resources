@@ -565,46 +565,12 @@
 
   /* ---------- Suggest form ---------- */
 
-  function renderSuggestForm() {
-    document.querySelectorAll(".js-levels").forEach(function (sel, idx) {
-      var prev = sel.value;
-      sel.innerHTML = "";
-      LEVELS.forEach(function (code) { sel.appendChild(el("option", { value: code, text: code + " · " + t("level." + code) })); });
-      sel.value = prev || (idx === 0 ? "A0" : "B1");
-    });
-
-    renderFormChips($("s-types"), CATEGORIES.concat(["ai"]), "cat.");
-    renderFormChips($("s-formats"), FORMATS, "format.");
-    renderFormChips($("s-focus"), FOCUS, "focus.");
-  }
-
-  var formChoices = { "s-types": new Set(), "s-formats": new Set(), "s-focus": new Set() };
-
-  function renderFormChips(container, values, prefix) {
-    var set = formChoices[container.id];
-    container.innerHTML = "";
-    values.forEach(function (v) {
-      container.appendChild(multiChip(t(prefix + v), set.has(v), function () {
-        if (set.has(v)) set.delete(v); else set.add(v);
-        renderFormChips(container, values, prefix);
-      }));
-    });
-  }
-
   function collectSuggestion(form) {
     var fd = new FormData(form);
     return {
       name: (fd.get("name") || "").trim(),
       url: (fd.get("url") || "").trim(),
-      pricingUrl: (fd.get("pricingUrl") || "").trim(),
-      types: Array.from(formChoices["s-types"]).map(function (c) { return t("cat." + c); }).join(", "),
-      cost: (fd.get("cost") || "").trim(),
-      levels: fd.get("levelFrom") + "–" + fd.get("levelTo"),
-      formats: Array.from(formChoices["s-formats"]).join(", "),
-      focus: Array.from(formChoices["s-focus"]).join(", "),
-      place: (fd.get("place") || "").trim(),
       why: (fd.get("why") || "").trim(),
-      contact: (fd.get("contact") || "").trim(),
       isTeacher: fd.get("isTeacher") === "yes" ? "yes" : "no",
       language: state.lang
     };
@@ -614,15 +580,7 @@
     var body = [
       "**Name:** " + s.name,
       "**Link:** " + s.url,
-      "**Pricing page:** " + (s.pricingUrl || "-"),
-      "**Resource type:** " + (s.types || "-"),
-      "**Price per month:** " + (s.cost || "-"),
-      "**Levels:** " + s.levels,
-      "**Format:** " + (s.formats || "-"),
-      "**Focus:** " + (s.focus || "-"),
-      "**City or online:** " + (s.place || "-"),
       "**Teacher/organiser:** " + s.isTeacher,
-      "**Suggested by:** " + (s.contact || "-"),
       "",
       "**Why:**",
       s.why || "-"
@@ -658,10 +616,6 @@
       }).then(function (res) {
         if (!res.ok) throw new Error(res.status);
         form.reset();
-        formChoices["s-types"].clear();
-        formChoices["s-formats"].clear();
-        formChoices["s-focus"].clear();
-        renderSuggestForm();
         status.textContent = t("suggest.sent");
         status.classList.add("ok");
       }).catch(function () {
@@ -681,7 +635,6 @@
     syncMobileMode();
     renderRoute();
     renderFilters();
-    renderSuggestForm();
     renderResults();
   }
 
@@ -693,8 +646,6 @@
     }
   }
 
-  // On a first visit, once the route is on screen, a finger slides between A0 and B1 for
-  // 5 seconds and then rests on A0 until the visitor taps a level.
   // Light deterrent only: blocks right-click saving and dragging of the brand images.
   function protectImages() {
     document.querySelectorAll(".js-protect").forEach(function (img) {
@@ -704,6 +655,8 @@
     });
   }
 
+  // On a first visit, once the route is on screen, a finger slides between A0 and B1 for
+  // 5 seconds and then rests on A0 until the visitor taps a level.
   function setupTapHint() {
     var hint = $("tapHint");
     if (state.cur !== null || !("IntersectionObserver" in window)) return;

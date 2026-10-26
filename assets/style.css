@@ -304,7 +304,6 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .suggest-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
 .suggest-grid > div:first-child { position: sticky; top: 112px; }
 .suggest-form { background: var(--paper); border-radius: 20px; padding: clamp(20px, 4vw, 36px); }
-.suggest-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .suggest-form .field { margin-bottom: 18px; }
 .check { display: flex; gap: 10px; align-items: center; margin: 0 0 18px; font-size: 15px; cursor: pointer; }
 .check input { width: 18px; height: 18px; accent-color: var(--orange); }
@@ -418,7 +417,6 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
   .station .flag { font-size: 11px; }
   .result { grid-template-columns: 1fr; gap: 6px; }
   .price { display: flex; align-items: baseline; gap: 8px; }
-  .suggest-form .row { grid-template-columns: 1fr; gap: 0; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
   .about-logo { width: 120px; height: 120px; }
 }
