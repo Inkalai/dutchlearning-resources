@@ -410,7 +410,6 @@
     var maxCost = function (r) { return r.cost[1] === null ? Infinity : r.cost[1]; };
     var byName = function (a, b) { return a.name.localeCompare(b.name); };
     if (state.sort === "price") list.sort(function (a, b) { return minCost(a) - minCost(b) || maxCost(a) - maxCost(b) || byName(a, b); });
-    else if (state.sort === "name") list.sort(byName);
     else list.sort(function (a, b) { return score(b) - score(a) || minCost(a) - minCost(b) || byName(a, b); });
     return list;
   }
