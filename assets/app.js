@@ -5,6 +5,7 @@
   var DATA = window.RESOURCES || [];
   var I18N = window.I18N;
 
+  var LANGS = ["en", "zh", "nl"];
   var LEVELS = ["A0", "A1", "A2", "B1", "B2", "C1", "C2"];
   var BUDGETS = [0, 25, 75, 150, 300, Infinity];
   var HOURS = [4, 10, 20, 40, Infinity];
@@ -42,10 +43,11 @@
 
   function initialLang() {
     var param = new URLSearchParams(location.search).get("lang");
-    if (param === "zh" || param === "en") return param;
+    if (LANGS.indexOf(param) >= 0) return param;
     var saved = storage("lang");
-    if (saved === "zh" || saved === "en") return saved;
-    return /^zh/i.test(navigator.language || "") ? "zh" : "en";
+    if (LANGS.indexOf(saved) >= 0) return saved;
+    var browser = (navigator.language || "").slice(0, 2).toLowerCase();
+    return LANGS.indexOf(browser) >= 0 ? browser : "en";
   }
 
   function t(key, vars) {
@@ -70,7 +72,8 @@
   /* ---------- Static text ---------- */
 
   function applyStaticText() {
-    document.documentElement.lang = state.lang === "zh" ? "zh-Hant-TW" : "en";
+    document.documentElement.lang = { en: "en", zh: "zh-Hant-TW", nl: "nl" }[state.lang];
+    $("langSelect").value = state.lang;
     document.title = t("meta.title");
     var desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", t("meta.description"));
@@ -417,7 +420,7 @@
   /* ---------- Results ---------- */
 
   function euro(n) {
-    return "€" + n.toLocaleString(state.lang === "zh" ? "zh-TW" : "en-GB");
+    return "€" + n.toLocaleString({ en: "en-GB", zh: "zh-TW", nl: "nl-NL" }[state.lang]);
   }
 
   // Unknown prices ([null, null]) only show when the budget filter is "Any".
@@ -716,8 +719,8 @@
     restoreRoute();
     applyLinks();
 
-    $("langToggle").addEventListener("click", function () {
-      state.lang = state.lang === "zh" ? "en" : "zh";
+    $("langSelect").addEventListener("change", function (e) {
+      state.lang = e.target.value;
       storage("lang", state.lang);
       var url = new URL(location.href);
       url.searchParams.set("lang", state.lang);

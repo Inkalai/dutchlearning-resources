@@ -1,6 +1,6 @@
 # @dutchlearning resources
 
-A bilingual (English / 繁體中文) finder for free and paid Dutch learning resources in the Netherlands, Belgium and online. It's a static site: plain HTML, CSS and JavaScript, with no build step.
+A trilingual (English / 繁體中文 / simple Nederlands) finder for free and paid Dutch learning resources in the Netherlands, Belgium and online. It's a static site: plain HTML, CSS and JavaScript, with no build step.
 
 ## Files
 
@@ -8,7 +8,7 @@ A bilingual (English / 繁體中文) finder for free and paid Dutch learning res
 | --- | --- |
 | `data/resources.js` | Every resource on the site. Edit this to add, change or remove listings. |
 | `config.js` | Instagram, Ko-fi and blog links, the "last checked" date and where suggestions go. |
-| `assets/i18n.js` | All interface text in English and Traditional Chinese. |
+| `assets/i18n.js` | All interface text in English, Traditional Chinese and simple Dutch (about A2 level). |
 | `assets/style.css` | Colours, fonts and layout. |
 | `assets/app.js` | Filtering, the level route and the suggestion form. |
 
@@ -40,4 +40,4 @@ To use your own domain, add it under **Settings → Pages → Custom domain**.
 
 ## Language links
 
-`?lang=en` and `?lang=zh` open the site in a specific language, which is useful for Instagram bio links. Without the parameter, the site follows the visitor's last choice, then their browser language.
+`?lang=en`, `?lang=zh` and `?lang=nl` open the site in a specific language, which is useful for Instagram bio links. Without the parameter, the site follows the visitor's last choice, then their browser language.

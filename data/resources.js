@@ -5,7 +5,7 @@
   the values. Field guide:
 
   id          unique short name, letters/numbers/dashes only
-  name        resource name (shown as-is in both languages)
+  name        resource name (shown as-is in every language)
   kind        optional label: library | government | school | university | app | course |
               tutors | creator | ai | media | podcast | community
   categories  quick-filter tags, any of: library, government, school, instagram,
@@ -24,8 +24,8 @@
   logo        optional image path or URL for the logo (e.g. "assets/logos/abc.png");
               without it the site shows the website's icon, or the name's initials
   review      true = not yet reviewed by Inka; shows a "Not yet reviewed" note
-  note        short description { en: "...", zh: "..." }
-  price       optional price detail { en: "...", zh: "..." }
+  note        short description { en: "...", zh: "...", nl: "..." } (nl in simple Dutch)
+  price       optional price detail { en: "...", zh: "...", nl: "..." }
 */
 // Country of each city outside the Netherlands (cities not listed here count as Netherlands).
 window.CITY_COUNTRIES = {
@@ -50,9 +50,10 @@ window.RESOURCES = [
     url: "https://www.bibliotheek.nl/",
     note: {
       en: "Most Dutch public libraries run a Taalhuis: a free drop-in desk that matches you with a course, a volunteer language buddy or a study group. Libraries can also lend NT2 textbooks.",
-      zh: "荷蘭大多數公立圖書館都設有 Taalhuis（語言之家）：免費諮詢櫃台，幫你媒合課程、志工語伴或讀書會。圖書館也能借到 NT2 荷語教材。"
+      zh: "荷蘭大多數公立圖書館都設有 Taalhuis（語言之家）：免費諮詢櫃台，幫你媒合課程、志工語伴或讀書會。圖書館也能借到 NT2 荷語教材。",
+      nl: "De meeste bibliotheken hebben een Taalhuis. Daar krijg je gratis hulp. Ze zoeken een cursus, een taalmaatje of een groep voor je. Je kunt er ook NT2-boeken lenen."
     },
-    price: { en: "Free. Library membership may be needed to borrow books.", zh: "免費。借書可能需要辦圖書證。" }
+    price: { en: "Free. Library membership may be needed to borrow books.", zh: "免費。借書可能需要辦圖書證。", nl: "Gratis. Voor boeken lenen heb je soms een pasje van de bibliotheek nodig." }
   },
   {
     id: "taalcafe",
@@ -70,9 +71,10 @@ window.RESOURCES = [
     url: "https://rotterdamstyle.com/education/practise-dutch-at-the-taalcafe-in-rotterdam",
     note: {
       en: "Informal conversation tables run by libraries, community centres and city halls. You need some basic Dutch (around A1) to join in. Search \"taalcafé\" plus your city.",
-      zh: "由圖書館、社區中心或市政府舉辦的荷語聊天聚會，氣氛輕鬆。需要一點基礎（約 A1）才能加入對話。搜尋「taalcafé + 你的城市」即可找到。"
+      zh: "由圖書館、社區中心或市政府舉辦的荷語聊天聚會，氣氛輕鬆。需要一點基礎（約 A1）才能加入對話。搜尋「taalcafé + 你的城市」即可找到。",
+      nl: "Hier praat je Nederlands met anderen, in een bibliotheek, buurthuis of gemeente. Je moet al een beetje Nederlands kennen (ongeveer A1). Zoek op \"taalcafé\" en je stad."
     },
-    price: { en: "Usually free, no booking needed.", zh: "通常免費，不需預約。" }
+    price: { en: "Usually free, no booking needed.", zh: "通常免費，不需預約。", nl: "Meestal gratis. Je hoeft niet te reserveren." }
   },
   {
     id: "inburgering-gemeente",
@@ -90,9 +92,10 @@ window.RESOURCES = [
     url: "https://www.inburgeren.nl/en/",
     note: {
       en: "If you are required to complete civic integration (Wet inburgering 2021), your city hall arranges and pays for your learning route to B1. Volunteers who aren't required can sometimes join, or borrow from DUO.",
-      zh: "如果你屬於需完成融入考試（Wet inburgering 2021）的對象，市政府會為你安排並支付到 B1 的學習路線。非強制者有時也能自願參加，或向 DUO 申請學習貸款。"
+      zh: "如果你屬於需完成融入考試（Wet inburgering 2021）的對象，市政府會為你安排並支付到 B1 的學習路線。非強制者有時也能自願參加，或向 DUO 申請學習貸款。",
+      nl: "Moet je inburgeren (Wet inburgering 2021)? Dan regelt en betaalt je gemeente je lessen tot B1. Moet je niet inburgeren? Soms mag je toch meedoen, of kun je geld lenen bij DUO."
     },
-    price: { en: "Free if your gemeente is responsible for your integration; otherwise a DUO loan is possible.", zh: "若由市政府負責你的融入程序則免費；否則可向 DUO 申請貸款。" }
+    price: { en: "Free if your gemeente is responsible for your integration; otherwise a DUO loan is possible.", zh: "若由市政府負責你的融入程序則免費；否則可向 DUO 申請貸款。", nl: "Gratis als je gemeente je inburgering regelt. Anders kun je geld lenen bij DUO." }
   },
   {
     id: "naar-nederland",
@@ -110,7 +113,8 @@ window.RESOURCES = [
     url: "https://www.naarnederland.nl/",
     note: {
       en: "The Dutch government's free self-study pack for the civic integration exam abroad: a film about life in the Netherlands, practice exercises and the A1 speaking test format.",
-      zh: "荷蘭政府提供的免費自學包，專為海外融入考試準備：介紹荷蘭生活的影片、練習題，以及 A1 口說考試題型。"
+      zh: "荷蘭政府提供的免費自學包，專為海外融入考試準備：介紹荷蘭生活的影片、練習題，以及 A1 口說考試題型。",
+      nl: "Gratis lespakket van de Nederlandse overheid voor het inburgeringsexamen in het buitenland. Met een film over Nederland, oefeningen en de spreektoets op A1."
     }
   },
   {
@@ -129,7 +133,8 @@ window.RESOURCES = [
     url: "https://oefenen.nl/",
     note: {
       en: "Free online exercise programmes from Stichting Expertisecentrum Oefenen.nl, built for adults learning everyday Dutch. Short videos with practical topics such as doctors, shopping and work.",
-      zh: "Oefenen.nl 提供的免費線上練習，專為學習日常荷語的成人設計。短片主題貼近生活，例如看醫生、購物和工作。"
+      zh: "Oefenen.nl 提供的免費線上練習，專為學習日常荷語的成人設計。短片主題貼近生活，例如看醫生、購物和工作。",
+      nl: "Gratis oefenprogramma's op internet voor volwassenen. Je leert Nederlands voor elke dag. Korte filmpjes over de dokter, boodschappen doen en werk."
     }
   },
   {
@@ -148,7 +153,8 @@ window.RESOURCES = [
     url: "https://hetbegintmettaal.nl/",
     note: {
       en: "A national network of organisations that pair newcomers with a volunteer taalmaatje (language buddy) for weekly conversation practice.",
-      zh: "全國性的語言志工網絡，為新移民配對志工語伴（taalmaatje），每週一起練習對話。"
+      zh: "全國性的語言志工網絡，為新移民配對志工語伴（taalmaatje），每週一起練習對話。",
+      nl: "Een netwerk van organisaties in heel Nederland. Ze zoeken een vrijwilliger (taalmaatje) voor je. Jullie praten elke week Nederlands."
     }
   },
   {
@@ -167,7 +173,8 @@ window.RESOURCES = [
     url: "https://nos.nl/l/2536458",
     note: {
       en: "The national broadcaster's news in easy Dutch: fewer topics, slower pace and every hard word explained. Episodes are also on YouTube.",
-      zh: "荷蘭國家廣播公司的簡易荷語新聞：主題較少、語速較慢，難字都會解釋。YouTube 上也看得到。"
+      zh: "荷蘭國家廣播公司的簡易荷語新聞：主題較少、語速較慢，難字都會解釋。YouTube 上也看得到。",
+      nl: "Het nieuws in makkelijke taal. Minder onderwerpen, rustig tempo en moeilijke woorden worden uitgelegd. Ook op YouTube."
     }
   },
   {
@@ -186,7 +193,8 @@ window.RESOURCES = [
     url: "https://jeugdjournaal.nl/",
     note: {
       en: "Daily news for children, with clear speech and short articles. A favourite stepping stone between textbook Dutch and the regular news.",
-      zh: "給兒童看的每日新聞，發音清楚、文章簡短。是從課本荷語過渡到一般新聞的好選擇。"
+      zh: "給兒童看的每日新聞，發音清楚、文章簡短。是從課本荷語過渡到一般新聞的好選擇。",
+      nl: "Elke dag nieuws voor kinderen. Ze praten duidelijk en de teksten zijn kort. Een goede stap tussen het lesboek en het gewone nieuws."
     }
   },
   {
@@ -205,9 +213,10 @@ window.RESOURCES = [
     url: "https://npo.nl/start",
     note: {
       en: "Dutch public TV on demand. Turn on Dutch subtitles to train your ear on real series, documentaries and talk shows.",
-      zh: "荷蘭公共電視隨選平台。打開荷文字幕，用真實的影集、紀錄片和談話節目訓練聽力。"
+      zh: "荷蘭公共電視隨選平台。打開荷文字幕，用真實的影集、紀錄片和談話節目訓練聽力。",
+      nl: "Nederlandse tv op internet. Zet de Nederlandse ondertiteling aan. Zo oefen je luisteren met echte series, documentaires en praatprogramma's."
     },
-    price: { en: "Much is free; NPO Plus removes ads and unlocks the archive.", zh: "大部分免費；NPO Plus 付費版無廣告並可看完整片庫。" }
+    price: { en: "Much is free; NPO Plus removes ads and unlocks the archive.", zh: "大部分免費；NPO Plus 付費版無廣告並可看完整片庫。", nl: "Veel is gratis. Met NPO Plus heb je geen reclame en kun je alles kijken." }
   },
   {
     id: "wablieft",
@@ -225,11 +234,13 @@ window.RESOURCES = [
     url: "https://wablieft.be/nl/abonnement",
     note: {
       en: "A Flemish newspaper written in clear, simple Dutch. Good weekly reading practice if you live in Belgium or want Flemish vocabulary.",
-      zh: "以清楚簡單的荷語撰寫的法蘭德斯報紙。住在比利時或想學比利時荷語詞彙的人，很適合每週閱讀練習。"
+      zh: "以清楚簡單的荷語撰寫的法蘭德斯報紙。住在比利時或想學比利時荷語詞彙的人，很適合每週閱讀練習。",
+      nl: "Een Vlaamse krant in duidelijke, makkelijke taal. Goed om elke week te lezen als je in België woont of Vlaamse woorden wilt leren."
     },
     price: {
       en: "Digital subscription €20 a year, covering Wablieft and Wablieft Start. Paper copies can no longer be ordered.",
-      zh: "數位訂閱每年 €20，含 Wablieft 與 Wablieft Start。紙本已停止訂購。"
+      zh: "數位訂閱每年 €20，含 Wablieft 與 Wablieft Start。紙本已停止訂購。",
+      nl: "Online abonnement: €20 per jaar, voor Wablieft en Wablieft Start. Een papieren krant kun je niet meer bestellen."
     }
   },
   {
@@ -248,9 +259,10 @@ window.RESOURCES = [
     url: "https://www.huisnederlandsbrussel.be/",
     note: {
       en: "Free advice and a placement test, then they point you to the right course in Brussels, free or paid, in person or online. They also list practice activities like theatre and conversation groups.",
-      zh: "提供免費諮詢和分級測驗，再幫你找到布魯塞爾合適的課程（免費或付費、實體或線上）。也整理了戲劇、聊天小組等練習活動。"
+      zh: "提供免費諮詢和分級測驗，再幫你找到布魯塞爾合適的課程（免費或付費、實體或線上）。也整理了戲劇、聊天小組等練習活動。",
+      nl: "Je krijgt gratis advies en een niveautest. Daarna vinden ze de juiste cursus in Brussel voor je: gratis of betaald, in de klas of online. Ze geven ook tips om te oefenen, zoals theater en praatgroepen."
     },
-    price: { en: "Advice is free; the courses they refer you to vary.", zh: "諮詢免費；推薦的課程費用不一。" }
+    price: { en: "Advice is free; the courses they refer you to vary.", zh: "諮詢免費；推薦的課程費用不一。", nl: "Het advies is gratis. De prijs van de cursus is verschillend." }
   },
   {
     id: "atlas-antwerpen",
@@ -268,9 +280,10 @@ window.RESOURCES = [
     url: "https://www.atlas-antwerpen.be/",
     note: {
       en: "Antwerp's integration and Dutch-learning centre. Book an intake to get matched with a course and practice opportunities in the city.",
-      zh: "安特衛普的融入與荷語學習中心。預約諮詢後，他們會為你媒合城市裡的課程和練習機會。"
+      zh: "安特衛普的融入與荷語學習中心。預約諮詢後，他們會為你媒合城市裡的課程和練習機會。",
+      nl: "Het centrum voor inburgering en Nederlands leren in Antwerpen. Maak een afspraak. Ze zoeken een cursus en plekken om te oefenen in de stad."
     },
-    price: { en: "Intake and advice are free.", zh: "諮詢與分級免費。" }
+    price: { en: "Intake and advice are free.", zh: "諮詢與分級免費。", nl: "Het gesprek en het advies zijn gratis." }
   },
   {
     id: "cvo-flanders",
@@ -288,11 +301,13 @@ window.RESOURCES = [
     url: "https://www.vlaanderen.be/onderwijs-en-vorming/school-en-studiekosten/kosten-volwassenenonderwijs",
     note: {
       en: "Flemish government-funded adult education centres (Centra voor Volwassenenonderwijs) offer full NT2 courses at subsidised prices. Your Huis van het Nederlands or Atlas can refer you.",
-      zh: "法蘭德斯政府補助的成人教育中心（CVO）提供完整的 NT2 荷語課程，學費有補貼。可透過 Huis van het Nederlands 或 Atlas 轉介。"
+      zh: "法蘭德斯政府補助的成人教育中心（CVO）提供完整的 NT2 荷語課程，學費有補貼。可透過 Huis van het Nederlands 或 Atlas 轉介。",
+      nl: "Centra voor Volwassenenonderwijs in Vlaanderen. De overheid betaalt mee, dus de NT2-cursussen zijn goedkoop. Het Huis van het Nederlands of Atlas kan je doorsturen."
     },
     price: {
       en: "€1.50 per lesson hour at the first level (max €180 in total), €0.60 per hour at higher levels, €0.30 with some reductions. Free with an inburgering contract or certificate. Books are extra.",
-      zh: "第一級每上課時數 €1.50（總額上限 €180），較高級別每小時 €0.60，部分減免者每小時 €0.30。持有融入合約或證明者免費。教材另計。"
+      zh: "第一級每上課時數 €1.50（總額上限 €180），較高級別每小時 €0.60，部分減免者每小時 €0.30。持有融入合約或證明者免費。教材另計。",
+      nl: "Eerste niveau: €1,50 per lesuur (samen maximaal €180). Hogere niveaus: €0,60 per uur, soms €0,30. Gratis met een inburgeringscontract of -attest. Boeken betaal je zelf."
     }
   },
   {
@@ -311,9 +326,10 @@ window.RESOURCES = [
     url: "https://www.vdab.be/anderstalig/nederlands",
     note: {
       en: "The Flemish employment service offers free Dutch courses for jobseekers, including a track for highly educated newcomers (Hogerop NT2).",
-      zh: "法蘭德斯就業服務局為求職者提供免費荷語課程，也有為高學歷新移民設計的路線（Hogerop NT2）。"
+      zh: "法蘭德斯就業服務局為求職者提供免費荷語課程，也有為高學歷新移民設計的路線（Hogerop NT2）。",
+      nl: "De Vlaamse dienst voor werk (VDAB) geeft gratis cursussen Nederlands aan werkzoekenden. Er is ook een cursus voor hoogopgeleide nieuwkomers (Hogerop NT2)."
     },
-    price: { en: "Free for registered jobseekers.", zh: "已登記的求職者免費。" }
+    price: { en: "Free for registered jobseekers.", zh: "已登記的求職者免費。", nl: "Gratis als je ingeschreven bent als werkzoekende." }
   },
   {
     id: "oefenkansen-be",
@@ -331,7 +347,8 @@ window.RESOURCES = [
     url: "https://www.oefenkansen.be/",
     note: {
       en: "A free Flemish guide to informal practice opportunities: no lessons, just ideas and places to use your Dutch in clubs, cafés and volunteering.",
-      zh: "法蘭德斯的免費練習機會指南：不是上課，而是提供在社團、咖啡館和志工活動中使用荷語的點子與地點。"
+      zh: "法蘭德斯的免費練習機會指南：不是上課，而是提供在社團、咖啡館和志工活動中使用荷語的點子與地點。",
+      nl: "Een gratis Vlaamse gids met plekken om Nederlands te oefenen. Geen lessen, wel ideeën: in clubs, cafés en als vrijwilliger."
     }
   },
   {
@@ -350,9 +367,10 @@ window.RESOURCES = [
     url: "https://www.volksuniversiteit.nl/",
     note: {
       en: "Affordable evening group courses run by local non-profits in most Dutch cities. Prices and schedules differ per city.",
-      zh: "由各地非營利機構開設的平價晚間團體班，荷蘭大多數城市都有。價格和時間依城市而異。"
+      zh: "由各地非營利機構開設的平價晚間團體班，荷蘭大多數城市都有。價格和時間依城市而異。",
+      nl: "Goedkope groepscursussen in de avond, in de meeste Nederlandse steden. Prijzen en lestijden zijn per stad anders."
     },
-    price: { en: "Den Haag A1: €265 for 8 × 3 h (autumn 2026). Amsterdam A0–A1: €528.", zh: "海牙 A1：8 堂 × 3 小時共 €265（2026 秋季）。阿姆斯特丹 A0–A1：€528。" }
+    price: { en: "Den Haag A1: €265 for 8 × 3 h (autumn 2026). Amsterdam A0–A1: €528.", zh: "海牙 A1：8 堂 × 3 小時共 €265（2026 秋季）。阿姆斯特丹 A0–A1：€528。", nl: "Den Haag A1: €265 voor 8 lessen van 3 uur (najaar 2026). Amsterdam A0–A1: €528." }
   },
   {
     id: "uva-talen",
@@ -370,11 +388,13 @@ window.RESOURCES = [
     url: "https://www.uvatalen.nl/nederlands",
     note: {
       en: "The University of Amsterdam's language centre, open to everyone. Courses from beginner to B2, e-learning, writing and fluency courses, and Staatsexamen preparation.",
-      zh: "阿姆斯特丹大學語言中心，對所有人開放。提供入門到 B2 的課程、線上自學、寫作與流利度課程，以及國家考試準備班。"
+      zh: "阿姆斯特丹大學語言中心，對所有人開放。提供入門到 B2 的課程、線上自學、寫作與流利度課程，以及國家考試準備班。",
+      nl: "Het talencentrum van de Universiteit van Amsterdam. Iedereen mag meedoen. Cursussen van beginner tot B2, online leren, schrijven, vloeiend spreken en voorbereiding op het Staatsexamen."
     },
     price: {
       en: "Per course: e-learning from €195, Staatsexamen prep and Fluency Skills from €485, Writing Skills from €710, Beginners intensive (A0–A2) from €815. Materials €30–48 extra.",
-      zh: "每期課程：線上自學 €195 起，國家考試準備班與流利度課程 €485 起，寫作課 €710 起，入門密集班（A0–A2）€815 起。教材另計 €30–48。"
+      zh: "每期課程：線上自學 €195 起，國家考試準備班與流利度課程 €485 起，寫作課 €710 起，入門密集班（A0–A2）€815 起。教材另計 €30–48。",
+      nl: "Per cursus: online leren vanaf €195. Staatsexamen en Fluency Skills vanaf €485. Writing Skills vanaf €710. Beginners intensief (A0–A2) vanaf €815. Boeken €30–48 extra."
     }
   },
   {
@@ -393,11 +413,13 @@ window.RESOURCES = [
     url: "https://www.babel.nl/cursus/",
     note: {
       en: "A language school in Utrecht with Dutch courses from beginner to C1, in the classroom or a virtual classroom, plus conversation courses, e-learning and Staatsexamen training.",
-      zh: "烏特勒支的語言學校，提供入門到 C1 的荷語課程（實體或線上教室），另有會話課、線上自學和國家考試訓練。"
+      zh: "烏特勒支的語言學校，提供入門到 C1 的荷語課程（實體或線上教室），另有會話課、線上自學和國家考試訓練。",
+      nl: "Een taalschool in Utrecht. Cursussen van beginner tot C1, in de klas of online. Ook praatcursussen, online leren en training voor het Staatsexamen."
     },
     price: {
       en: "Per course: e-learning from €225, conversation €295, A0–A1 €550, advanced 9-week courses €795, full A0–A2 or B1–B2 €1,075, Staatsexamen training €565–590.",
-      zh: "每期課程：線上自學 €225 起、會話課 €295、A0–A1 €550、9 週高級課程 €795、完整 A0–A2 或 B1–B2 €1,075、國家考試訓練 €565–590。"
+      zh: "每期課程：線上自學 €225 起、會話課 €295、A0–A1 €550、9 週高級課程 €795、完整 A0–A2 或 B1–B2 €1,075、國家考試訓練 €565–590。",
+      nl: "Per cursus: online leren vanaf €225, praatcursus €295, A0–A1 €550, cursus van 9 weken voor gevorderden €795, A0–A2 of B1–B2 €1.075, Staatsexamen €565–590."
     }
   },
   {
@@ -416,9 +438,10 @@ window.RESOURCES = [
     url: "https://www.eur.nl/onderwijs/taal-trainingscentrum/nederlands/nederlands-a1-beginners",
     note: {
       en: "Erasmus University Rotterdam's Dutch courses, open to all. International EUR students pay a heavily reduced fee once per level.",
-      zh: "鹿特丹伊拉斯謨大學的荷語課程，對外開放。EUR 國際學生每個級別可享一次大幅優惠價。"
+      zh: "鹿特丹伊拉斯謨大學的荷語課程，對外開放。EUR 國際學生每個級別可享一次大幅優惠價。",
+      nl: "Cursussen Nederlands van de Erasmus Universiteit Rotterdam. Iedereen mag meedoen. Internationale studenten van de EUR betalen veel minder, één keer per niveau."
     },
-    price: { en: "€50 per level for international EUR students; regular price higher.", zh: "EUR 國際學生每級 €50；一般價格較高。" }
+    price: { en: "€50 per level for international EUR students; regular price higher.", zh: "EUR 國際學生每級 €50；一般價格較高。", nl: "€50 per niveau voor internationale EUR-studenten. Voor anderen is de prijs hoger." }
   },
   {
     id: "wur-into",
@@ -436,7 +459,8 @@ window.RESOURCES = [
     url: "https://www.wur.nl/nl/onderwijs/into-languages",
     note: {
       en: "Wageningen University's language centre, including social Dutch courses and intensive summer courses.",
-      zh: "瓦赫寧恩大學語言中心，提供生活荷語課程和暑期密集班。"
+      zh: "瓦赫寧恩大學語言中心，提供生活荷語課程和暑期密集班。",
+      nl: "Het talencentrum van Wageningen University. Met cursussen Nederlands voor het dagelijks leven en intensieve zomercursussen."
     }
   },
   {
@@ -455,11 +479,13 @@ window.RESOURCES = [
     url: "https://ilt.kuleuven.be/cursus/nt2_prijs_voorwaarden.php",
     note: {
       en: "KU Leuven's Institute for Living Languages teaches Dutch in six levels in small groups, plus pronunciation and online writing classes and a summer course. Open to adults outside the university.",
-      zh: "魯汶大學現代語言學院以小班教授六個級別的荷語，另有發音課、線上寫作課和暑期課程，校外成人也能報名。"
+      zh: "魯汶大學現代語言學院以小班教授六個級別的荷語，另有發音課、線上寫作課和暑期課程，校外成人也能報名。",
+      nl: "Het talencentrum van de KU Leuven. Nederlands in 6 niveaus, in kleine groepen. Ook lessen uitspraak, online schrijven en een zomercursus. Ook voor volwassenen die niet aan de universiteit studeren."
     },
     price: {
       en: "Per module: €300 (levels 1–3) or €320 (levels 4–6) for external students, €175–195 for KU Leuven students and staff, syllabus included. Summer course €460–480. Free for Erasmus students.",
-      zh: "每個模組：校外學員 €300（1–3 級）或 €320（4–6 級），KU Leuven 學生與教職員 €175–195，含講義。暑期課程 €460–480。Erasmus 學生免費。"
+      zh: "每個模組：校外學員 €300（1–3 級）或 €320（4–6 級），KU Leuven 學生與教職員 €175–195，含講義。暑期課程 €460–480。Erasmus 學生免費。",
+      nl: "Per module: €300 (niveau 1–3) of €320 (niveau 4–6). Studenten en personeel van de KU Leuven: €175–195. Boek inbegrepen. Zomercursus €460–480. Gratis voor Erasmusstudenten."
     }
   },
   {
@@ -478,11 +504,13 @@ window.RESOURCES = [
     url: "https://www.uct.ugent.be/en",
     note: {
       en: "Ghent University's language centre teaches Dutch from level 1 (A1) to level 6 (C1), as intensive day courses or evening courses, open to residents as well as students.",
-      zh: "根特大學語言中心教授 1 級（A1）到 6 級（C1）荷語，有密集日間班和晚間班，居民與學生皆可報名。"
+      zh: "根特大學語言中心教授 1 級（A1）到 6 級（C1）荷語，有密集日間班和晚間班，居民與學生皆可報名。",
+      nl: "Het talencentrum van de Universiteit Gent. Nederlands van niveau 1 (A1) tot niveau 6 (C1). Intensief overdag of in de avond. Ook voor mensen die in Gent wonen."
     },
     price: {
       en: "Per course: €588 standard, €520 for UGent staff and PhD students, €400 for UGent students.",
-      zh: "每期課程：一般學員 €588、UGent 教職員與博士生 €520、UGent 學生 €400。"
+      zh: "每期課程：一般學員 €588、UGent 教職員與博士生 €520、UGent 學生 €400。",
+      nl: "Per cursus: €588. Personeel en doctoraatsstudenten van de UGent: €520. Studenten van de UGent: €400."
     }
   },
   {
@@ -501,11 +529,13 @@ window.RESOURCES = [
     url: "https://www.uantwerpen.be/en/centres/linguapolis/language-courses/languages/dutch/tariffs-and-subsidies2/",
     note: {
       en: "The University of Antwerp's language institute, with Dutch courses for students, expats and professionals, plus a one-year academic Dutch programme.",
-      zh: "安特衛普大學語言中心，為學生、外派人士與上班族開設荷語課程，另有一年制學術荷語預科。"
+      zh: "安特衛普大學語言中心，為學生、外派人士與上班族開設荷語課程，另有一年制學術荷語預科。",
+      nl: "Het talencentrum van de Universiteit Antwerpen. Cursussen Nederlands voor studenten, expats en mensen die werken. Er is ook een jaar Nederlands voor de universiteit."
     },
     price: {
       en: "Standard rate €555 for a 45-hour course, €750 for 90 hours (2026–2027). A Flemish training voucher can cover up to €125; level 1 may qualify for a Flemish grant.",
-      zh: "一般價格：45 小時課程 €555、90 小時 €750（2026–2027）。法蘭德斯培訓券最多可抵 €125；第 1 級可能申請法蘭德斯獎助。"
+      zh: "一般價格：45 小時課程 €555、90 小時 €750（2026–2027）。法蘭德斯培訓券最多可抵 €125；第 1 級可能申請法蘭德斯獎助。",
+      nl: "€555 voor een cursus van 45 uur, €750 voor 90 uur (2026–2027). Met een Vlaamse opleidingscheque krijg je tot €125 terug. Voor niveau 1 kun je soms een beurs krijgen."
     }
   },
   {
@@ -524,11 +554,13 @@ window.RESOURCES = [
     url: "https://www.reginacoeli.com/language-courses/fees.html",
     note: {
       en: "A well-known residential language institute in Vught: full-immersion training, mostly one-to-one, often paid for by employers. Also runs small evening groups at High Tech Campus Eindhoven.",
-      zh: "位於 Vught 的知名住宿式語言學校：以一對一為主的全沉浸式訓練，通常由公司支付。另在恩荷芬 High Tech Campus 開設小班晚間課。"
+      zh: "位於 Vught 的知名住宿式語言學校：以一對一為主的全沉浸式訓練，通常由公司支付。另在恩荷芬 High Tech Campus 開設小班晚間課。",
+      nl: "Een bekend talencentrum in Vught. Je woont er en leert de hele dag, meestal alleen met een docent. Vaak betaalt de werkgever. Er zijn ook kleine avondgroepen op de High Tech Campus in Eindhoven."
     },
     price: {
       en: "Intensive week (5 days) €5,315 excl. VAT, overnight stay extra. Evening course in Eindhoven €1,135 excl. VAT for 12 two-hour lessons over 6 weeks, groups of 5.",
-      zh: "一週密集班（5 天）€5,315（未稅），住宿另計。恩荷芬晚間課 12 堂 × 2 小時、為期 6 週、5 人小班，€1,135（未稅）。"
+      zh: "一週密集班（5 天）€5,315（未稅），住宿另計。恩荷芬晚間課 12 堂 × 2 小時、為期 6 週、5 人小班，€1,135（未稅）。",
+      nl: "Intensieve week (5 dagen): €5.315 zonder btw. Overnachten kost extra. Avondcursus in Eindhoven: €1.135 zonder btw, 12 lessen van 2 uur in 6 weken, groepen van 5."
     }
   },
   {
@@ -547,11 +579,13 @@ window.RESOURCES = [
     url: "https://directdutch.com/courses/",
     note: {
       en: "A private language school in The Hague for expats, with in-person and online group courses from A0 to B2, a B1+ writing course and two-week intensives.",
-      zh: "位於海牙、以外派人士為主的私人語言學校，提供 A0 到 B2 的實體與線上團體課、B1+ 寫作課，以及兩週密集班。"
+      zh: "位於海牙、以外派人士為主的私人語言學校，提供 A0 到 B2 的實體與線上團體課、B1+ 寫作課，以及兩週密集班。",
+      nl: "Een taalschool in Den Haag voor expats. Groepscursussen van A0 tot B2, in de klas en online. Ook een schrijfcursus (B1+) en intensieve cursussen van 2 weken."
     },
     price: {
       en: "A1 or A2 in person €645 for 7 weeks. B1 online or B2 €780 for 12 weeks. A2+ and B1+ writing €480 for 8 weeks. Two-week intensives €865–€1,395. Course material included.",
-      zh: "A1 或 A2 實體課 7 週 €645。B1 線上或 B2 課程 12 週 €780。A2+ 與 B1+ 寫作課 8 週 €480。兩週密集班 €865–€1,395。皆含教材。"
+      zh: "A1 或 A2 實體課 7 週 €645。B1 線上或 B2 課程 12 週 €780。A2+ 與 B1+ 寫作課 8 週 €480。兩週密集班 €865–€1,395。皆含教材。",
+      nl: "A1 of A2 in de klas: €645 voor 7 weken. B1 online of B2: €780 voor 12 weken. Schrijven A2+ en B1+: €480 voor 8 weken. Intensief 2 weken: €865–1.395. Lesmateriaal inbegrepen."
     }
   },
   {
@@ -570,11 +604,13 @@ window.RESOURCES = [
     url: "https://koentact.nl/",
     note: {
       en: "An Amsterdam language school with small group courses (5–12 students), a conversation course and one-week intensives (max 6 students).",
-      zh: "阿姆斯特丹的語言學校，提供小班團體課（5–12 人）、會話課，以及一週密集班（最多 6 人）。"
+      zh: "阿姆斯特丹的語言學校，提供小班團體課（5–12 人）、會話課，以及一週密集班（最多 6 人）。",
+      nl: "Een taalschool in Amsterdam. Kleine groepen (5–12 mensen), een praatcursus en intensieve weken (maximaal 6 mensen)."
     },
     price: {
       en: "Morning or evening group course €525 (8 lessons + 2 field trips over 4 weeks). Conversation course (A2–B1) €320. Intensive week €975 (33 hours in 6 days). Discount when you prepay 3 courses.",
-      zh: "早上或晚上團體班 €525（4 週內 8 堂課＋2 次校外教學）。會話課（A2–B1）€320。一週密集班 €975（6 天共 33 小時）。一次預付 3 期有折扣。"
+      zh: "早上或晚上團體班 €525（4 週內 8 堂課＋2 次校外教學）。會話課（A2–B1）€320。一週密集班 €975（6 天共 33 小時）。一次預付 3 期有折扣。",
+      nl: "Groepscursus in de ochtend of avond: €525 (8 lessen en 2 uitjes in 4 weken). Praatcursus (A2–B1): €320. Intensieve week: €975 (33 uur in 6 dagen). Korting als je 3 cursussen tegelijk betaalt."
     }
   },
   {
@@ -593,9 +629,10 @@ window.RESOURCES = [
     url: "https://www.futurelearn.com/courses/dutch",
     note: {
       en: "A free beginner MOOC on FutureLearn from the University of Groningen, covering basic words, sentences and Dutch culture.",
-      zh: "格羅寧根大學在 FutureLearn 上的免費入門 MOOC，涵蓋基本詞彙、句型與荷蘭文化。"
+      zh: "格羅寧根大學在 FutureLearn 上的免費入門 MOOC，涵蓋基本詞彙、句型與荷蘭文化。",
+      nl: "Een gratis online cursus voor beginners van de Rijksuniversiteit Groningen, op FutureLearn. Je leert eerste woorden, zinnen en over de Nederlandse cultuur."
     },
-    price: { en: "Free to audit; paid upgrade for unlimited access and a certificate.", zh: "旁聽免費；付費升級可無限期觀看並取得證書。" }
+    price: { en: "Free to audit; paid upgrade for unlimited access and a certificate.", zh: "旁聽免費；付費升級可無限期觀看並取得證書。", nl: "Gratis. Wil je alles blijven zien en een certificaat? Dan betaal je." }
   },
   {
     id: "tudelft",
@@ -613,11 +650,13 @@ window.RESOURCES = [
     url: "https://www.tudelft.nl/tbm/itav/onderwijs/nederlands-nt2/nederlandse-cursussen",
     note: {
       en: "TU Delft's language centre runs Dutch courses from beginner to advanced, a summer school, NT2 State Exam preparation and a free online beginners course. Open to non-students too.",
-      zh: "台夫特理工大學語言中心開設入門到高級的荷語課程、暑期班、NT2 國家考試準備，以及免費的線上入門課程，非學生也能報名。"
+      zh: "台夫特理工大學語言中心開設入門到高級的荷語課程、暑期班、NT2 國家考試準備，以及免費的線上入門課程，非學生也能報名。",
+      nl: "Het talencentrum van de TU Delft. Cursussen van beginner tot gevorderd, een zomerschool, voorbereiding op het Staatsexamen NT2 en een gratis online cursus voor beginners. Ook voor mensen die geen student zijn."
     },
     price: {
       en: "Online beginners course free. Semi-intensive courses €445–€485, advanced intensive €910, summer school €550 per level (materials extra). Some levels free for TU Delft students in English-taught programmes.",
-      zh: "線上入門課程免費。半密集課程 €445–€485，高級密集班 €910，暑期班每級 €550（教材另計）。就讀英語授課學程的 TU Delft 學生部分級別免費。"
+      zh: "線上入門課程免費。半密集課程 €445–€485，高級密集班 €910，暑期班每級 €550（教材另計）。就讀英語授課學程的 TU Delft 學生部分級別免費。",
+      nl: "Online cursus voor beginners: gratis. Halfintensieve cursussen €445–485, intensief voor gevorderden €910, zomerschool €550 per niveau (boeken extra). Sommige niveaus gratis voor studenten van de TU Delft in Engelstalige opleidingen."
     }
   },
   {
@@ -636,9 +675,10 @@ window.RESOURCES = [
     url: "https://www.staatsexamensnt2.nl/",
     note: {
       en: "Official free practice exams for the State Exam Dutch as a Second Language (programme I at B1, programme II at B2). Essential if a job or university needs the certificate.",
-      zh: "荷語作為第二語言國家考試（Staatsexamen NT2）的官方免費模擬試題，第一級為 B1、第二級為 B2。工作或大學要求證書時必備。"
+      zh: "荷語作為第二語言國家考試（Staatsexamen NT2）的官方免費模擬試題，第一級為 B1、第二級為 B2。工作或大學要求證書時必備。",
+      nl: "Gratis oefenexamens voor het Staatsexamen Nederlands als tweede taal (programma I op B1, programma II op B2). Belangrijk als je het diploma nodig hebt voor werk of studie."
     },
-    price: { en: "Practice material is free; taking the exam costs a fee per part.", zh: "練習題免費；正式考試每科需付報名費。" }
+    price: { en: "Practice material is free; taking the exam costs a fee per part.", zh: "練習題免費；正式考試每科需付報名費。", nl: "Oefenen is gratis. Voor het examen betaal je per onderdeel." }
   },
   {
     id: "dutchgrammar",
@@ -656,9 +696,10 @@ window.RESOURCES = [
     url: "https://www.dutchgrammar.com/",
     note: {
       en: "Clear grammar explanations in English with exercises. The go-to reference when a rule in class doesn't click.",
-      zh: "用英文清楚解釋荷語文法並附練習題。上課聽不懂某個規則時，最常被推薦的查詢網站。"
+      zh: "用英文清楚解釋荷語文法並附練習題。上課聽不懂某個規則時，最常被推薦的查詢網站。",
+      nl: "Duidelijke uitleg over grammatica, in het Engels, met oefeningen. Handig als je een regel uit de les niet begrijpt."
     },
-    price: { en: "Explanations are free; optional paid e-book and course.", zh: "說明免費；另有付費電子書和課程。" }
+    price: { en: "Explanations are free; optional paid e-book and course.", zh: "說明免費；另有付費電子書和課程。", nl: "De uitleg is gratis. Er is ook een e-book en een cursus waarvoor je betaalt." }
   },
   {
     id: "duolingo",
@@ -676,9 +717,10 @@ window.RESOURCES = [
     url: "https://www.duolingo.com/course/nl/en/Learn-Dutch",
     note: {
       en: "A game-style daily habit for vocabulary and basic sentences. Great for getting started; pair it with speaking practice to progress past A2.",
-      zh: "遊戲化的每日練習，適合累積單字和基本句型。入門很好用，但想超過 A2 需要搭配口說練習。"
+      zh: "遊戲化的每日練習，適合累積單字和基本句型。入門很好用，但想超過 A2 需要搭配口說練習。",
+      nl: "Een app als een spel. Elke dag een beetje woorden en korte zinnen leren. Goed om te beginnen. Wil je verder dan A2? Oefen dan ook met spreken."
     },
-    price: { en: "Free with ads; Super is about €7–13 a month.", zh: "免費版有廣告；Super 約每月 €7–13。" }
+    price: { en: "Free with ads; Super is about €7–13 a month.", zh: "免費版有廣告；Super 約每月 €7–13。", nl: "Gratis met reclame. Super kost ongeveer €7–13 per maand." }
   },
   {
     id: "babbel",
@@ -696,9 +738,10 @@ window.RESOURCES = [
     url: "https://www.babbel.com/learn-dutch",
     note: {
       en: "Short structured lessons with dialogues and grammar tips, taught from English. More grammar than Duolingo.",
-      zh: "以英文教學的短課程，包含對話與文法說明，文法比 Duolingo 多。"
+      zh: "以英文教學的短課程，包含對話與文法說明，文法比 Duolingo 多。",
+      nl: "Korte lessen met gesprekken en tips over grammatica. De uitleg is in het Engels. Meer grammatica dan Duolingo."
     },
-    price: { en: "Roughly €7–15 a month depending on plan length.", zh: "依方案長短約每月 €7–15。" }
+    price: { en: "Roughly €7–15 a month depending on plan length.", zh: "依方案長短約每月 €7–15。", nl: "Ongeveer €7–15 per maand. Hoe langer je abonnement, hoe goedkoper." }
   },
   {
     id: "dutchpod101",
@@ -716,11 +759,13 @@ window.RESOURCES = [
     url: "https://www.dutchpod101.com/",
     note: {
       en: "Audio and video lessons organised by level, with transcripts and vocabulary lists. Good for learning on a commute.",
-      zh: "依程度分類的音訊與影片課程，附逐字稿和單字表，適合通勤時學習。"
+      zh: "依程度分類的音訊與影片課程，附逐字稿和單字表，適合通勤時學習。",
+      nl: "Lessen met audio en video, per niveau. Met de tekst en woordenlijsten erbij. Goed om te luisteren onderweg."
     },
     price: {
       en: "Free account to start. Check the website for the paid service.",
-      zh: "可免費註冊開始使用。付費方案請至官網查看。"
+      zh: "可免費註冊開始使用。付費方案請至官網查看。",
+      nl: "Je begint met een gratis account. Kijk op de website voor de prijs van het betaalde deel."
     }
   },
   {
@@ -739,9 +784,10 @@ window.RESOURCES = [
     url: "https://www.italki.com/en/teachers/dutch",
     note: {
       en: "Book one-to-one video lessons with Dutch and Flemish tutors. Filter by price and specialty, such as inburgering or Staatsexamen prep.",
-      zh: "預約荷蘭或比利時老師的一對一視訊課。可依價格與專長篩選，例如融入考試或國家考試準備。"
+      zh: "預約荷蘭或比利時老師的一對一視訊課。可依價格與專長篩選，例如融入考試或國家考試準備。",
+      nl: "Boek lessen met een eigen docent via video. Er zijn docenten uit Nederland en Vlaanderen. Zoek op prijs of op onderwerp, zoals inburgering of het Staatsexamen."
     },
-    price: { en: "Tutors set their own rates, roughly €12–35 per hour.", zh: "老師自訂價格，約每小時 €12–35。" }
+    price: { en: "Tutors set their own rates, roughly €12–35 per hour.", zh: "老師自訂價格，約每小時 €12–35。", nl: "Elke docent kiest zijn eigen prijs: ongeveer €12–35 per uur." }
   },
   {
     id: "preply",
@@ -759,9 +805,10 @@ window.RESOURCES = [
     url: "https://preply.com/en/online/dutch-tutors",
     note: {
       en: "Another large tutor marketplace with many Dutch teachers. Trial lessons are discounted, so it's easy to try a few teachers.",
-      zh: "另一個大型家教平台，荷語老師很多。試聽課有折扣，方便多試幾位老師。"
+      zh: "另一個大型家教平台，荷語老師很多。試聽課有折扣，方便多試幾位老師。",
+      nl: "Nog een grote website met veel docenten Nederlands. De eerste les is goedkoper. Zo kun je makkelijk een paar docenten proberen."
     },
-    price: { en: "Tutors set their own rates, roughly €10–35 per hour.", zh: "老師自訂價格，約每小時 €10–35。" }
+    price: { en: "Tutors set their own rates, roughly €10–35 per hour.", zh: "老師自訂價格，約每小時 €10–35。", nl: "Elke docent kiest zijn eigen prijs: ongeveer €10–35 per uur." }
   },
   {
     id: "exchange-apps",
@@ -779,9 +826,10 @@ window.RESOURCES = [
     url: "https://www.tandem.net/",
     note: {
       en: "Language-exchange apps: chat with Dutch speakers who want to learn your language. Free practice in writing and, once you're braver, voice calls.",
-      zh: "語言交換 App：和想學你母語的荷語母語者聊天。免費練習寫作，敢開口後還能語音通話。"
+      zh: "語言交換 App：和想學你母語的荷語母語者聊天。免費練習寫作，敢開口後還能語音通話。",
+      nl: "Apps om talen te ruilen. Je chat met Nederlanders die jouw taal willen leren. Gratis oefenen met schrijven, en later ook met bellen."
     },
-    price: { en: "Free; optional premium.", zh: "免費；可選付費進階版。" }
+    price: { en: "Free; optional premium.", zh: "免費；可選付費進階版。", nl: "Gratis. Je kunt extra's kopen." }
   },
   {
     id: "meetup-exchange",
@@ -799,9 +847,10 @@ window.RESOURCES = [
     url: "https://www.meetup.com/topics/dutch-language/",
     note: {
       en: "Evening language exchanges in bars and cafés, organised on Meetup. Good for building confidence once you can hold a basic conversation.",
-      zh: "在酒吧或咖啡館舉行的晚間語言交換活動，透過 Meetup 報名。能進行基本對話後，很適合建立開口的自信。"
+      zh: "在酒吧或咖啡館舉行的晚間語言交換活動，透過 Meetup 報名。能進行基本對話後，很適合建立開口的自信。",
+      nl: "Avonden in een café of bar om talen te oefenen, via Meetup. Goed voor meer zelfvertrouwen als je al een eenvoudig gesprek kunt voeren."
     },
-    price: { en: "Usually free or a small fee; you buy your own drinks.", zh: "通常免費或酌收小額費用，飲料自費。" }
+    price: { en: "Usually free or a small fee; you buy your own drinks.", zh: "通常免費或酌收小額費用，飲料自費。", nl: "Meestal gratis of goedkoop. Je drankjes betaal je zelf." }
   },
   {
     id: "bart-de-pau",
@@ -820,11 +869,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/results?search_query=learn+dutch+bart+de+pau",
     note: {
       en: "One of the biggest Dutch-learning YouTube channels (200K+ subscribers): an animated soap opera, culture interviews and grammar videos. Free online lessons on his website, plus premium courses and virtual classrooms.",
-      zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站有免費線上課程，另有付費進階課程與線上教室。"
+      zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站有免費線上課程，另有付費進階課程與線上教室。",
+      nl: "Een van de grootste YouTube-kanalen om Nederlands te leren (meer dan 200.000 abonnees). Met een tekenfilmserie, interviews over cultuur en video's over grammatica. Gratis lessen op zijn website, en betaalde cursussen en online klassen."
     },
     price: {
       en: "YouTube and basic lessons are free. Premium #dutchgrammar course €49 for one year (discounted from €79, plus VAT in the EU). Live course €495 per level (intro + 9 sessions), book extra.",
-      zh: "YouTube 和基礎課程免費。進階課程 #dutchgrammar 一年 €49（原價 €79，歐盟需另加增值稅）。直播課每級 €495（介紹課＋9 堂），教材另計。"
+      zh: "YouTube 和基礎課程免費。進階課程 #dutchgrammar 一年 €49（原價 €79，歐盟需另加增值稅）。直播課每級 €495（介紹課＋9 堂），教材另計。",
+      nl: "YouTube en de eerste lessen zijn gratis. Premium #dutchgrammar-cursus: €49 voor een jaar (eerst €79, plus btw in de EU). Live cursus: €495 per niveau (intro + 9 lessen), boek extra."
     }
   },
   {
@@ -844,11 +895,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/results?search_query=dutchies+to+be",
     note: {
       en: "Kim teaches Dutch through acted, funny everyday scenes followed by the grammar behind them. Free YouTube videos, plus self-paced 3-month courses per level with lifetime access.",
-      zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。YouTube 影片免費，另有各級三個月自學課程，可終身觀看。"
+      zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。YouTube 影片免費，另有各級三個月自學課程，可終身觀看。",
+      nl: "Kim speelt grappige scènes uit het dagelijks leven. Daarna legt ze de grammatica uit. Gratis video's op YouTube. Ook cursussen van 3 maanden per niveau, in je eigen tempo, en je mag ze altijd blijven gebruiken."
     },
     price: {
       en: "One-time: A1 or A2 course €79, B1 €99, A2 + B1 €159, A0–B1 package €199. Online community membership about €15–17 a month (billed in US dollars). Live lessons not included.",
-      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 €15–17（以美元計費）。不含直播課。"
+      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 €15–17（以美元計費）。不含直播課。",
+      nl: "Eén keer betalen: A1 of A2 €79, B1 €99, A2 + B1 €159, pakket A0–B1 €199. Online groep: ongeveer €15–17 per maand (in dollars). Live lessen zitten er niet bij."
     }
   },
   {
@@ -868,11 +921,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/@EasyDutch",
     note: {
       en: "Street interviews with real Dutch people, subtitled in Dutch and English. Great for hearing how people actually talk. Paid memberships add podcasts, transcripts and conversation sessions.",
-      zh: "街頭訪問真實的荷蘭人，附荷文與英文字幕，最能聽到荷蘭人平常怎麼說話。付費會員另有 Podcast、逐字稿與會話練習。"
+      zh: "街頭訪問真實的荷蘭人，附荷文與英文字幕，最能聽到荷蘭人平常怎麼說話。付費會員另有 Podcast、逐字稿與會話練習。",
+      nl: "Interviews op straat met echte Nederlanders, met ondertiteling in het Nederlands en Engels. Zo hoor je hoe mensen echt praten. Met een betaald lidmaatschap krijg je podcasts, teksten en gesprekken."
     },
     price: {
       en: "Videos are free on YouTube. Memberships: Basic €5, Podcast €10, Audio and Video €12, Conversation €25 a month.",
-      zh: "YouTube 影片免費。會員方案：基本 €5、Podcast €10、音訊與影片 €12、會話 €25（每月）。"
+      zh: "YouTube 影片免費。會員方案：基本 €5、Podcast €10、音訊與影片 €12、會話 €25（每月）。",
+      nl: "Video's zijn gratis op YouTube. Lidmaatschap per maand: Basic €5, Podcast €10, Audio en Video €12, Conversation €25."
     }
   },
   {
@@ -892,11 +947,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/learn_dutch_now/",
     note: {
       en: "A large Instagram account (130K+ followers) with bite-sized vocabulary posts, plus downloadable courses and exam packs for the inburgering exam (A2) and Staatsexamen NT2 (B1).",
-      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。"
+      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。",
+      nl: "Een groot Instagram-account (meer dan 130.000 volgers) met korte posts over woorden. Ook cursussen en oefenpakketten om te downloaden, voor het inburgeringsexamen (A2) en het Staatsexamen NT2 (B1)."
     },
     price: {
       en: "One-time, lifetime access: Starter course €75, B1 course €75, both €135, Starter course + A2 exam package €199, single exam parts from €24.99.",
-      zh: "一次付清、終身使用：入門課程 €75、B1 課程 €75、兩者合購 €135、入門課程＋A2 考試包 €199，單科考試資料 €24.99 起。"
+      zh: "一次付清、終身使用：入門課程 €75、B1 課程 €75、兩者合購 €135、入門課程＋A2 考試包 €199，單科考試資料 €24.99 起。",
+      nl: "Eén keer betalen, voor altijd: Starter-cursus €75, B1-cursus €75, samen €135, Starter-cursus + A2-examenpakket €199, losse examendelen vanaf €24,99."
     }
   },
   {
@@ -916,11 +973,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/learndutchwithyas/",
     note: {
       en: "Yasmine teaches all levels: 13-week live online group classes (max 6 students), B2+ conversation classes, self-paced courses and private packages of 8 one-hour lessons.",
-      zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 8 堂一小時的一對一套裝課。"
+      zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 8 堂一小時的一對一套裝課。",
+      nl: "Yasmine geeft les op alle niveaus: online groepslessen van 13 weken (maximaal 6 mensen), praatlessen vanaf B2, cursussen in je eigen tempo en privélessen (8 lessen van 1 uur)."
     },
     price: {
       en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €350 excl. VAT paid at once, or 3 × €130 or 6 × €70 in instalments.",
-      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €350（未稅），或分期 3 × €130、6 × €70。"
+      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €350（未稅），或分期 3 × €130、6 × €70。",
+      nl: "Tips op Instagram zijn gratis. Groepslessen van 13 weken met toegang tot de Dutch Mastery Academy: €350 zonder btw in één keer, of 3 × €130, of 6 × €70."
     }
   },
   {
@@ -940,11 +999,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/your.dutchfriend/",
     note: {
       en: "Charlotte posts everyday spoken Dutch on Instagram as \"your Dutch friend\" and runs self-paced video courses (A0–A1, A1–A2, A2–B1) and live online group classes.",
-      zh: "Charlotte 以「你的荷蘭朋友」身分在 Instagram 分享日常口語荷語，並開設自學影片課程（A0–A1、A1–A2、A2–B1）和線上團體直播課。"
+      zh: "Charlotte 以「你的荷蘭朋友」身分在 Instagram 分享日常口語荷語，並開設自學影片課程（A0–A1、A1–A2、A2–B1）和線上團體直播課。",
+      nl: "Charlotte laat op Instagram zien hoe Nederlanders elke dag praten. Ze heeft videocursussen in je eigen tempo (A0–A1, A1–A2, A2–B1) en live online groepslessen."
     },
     price: {
       en: "Video course €250 per level (one-time, often on sale for €199). Group classes €200 for a pack of 10. Grammar e-book €12.50.",
-      zh: "影片課程每級 €250（一次付清，常有 €199 特價）。團體課 10 堂 €200。文法電子書 €12.50。"
+      zh: "影片課程每級 €250（一次付清，常有 €199 特價）。團體課 10 堂 €200。文法電子書 €12.50。",
+      nl: "Videocursus: €250 per niveau (één keer betalen, vaak in de aanbieding voor €199). Groepslessen: €200 voor 10 lessen. E-book grammatica: €12,50."
     }
   },
   {
@@ -964,11 +1025,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/goingdutchcommunity/",
     note: {
       en: "A large Instagram community (230K+ followers) with a paid \"Road to Dutch Fluency\" subscription that includes daily live classes at different levels, plus in-person events.",
-      zh: "大型 Instagram 社群（超過 23 萬追蹤），付費訂閱「Road to Dutch Fluency」包含每日不同程度的直播課，另有實體活動。"
+      zh: "大型 Instagram 社群（超過 23 萬追蹤），付費訂閱「Road to Dutch Fluency」包含每日不同程度的直播課，另有實體活動。",
+      nl: "Een grote groep op Instagram (meer dan 230.000 volgers). Met een betaald abonnement (Road to Dutch Fluency) krijg je elke dag live lessen op verschillende niveaus. Ook activiteiten in het echt."
     },
     price: {
       en: "Subscription €119 a month. 6-month package with 24 private classes €1,699. Speed Dutching evenings €5; Texel summer school €950.",
-      zh: "訂閱每月 €119。含 24 堂私人課的 6 個月套裝 €1,699。Speed Dutching 活動 €5；Texel 暑期營 €950。"
+      zh: "訂閱每月 €119。含 24 堂私人課的 6 個月套裝 €1,699。Speed Dutching 活動 €5；Texel 暑期營 €950。",
+      nl: "Abonnement: €119 per maand. Pakket van 6 maanden met 24 privélessen: €1.699. Speed Dutching-avond: €5. Zomerschool op Texel: €950."
     }
   },
   {
@@ -987,11 +1050,13 @@ window.RESOURCES = [
     url: "https://www.abcdutch.com/",
     note: {
       en: "A language school in The Hague and Rotterdam with evening and day group courses, intensive weeks, summer courses and civic integration exam preparation. Private lessons in person or on Zoom.",
-      zh: "位於海牙與鹿特丹的語言學校，提供晚間與日間團體課、密集週課程、暑期班和融入考試準備。另有實體或 Zoom 一對一課。"
+      zh: "位於海牙與鹿特丹的語言學校，提供晚間與日間團體課、密集週課程、暑期班和融入考試準備。另有實體或 Zoom 一對一課。",
+      nl: "Een taalschool in Den Haag en Rotterdam. Groepscursussen in de avond en overdag, intensieve weken, zomercursussen en voorbereiding op het inburgeringsexamen. Ook privéles in de klas of via Zoom."
     },
     price: {
       en: "Group courses €270–295, civic integration exam courses €275–330, day courses €225–335. Rotterdam intensive A2 €275 a week or €1,245 for 5 weeks. Private lessons on request.",
-      zh: "團體課 €270–295，融入考試課程 €275–330，日間課程 €225–335。鹿特丹 A2 密集班每週 €275，5 週套裝 €1,245。一對一課程價格請洽詢。"
+      zh: "團體課 €270–295，融入考試課程 €275–330，日間課程 €225–335。鹿特丹 A2 密集班每週 €275，5 週套裝 €1,245。一對一課程價格請洽詢。",
+      nl: "Groepscursussen €270–295. Cursussen voor het inburgeringsexamen €275–330. Dagcursussen €225–335. Rotterdam intensief A2: €275 per week of €1.245 voor 5 weken. Privéles: vraag de prijs."
     }
   },
   {
@@ -1010,11 +1075,13 @@ window.RESOURCES = [
     url: "https://www.sagenn.nl/educatie",
     note: {
       en: "An adult education provider with Dutch courses from A0 to B2, literacy classes, civic integration routes and Staatsexamen preparation. Each course ends with a level test.",
-      zh: "成人教育機構，提供 A0 到 B2 的荷語課程、識字班、融入考試路線和國家考試準備。每期課程結束都有程度測驗。"
+      zh: "成人教育機構，提供 A0 到 B2 的荷語課程、識字班、融入考試路線和國家考試準備。每期課程結束都有程度測驗。",
+      nl: "Een school voor volwassenen. Cursussen Nederlands van A0 tot B2, lessen lezen en schrijven, inburgering en voorbereiding op het Staatsexamen. Na elke cursus doe je een niveautest."
     },
     price: {
       en: "€415 a month for 2 lessons a week, €515 for 3, €615 for 4, from 3 months. Includes intake test, personal advice and materials. Labour market orientation course €315 a month. DUO loan possible if you're required to do inburgering. Free lessons if you aren't, in Alphen aan den Rijn, Midden-Holland, Midden-Utrecht, Zaanstreek-Waterland, Zuid-Kennemerland/IJmond, Rotterdam Rijnmond and Noordoost-Brabant.",
-      zh: "每月 €415（每週 2 堂）、€515（3 堂）、€615（4 堂），至少報名 3 個月，含入學測驗、個人諮詢與教材。荷蘭就業市場導向課程每月 €315。融入義務者可申請 DUO 貸款。非融入義務者在 Alphen aan den Rijn、Midden-Holland、Midden-Utrecht、Zaanstreek-Waterland、Zuid-Kennemerland/IJmond、鹿特丹大區與 Noordoost-Brabant 可免費上課。"
+      zh: "每月 €415（每週 2 堂）、€515（3 堂）、€615（4 堂），至少報名 3 個月，含入學測驗、個人諮詢與教材。荷蘭就業市場導向課程每月 €315。融入義務者可申請 DUO 貸款。非融入義務者在 Alphen aan den Rijn、Midden-Holland、Midden-Utrecht、Zaanstreek-Waterland、Zuid-Kennemerland/IJmond、鹿特丹大區與 Noordoost-Brabant 可免費上課。",
+      nl: "€415 per maand voor 2 lessen per week, €515 voor 3, €615 voor 4. Minimaal 3 maanden. Met test, advies en lesmateriaal. Cursus over werk (ONA): €315 per maand. Moet je inburgeren? Dan kun je lenen bij DUO. Moet je niet inburgeren? Dan zijn de lessen gratis in Alphen aan den Rijn, Midden-Holland, Midden-Utrecht, Zaanstreek-Waterland, Zuid-Kennemerland/IJmond, Rotterdam Rijnmond en Noordoost-Brabant."
     }
   },
   {
@@ -1033,11 +1100,13 @@ window.RESOURCES = [
     url: "https://www.nltraining.nl/cursussen",
     note: {
       en: "Dutch courses at every level in several cities and online, including free municipality-funded courses for people who aren't required to do inburgering, and paid inburgering courses.",
-      zh: "在多個城市與線上開設各級荷語課程，包括由市政府出資、給非融入義務者的免費課程，以及付費的融入課程。"
+      zh: "在多個城市與線上開設各級荷語課程，包括由市政府出資、給非融入義務者的免費課程，以及付費的融入課程。",
+      nl: "Cursussen Nederlands op elk niveau, in verschillende steden en online. Gratis cursussen (betaald door de gemeente) voor mensen die niet moeten inburgeren. Ook betaalde inburgeringscursussen."
     },
     price: {
       en: "Online course €599 per 12-week module. Inburgering courses €16.25 per hour (DUO loan possible). Free \"Verbeter je Nederlands\" courses if you aren't required to do inburgering: Rotterdam (10–20 weeks), Leiden (12 months), and Flevoland online, Almere or Lelystad (40 weeks). Morning, afternoon or evening classes.",
-      zh: "線上課程每 12 週模組 €599。融入課程每小時 €16.25（可申請 DUO 貸款）。非融入義務者可免費參加「Verbeter je Nederlands」課程：鹿特丹（10–20 週）、萊登（12 個月），以及 Flevoland 線上、Almere 或 Lelystad（40 週）。上午、下午或晚上上課。"
+      zh: "線上課程每 12 週模組 €599。融入課程每小時 €16.25（可申請 DUO 貸款）。非融入義務者可免費參加「Verbeter je Nederlands」課程：鹿特丹（10–20 週）、萊登（12 個月），以及 Flevoland 線上、Almere 或 Lelystad（40 週）。上午、下午或晚上上課。",
+      nl: "Online cursus: €599 per blok van 12 weken. Inburgeringscursus: €16,25 per uur (lenen bij DUO kan). Gratis cursus \"Verbeter je Nederlands\" als je niet moet inburgeren: Rotterdam (10–20 weken), Leiden (12 maanden), en Flevoland online, Almere of Lelystad (40 weken). Les in de ochtend, middag of avond."
     }
   },
   {
@@ -1056,11 +1125,13 @@ window.RESOURCES = [
     url: "https://dutch-approach.nl/netherlands/",
     note: {
       en: "Small-group Dutch courses from beginner to B2, online and in classrooms in Amsterdam, Eindhoven, Taipei and Tainan: 10 weekly 2-hour classes per level, plus CNaVT exam preparation. Teaching in English and Mandarin, a good fit for learners from Taiwan.",
-      zh: "從入門到 B2 的荷語小班課，可線上或在阿姆斯特丹、恩荷芬、台北、台南的教室上課：每級 10 週、每週一堂 2 小時，另有 CNaVT 荷語檢定準備。以英文與中文教學，很適合來自台灣的學習者。"
+      zh: "從入門到 B2 的荷語小班課，可線上或在阿姆斯特丹、恩荷芬、台北、台南的教室上課：每級 10 週、每週一堂 2 小時，另有 CNaVT 荷語檢定準備。以英文與中文教學，很適合來自台灣的學習者。",
+      nl: "Cursussen in kleine groepen, van beginner tot B2. Online en in de klas in Amsterdam, Eindhoven, Taipei en Tainan. Per niveau 10 lessen van 2 uur, één keer per week. Ook voorbereiding op het CNaVT-examen. Uitleg in het Engels en Chinees, goed voor mensen uit Taiwan."
     },
     price: {
       en: "€339 per 10-week course, plus €30.50 for textbook and website. In Taiwan about €270 per course (NT$9,900). Check the course pages for the current term.",
-      zh: "每期 10 週課程 €339，另加課本與網站費 €30.50。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。"
+      zh: "每期 10 週課程 €339，另加課本與網站費 €30.50。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。",
+      nl: "€339 per cursus van 10 weken, plus €30,50 voor boek en website. In Taiwan ongeveer €270 per cursus (NT$9.900). Kijk op de website voor de nieuwe cursussen."
     }
   },
   {
@@ -1080,11 +1151,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/@realdutchwithlucas",
     note: {
       en: "Lucas runs online Dutch courses, a live supported-speaking café in the evenings and private lessons for speaking, grammar or the inburgering exam. Free videos on YouTube.",
-      zh: "Lucas 開設線上荷語課程、晚間線上口說咖啡館，以及口說、文法或融入考試的一對一課程。YouTube 有免費影片。"
+      zh: "Lucas 開設線上荷語課程、晚間線上口說咖啡館，以及口說、文法或融入考試的一對一課程。YouTube 有免費影片。",
+      nl: "Lucas heeft online cursussen, een live praatcafé in de avond en privélessen voor spreken, grammatica of het inburgeringsexamen. Gratis video's op YouTube."
     },
     price: {
       en: "Speaking café €11.99 a month (1 evening a week) or €19.99 (2 evenings), cheaper per year. Private lessons from €28. Online course prices on the website.",
-      zh: "口說咖啡館每月 €11.99（每週 1 晚）或 €19.99（每週 2 晚），年繳更便宜。一對一課 €28 起。線上課程價格請至官網查看。"
+      zh: "口說咖啡館每月 €11.99（每週 1 晚）或 €19.99（每週 2 晚），年繳更便宜。一對一課 €28 起。線上課程價格請至官網查看。",
+      nl: "Praatcafé: €11,99 per maand (1 avond per week) of €19,99 (2 avonden). Per jaar is het goedkoper. Privéles vanaf €28. Prijzen van de online cursussen staan op de website."
     }
   },
   {
@@ -1105,11 +1178,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/@vivodutch",
     note: {
       en: "Vivian, a certified teacher since 2015 and former inburgering exam assessor, shares free lessons on Instagram (60K followers) and YouTube and runs 10-week online courses for A1, A2 and B1.",
-      zh: "Vivian 自 2015 年起為合格荷語教師，曾任融入考試評分員。在 Instagram（6 萬追蹤）與 YouTube 分享免費教學，並開設 A1、A2、B1 的 10 週線上課程。"
+      zh: "Vivian 自 2015 年起為合格荷語教師，曾任融入考試評分員。在 Instagram（6 萬追蹤）與 YouTube 分享免費教學，並開設 A1、A2、B1 的 10 週線上課程。",
+      nl: "Vivian is sinds 2015 bevoegd docent en was examinator voor het inburgeringsexamen. Ze deelt gratis lessen op Instagram (60.000 volgers) en YouTube. Ze heeft online cursussen van 10 weken voor A1, A2 en B1."
     },
     price: {
       en: "Online course per level: DIY €187, DIY Plus €237, Premium with live classes €357 (excl. VAT, 3 installments possible). Colloquial Dutch course €37.",
-      zh: "每級線上課程：DIY €187、DIY Plus €237、含直播課的 Premium €357（未稅，可分 3 期）。口語荷語課程 €37。"
+      zh: "每級線上課程：DIY €187、DIY Plus €237、含直播課的 Premium €357（未稅，可分 3 期）。口語荷語課程 €37。",
+      nl: "Online cursus per niveau: DIY €187, DIY Plus €237, Premium met live lessen €357 (zonder btw, betalen in 3 keer kan). Cursus spreektaal: €37."
     }
   },
   {
@@ -1129,11 +1204,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/jedutchy/",
     note: {
       en: "A certified Dutch teacher offering online group courses, private lessons, a conversation-training subscription and an inburgering masterclass.",
-      zh: "合格荷語教師，提供線上團體課、一對一課程、會話訓練訂閱與融入考試大師班。"
+      zh: "合格荷語教師，提供線上團體課、一對一課程、會話訓練訂閱與融入考試大師班。",
+      nl: "Een bevoegde docent Nederlands. Online groepscursussen, privélessen, een abonnement om te oefenen met praten en een masterclass inburgering."
     },
     price: {
       en: "Group courses €650. Private lessons 5 × 1 h €395 or 10 × 1 h €575, trial lesson €25. Conversation training €100 a month (8 sessions). Inburgering masterclass €100.",
-      zh: "團體課 €650。一對一課 5 × 1 小時 €395 或 10 × 1 小時 €575，試聽課 €25。會話訓練每月 €100（8 堂）。融入考試大師班 €100。"
+      zh: "團體課 €650。一對一課 5 × 1 小時 €395 或 10 × 1 小時 €575，試聽課 €25。會話訓練每月 €100（8 堂）。融入考試大師班 €100。",
+      nl: "Groepscursus €650. Privélessen: 5 × 1 uur €395 of 10 × 1 uur €575. Proefles €25. Praattraining €100 per maand (8 keer). Masterclass inburgering €100."
     }
   },
   {
@@ -1153,11 +1230,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/the.dutchspeakingacademy/",
     note: {
       en: "Speaking-focused video courses (beginners, inburgering A2, grammar, Dutch for parents, Dutch for social life), group conversation programmes and 1:1 coaching.",
-      zh: "以口說為主的影片課程（入門、融入考試 A2、文法、給家長的荷語、社交荷語），另有團體會話課程與一對一教練。"
+      zh: "以口說為主的影片課程（入門、融入考試 A2、文法、給家長的荷語、社交荷語），另有團體會話課程與一對一教練。",
+      nl: "Videocursussen met veel aandacht voor spreken (beginners, inburgering A2, grammatica, Nederlands voor ouders, Nederlands voor sociale contacten). Ook praatgroepen en persoonlijke coaching."
     },
     price: {
       en: "Video courses: inburgering A2 €47, Beginners €147, Dutch for Parents or Grammar €333, Dutch for Social Life €444. Group conversation course about €3,333. 1:1 programme from €5,555 for 3 months. Speaking challenge €15.",
-      zh: "影片課程：融入考試 A2 €47、入門 €147、給家長的荷語或文法 €333、社交荷語 €444。團體會話課程約 €3,333。一對一課程 3 個月 €5,555 起。口說挑戰 €15。"
+      zh: "影片課程：融入考試 A2 €47、入門 €147、給家長的荷語或文法 €333、社交荷語 €444。團體會話課程約 €3,333。一對一課程 3 個月 €5,555 起。口說挑戰 €15。",
+      nl: "Videocursussen: inburgering A2 €47, beginners €147, ouders of grammatica €333, sociale contacten €444. Praatgroep ongeveer €3.333. Persoonlijke coaching vanaf €5.555 voor 3 maanden. Spreekchallenge €15."
     }
   },
   {
@@ -1177,11 +1256,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/easydutchlearning/",
     note: {
       en: "Sanne shares Dutch tips on Instagram (42K followers) and sells self-paced online courses for every level from A1 to C1, including NT2 and inburgering exam preparation, with a students' Instagram community.",
-      zh: "Sanne 在 Instagram（4.2 萬追蹤）分享荷語技巧，並販售 A1 到 C1 各級自學線上課程，包含 NT2 與融入考試準備，學員可加入 Instagram 學習社群。"
+      zh: "Sanne 在 Instagram（4.2 萬追蹤）分享荷語技巧，並販售 A1 到 C1 各級自學線上課程，包含 NT2 與融入考試準備，學員可加入 Instagram 學習社群。",
+      nl: "Sanne deelt tips op Instagram (42.000 volgers). Ze verkoopt online cursussen in je eigen tempo, van A1 tot C1, ook voor NT2 en het inburgeringsexamen. Met een Instagram-groep voor studenten."
     },
     price: {
       en: "One-time per level: A1–B2 €245, C1 €199 (the homepage shows €297). All five levels €1,485. Kids' courses €397. No subscription.",
-      zh: "每級一次付清：A1–B2 €245、C1 €199（首頁顯示 €297）。五級全套 €1,485。兒童課程 €397。無訂閱制。"
+      zh: "每級一次付清：A1–B2 €245、C1 €199（首頁顯示 €297）。五級全套 €1,485。兒童課程 €397。無訂閱制。",
+      nl: "Eén keer betalen per niveau: A1–B2 €245, C1 €199 (op de homepage staat €297). Alle vijf niveaus €1.485. Cursussen voor kinderen €397. Geen abonnement."
     }
   },
   {
@@ -1201,11 +1282,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/hartvoornederlands/",
     note: {
       en: "A Dutch teacher offering private and duo lessons, B2 group courses, an online book club, conversation clubs and a podcast.",
-      zh: "荷語教師，提供一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。"
+      zh: "荷語教師，提供一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。",
+      nl: "Een docent Nederlands met privélessen en duolessen, groepscursussen B2, een online leesclub, praatclubs en een podcast."
     },
     price: {
       en: "Private lessons: 10 h €737, 15 h €981, 20 h €1,190 (book extra). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
-      zh: "一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。"
+      zh: "一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。",
+      nl: "Privéles: 10 uur €737, 15 uur €981, 20 uur €1.190 (boek extra). Duoles €320–450 per persoon. Groepscursus B2 €450 zonder btw. Leesclub €200 voor 8 online keren. Praatclub €90–120."
     }
   },
   {
@@ -1226,11 +1309,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/c/LearnDutchOfficial",
     note: {
       en: "Interactive online group courses in small groups (4–6 students, two 2-hour live classes a week for 6 weeks), flexible courses and self-study grammar and vocabulary courses.",
-      zh: "互動式線上小班課（4–6 人，每週兩堂 2 小時直播課，為期 6 週）、彈性課程，以及文法和單字自學課程。"
+      zh: "互動式線上小班課（4–6 人，每週兩堂 2 小時直播課，為期 6 週）、彈性課程，以及文法和單字自學課程。",
+      nl: "Online groepscursussen in kleine groepen (4–6 mensen). Twee live lessen van 2 uur per week, 6 weken lang. Ook flexibele cursussen en zelfstudie voor grammatica en woorden."
     },
     price: {
       en: "Group course €289 all-in. Flexible course €149. Grammar Essentials A1 €89 or A2 €69. Vocabulary course A1 €69.",
-      zh: "團體課全包 €289。彈性課程 €149。文法精華 A1 €89、A2 €69。A1 單字課程 €69。"
+      zh: "團體課全包 €289。彈性課程 €149。文法精華 A1 €89、A2 €69。A1 單字課程 €69。",
+      nl: "Groepscursus €289, alles inbegrepen. Flexibele cursus €149. Grammar Essentials A1 €89 of A2 €69. Woordencursus A1 €69."
     }
   },
   {
@@ -1250,11 +1335,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/yourdutchteacher/",
     note: {
       en: "Emeraude has taught Dutch since 2009. Small online groups of 3–6 students meet twice a week for 1.5 hours, one level in 4 weeks. Tailor-made private classes too.",
-      zh: "Emeraude 自 2009 年起教荷語。線上小班 3–6 人，每週兩次、每次 1.5 小時，4 週完成一個級別。也有客製化私人課程。"
+      zh: "Emeraude 自 2009 年起教荷語。線上小班 3–6 人，每週兩次、每次 1.5 小時，4 週完成一個級別。也有客製化私人課程。",
+      nl: "Emeraude geeft sinds 2009 les. Kleine online groepen van 3–6 mensen, twee keer per week 1,5 uur. Eén niveau in 4 weken. Ook privélessen op maat."
     },
     price: {
       en: "Group course €199 per level (4 weeks). Tailor-made lessons €62.50 an hour, with discounts for 10 or 20 classes.",
-      zh: "團體課每級 €199（4 週）。客製化課程每小時 €62.50，10 或 20 堂套裝有折扣。"
+      zh: "團體課每級 €199（4 週）。客製化課程每小時 €62.50，10 或 20 堂套裝有折扣。",
+      nl: "Groepscursus €199 per niveau (4 weken). Lessen op maat €62,50 per uur, met korting voor 10 of 20 lessen."
     }
   },
   {
@@ -1274,11 +1361,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/activedutch/",
     note: {
       en: "Dutch for expats in Alphen aan den Rijn and online: a beginners' group course, private lessons, the Keep Talking Dutch conversation club, plus a free trial lesson and a free 5-day speaking challenge.",
-      zh: "為外派人士開設的荷語課程，在 Alphen aan den Rijn 與線上上課：入門團體課、一對一課程、Keep Talking Dutch 會話俱樂部，另有免費試聽課與 5 天免費口說挑戰。"
+      zh: "為外派人士開設的荷語課程，在 Alphen aan den Rijn 與線上上課：入門團體課、一對一課程、Keep Talking Dutch 會話俱樂部，另有免費試聽課與 5 天免費口說挑戰。",
+      nl: "Nederlands voor expats in Alphen aan den Rijn en online. Een groepscursus voor beginners, privélessen en de praatclub Keep Talking Dutch. Ook een gratis proefles en een gratis spreekchallenge van 5 dagen."
     },
     price: {
       en: "Beginners' group course €635 plus book. Keep Talking Dutch €145 for a month (4 sessions), €250 for 2 months, €350 for 3. Private lessons 10 × 90 min €1,200.",
-      zh: "入門團體課 €635，教材另計。Keep Talking Dutch 1 個月（4 堂）€145、2 個月 €250、3 個月 €350。一對一課 10 堂 × 90 分鐘 €1,200。"
+      zh: "入門團體課 €635，教材另計。Keep Talking Dutch 1 個月（4 堂）€145、2 個月 €250、3 個月 €350。一對一課 10 堂 × 90 分鐘 €1,200。",
+      nl: "Groepscursus voor beginners €635 plus boek. Keep Talking Dutch: €145 voor 1 maand (4 keer), €250 voor 2 maanden, €350 voor 3. Privéles 10 × 90 minuten €1.200."
     }
   },
   {
@@ -1298,11 +1387,13 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/@dutchtoday",
     note: {
       en: "Martijn's weekly Dutch lessons on YouTube and the podcast \"Dutch Today: leer Nederlands met Martijn\", with episodes marked by level.",
-      zh: "Martijn 每週在 YouTube 和 Podcast「Dutch Today: leer Nederlands met Martijn」發布荷語課程，每集標示程度。"
+      zh: "Martijn 每週在 YouTube 和 Podcast「Dutch Today: leer Nederlands met Martijn」發布荷語課程，每集標示程度。",
+      nl: "Martijn maakt elke week lessen Nederlands op YouTube en de podcast \"Dutch Today: leer Nederlands met Martijn\". Bij elke aflevering staat het niveau."
     },
     price: {
       en: "Free on YouTube and podcast apps. Patreon €5 a month for transcripts, exercises, word lists and extra episodes.",
-      zh: "YouTube 與 Podcast 免費。Patreon 每月 €5，提供逐字稿、練習、單字表與額外集數。"
+      zh: "YouTube 與 Podcast 免費。Patreon 每月 €5，提供逐字稿、練習、單字表與額外集數。",
+      nl: "Gratis op YouTube en in podcast-apps. Patreon: €5 per maand voor teksten, oefeningen, woordenlijsten en extra afleveringen."
     }
   },
   {
@@ -1322,11 +1413,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/master_dutch_/",
     note: {
       en: "Kees teaches with his Three Pillar Method in three formats: group classes (A1 to B+, max. 8 people, 8 weekly 90-minute sessions), 1-on-1 lesson packs and an all-in-one subscription.",
-      zh: "Kees 以「三支柱教學法」提供三種方案：團體課（A1 到 B+，最多 8 人，8 週、每週一堂 90 分鐘）、一對一課程套裝，以及全方位訂閱方案。"
+      zh: "Kees 以「三支柱教學法」提供三種方案：團體課（A1 到 B+，最多 8 人，8 週、每週一堂 90 分鐘）、一對一課程套裝，以及全方位訂閱方案。",
+      nl: "Kees geeft les met zijn Three Pillar Method, op drie manieren: groepslessen (A1 tot B+, maximaal 8 mensen, 8 lessen van 90 minuten, één keer per week), pakketten privélessen en een abonnement met alles erin."
     },
     price: {
       en: "Group classes €255 per 8-week course. 1-on-1 lessons: 4-hour pack €260, 16-hour pack €960. All-in-one subscription €14.95 a month.",
-      zh: "團體課每期 8 週 €255。一對一課：4 小時套裝 €260、16 小時套裝 €960。全方位訂閱方案每月 €14.95。"
+      zh: "團體課每期 8 週 €255。一對一課：4 小時套裝 €260、16 小時套裝 €960。全方位訂閱方案每月 €14.95。",
+      nl: "Groepslessen €255 per cursus van 8 weken. Privéles: 4 uur €260, 16 uur €960. Abonnement met alles: €14,95 per maand."
     }
   },
   {
@@ -1346,11 +1439,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/nederlessen/",
     note: {
       en: "Joram teaches small online groups (max. 4) and private speaking lessons, including help with inburgering and the Staatsexamen NT2. He also sells self-study PDFs: graded story readers with grammar (A1–B1+), speaking guides, a verb guide and a KNM exam practice book, plus free cheat sheets.",
-      zh: "Joram 開設線上小班（最多 4 人）與一對一口說課，也協助準備融入考試與國家考試 NT2。另販售自學 PDF：附文法的分級故事讀本（A1–B1+）、口說指南、動詞指南與 KNM 考試練習書，還有免費速查表。"
+      zh: "Joram 開設線上小班（最多 4 人）與一對一口說課，也協助準備融入考試與國家考試 NT2。另販售自學 PDF：附文法的分級故事讀本（A1–B1+）、口說指南、動詞指南與 KNM 考試練習書，還有免費速查表。",
+      nl: "Joram geeft online les in kleine groepen (maximaal 4) en privélessen spreken, ook voor inburgering en het Staatsexamen NT2. Hij verkoopt ook pdf's om zelf te leren: verhalen met grammatica (A1–B1+), gidsen voor spreken, een gids voor werkwoorden en een oefenboek voor het KNM-examen. Er zijn ook gratis spiekbriefjes."
     },
     price: {
       en: "Small group €249 for 8 sessions. Private speaking lessons from €219. Self-study PDFs €5–9.99 (KNM book €9.99), with two free guides.",
-      zh: "小班課 8 堂 €249。一對一口說課 €219 起。自學 PDF €5–9.99（KNM 書 €9.99），另有兩份免費指南。"
+      zh: "小班課 8 堂 €249。一對一口說課 €219 起。自學 PDF €5–9.99（KNM 書 €9.99），另有兩份免費指南。",
+      nl: "Kleine groep: €249 voor 8 lessen. Privéles spreken vanaf €219. Pdf's €5–9,99 (KNM-boek €9,99), en twee gratis gidsen."
     }
   },
   {
@@ -1369,11 +1464,13 @@ window.RESOURCES = [
     url: "https://dutchfirst.nl/",
     note: {
       en: "A language school in Utrecht with group courses from beginner to B1, intensive summer courses, conversation courses, inburgering courses and individual lessons in class or on Zoom.",
-      zh: "位於烏特勒支的語言學校，提供入門到 B1 的團體課、暑期密集班、會話課、融入課程，以及實體或 Zoom 一對一課。"
+      zh: "位於烏特勒支的語言學校，提供入門到 B1 的團體課、暑期密集班、會話課、融入課程，以及實體或 Zoom 一對一課。",
+      nl: "Een taalschool in Utrecht. Groepscursussen van beginner tot B1, intensieve zomercursussen, praatcursussen, inburgeringscursussen en privéles in de klas of via Zoom."
     },
     price: {
       en: "Group courses from €350 (books extra). Summer intensives €350 for 24 hours up to €1,159 for 96 hours. Inburgering courses €17 an hour. Individual lessons in packages of 5 or more.",
-      zh: "團體課 €350 起（教材另計）。暑期密集班 24 小時 €350 到 96 小時 €1,159。融入課程每小時 €17。一對一課以 5 堂以上套裝購買。"
+      zh: "團體課 €350 起（教材另計）。暑期密集班 24 小時 €350 到 96 小時 €1,159。融入課程每小時 €17。一對一課以 5 堂以上套裝購買。",
+      nl: "Groepscursus vanaf €350 (boeken extra). Zomer intensief: €350 voor 24 uur tot €1.159 voor 96 uur. Inburgeringscursus €17 per uur. Privéles in pakketten van 5 lessen of meer."
     }
   },
   {
@@ -1393,11 +1490,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/betterunderstandingnl/",
     note: {
       en: "Online Dutch group courses from A1 to B2 in groups of 3–6 (9 weeks, two 1.5-hour classes a week), private and duo lessons, and in-company training.",
-      zh: "A1 到 B2 的線上荷語小班課，每班 3–6 人（9 週、每週兩堂 1.5 小時），另有一對一、雙人課程與企業內訓。"
+      zh: "A1 到 B2 的線上荷語小班課，每班 3–6 人（9 週、每週兩堂 1.5 小時），另有一對一、雙人課程與企業內訓。",
+      nl: "Online groepscursussen van A1 tot B2, in groepen van 3–6 mensen (9 weken, twee lessen van 1,5 uur per week). Ook privélessen, duolessen en lessen op je werk."
     },
     price: {
       en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €645 for 10 one-hour lessons (€322.50 each for a duo).",
-      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €645（雙人課每人 €322.50）。"
+      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €645（雙人課每人 €322.50）。",
+      nl: "Groepscursus €595 voor 27 uur, plus €48,50 voor het boek. Privéles €645 voor 10 lessen van 1 uur (€322,50 per persoon voor een duo)."
     }
   },
   {
@@ -1417,11 +1516,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/dutchwithoutstress/",
     note: {
       en: "A Dutch teacher offering private lessons for B1–B2 learners and an 8-week intensive small-group course for beginners. Book directly through the online calendar.",
-      zh: "荷語老師，提供 B1–B2 一對一課程，以及給初學者的 8 週密集小班課。可直接透過線上行事曆預約。"
+      zh: "荷語老師，提供 B1–B2 一對一課程，以及給初學者的 8 週密集小班課。可直接透過線上行事曆預約。",
+      nl: "Een docent Nederlands met privélessen voor B1–B2 en een intensieve cursus van 8 weken in een kleine groep voor beginners. Boek direct in de online agenda."
     },
     price: {
       en: "Private lessons B1–B2 €160 a month (4 bookings). Intensive beginners' small-group course €195 for 8 weeks of 1.5-hour classes.",
-      zh: "B1–B2 一對一課每月 €160（4 堂）。初學者密集小班課 8 週、每堂 1.5 小時，共 €195。"
+      zh: "B1–B2 一對一課每月 €160（4 堂）。初學者密集小班課 8 週、每堂 1.5 小時，共 €195。",
+      nl: "Privéles B1–B2: €160 per maand (4 lessen). Intensieve cursus voor beginners in een kleine groep: €195 voor 8 weken, lessen van 1,5 uur."
     }
   },
   {
@@ -1441,11 +1542,13 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/diveintodutch/",
     note: {
       en: "A calm, structured 4-month 1:1 coaching programme: 14 online sessions of 50 minutes (or 12 plus 2 coffee sessions in The Hague, Leiden, Delft or Alphen aan den Rijn), homework, a weekly check-in, group meet-ups with other students, the Taalcompleet book with its online platform, and access to the Dive into Dutch Club. Small-group lessons too.",
-      zh: "平穩、有結構的 4 個月一對一教練課程：14 堂 50 分鐘線上課（或 12 堂線上課加 2 次在海牙、萊登、台夫特或 Alphen aan den Rijn 的咖啡課），附作業、每週一次進度確認、學員聚會、Taalcompleet 課本與線上練習平台，以及 Dive into Dutch Club 會員資格。另有小班課。"
+      zh: "平穩、有結構的 4 個月一對一教練課程：14 堂 50 分鐘線上課（或 12 堂線上課加 2 次在海牙、萊登、台夫特或 Alphen aan den Rijn 的咖啡課），附作業、每週一次進度確認、學員聚會、Taalcompleet 課本與線上練習平台，以及 Dive into Dutch Club 會員資格。另有小班課。",
+      nl: "Rustige, duidelijke coaching van 4 maanden, alleen met de docent: 14 online lessen van 50 minuten (of 12, plus 2 keer koffie in Den Haag, Leiden, Delft of Alphen aan den Rijn). Met huiswerk, elke week een check-in, bijeenkomsten met andere studenten, het boek Taalcompleet met website, en de Dive into Dutch Club. Ook lessen in kleine groepen."
     },
     price: {
       en: "1:1 programme: 4 months from €1,899, including book and club access. Coffee sessions cost extra. Small-group prices on request.",
-      zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課價格請洽詢。"
+      zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課價格請洽詢。",
+      nl: "Coaching: 4 maanden vanaf €1.899, met boek en club. De koffieafspraken kosten extra. Prijs voor kleine groepen: vraag het."
     }
   },
   {
@@ -1465,9 +1568,10 @@ window.RESOURCES = [
     youtube: "https://www.youtube.com/@ZegmaarNederlands",
     note: {
       en: "A YouTube channel about how Dutch people really speak in everyday life: recognisable dialogues, practical language tips, clear lessons and Dutch culture. The content is AI-generated: the presenters (Ling, Sam, Marieke, Jenny, Mateo and friends) are not real teachers. For beginners to advanced learners.",
-      zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化。內容由 AI 生成：主持人（Ling、Sam、Marieke、Jenny、Mateo 等）並非真人老師。適合初學者到進階學習者。"
+      zh: "介紹荷蘭人日常生活中真正怎麼說話的 YouTube 頻道：貼近生活的對話、實用語言技巧、清楚的課程與荷蘭文化。內容由 AI 生成：主持人（Ling、Sam、Marieke、Jenny、Mateo 等）並非真人老師。適合初學者到進階學習者。",
+      nl: "Een YouTube-kanaal over hoe Nederlanders echt praten: herkenbare gesprekken, handige tips, duidelijke lessen en Nederlandse cultuur. De video's zijn gemaakt met AI: de presentatoren (Ling, Sam, Marieke, Jenny, Mateo en anderen) zijn geen echte docenten. Voor beginners en gevorderden."
     },
-    price: { en: "Free on YouTube.", zh: "YouTube 免費觀看。" }
+    price: { en: "Free on YouTube.", zh: "YouTube 免費觀看。", nl: "Gratis op YouTube." }
   },
   {
     id: "strooptaal",
@@ -1485,11 +1589,13 @@ window.RESOURCES = [
     url: "https://strooptaal.app/",
     note: {
       en: "An app for people living in the Netherlands, covering A0 to C1: a lesson path, word games, flashcards with daily reviews, podcasts and a culture quiz. Premium adds AI voice conversations, pronunciation scores and inburgering exam practice. Independent, not run by DUO; the interface is available in several languages.",
-      zh: "為住在荷蘭的人設計的 App，涵蓋 A0 到 C1：循序課程、單字遊戲、每日複習的單字卡、Podcast 與文化測驗。Premium 另有 AI 語音對話、發音評分與融入考試練習。為獨立 App，非 DUO 官方；介面提供多種語言。"
+      zh: "為住在荷蘭的人設計的 App，涵蓋 A0 到 C1：循序課程、單字遊戲、每日複習的單字卡、Podcast 與文化測驗。Premium 另有 AI 語音對話、發音評分與融入考試練習。為獨立 App，非 DUO 官方；介面提供多種語言。",
+      nl: "Een app voor mensen die in Nederland wonen, van A0 tot C1. Met lessen, woordspelletjes, flashcards om elke dag te herhalen, podcasts en een quiz over cultuur. Premium heeft ook gesprekken met AI, een score voor je uitspraak en oefenen voor het inburgeringsexamen. Niet van DUO. De app is er in verschillende talen."
     },
     price: {
       en: "Free basics. Plus from €7.99 a month. Premium €12.99 a month, €29.99 for 3 months, or €69.99–89.99 a year (App Store, Netherlands).",
-      zh: "基本功能免費。Plus 每月 €7.99 起。Premium 每月 €12.99、3 個月 €29.99，或每年 €69.99–89.99（荷蘭 App Store）。"
+      zh: "基本功能免費。Plus 每月 €7.99 起。Premium 每月 €12.99、3 個月 €29.99，或每年 €69.99–89.99（荷蘭 App Store）。",
+      nl: "Basis gratis. Plus vanaf €7,99 per maand. Premium: €12,99 per maand, €29,99 voor 3 maanden of €69,99–89,99 per jaar (App Store, Nederland)."
     }
   },
   {
@@ -1507,11 +1613,13 @@ window.RESOURCES = [
     url: "http://dutchinutrecht.nl/",
     note: {
       en: "A Dutch teacher offering classes at every level, in person in Utrecht or live online: beginner and intermediate courses, custom courses built around your needs, and inburgering exam preparation. Learn alone or with friends.",
-      zh: "在烏特勒支實體授課、也提供線上直播課的荷語老師，涵蓋所有程度：初級與中級課程、依需求量身打造的課程，以及融入考試準備。可單獨上課，也可與朋友一起上。"
+      zh: "在烏特勒支實體授課、也提供線上直播課的荷語老師，涵蓋所有程度：初級與中級課程、依需求量身打造的課程，以及融入考試準備。可單獨上課，也可與朋友一起上。",
+      nl: "Een docent Nederlands voor alle niveaus, in de klas in Utrecht of live online. Cursussen voor beginners en gevorderden, cursussen op maat en voorbereiding op het inburgeringsexamen. Leer alleen of met vrienden."
     },
     price: {
       en: "€27.50 an hour for beginner, intermediate and inburgering courses; €30 an hour for custom courses. The second and third student in a group get 40% off.",
-      zh: "初級、中級與融入考試課程每小時 €27.50；客製化課程每小時 €30。兩人以上同班，第二與第三位學員享 6 折優惠。"
+      zh: "初級、中級與融入考試課程每小時 €27.50；客製化課程每小時 €30。兩人以上同班，第二與第三位學員享 6 折優惠。",
+      nl: "€27,50 per uur voor beginners, gevorderden en inburgering. €30 per uur voor cursussen op maat. De tweede en derde student in een groep krijgen 40% korting."
     }
   }
 ];
