@@ -823,7 +823,7 @@ window.RESOURCES = [
     levels: ["A1", "C1"],
     cost: [0, 10],
     hours: [1, 20],
-    url: "https://www.tandem.net/",
+    url: "https://tandem.net/language-exchange/netherlands",
     note: {
       en: "Language-exchange apps: chat with Dutch speakers who want to learn your language. Free practice in writing and, once you're braver, voice calls.",
       zh: "語言交換 App：和想學你母語的荷語母語者聊天。免費練習寫作，敢開口後還能語音通話。",
