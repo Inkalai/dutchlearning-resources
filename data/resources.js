@@ -1721,5 +1721,31 @@ window.RESOURCES = [
       zh: "A0–A1 或 A1–A2 各 €500（11 堂、每堂 2 小時）。A2–B1 €985（21 堂），或分 3 期每期 €341。A0–B1 一年課程 €1,786.50。皆含教材。",
       nl: "A0–A1 of A1–A2: €500 (11 lessen van 2 uur). A2–B1: €985 (21 lessen), of 3 × €341. Een jaar A0–B1: €1.786,50. Lesmateriaal inbegrepen."
     }
+  },
+  {
+    id: "taalboost",
+    name: "TaalBoost",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    variants: ["nl"],
+    cities: ["Amsterdam"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    levels: ["A0", "C1"],
+    cost: [160, 550],
+    hours: [12, 40],
+    url: "https://www.taalboost.nl/",
+    instagram: "https://www.instagram.com/taalboost/",
+    note: {
+      en: "A language school in Amsterdam (Chasséstraat) and online, with 30-hour courses from beginner to C1: evening, morning or Saturday classes online, evening classes in Amsterdam, and an intensive week for A1–A2. Also an online conversation course from B1, and private or duo lessons.",
+      zh: "位於阿姆斯特丹（Chasséstraat）並提供線上課程的語言學校，30 小時的課程從初級到 C1：線上有晚間、早上或週六班，阿姆斯特丹有實體晚間班，另有 A1–A2 的一週密集班。也有 B1 以上的線上會話課，以及一對一或兩人小班課。",
+      nl: "Een taalschool in Amsterdam (Chasséstraat) en online. Cursussen van 30 uur, van beginner tot C1: online in de avond, de ochtend of op zaterdag, in de avond in Amsterdam, en een intensieve week voor A1–A2. Ook een online praatcursus vanaf B1, en privé- of duolessen."
+    },
+    price: {
+      en: "Online evening, morning or Saturday course €399 (30 hours in 6 or 10 weeks). Evening course in Amsterdam €549 (30 hours in 6 weeks). Intensive week in Amsterdam €549 (30 hours in 6 days). Online conversation course from B1 €249 (15 hours). Private and duo lessons: ask for a quote.",
+      zh: "線上晚間、早上或週六班 €399（6 或 10 週共 30 小時）。阿姆斯特丹實體晚間班 €549（6 週共 30 小時）。阿姆斯特丹一週密集班 €549（6 天共 30 小時）。B1 以上線上會話課 €249（15 小時）。一對一與兩人小班課需另外報價。",
+      nl: "Online in de avond, ochtend of op zaterdag: €399 (30 uur in 6 of 10 weken). Avondcursus in Amsterdam: €549 (30 uur in 6 weken). Intensieve week in Amsterdam: €549 (30 uur in 6 dagen). Online praatcursus vanaf B1: €249 (15 uur). Privé- en duolessen: vraag de prijs."
+    }
   }
 ];
