@@ -1621,5 +1621,105 @@ window.RESOURCES = [
       zh: "初級、中級與融入考試課程每小時 €27.50；客製化課程每小時 €30。兩人以上同班，第二與第三位學員享 6 折優惠。",
       nl: "€27,50 per uur voor beginners, gevorderden en inburgering. €30 per uur voor cursussen op maat. De tweede en derde student in een groep krijgen 40% korting."
     }
+  },
+  {
+    id: "lest-best",
+    name: "Lest Best",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    variants: ["nl"],
+    cities: ["Utrecht", "Rotterdam"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    levels: ["A0", "C1"],
+    cost: [265, 750],
+    hours: [10, 60],
+    url: "https://lestbest.nl/cursussen-overzicht/",
+    note: {
+      en: "A language school for highly educated learners in Utrecht, Rotterdam and online, with courses from A0 to C1. Choose intensive (6 weeks), semi-intensive (9 weeks) or the once-a-week \"Nederlands in de praktijk\" courses (13 weeks) for everyday Dutch at work and socially.",
+      zh: "位於烏特勒支、鹿特丹並提供線上課程的語言學校，對象為高學歷學習者，課程從 A0 到 C1。可選擇密集班（6 週）、半密集班（9 週），或每週一次、為期 13 週的「Nederlands in de praktijk」實用課，練習工作與社交中的日常荷語。",
+      nl: "Een taalschool voor hoogopgeleiden in Utrecht, Rotterdam en online. Cursussen van A0 tot C1. Kies intensief (6 weken), half-intensief (9 weken) of \"Nederlands in de praktijk\" (13 weken, één keer per week): Nederlands voor werk en vrije tijd."
+    },
+    price: {
+      en: "Nederlands in de praktijk €795 (13 weeks, groups up to 15). Intensive or semi-intensive courses €1,099; extensive course in Rotterdam €1,445. €50 off your 2nd course, €100 off the 3rd, €150 off the 4th. Check the course page for whether books are included.",
+      zh: "Nederlands in de praktijk 實用課 €795（13 週，每班最多 15 人）。密集班或半密集班 €1,099；鹿特丹的延長班 €1,445。第 2 期課程折 €50、第 3 期折 €100、第 4 期折 €150。教材是否包含請見各課程頁面。",
+      nl: "Nederlands in de praktijk: €795 (13 weken, groepen tot 15 mensen). Intensief of half-intensief: €1.099. Extensief in Rotterdam: €1.445. Korting: €50 op je 2e cursus, €100 op de 3e, €150 op de 4e. Kijk op de website of boeken erbij zitten."
+    }
+  },
+  {
+    id: "flowently",
+    name: "Flowently: Daily Dutch in 30h",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    variants: ["nl"],
+    cities: [],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "A1"],
+    cost: [120, 1000],
+    hours: [8, 30],
+    url: "https://flowently.com/language-sessions/daily-dutch-in-30-h-explained/",
+    note: {
+      en: "A 30-hour beginner programme with a private tutor, online or in person: you often meet in a café and practise ordering, shopping and small talk on the spot. Covers your first 1,000 words, basic grammar and pronunciation. Sessions 7 days a week, 8:00–22:00.",
+      zh: "與私人家教一起上的 30 小時初學者課程，可線上或實體上課：常約在咖啡館見面，當場練習點餐、購物和閒聊。內容包括最初的 1,000 個單字、基礎文法與發音。每週 7 天、08:00–22:00 都能上課。",
+      nl: "Een cursus van 30 uur voor beginners, met een eigen docent. Online of in het echt: vaak spreek je af in een café en oefen je meteen met bestellen, winkelen en praten. Je leert je eerste 1.000 woorden, grammatica en uitspraak. Les op alle dagen, van 8:00 tot 22:00."
+    },
+    price: {
+      en: "Trial package of 3 hours €120. Packages: 10 hours €750 (€75 an hour), 30 hours €1,999 (€67 an hour), 60 hours €3,960 (€66 an hour), valid for 1 year. Bring a friend for a discount.",
+      zh: "3 小時體驗方案 €120。課程方案：10 小時 €750（每小時 €75）、30 小時 €1,999（每小時 €67）、60 小時 €3,960（每小時 €66），效期 1 年。和朋友一起上有優惠。",
+      nl: "Proefpakket van 3 uur: €120. Pakketten: 10 uur €750 (€75 per uur), 30 uur €1.999 (€67 per uur), 60 uur €3.960 (€66 per uur). 1 jaar geldig. Met een vriend krijg je korting."
+    }
+  },
+  {
+    id: "kickstart-school",
+    name: "Kickstart School",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    variants: ["nl"],
+    cities: ["Den Haag"],
+    formats: ["self", "inperson", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar"],
+    levels: ["A0", "C1"],
+    cost: [0, 240],
+    hours: [12, 40],
+    url: "https://www.kickstartschool.nl/dutch-group-courses",
+    note: {
+      en: "A language school in The Hague with group courses from beginner to advanced, in the classroom (max. 10), online (max. 8) or hybrid. Once a week or semi-intensive twice a week. Also a free Kickstart School toolkit with vocabulary, grammar tips, worksheets and links to practise.",
+      zh: "位於海牙的語言學校，提供從初級到高級的團體課，可選實體（最多 10 人）、線上（最多 8 人）或混合上課，每週一次或每週兩次的半密集班。另有免費的 Kickstart School 學習工具包，包含單字、文法技巧、練習單與練習資源連結。",
+      nl: "Een taalschool in Den Haag. Groepscursussen van beginner tot gevorderd: in de klas (maximaal 10), online (maximaal 8) of allebei. Eén keer per week of twee keer per week (half-intensief). Ook een gratis toolkit met woorden, tips over grammatica, werkbladen en links om te oefenen."
+    },
+    price: {
+      en: "Free toolkit. Once-a-week group course €420 for 24 hours (book extra; Step Up I goes up to €450 from January 2027). Semi-intensive course €720 for 48 hours. Some courses give students and au pairs €40 off.",
+      zh: "學習工具包免費。每週一次的團體班 24 小時 €420（教材另計；Step Up I 自 2027 年 1 月起調漲為 €450）。半密集班 48 小時 €720。部分課程學生與互惠生（au pair）可折 €40。",
+      nl: "Toolkit gratis. Groepscursus één keer per week: €420 voor 24 uur (boek extra; Step Up I wordt €450 vanaf januari 2027). Half-intensief: €720 voor 48 uur. Studenten en au pairs krijgen bij sommige cursussen €40 korting."
+    }
+  },
+  {
+    id: "dutch-on-track",
+    name: "Dutch on Track",
+    kind: "school",
+    categories: ["school"],
+    region: "NL",
+    variants: ["nl"],
+    cities: ["Eindhoven"],
+    formats: ["inperson", "online"],
+    focus: ["speaking", "listening", "grammar"],
+    levels: ["A0", "B1"],
+    cost: [150, 200],
+    hours: [8, 16],
+    url: "https://dutchontrack.nl/",
+    note: {
+      en: "Dutch courses for expats in Eindhoven, Tilburg and online, with a focus on speaking and understanding. Small groups of 8–10 meet once a week for 2 hours in the evening. New courses start every quarter, plus a one-year track from A0 to B1 and a conversation course from A2.",
+      zh: "為外籍人士開設的荷語課程，地點在恩荷芬、蒂爾堡與線上，著重口說和聽力。8–10 人小班，每週一次、晚上上課 2 小時。每季開新班，另有從 A0 到 B1 的一年課程，以及 A2 以上的會話課。",
+      nl: "Cursussen Nederlands voor expats in Eindhoven, Tilburg en online. Veel aandacht voor spreken en luisteren. Kleine groepen van 8–10 mensen, één keer per week 2 uur in de avond. Elk kwartaal starten nieuwe cursussen. Ook een jaar van A0 tot B1 en een praatcursus vanaf A2."
+    },
+    price: {
+      en: "A0–A1 or A1–A2 €500 each (11 lessons of 2 hours). A2–B1 €985 (21 lessons), or 3 × €341 in instalments. One year A0–B1 €1,786.50. Study materials included.",
+      zh: "A0–A1 或 A1–A2 各 €500（11 堂、每堂 2 小時）。A2–B1 €985（21 堂），或分 3 期每期 €341。A0–B1 一年課程 €1,786.50。皆含教材。",
+      nl: "A0–A1 of A1–A2: €500 (11 lessen van 2 uur). A2–B1: €985 (21 lessen), of 3 × €341. Een jaar A0–B1: €1.786,50. Lesmateriaal inbegrepen."
+    }
   }
 ];
