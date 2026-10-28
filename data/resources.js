@@ -811,8 +811,8 @@ window.RESOURCES = [
     price: { en: "Tutors set their own rates, roughly €10–35 per hour.", zh: "老師自訂價格，約每小時 €10–35。", nl: "Elke docent kiest zijn eigen prijs: ongeveer €10–35 per uur." }
   },
   {
-    id: "exchange-apps",
-    name: "Tandem & HelloTalk",
+    id: "tandem",
+    name: "Tandem",
     kind: "community",
     categories: ["app", "practice"],
     region: "online",
@@ -825,9 +825,30 @@ window.RESOURCES = [
     hours: [1, 20],
     url: "https://tandem.net/language-exchange/netherlands",
     note: {
-      en: "Language-exchange apps: chat with Dutch speakers who want to learn your language. Free practice in writing and, once you're braver, voice calls.",
-      zh: "語言交換 App：和想學你母語的荷語母語者聊天。免費練習寫作，敢開口後還能語音通話。",
-      nl: "Apps om talen te ruilen. Je chat met Nederlanders die jouw taal willen leren. Gratis oefenen met schrijven, en later ook met bellen."
+      en: "A language-exchange app: chat with Dutch speakers who want to learn your language. Free practice in writing and, once you're braver, voice and video calls.",
+      zh: "語言交換 App：和想學你母語的荷語母語者聊天。免費練習寫作，敢開口後還能語音或視訊通話。",
+      nl: "Een app om talen te ruilen. Je chat met Nederlanders die jouw taal willen leren. Gratis oefenen met schrijven, en later ook met bellen of videobellen."
+    },
+    price: { en: "Free; optional premium.", zh: "免費；可選付費進階版。", nl: "Gratis. Je kunt extra's kopen." }
+  },
+  {
+    id: "hellotalk",
+    name: "HelloTalk",
+    kind: "community",
+    categories: ["app", "practice"],
+    region: "online",
+    variants: ["nl", "be"],
+    cities: [],
+    formats: ["online"],
+    focus: ["speaking", "writing"],
+    levels: ["A1", "C1"],
+    cost: [0, 10],
+    hours: [1, 20],
+    url: "https://www.hellotalk.com/en/learn/dutch",
+    note: {
+      en: "A language-exchange app: chat with Dutch speakers who are learning your language, with built-in translation and corrections. You can also post short updates for native speakers to correct.",
+      zh: "語言交換 App：和正在學你母語的荷語母語者聊天，內建翻譯與修改功能。也可以發短文動態，讓母語者幫你訂正。",
+      nl: "Een app om talen te ruilen. Je chat met Nederlanders die jouw taal leren. De app kan vertalen en verbeteren. Je kunt ook korte berichten plaatsen. Nederlanders verbeteren dan je fouten."
     },
     price: { en: "Free; optional premium.", zh: "免費；可選付費進階版。", nl: "Gratis. Je kunt extra's kopen." }
   },
