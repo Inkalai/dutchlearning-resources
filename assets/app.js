@@ -323,12 +323,22 @@
     });
     $("filtersClose").addEventListener("click", function () { setFilterSheet(false, true); });
 
-    // The floating filter button appears only once the filter section has scrolled out of view.
+    // The floating filter button appears only while the results are on screen and the
+    // filter section has scrolled up out of view, so it never covers later sections.
     if ("IntersectionObserver" in window) {
+      var entryAbove = false, resultsInView = false;
+      var updateToggle = function () { $("filtersToggle").classList.toggle("show", entryAbove && resultsInView); };
       new IntersectionObserver(function (entries) {
         var e = entries[0];
-        $("filtersToggle").classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top < 0);
+        entryAbove = !e.isIntersecting && e.boundingClientRect.top < 0;
+        updateToggle();
       }).observe($("filtersEntry"));
+      // Watch only the bottom strip of the screen, where the button sits: it shows while
+      // result cards are behind it and hides at the list's end buttons and the next section.
+      new IntersectionObserver(function (entries) {
+        resultsInView = entries[0].isIntersecting;
+        updateToggle();
+      }, { rootMargin: "-85% 0px 0px 0px" }).observe($("resultList"));
     } else {
       $("filtersToggle").classList.add("show");
     }
