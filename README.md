@@ -46,7 +46,7 @@ Run the build first so the pages are up to date.
 1. Push this repository to GitHub.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
-4. The site appears at `https://inkalai.github.io/dutchlearning-resources/` within a minute or two.
+4. The site appears at `https://www.dutchlearningresources.com/` (set under **Settings → Pages → Custom domain**, saved in the `CNAME` file) within a minute or two. The old `inkalai.github.io/dutchlearning-resources/` address redirects there.
 
 To use your own domain, add it under **Settings → Pages → Custom domain**, then change `SITE_URL` in `tools/build.js` and run the build.
 

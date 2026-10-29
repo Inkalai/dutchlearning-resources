@@ -2,7 +2,7 @@
 
 > A free, independent finder for ways to learn Dutch: libraries, city halls, language schools, universities, apps, online tutors, Instagram and YouTube teachers and practice groups in the Netherlands, Belgium, Taiwan and online. Run by Inka (Instagram @dutchlearning). No ads or paid placements. Prices are checked every week.
 
-The site is available in English (https://inkalai.github.io/dutchlearning-resources/), Traditional Chinese (https://inkalai.github.io/dutchlearning-resources/zh/) and simple Dutch (https://inkalai.github.io/dutchlearning-resources/nl/). Visitors filter by current and target CEFR level (A0–C2), monthly budget, time per month, learning format, skills, region and Dutch or Flemish.
+The site is available in English (https://www.dutchlearningresources.com/), Traditional Chinese (https://www.dutchlearningresources.com/zh/) and simple Dutch (https://www.dutchlearningresources.com/nl/). Visitors filter by current and target CEFR level (A0–C2), monthly budget, time per month, learning format, skills, region and Dutch or Flemish.
 
 Last price check: 2026-10-26. Prices change; always confirm on the provider's website.
 
@@ -84,5 +84,5 @@ Last price check: 2026-10-26. Prices change; always confirm on the provider's we
 
 ## Optional
 
-- [Suggest a resource](https://inkalai.github.io/dutchlearning-resources/#suggest)
+- [Suggest a resource](https://www.dutchlearningresources.com/#suggest)
 - [Instagram @dutchlearning](https://www.instagram.com/dutchlearning/)

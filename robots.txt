@@ -4,4 +4,4 @@ Allow: /
 Disallow: /templates/
 Disallow: /tools/
 
-Sitemap: https://inkalai.github.io/dutchlearning-resources/sitemap.xml
+Sitemap: https://www.dutchlearningresources.com/sitemap.xml

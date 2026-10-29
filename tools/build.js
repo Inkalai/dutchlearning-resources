@@ -26,7 +26,7 @@ const { execSync } = require("child_process");
 
 const ROOT = path.join(__dirname, "..");
 // Change this if the site moves to its own domain.
-const SITE_URL = "https://inkalai.github.io/dutchlearning-resources/";
+const SITE_URL = "https://www.dutchlearningresources.com/";
 
 const LANGS = {
   en: { dir: "", htmlLang: "en", hreflang: "en", ogLocale: "en_GB" },
