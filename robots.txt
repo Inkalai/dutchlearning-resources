@@ -1,0 +1,7 @@
+# Search engines and AI tools are welcome to read and cite this site.
+User-agent: *
+Allow: /
+Disallow: /templates/
+Disallow: /tools/
+
+Sitemap: https://inkalai.github.io/dutchlearning-resources/sitemap.xml

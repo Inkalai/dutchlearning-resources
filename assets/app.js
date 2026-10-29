@@ -41,13 +41,11 @@
     } catch (e) { return null; }
   }
 
+  // Each language has its own page (/, /zh/, /nl/); a script in the page head handles
+  // ?lang= links and sends returning visitors to the language they chose before.
   function initialLang() {
-    var param = new URLSearchParams(location.search).get("lang");
-    if (LANGS.indexOf(param) >= 0) return param;
-    var saved = storage("lang");
-    if (LANGS.indexOf(saved) >= 0) return saved;
-    var browser = (navigator.language || "").slice(0, 2).toLowerCase();
-    return LANGS.indexOf(browser) >= 0 ? browser : "en";
+    var page = document.documentElement.getAttribute("data-lang");
+    return LANGS.indexOf(page) >= 0 ? page : "en";
   }
 
   function t(key, vars) {
@@ -730,12 +728,10 @@
     applyLinks();
 
     $("langSelect").addEventListener("change", function (e) {
-      state.lang = e.target.value;
-      storage("lang", state.lang);
-      var url = new URL(location.href);
-      url.searchParams.set("lang", state.lang);
-      history.replaceState(null, "", url);
-      renderAll();
+      var lang = e.target.value;
+      storage("lang", lang);
+      var root = document.documentElement.getAttribute("data-root") || "";
+      location.href = (lang === "en" ? root || "./" : root + lang + "/") + location.hash;
     });
 
     $("place").addEventListener("change", function (e) { state.place = e.target.value; renderResults(); });
