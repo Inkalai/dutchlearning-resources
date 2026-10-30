@@ -1803,15 +1803,15 @@ window.RESOURCES = [
     variants: ["nl", "be"],
     cities: [],
     formats: ["self"],
-    focus: ["reading", "writing"],
+    focus: ["reading", "grammar"],
     levels: ["A0", "C2"],
     cost: [0, 0],
     hours: [1, 4],
     url: "https://glosbe.com/nl/en",
     note: {
-      en: "A free online dictionary between Dutch and almost any language, including English and Chinese. Besides translations it shows dozens of example sentences, so you can see how a word is really used.",
-      zh: "免費的線上字典，荷語可對照幾乎所有語言，包括英文和中文。除了翻譯，還提供大量例句，讓你看到單字實際怎麼用。",
-      nl: "Een gratis woordenboek op internet. Van Nederlands naar bijna elke taal, ook Engels en Chinees. Je ziet niet alleen de vertaling, maar ook veel voorbeeldzinnen. Zo zie je hoe je een woord echt gebruikt."
+      en: "A free online dictionary between Dutch and almost any language, including English and Chinese. Besides translations it shows dozens of example sentences, so you can see how a word is really used, and you can listen to the pronunciation.",
+      zh: "免費的線上字典，荷語可對照幾乎所有語言，包括英文和中文。除了翻譯，還提供大量例句，讓你看到單字實際怎麼用，也可以聽發音。",
+      nl: "Een gratis woordenboek op internet. Van Nederlands naar bijna elke taal, ook Engels en Chinees. Je ziet niet alleen de vertaling, maar ook veel voorbeeldzinnen. Zo zie je hoe je een woord echt gebruikt. Je kunt ook luisteren hoe je het uitspreekt."
     }
   },
   {
@@ -1823,15 +1823,15 @@ window.RESOURCES = [
     variants: ["nl", "be"],
     cities: [],
     formats: ["self"],
-    focus: ["writing", "grammar"],
-    levels: ["A1", "C2"],
+    focus: ["reading", "grammar"],
+    levels: ["A0", "C2"],
     cost: [0, 0],
     hours: [1, 4],
     url: "https://woordenlijst.org/",
     note: {
-      en: "The official Dutch spelling list (\"het Groene Boekje\") from the Dutch Language Union, used in the Netherlands and Flanders. It has no translations, but shows the correct spelling, articles (de/het), plurals and verb forms of every word.",
-      zh: "荷蘭語聯盟（Taalunie）出版的官方荷語拼字表（俗稱「綠皮書」），荷蘭和法蘭德斯通用。沒有翻譯，但能查到每個單字的正確拼法、冠詞（de/het）、複數和動詞變化。",
-      nl: "De officiële lijst met de juiste spelling (\"het Groene Boekje\") van de Taalunie, voor Nederland en Vlaanderen. Er staan geen vertalingen in. Je vindt wel de spelling, het lidwoord (de of het), het meervoud en de vormen van werkwoorden."
+      en: "The official Dutch spelling list (\"het Groene Boekje\") from the Dutch Language Union, used in the Netherlands and Flanders. It has no translations, but shows the correct spelling, articles (de/het), plurals and verb forms of every word, and lets you hear the pronunciation.",
+      zh: "荷蘭語聯盟（Taalunie）出版的官方荷語拼字表（俗稱「綠皮書」），荷蘭和法蘭德斯通用。沒有翻譯，但能查到每個單字的正確拼法、冠詞（de/het）、複數和動詞變化，也可以聽發音。",
+      nl: "De officiële lijst met de juiste spelling (\"het Groene Boekje\") van de Taalunie, voor Nederland en Vlaanderen. Er staan geen vertalingen in. Je vindt wel de spelling, het lidwoord (de of het), het meervoud en de vormen van werkwoorden. Je kunt ook luisteren hoe je een woord uitspreekt."
     }
   }
 ];
