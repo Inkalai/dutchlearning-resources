@@ -7,9 +7,9 @@
   id          unique short name, letters/numbers/dashes only
   name        resource name (shown as-is in every language)
   kind        optional label: library | government | school | university | app | course |
-              tutors | creator | ai | media | podcast | community
+              tutors | creator | ai | media | podcast | community | dictionary
   categories  quick-filter tags, any of: library, government, school, instagram,
-              youtube, app, tutors, courses, practice, news, tv
+              youtube, app, tutors, courses, practice, news, tv, dictionary
   region      "NL", "BE", "TW", "online", or several joined with + (e.g. "NL+BE")
   variants    "nl" (Netherlands Dutch), "be" (Belgian Dutch / Flemish) or both
   cities      cities with in-person sessions, [] if none
@@ -1792,6 +1792,46 @@ window.RESOURCES = [
       en: "Online evening, morning or Saturday course €399 (30 hours in 6 or 10 weeks). Evening course in Amsterdam €549 (30 hours in 6 weeks). Intensive week in Amsterdam €549 (30 hours in 6 days). Online conversation course from B1 €249 (15 hours). Private and duo lessons: ask for a quote.",
       zh: "線上晚間、早上或週六班 €399（6 或 10 週共 30 小時）。阿姆斯特丹實體晚間班 €549（6 週共 30 小時）。阿姆斯特丹一週密集班 €549（6 天共 30 小時）。B1 以上線上會話課 €249（15 小時）。一對一與兩人小班課需另外報價。",
       nl: "Online in de avond, ochtend of op zaterdag: €399 (30 uur in 6 of 10 weken). Avondcursus in Amsterdam: €549 (30 uur in 6 weken). Intensieve week in Amsterdam: €549 (30 uur in 6 dagen). Online praatcursus vanaf B1: €249 (15 uur). Privé- en duolessen: vraag de prijs."
+    }
+  },
+  {
+    id: "glosbe",
+    name: "Glosbe",
+    kind: "dictionary",
+    categories: ["dictionary"],
+    region: "online",
+    variants: ["nl", "be"],
+    cities: [],
+    formats: ["self"],
+    focus: ["reading", "writing"],
+    levels: ["A0", "C2"],
+    cost: [0, 0],
+    hours: [1, 4],
+    url: "https://glosbe.com/nl/en",
+    note: {
+      en: "A free online dictionary between Dutch and almost any language, including English and Chinese. Besides translations it shows dozens of example sentences, so you can see how a word is really used.",
+      zh: "免費的線上字典，荷語可對照幾乎所有語言，包括英文和中文。除了翻譯，還提供大量例句，讓你看到單字實際怎麼用。",
+      nl: "Een gratis woordenboek op internet. Van Nederlands naar bijna elke taal, ook Engels en Chinees. Je ziet niet alleen de vertaling, maar ook veel voorbeeldzinnen. Zo zie je hoe je een woord echt gebruikt."
+    }
+  },
+  {
+    id: "woordenlijst",
+    name: "Woordenlijst Nederlandse Taal",
+    kind: "dictionary",
+    categories: ["dictionary"],
+    region: "online",
+    variants: ["nl", "be"],
+    cities: [],
+    formats: ["self"],
+    focus: ["writing", "grammar"],
+    levels: ["A1", "C2"],
+    cost: [0, 0],
+    hours: [1, 4],
+    url: "https://woordenlijst.org/",
+    note: {
+      en: "The official Dutch spelling list (\"het Groene Boekje\") from the Dutch Language Union, used in the Netherlands and Flanders. It has no translations, but shows the correct spelling, articles (de/het), plurals and verb forms of every word.",
+      zh: "荷蘭語聯盟（Taalunie）出版的官方荷語拼字表（俗稱「綠皮書」），荷蘭和法蘭德斯通用。沒有翻譯，但能查到每個單字的正確拼法、冠詞（de/het）、複數和動詞變化。",
+      nl: "De officiële lijst met de juiste spelling (\"het Groene Boekje\") van de Taalunie, voor Nederland en Vlaanderen. Er staan geen vertalingen in. Je vindt wel de spelling, het lidwoord (de of het), het meervoud en de vormen van werkwoorden."
     }
   }
 ];

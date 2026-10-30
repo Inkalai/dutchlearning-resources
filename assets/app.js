@@ -12,7 +12,7 @@
   var FORMATS = ["self", "inperson", "online"];
   var FOCUS = ["speaking", "listening", "reading", "writing", "grammar", "exam"];
   var VARIANTS = ["nl", "be"];
-  var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv"];
+  var CATEGORIES = ["library", "government", "school", "instagram", "youtube", "app", "tutors", "courses", "practice", "news", "tv", "dictionary"];
   var COUNTRIES = ["NL", "BE", "TW"];
   var CITY_COUNTRIES = window.CITY_COUNTRIES || {};
 

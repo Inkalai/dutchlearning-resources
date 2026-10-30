@@ -273,7 +273,7 @@ select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmln
 .logo-creator { background: #fde0d2; color: #b2441a; }
 .logo-school, .logo-university { background: var(--teal-soft); color: #11606a; }
 .logo-government, .logo-library { background: #e8eef7; color: #2f4f7f; }
-.logo-app, .logo-course, .logo-podcast, .logo-tutors { background: #efe9f7; color: #5b3f8a; }
+.logo-app, .logo-course, .logo-podcast, .logo-tutors, .logo-dictionary { background: #efe9f7; color: #5b3f8a; }
 .logo-media, .logo-ai { background: #f3ece7; color: #6e625b; }
 .logo-community { background: #e6f2e4; color: #3d6b36; }
 .result h3 a { color: var(--ink); text-decoration: none; }
