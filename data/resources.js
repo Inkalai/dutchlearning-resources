@@ -219,6 +219,31 @@ window.RESOURCES = [
     price: { en: "Much is free; NPO Plus removes ads and unlocks the archive.", zh: "大部分免費；NPO Plus 付費版無廣告並可看完整片庫。", nl: "Veel is gratis. Met NPO Plus heb je geen reclame en kun je alles kijken." }
   },
   {
+    id: "vrt-max",
+    name: "VRT MAX",
+    kind: "media",
+    categories: ["tv"],
+    region: "online",
+    variants: ["be"],
+    cities: [],
+    formats: ["self"],
+    focus: ["listening"],
+    levels: ["B1", "C2"],
+    cost: [0, 0],
+    hours: [1, 40],
+    url: "https://www.vrt.be/vrtmax/",
+    note: {
+      en: "Flemish public TV on demand: series, documentaries, news and kids' shows in Belgian Dutch. Turn on Dutch subtitles with the CC button to train your ear.",
+      zh: "法蘭德斯公共電視隨選平台，有比利時荷語的影集、紀錄片、新聞和兒童節目。按 CC 鍵開啟荷文字幕，訓練聽力。",
+      nl: "Vlaamse tv op internet: series, documentaires, nieuws en programma's voor kinderen, in het Vlaams. Zet de Nederlandse ondertiteling aan met de knop CC. Zo oefen je luisteren."
+    },
+    price: {
+      en: "Free with a free VRT profile. Without a Belgian address, many programmes are blocked for rights reasons; VRT's own productions can be watched from anywhere.",
+      zh: "免費，只需註冊免費的 VRT 帳號。沒有比利時地址的話，很多節目因版權限制無法觀看；VRT 自製節目在任何地方都能看。",
+      nl: "Gratis met een gratis VRT-profiel. Woon je niet in België? Dan kun je veel programma's niet kijken. Programma's die VRT zelf maakt, kun je overal kijken."
+    }
+  },
+  {
     id: "wablieft",
     name: "Wablieft",
     kind: "media",
