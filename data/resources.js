@@ -1823,15 +1823,35 @@ window.RESOURCES = [
     variants: ["nl", "be"],
     cities: [],
     formats: ["self"],
-    focus: ["reading", "grammar"],
+    focus: ["grammar"],
     levels: ["A0", "C2"],
     cost: [0, 0],
     hours: [1, 4],
     url: "https://woordenlijst.org/",
     note: {
-      en: "The official Dutch spelling list (\"het Groene Boekje\") from the Dutch Language Union, used in the Netherlands and Flanders. It has no translations, but shows the correct spelling, articles (de/het), plurals and verb forms of every word, and lets you hear the pronunciation.",
-      zh: "荷蘭語聯盟（Taalunie）出版的官方荷語拼字表（俗稱「綠皮書」），荷蘭和法蘭德斯通用。沒有翻譯，但能查到每個單字的正確拼法、冠詞（de/het）、複數和動詞變化，也可以聽發音。",
-      nl: "De officiële lijst met de juiste spelling (\"het Groene Boekje\") van de Taalunie, voor Nederland en Vlaanderen. Er staan geen vertalingen in. Je vindt wel de spelling, het lidwoord (de of het), het meervoud en de vormen van werkwoorden. Je kunt ook luisteren hoe je een woord uitspreekt."
+      en: "The official Dutch spelling list (\"het Groene Boekje\") from the Dutch Language Union, used in the Netherlands and Flanders. It has no translations, but shows the correct spelling, articles (de/het), plurals and verb forms of every word.",
+      zh: "荷蘭語聯盟（Taalunie）出版的官方荷語拼字表（俗稱「綠皮書」），荷蘭和法蘭德斯通用。沒有翻譯，但能查到每個單字的正確拼法、冠詞（de/het）、複數和動詞變化。",
+      nl: "De officiële lijst met de juiste spelling (\"het Groene Boekje\") van de Taalunie, voor Nederland en Vlaanderen. Er staan geen vertalingen in. Je vindt wel de spelling, het lidwoord (de of het), het meervoud en de vormen van werkwoorden."
+    }
+  },
+  {
+    id: "reverso",
+    name: "Reverso Dictionary",
+    kind: "dictionary",
+    categories: ["dictionary"],
+    region: "online",
+    variants: ["nl", "be"],
+    cities: [],
+    formats: ["self"],
+    focus: ["reading", "grammar"],
+    levels: ["A0", "C2"],
+    cost: [0, 0],
+    hours: [1, 4],
+    url: "https://dictionary.reverso.net/",
+    note: {
+      en: "A free online dictionary between Dutch and English and other languages, with example sentences from real translated texts, articles and film subtitles. You can hear how words are pronounced by native speakers.",
+      zh: "免費的線上字典，提供荷語與英文及其他語言的對照，例句取自真實的翻譯文本、文章和電影字幕。可以聽母語者的發音。",
+      nl: "Een gratis woordenboek op internet: Nederlands en Engels, en ook andere talen. Met voorbeeldzinnen uit echte teksten, artikelen en ondertitels van films. Je kunt luisteren hoe Nederlanders een woord uitspreken."
     }
   }
 ];
