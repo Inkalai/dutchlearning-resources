@@ -1296,7 +1296,7 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["speaking", "listening", "reading", "grammar", "exam"],
     levels: ["A0", "C1"],
-    cost: [0, 100],
+    cost: [0, 200],
     hours: [4, 20],
     url: "https://easydutchlearning.nl/",
     instagram: "https://www.instagram.com/easydutchlearning/",
@@ -1306,9 +1306,9 @@ window.RESOURCES = [
       nl: "Sanne deelt tips op Instagram (42.000 volgers). Ze verkoopt online cursussen in je eigen tempo, van A1 tot C1, ook voor NT2 en het inburgeringsexamen. Met een Instagram-groep voor studenten."
     },
     price: {
-      en: "One-time per level: A1–B2 €245, C1 €199 (the homepage shows €297). All five levels €1,485. Kids' courses €397. No subscription.",
-      zh: "每級一次付清：A1–B2 €245、C1 €199（首頁顯示 €297）。五級全套 €1,485。兒童課程 €397。無訂閱制。",
-      nl: "Eén keer betalen per niveau: A1–B2 €245, C1 €199 (op de homepage staat €297). Alle vijf niveaus €1.485. Cursussen voor kinderen €397. Geen abonnement."
+      en: "One-time per level: €397. All five levels together €1,985. Kids' courses €397. No subscription.",
+      zh: "每級一次付清：€397。五級全套 €1,985。兒童課程 €397。無訂閱制。",
+      nl: "Eén keer betalen per niveau: €397. Alle vijf niveaus samen €1.985. Cursussen voor kinderen €397. Geen abonnement."
     }
   },
   {

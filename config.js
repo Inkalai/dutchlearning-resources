@@ -15,5 +15,5 @@ window.SITE_CONFIG = {
   githubRepo: "Inkalai/dutchlearning-resources",
 
   // Date shown as "Last checked" in the footer.
-  lastReviewed: "2026-10-26"
+  lastReviewed: "2026-11-02"
 };
