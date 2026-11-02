@@ -912,7 +912,7 @@ window.RESOURCES = [
     cost: [0, 200],
     hours: [1, 20],
     url: "https://www.learndutch.org/",
-    youtube: "https://www.youtube.com/results?search_query=learn+dutch+bart+de+pau",
+    youtube: "https://www.youtube.com/@LearndutchOrg",
     note: {
       en: "One of the biggest Dutch-learning YouTube channels (200K+ subscribers): an animated soap opera, culture interviews and grammar videos. Free online lessons on his website, plus premium courses and virtual classrooms.",
       zh: "最大的荷語學習 YouTube 頻道之一（超過 20 萬訂閱）：動畫肥皂劇、文化訪談和文法影片。網站有免費線上課程，另有付費進階課程與線上教室。",
@@ -938,7 +938,7 @@ window.RESOURCES = [
     cost: [0, 35],
     hours: [4, 15],
     url: "https://www.learndutchwithkim.com/course/courses",
-    youtube: "https://www.youtube.com/results?search_query=dutchies+to+be",
+    youtube: "https://www.youtube.com/@learndutchwithkim",
     note: {
       en: "Kim teaches Dutch through acted, funny everyday scenes followed by the grammar behind them. Free YouTube videos, plus self-paced 3-month courses per level with lifetime access.",
       zh: "Kim 用生活情境短劇教荷語，劇情好笑，接著講解背後的文法。YouTube 影片免費，另有各級三個月自學課程，可終身觀看。",
