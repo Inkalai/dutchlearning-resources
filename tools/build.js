@@ -169,8 +169,8 @@ function fillTemplate(template, lang, data) {
     (m, open, tag, key, inner, close) => open + esc(t(key)) + close);
   html = html.replace(/(\sdata-i18n-placeholder="([^"]+)")/g,
     (m, attr, key) => `${attr} placeholder="${esc(t(key))}"`);
-  html = html.replace('<p id="updated"></p>',
-    `<p id="updated">${esc(t("footer.updated", { date: data.config.lastReviewed }))}</p>`);
+  html = html.replace('<span id="updated"></span>',
+    `<span id="updated">${esc(t("footer.updated", { date: data.config.lastReviewed }))}</span>`);
   return html;
 }
 
