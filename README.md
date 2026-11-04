@@ -13,6 +13,7 @@ A trilingual (English / 繁體中文 / simple Nederlands) finder for free and pa
 | `assets/app.js` | Filtering, the level route and the suggestion form. |
 | `templates/page.html` | The page layout. The published pages are built from it. |
 | `tools/build.js` | Builds `index.html`, `zh/index.html`, `nl/index.html`, `sitemap.xml`, `robots.txt` and `llms.txt`. |
+| `journey/index.html` | "Resources I use": Inka's own Dutch learning journey (English only). A hand-written page, not built from the template; edit it directly. It contains labelled affiliate links. |
 
 ## Build the pages
 

@@ -3,6 +3,8 @@ window.I18N = {
   en: {
     "meta.title": "Dutch learning resources | @dutchlearning",
     "meta.description": "Free and paid ways to learn Dutch in the Netherlands, Belgium and online, filtered by budget, level, time and the way you like to learn.",
+    "nav.resources": "Resources",
+    "nav.journey": "Resources I use",
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
     "nav.about": "About",
@@ -173,6 +175,8 @@ window.I18N = {
   zh: {
     "meta.title": "荷語學習資源 | @dutchlearning",
     "meta.description": "整理荷蘭、比利時與線上的免費和付費荷語學習資源，可依預算、程度、時間與學習方式篩選。",
+    "nav.resources": "資源",
+    "nav.journey": "我用過的資源（英文）",
     "nav.find": "找資源",
     "nav.suggest": "推薦資源",
     "nav.about": "關於我",
@@ -343,6 +347,8 @@ window.I18N = {
   nl: {
     "meta.title": "Nederlands leren | @dutchlearning",
     "meta.description": "Gratis en betaalde manieren om Nederlands te leren, in Nederland, België en online. Zoek op prijs, niveau, tijd en hoe je wilt leren.",
+    "nav.resources": "Hulpmiddelen",
+    "nav.journey": "Wat ik gebruik (Engels)",
     "nav.find": "Zoeken",
     "nav.suggest": "Voorstellen",
     "nav.about": "Over mij",

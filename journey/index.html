@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources I use | @dutchlearning</title>
+  <meta name="description" content="Inka's Dutch learning journey from Taiwan to the Netherlands: the courses, books, apps and teachers she used at each level from A0 to B1, the skills each one trained, and the setbacks along the way.">
+  <link rel="canonical" href="https://www.dutchlearningresources.com/journey/">
+  <link rel="icon" href="../assets/favicon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="@dutchlearning">
+  <meta property="og:title" content="Resources I use | @dutchlearning">
+  <meta property="og:description" content="My Dutch quest: what I used at each level, which skills it trained, and the detours real life put in my way.">
+  <meta property="og:url" content="https://www.dutchlearningresources.com/journey/">
+  <meta property="og:image" content="https://www.dutchlearningresources.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #2b2420;
+      --muted: #6e625b;
+      --paper: #ffffff;
+      --peach: #fdf3ed;
+      --orange: #f26b2a;
+      --orange-ink: #c94d12;
+      --salmon: #ee8e76;
+      --teal: #1f8f9d;
+      --teal-soft: #e3f4f6;
+      --line: #eadfd7;
+      --grass: #e3efd6;
+      --grass-deep: #cfe5c4;
+      --sea: #cfe8ee;
+      --road: #f6e7c8;
+      --road-edge: #e8d3a8;
+      --radius: 16px;
+      --display: "Baloo 2", "Noto Sans TC", system-ui, sans-serif;
+      --body: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+      /* Skill colours */
+      --sk-pronunciation: #8a5cc4;
+      --sk-vocabulary: #c99a12;
+      --sk-grammar: #1f8f9d;
+      --sk-verbs: #2f7d4f;
+      --sk-speaking: #f26b2a;
+      --sk-listening: #3f6fc4;
+      --sk-reading: #6a8f1f;
+      --sk-writing: #d0587a;
+      --sk-exam: #2b2420;
+      --sk-confidence: #a15c2b;
+      color-scheme: light;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--body); -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); text-underline-offset: 3px; }
+    a:hover { color: var(--ink); }
+    :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: 6px; }
+    h1, h2, h3 { font-family: var(--display); line-height: 1.15; margin: 0; }
+    .wrap { width: min(1080px, 100% - 32px); margin-inline: auto; }
+
+    /* Header */
+    .top { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.95); backdrop-filter: blur(8px); }
+    .top .wrap { display: flex; align-items: center; gap: 16px; min-height: 68px; }
+    .top-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+    .top-nav > a, .nav-drop { color: var(--ink); text-decoration: none; padding: 8px 14px; border-radius: 999px; font: 500 16px var(--body); }
+    .top-nav > a:hover, .nav-drop:hover, .nav-group.open .nav-drop { background: var(--peach); color: var(--orange-ink); }
+    .nav-group { position: relative; }
+    .nav-drop { display: inline-flex; align-items: center; gap: 7px; border: 0; background: none; cursor: pointer; }
+    .nav-drop svg { transition: transform .15s ease; }
+    .nav-group.open .nav-drop svg { transform: rotate(180deg); }
+    .nav-menu { display: none; position: absolute; top: 100%; left: 0; min-width: 230px; padding: 8px; margin-top: 6px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 14px 30px rgba(43,36,32,.12); }
+    .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+    .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu, .nav-group.open .nav-menu { display: grid; }
+    .nav-menu a { color: var(--ink); text-decoration: none; border-radius: 10px; padding: 10px 12px; white-space: nowrap; }
+    .nav-menu a:hover { background: var(--peach); color: var(--orange-ink); }
+    .nav-menu a[aria-current="page"] { font-weight: 700; color: var(--orange-ink); }
+    .kofi { font: 700 14px var(--body); color: #fff; background: var(--teal); border-radius: 999px; padding: 9px 14px; text-decoration: none; white-space: nowrap; }
+    .kofi:hover { background: #17707b; color: #fff; }
+    .menu-btn { display: none; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 12px; background: #fff; cursor: pointer; padding: 11px 10px; flex-direction: column; justify-content: space-between; }
+    .menu-btn span { display: block; height: 2px; border-radius: 2px; background: var(--ink); }
+    .brand { display: flex; align-items: center; gap: 10px; font: 700 18px var(--display); color: var(--ink); text-decoration: none; }
+    .brand img { width: 40px; height: 40px; border-radius: 50%; }
+
+    /* Intro */
+    .intro { background: var(--peach); padding: 48px 0 36px; }
+    .intro h1 { font-size: clamp(36px, 6vw, 60px); }
+    .intro .lead { max-width: 62ch; color: var(--muted); font-size: 1.1rem; margin: 12px 0 24px; }
+    .disclosure { max-width: 820px; font-size: 14px; color: var(--muted); background: #fff; border-left: 4px solid var(--salmon); border-radius: 10px; padding: 10px 14px; margin: -8px 0 24px; }
+    /* Persona card */
+    .persona { background: #fff; border-radius: var(--radius); padding: 20px 22px; max-width: 820px; box-shadow: 0 6px 20px rgba(43,36,32,.06); border-top: 6px solid var(--teal); }
+    .persona-head { display: flex; align-items: center; gap: 16px; cursor: pointer; list-style: none; }
+    .persona-head::-webkit-details-marker { display: none; }
+    .persona[open] .persona-head { margin-bottom: 14px; }
+    .persona-title { flex: 1; min-width: 0; }
+    /* Folded: just a small headshot and "Quest character". */
+    .persona:not([open]) { padding: 10px 16px; }
+    .persona:not([open]) .avatar { width: 46px; height: 46px; box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--salmon); }
+    .persona:not([open]) .persona-title, .persona[open] .persona-label { display: none; }
+    .persona-label { flex: 1; font: 700 19px var(--display); }
+    .persona-toggle { flex: none; display: inline-flex; align-items: center; gap: 6px; font: 700 13px var(--body); color: var(--teal); background: var(--teal-soft); border-radius: 999px; padding: 6px 12px; }
+    .persona-toggle::after { content: "▾"; font-size: 11px; transition: transform .2s; }
+    .persona[open] .persona-toggle::after { transform: rotate(180deg); }
+    .persona .open-text, .persona[open] .closed-text { display: none; }
+    .persona[open] .open-text { display: inline; }
+    .persona-head:hover .persona-toggle { background: #cfeef1; }
+    .persona[open] .persona-facts, .persona[open] .persona-goal { animation: unroll .35s ease-out; }
+    .avatar { width: 92px; height: 92px; flex: none; border-radius: 50%; box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--salmon); }
+    .persona h2 { font-size: 30px; }
+    .persona-job { margin: 2px 0 0; color: var(--muted); font-weight: 500; }
+    .persona-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 22px; margin: 0; }
+    .persona-facts > div { background: var(--peach); border-radius: 12px; padding: 10px 14px; }
+    .persona-facts > .wide { grid-column: 1 / -1; }
+    .persona-facts dt { font: 700 12px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+    .persona-facts dd { margin: 0; font-size: 15px; line-height: 1.5; }
+    .langs { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+    .langs li { background: #fff; border-radius: 999px; padding: 2px 10px; font-size: 14px; color: var(--muted); }
+    .langs b { color: var(--ink); margin-right: 4px; }
+    .persona-goal { display: flex; gap: 14px; align-items: center; margin-top: 12px; padding: 12px 16px; border-radius: 12px; background: #fff6d6; }
+    .persona-goal .flag { font-size: 30px; }
+    .persona-goal strong { font-family: var(--display); font-size: 20px; display: block; line-height: 1.2; }
+    .persona-goal span { color: var(--muted); font-size: 15px; }
+    /* The map key: a paper scroll that unrolls */
+    .map-key { margin-top: 26px; max-width: 820px; --parch: #f8edd3; --parch-edge: #e6d1a2; --roll-a: #e9d29d; --roll-b: #fbf1da; --knob: #b07d4a; }
+    .map-key summary, .roll-bottom {
+      position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      height: 46px; padding: 0 30px; margin: 0 6px; border-radius: 23px; list-style: none; cursor: pointer;
+      background: linear-gradient(to bottom, var(--roll-a), var(--roll-b) 45%, var(--roll-a));
+      box-shadow: 0 4px 10px rgba(43,36,32,.12), inset 0 -2px 0 rgba(176,125,74,.18);
+    }
+    .map-key summary::-webkit-details-marker { display: none; }
+    .map-key summary::before, .map-key summary::after, .roll-bottom::before, .roll-bottom::after {
+      content: ""; position: absolute; top: 50%; width: 14px; height: 34px; margin-top: -17px; border-radius: 6px;
+      background: linear-gradient(to bottom, #8a5a30, var(--knob) 45%, #7a4d27);
+    }
+    .map-key summary::before, .roll-bottom::before { left: -6px; }
+    .map-key summary::after, .roll-bottom::after { right: -6px; }
+    .roll-label { font: 700 18px var(--display); color: #5a3d22; }
+    .roll-hint { font: 700 12px var(--body); letter-spacing: .05em; text-transform: uppercase; color: #8a5a30; background: rgba(255,255,255,.55); border-radius: 999px; padding: 4px 10px; }
+    .map-key .open-text, .map-key[open] .closed-text { display: none; }
+    .map-key[open] .open-text { display: inline; }
+    .map-key summary:hover .roll-hint { background: #fff; }
+    .map-key .paper {
+      margin: -10px 20px 0; padding: 26px 26px 20px;
+      background: linear-gradient(to right, rgba(176,125,74,.10), transparent 6%, transparent 94%, rgba(176,125,74,.10)), var(--parch);
+      border-left: 1px solid var(--parch-edge); border-right: 1px solid var(--parch-edge);
+      transform-origin: top; animation: unroll .45s ease-out;
+    }
+    .roll-bottom { display: none; height: 30px; margin-top: -8px; cursor: default; }
+    .roll-bottom::before, .roll-bottom::after { height: 24px; margin-top: -12px; }
+    .map-key[open] .roll-bottom { display: block; }
+    @keyframes unroll { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+    .map-key .tag-group-title { color: #6b4a2b; }
+    .paper-hint { display: flex; gap: 10px; align-items: center; margin: 0 0 18px; padding: 8px 12px; border-radius: 10px; background: rgba(255,255,255,.6); border: 1px dashed #d8bf8a; font-size: 14px; color: #5a3d22; }
+    .paper-hint svg { flex: none; width: 34px; height: 34px; padding: 4px; border-radius: 50%; background: var(--teal); }
+    .paper-hint + .paper-hint { margin-top: -8px; }
+    .paper-hint a { color: #8a4b1f; font-weight: 700; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .skill { --c: var(--ink); display: inline-flex; align-items: center; gap: 6px; font: 500 14px/1 var(--body); color: var(--c); background: color-mix(in srgb, var(--c) 11%, #fff); border: 1px solid color-mix(in srgb, var(--c) 28%, #fff); border-radius: 999px; padding: 6px 11px; white-space: nowrap; }
+    .skill .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+    .skill.small { font-size: 12.5px; padding: 4px 9px; }
+    .skill[data-skill="pronunciation"] { --c: var(--sk-pronunciation); }
+    .skill[data-skill="vocabulary"] { --c: var(--sk-vocabulary); }
+    .skill[data-skill="grammar"] { --c: var(--sk-grammar); }
+    .skill[data-skill="verbs"] { --c: var(--sk-verbs); }
+    .skill[data-skill="speaking"] { --c: var(--sk-speaking); }
+    .skill[data-skill="listening"] { --c: var(--sk-listening); }
+    .skill[data-skill="reading"] { --c: var(--sk-reading); }
+    .skill[data-skill="writing"] { --c: var(--sk-writing); }
+    .skill[data-skill="exam"] { --c: var(--sk-exam); }
+    .skill[data-skill="confidence"] { --c: var(--sk-confidence); }
+    .skill.neutral { --c: #5c524c; background: #fff; border-color: var(--line); }
+    .skill.neutral .dot { display: none; }
+    /* Focus tags: a diamond and a white chip with a coloured outline, so they stand apart from skills (round dot, tinted chip). */
+    .skill.focus { background: #fff; border-color: color-mix(in srgb, var(--c) 55%, #fff); border-radius: 8px; }
+    .skill.focus .dot { border-radius: 1.5px; transform: rotate(45deg); width: 8px; height: 8px; margin: 0 1px; }
+    .hud .skill.focus .dot { width: 7px; height: 7px; }
+    .tag-group { display: grid; grid-template-columns: 130px 1fr; gap: 10px; align-items: start; margin-bottom: 8px; }
+    .tag-group-title { font-size: 13px; font-weight: 700; color: var(--muted); padding-top: 5px; }
+    .tool-meta { font-size: 13px; color: var(--muted); }
+    .tool-info { margin-top: 2px; }
+    .tool-info summary { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; font: 700 13px var(--body); color: var(--teal); }
+    .tool-info summary::-webkit-details-marker { display: none; }
+    .tool-info summary::before { content: "i"; display: grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; background: var(--teal); color: #fff; font: 700 11px/1 Georgia, serif; font-style: italic; }
+    .tool-info summary::after { content: "▾"; font-size: 11px; transition: transform .2s; }
+    .tool-info[open] summary::after { transform: rotate(180deg); }
+    .card .tool-info p { margin: 14px 0 2px; padding: 10px 12px; background: #fff; border-left: 3px solid var(--teal); border-radius: 8px; font-size: 14px; line-height: 1.55; }
+
+    /* The quest map */
+    .quest { position: relative; background: var(--grass); overflow: hidden; padding: 70px 0 120px; }
+    .quest::before { /* soft meadow texture */
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(60px 26px at 12% 8%, var(--grass-deep) 98%, transparent) ,
+        radial-gradient(90px 34px at 85% 22%, var(--grass-deep) 98%, transparent),
+        radial-gradient(70px 28px at 20% 46%, var(--grass-deep) 98%, transparent),
+        radial-gradient(110px 40px at 80% 63%, var(--grass-deep) 98%, transparent),
+        radial-gradient(80px 30px at 15% 84%, var(--grass-deep) 98%, transparent);
+      opacity: .7;
+    }
+    .trail { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .stops { position: relative; list-style: none; margin: 0; padding: 0; }
+    .stop { position: relative; display: flex; min-height: 260px; padding: 28px 0; }
+    .stop[data-side="left"] { justify-content: flex-start; }
+    .stop[data-side="right"] { justify-content: flex-end; }
+    .stop.compact { min-height: 190px; }
+
+    /* Markers sit on the road: at 62% for cards on the left, 38% for cards on the right. */
+    .marker {
+      position: absolute; top: 46px; left: var(--mx); transform: translateX(-50%); z-index: 3;
+      width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center;
+      font: 800 19px/1 var(--display); color: #fff; background: var(--orange);
+      border: 5px solid #fff; box-shadow: 0 4px 14px rgba(43,36,32,.18);
+    }
+    .stop[data-side="left"] .marker { --mx: 62%; }
+    .stop[data-side="right"] .marker { --mx: 38%; }
+    .stop[data-kind="detour"] .marker { background: #9a9089; font-size: 24px; width: 52px; height: 52px; }
+    .stop[data-kind="spark"] .marker { background: var(--teal); font-size: 24px; width: 52px; height: 52px; }
+    .stop[data-kind="goal"] .marker { background: #b9afa8; font-size: 22px; }
+    .stop.current .marker { background: var(--orange); animation: pulse 2.2s ease-out infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(242,107,42,.55), 0 4px 14px rgba(43,36,32,.18); } 70% { box-shadow: 0 0 0 22px rgba(242,107,42,0), 0 4px 14px rgba(43,36,32,.18); } 100% { box-shadow: 0 0 0 0 rgba(242,107,42,0), 0 4px 14px rgba(43,36,32,.18); } }
+    .here-flag { position: absolute; left: var(--mx); top: 4px; transform: translateX(-50%); z-index: 4; font: 700 13px var(--body); color: #fff; background: var(--ink); border-radius: 999px; padding: 3px 11px; white-space: nowrap; }
+    .stop[data-side="left"] .here-flag { --mx: 62%; }
+    .stop[data-side="right"] .here-flag { --mx: 38%; }
+
+    /* Cards */
+    .card {
+      position: relative; z-index: 2; width: min(500px, 52%); background: #fff; border-radius: var(--radius);
+      padding: 20px 22px 18px; box-shadow: 0 10px 30px rgba(43,36,32,.10);
+      border-top: 6px solid var(--orange);
+      opacity: 0; transform: translateY(26px); transition: opacity .6s ease, transform .6s ease;
+    }
+    .stop.seen .card { opacity: 1; transform: none; }
+    .stop[data-kind="detour"] .card { border-top-color: #9a9089; background: #fbf9f7; }
+    .stop[data-kind="spark"] .card { border-top-color: var(--teal); }
+    .stop[data-kind="goal"] .card { border-top-color: #b9afa8; border-style: dashed; border-width: 6px 0 0; }
+    .eyebrow { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+    .eyebrow .when { font-weight: 700; color: var(--ink); }
+    .card h2 { font-size: 24px; margin: 2px 0 8px; }
+    .level-badge { display: inline-block; font: 800 14px/1 var(--display); color: var(--orange-ink); background: #fff1e8; border-radius: 8px; padding: 5px 9px 3px; }
+    .stop[data-kind="detour"] .level-badge { color: var(--muted); background: #efebe8; }
+    .stop[data-kind="spark"] .level-badge { color: var(--teal); background: var(--teal-soft); }
+    .card p { margin: 0 0 12px; }
+    .card h3 { font: 700 13px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin: 14px 0 8px; }
+    .tools { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    .tool { display: grid; gap: 6px; padding: 10px 12px; border-radius: 12px; background: var(--peach); }
+    .tool-name { font-weight: 700; }
+    .tool-name small { font-weight: 400; color: var(--muted); }
+    .tool .skills { gap: 6px; }
+    .setbacks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+    .setbacks li { display: flex; gap: 8px; align-items: flex-start; font-size: 15px; background: #f3efec; border-radius: 10px; padding: 7px 10px; }
+    .milestones { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+    .milestone { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; border-radius: 12px; background: #fff6d6; font-weight: 500; }
+    .affiliate { font-size: 12px; color: var(--muted); }
+
+    /* Scenery on the empty side of each stop */
+    .scenery { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+    .scenery svg { position: absolute; overflow: visible; }
+
+    /* Sea crossing between Taiwan and the Netherlands (positioned by script) */
+    .place-sign { position: absolute; z-index: 2; font: 700 13px var(--body); letter-spacing: .06em; text-transform: uppercase; color: #3c6a74; background: #fff; border-radius: 6px; padding: 3px 10px; box-shadow: 0 2px 8px rgba(43,36,32,.12); transform: translateX(-50%); }
+
+    /* The traveller walking along the road */
+    .walker { position: absolute; z-index: 1; width: 54px; height: 76px; left: 0; top: 0; transform: translate(-50%, -88%); transition: transform .1s linear, opacity .25s; will-change: left, top; pointer-events: none; }
+    .walker svg { width: 100%; height: 100%; }
+    .walker.flip svg { transform: scaleX(-1); }
+    .walker.walking .leg-a { animation: stepA .5s ease-in-out infinite alternate; transform-origin: 25px 47px; }
+    .walker.walking .leg-b { animation: stepB .5s ease-in-out infinite alternate; transform-origin: 25px 47px; }
+    @keyframes stepA { from { transform: rotate(14deg); } to { transform: rotate(-14deg); } }
+    @keyframes stepB { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
+
+    /* My toolkit: a backpack button that opens a panel of tags */
+    .pack-btn {
+      position: fixed; right: 18px; bottom: 18px; z-index: 21; width: 64px; height: 64px; border-radius: 50%;
+      border: 0; background: var(--teal); box-shadow: 0 10px 26px rgba(31,143,157,.35); cursor: pointer;
+      display: grid; place-items: center; padding: 0;
+      opacity: 0; transform: translateY(14px) scale(.9); transition: opacity .3s, transform .3s, background .2s; pointer-events: none;
+    }
+    .pack-btn.show { opacity: 1; transform: none; pointer-events: auto; }
+    .pack-btn:hover { background: #17707b; }
+    .pack-btn svg { width: 38px; height: 38px; }
+    .pack-btn[aria-expanded="true"] { background: var(--ink); }
+    .pack-tip { position: absolute; right: 74px; top: 50%; transform: translateY(-50%); white-space: nowrap; font: 700 13px var(--body); color: #fff; background: var(--ink); border-radius: 999px; padding: 4px 11px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+    .pack-btn:hover .pack-tip, .pack-btn:focus-visible .pack-tip { opacity: 1; }
+    .hud {
+      position: fixed; right: 18px; bottom: 94px; z-index: 20; width: 360px;
+      background: #fff; border-radius: var(--radius); padding: 14px 16px;
+      box-shadow: 0 14px 40px rgba(43,36,32,.22); font-size: 14px;
+      display: flex; flex-direction: column; max-height: calc(100vh - 114px); max-height: calc(100dvh - 114px);
+    }
+    .hud[hidden] { display: none; }
+    .hud-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .hud-head strong { font: 700 20px var(--display); display: flex; align-items: center; gap: 8px; }
+    .hud-head strong svg { width: 24px; height: 24px; }
+    .tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; background: var(--peach); border-radius: 12px; padding: 4px; margin-bottom: 10px; }
+    .tab { border: 0; background: none; border-radius: 9px; padding: 7px 4px; font: 700 12.5px/1.2 var(--body); color: var(--muted); cursor: pointer; }
+    .tab[aria-selected="true"] { background: #fff; color: var(--ink); box-shadow: 0 2px 6px rgba(43,36,32,.10); }
+    .tab small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); }
+    .tab-hint { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+    .hud .skills { gap: 5px; }
+    .hud .skill { font-size: 12px; padding: 4px 9px; cursor: pointer; font-family: var(--body); }
+    .hud .skill:hover { background: color-mix(in srgb, var(--c) 20%, #fff); }
+    .hud .skill[aria-pressed="true"] { color: #fff; background: var(--c); border-color: var(--c); }
+    .hud .skill[aria-pressed="true"] .dot { background: #fff; }
+    .hud .skill .dot { width: 7px; height: 7px; }
+    .toolkit { border-top: 1px solid var(--line); margin-top: 4px; padding-top: 10px; display: flex; flex-direction: column; flex: 1; min-height: 0; }
+    .toolkit[hidden] { display: none; }
+    .toolkit-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+    .toolkit-head strong { font: 700 17px var(--display); }
+    .toolkit-head small { color: var(--muted); font-weight: 400; margin-left: 6px; font-family: var(--body); font-size: 12px; }
+    .toolkit-close { border: 0; background: #f3efec; border-radius: 50%; width: 28px; height: 28px; font-size: 16px; line-height: 1; cursor: pointer; color: var(--ink); }
+    .toolkit-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; flex: 1; min-height: 110px; overflow: auto; overscroll-behavior: contain; }
+    .toolkit-item { background: var(--peach); border-radius: 10px; padding: 8px 10px; }
+    .toolkit-item .tool-name { font-size: 14px; }
+    .uses { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+    .use { font: 500 12px var(--body); color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; cursor: pointer; text-align: left; }
+    .use b { font-family: var(--display); color: var(--orange-ink); }
+    .use:hover { border-color: var(--orange); }
+
+    .outro { background: var(--peach); padding: 44px 0 56px; text-align: center; }
+    .outro h2 { font-size: 30px; margin-bottom: 8px; }
+    .outro p { color: var(--muted); max-width: 56ch; margin: 0 auto 18px; }
+    .btn { display: inline-block; font: 700 16px var(--body); color: #fff; background: var(--orange); border-radius: 999px; padding: 12px 22px; text-decoration: none; }
+    .btn:hover { color: #fff; background: var(--orange-ink); }
+
+    /* Phones: road runs down the left edge, cards fill the width beside it. */
+    @media (max-width: 760px) {
+      .quest { padding: 40px 0 100px; }
+      .stop, .stop.compact { min-height: 0; padding: 22px 0; justify-content: flex-end !important; }
+      .stop .marker, .stop .here-flag { --mx: 30px !important; }
+      .stop[data-side="right"] .marker { --mx: 46px !important; }
+      .stop[data-side="right"] .here-flag { --mx: 46px !important; }
+      .marker { width: 50px; height: 50px; font-size: 16px; border-width: 4px; top: 40px; }
+      .stop[data-kind="detour"] .marker, .stop[data-kind="spark"] .marker { width: 44px; height: 44px; font-size: 19px; }
+      .here-flag { top: 2px; font-size: 11px; padding: 2px 8px; }
+      .card { width: calc(100% - 82px); padding: 16px 16px 14px; }
+      .card h2 { font-size: 21px; }
+      .scenery { display: none; }
+      .hud { left: 12px; right: 12px; bottom: 86px; width: auto; padding: 12px 14px; max-height: calc(100vh - 100px); max-height: calc(100dvh - 100px); }
+      .pack-btn { right: 14px; bottom: 14px; width: 58px; height: 58px; }
+      .pack-tip { display: none; }
+      .tab { font-size: 12px; padding: 7px 2px; }
+      .hud .skills { gap: 5px; }
+      .walker { width: 38px; height: 53px; }
+      .place-sign { display: none; }
+      .brand { font-size: 0; gap: 0; }
+      .kofi { margin-left: auto; padding: 8px 12px; font-size: 13px; }
+      .menu-btn { display: flex; }
+      .top-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; margin: 0; padding: 8px 16px 16px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px rgba(43,36,32,.08); }
+      .top-nav.open { display: flex; }
+      .top-nav > a { padding: 14px 12px; border-radius: 10px; font-size: 17px; }
+      .nav-drop { pointer-events: none; padding: 14px 12px 4px; font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); background: none !important; }
+      .nav-drop svg { display: none; }
+      .nav-menu { display: grid; position: static; min-width: 0; margin: 0; padding: 0 0 0 10px; border: 0; box-shadow: none; background: none; }
+      .nav-menu a { padding: 12px; font-size: 17px; }
+      .hud .skill { font-size: 12px; padding: 4px 8px; }
+      .tag-group { grid-template-columns: 1fr; gap: 4px; }
+      .persona { padding: 16px; }
+      .persona-facts { grid-template-columns: 1fr; }
+      .avatar { width: 64px; height: 64px; }
+      .persona-head { gap: 12px; }
+      .persona-toggle { width: 32px; height: 32px; padding: 0; justify-content: center; }
+      .persona[open] .persona-toggle { align-self: flex-start; }
+      .persona-toggle .closed-text, .persona-toggle .open-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .persona-toggle::after { font-size: 13px; }
+      .persona h2 { font-size: 26px; }
+      .map-key summary { padding: 0 22px; }
+      .roll-label { font-size: 16px; }
+      .map-key .paper { margin: -10px 12px 0; padding: 22px 16px 16px; }
+      .tag-group-title { padding-top: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card { opacity: 1; transform: none; transition: none; }
+      .stop.current .marker { animation: none; }
+      .walker.walking .leg-a, .walker.walking .leg-b { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Reusable flat scenery drawings, in the site's palette. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="tree" viewBox="0 0 60 80"><rect x="27" y="48" width="6" height="28" rx="3" fill="#8a6a4f"/><circle cx="30" cy="34" r="22" fill="#7fb36a"/><circle cx="20" cy="40" r="13" fill="#8fc27a"/><circle cx="40" cy="28" r="12" fill="#6fa55c"/></symbol>
+    <symbol id="pine" viewBox="0 0 50 80"><rect x="22" y="58" width="6" height="20" rx="3" fill="#8a6a4f"/><path d="M25 2 L46 62 H4 Z" fill="#4f9a6a"/><path d="M25 2 L46 62 H25 Z" fill="#44895e"/></symbol>
+    <symbol id="tulips" viewBox="0 0 120 40"><g stroke="#5e9b55" stroke-width="3"><path d="M10 40V18M30 40V14M50 40V20M70 40V15M90 40V19M110 40V16"/></g><g><path d="M4 18q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#f26b2a"/><path d="M24 14q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#ee8e76"/><path d="M44 20q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#f3c86a"/><path d="M64 15q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#f26b2a"/><path d="M84 19q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#ee8e76"/><path d="M104 16q0-10 6-12q6 2 6 12q-6 4-12 0z" fill="#f3c86a"/></g></symbol>
+    <symbol id="windmill" viewBox="0 0 90 120"><path d="M30 118 L36 52 H54 L60 118 Z" fill="#ee8e76"/><path d="M32 52 H58 L45 36 Z" fill="#1d4e5f"/><rect x="40" y="96" width="10" height="22" rx="5" fill="#1d4e5f"/><g fill="#1d4e5f"><rect x="43" y="4" width="5" height="44" rx="2" transform="rotate(30 45 46)"/><rect x="43" y="4" width="5" height="44" rx="2" transform="rotate(120 45 46)"/><rect x="43" y="4" width="5" height="44" rx="2" transform="rotate(210 45 46)"/><rect x="43" y="4" width="5" height="44" rx="2" transform="rotate(300 45 46)"/></g><circle cx="45" cy="46" r="4" fill="#fffaf5"/></symbol>
+    <symbol id="houses" viewBox="0 0 130 90"><path d="M2 90V38l18-22 18 22v52z" fill="#ee8e76"/><path d="M38 90V30l16-20 16 20v60z" fill="#1f8f9d"/><path d="M70 90V40l15-18 15 18v50z" fill="#f3c86a"/><path d="M100 90V34l14-18 14 18v56z" fill="#c94d12"/><g fill="#fffaf5"><rect x="12" y="46" width="7" height="10" rx="1"/><rect x="22" y="46" width="7" height="10" rx="1"/><rect x="48" y="40" width="12" height="10" rx="1"/><rect x="48" y="58" width="12" height="10" rx="1"/><rect x="80" y="50" width="10" height="10" rx="1"/><rect x="108" y="44" width="12" height="10" rx="1"/><rect x="108" y="62" width="12" height="10" rx="1"/></g><g fill="#1d4e5f"><rect x="15" y="72" width="10" height="18" rx="2"/><rect x="80" y="72" width="10" height="18" rx="2"/></g></symbol>
+    <symbol id="canal" viewBox="0 0 200 50"><path d="M0 20 C50 8 150 32 200 20 V40 C150 52 50 28 0 40 Z" fill="#a9d6e0"/><path d="M30 27 q10-4 20 0M110 31 q10-4 20 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M84 30 q16-18 32 0" stroke="#8a6a4f" stroke-width="6" fill="none"/></symbol>
+    <symbol id="sheep" viewBox="0 0 60 40"><g fill="#fffaf5"><circle cx="20" cy="18" r="10"/><circle cx="30" cy="14" r="10"/><circle cx="40" cy="18" r="10"/><circle cx="30" cy="22" r="10"/></g><ellipse cx="50" cy="16" rx="6" ry="7" fill="#2b2420"/><g stroke="#2b2420" stroke-width="3"><path d="M22 28v10M38 28v10"/></g></symbol>
+    <symbol id="bike" viewBox="0 0 70 44"><g fill="none" stroke="#1d4e5f" stroke-width="3"><circle cx="14" cy="30" r="11"/><circle cx="56" cy="30" r="11"/><path d="M14 30 L28 12 H48 L56 30 M28 12 L36 30 L48 12 M24 8h10M46 6l4 6"/></g></symbol>
+    <symbol id="mountains" viewBox="0 0 160 90"><path d="M0 90 L46 18 L92 90 Z" fill="#5f9e7a"/><path d="M46 18 L58 37 L50 34 L44 40 L38 33 Z" fill="#fffaf5"/><path d="M52 90 L104 6 L156 90 Z" fill="#4f8d6a"/><path d="M104 6 L118 28 L108 25 L102 32 L96 25 L90 28 Z" fill="#fffaf5"/></symbol>
+    <symbol id="tower" viewBox="0 0 40 120"><g fill="#3c6a74"><rect x="18" y="0" width="4" height="16"/><path d="M12 16h16l-2 14h-12z"/><path d="M10 30h20l-2 14h-16z"/><path d="M8 44h24l-2 14h-20z"/><path d="M6 58h28l-2 14h-24z"/><path d="M4 72h32l-2 14h-28z"/><rect x="8" y="86" width="24" height="34"/></g></symbol>
+    <symbol id="palm" viewBox="0 0 60 90"><path d="M30 88 C28 60 30 40 34 26" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/><g fill="#5e9b55"><path d="M34 26 C20 14 8 18 2 26 C14 22 24 24 34 28z"/><path d="M34 26 C46 12 56 16 60 24 C50 20 42 22 34 28z"/><path d="M34 26 C30 10 38 2 46 0 C40 8 38 16 36 28z"/></g></symbol>
+    <symbol id="cloud" viewBox="0 0 100 44"><g fill="#fffaf5"><rect x="8" y="20" width="84" height="22" rx="11"/><circle cx="36" cy="22" r="16"/><circle cx="60" cy="18" r="18"/></g></symbol>
+    <symbol id="storm" viewBox="0 0 100 70"><g fill="#b9b4b0"><rect x="8" y="20" width="84" height="24" rx="12"/><circle cx="36" cy="22" r="17"/><circle cx="62" cy="18" r="19"/></g><path d="M50 46 l-8 12 h8 l-6 12" stroke="#f3c86a" stroke-width="4" fill="none" stroke-linejoin="round"/><g stroke="#9db8c4" stroke-width="3" stroke-linecap="round"><path d="M28 50 l-4 10M72 50 l-4 10"/></g></symbol>
+    <symbol id="bench" viewBox="0 0 70 40"><g fill="#8a6a4f"><rect x="4" y="14" width="62" height="6" rx="2"/><rect x="4" y="24" width="62" height="5" rx="2"/><rect x="10" y="24" width="5" height="16"/><rect x="55" y="24" width="5" height="16"/></g></symbol>
+    <symbol id="key" viewBox="0 0 70 70"><circle cx="20" cy="20" r="14" fill="none" stroke="#f3c86a" stroke-width="7"/><path d="M30 30 L62 62 M50 50 l8-8 M58 58 l6-6" stroke="#f3c86a" stroke-width="7" stroke-linecap="round"/></symbol>
+    <symbol id="books" viewBox="0 0 80 60"><rect x="4" y="38" width="72" height="12" rx="2" fill="#1f8f9d"/><rect x="10" y="26" width="62" height="12" rx="2" fill="#f26b2a"/><rect x="6" y="14" width="66" height="12" rx="2" fill="#f3c86a"/><g fill="#fffaf5" opacity=".7"><rect x="14" y="42" width="40" height="3"/><rect x="18" y="30" width="34" height="3"/><rect x="14" y="18" width="38" height="3"/></g></symbol>
+    <symbol id="castle" viewBox="0 0 140 120"><path d="M0 120 C30 92 110 92 140 120 Z" fill="#b5d8a6"/><g fill="#d9cfc8"><rect x="30" y="50" width="80" height="56"/><rect x="22" y="34" width="26" height="72"/><rect x="92" y="34" width="26" height="72"/></g><g fill="#c4b8b0"><path d="M22 34h6v-8h6v8h2v-8h6v8h6v4H22z"/><path d="M92 34h6v-8h6v8h2v-8h6v8h6v4H92z"/></g><rect x="60" y="78" width="20" height="28" rx="10" fill="#8f837b"/><path d="M70 50 V14" stroke="#8f837b" stroke-width="3"/><path d="M70 14 h40 l-6 7 6 7 h-40z" fill="#f26b2a"/><text x="87" y="24.5" font-family="Baloo 2, sans-serif" font-weight="800" font-size="8.5" fill="#fff" text-anchor="middle">B2/C1</text></symbol>
+    <symbol id="baby" viewBox="0 0 80 60"><path d="M10 30 h52 a10 10 0 0 1 -10 18 h-32 a10 10 0 0 1 -10 -18z" fill="#ee8e76"/><path d="M14 30 a24 22 0 0 1 44 -14 l-22 14z" fill="#1f8f9d"/><g fill="#1d4e5f"><circle cx="24" cy="54" r="5"/><circle cx="50" cy="54" r="5"/></g><path d="M62 32 q10-2 12-12" stroke="#1d4e5f" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="heart-house" viewBox="0 0 80 70"><path d="M8 70 V32 L40 6 L72 32 V70 Z" fill="#f3c86a"/><path d="M2 34 L40 2 L78 34" stroke="#c94d12" stroke-width="6" fill="none" stroke-linejoin="round"/><path d="M40 56 C26 46 28 36 35 36 C38 36 40 39 40 41 C40 39 42 36 45 36 C52 36 54 46 40 56 Z" fill="#f26b2a"/></symbol>
+    <symbol id="backpack" viewBox="0 0 40 40"><path d="M14 9 C14 3 26 3 26 9" stroke="#f3c86a" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="7" y="9" width="26" height="28" rx="8" fill="#f26b2a"/><path d="M7 17 C7 12 11 9 15 9 H25 C29 9 33 12 33 17 V19 H7 Z" fill="#f3c86a"/><rect x="17.5" y="16" width="5" height="6" rx="2" fill="#c94d12"/><rect x="12" y="25" width="16" height="9" rx="3" fill="#c94d12"/><path d="M15 28.5 H25" stroke="#f3c86a" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="bulb" viewBox="0 0 40 40"><g stroke="#f3c86a" stroke-width="2.4" stroke-linecap="round"><path d="M20 3v3M7 9l2.2 2.2M33 9l-2.2 2.2M3 21h3M34 21h3"/></g><path d="M20 9 C13.4 9 9.5 14 9.5 19.5 C9.5 23.6 12 26 13.6 28 C14.6 29.3 15 30.4 15 31.5 H25 C25 30.4 25.4 29.3 26.4 28 C28 26 30.5 23.6 30.5 19.5 C30.5 14 26.6 9 20 9 Z" fill="#f3c86a"/><path d="M15 33.5 H25 M16.5 36.5 H23.5" stroke="#fffaf5" stroke-width="2.4" stroke-linecap="round"/><path d="M15.5 17 C16.5 14.5 18.5 13.2 21 13" stroke="#fffaf5" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/></symbol>
+    <symbol id="plane" viewBox="0 0 80 50"><path d="M4 26 L60 22 C70 21 78 24 78 26 C78 28 70 31 60 30 L4 26 Z" fill="#fffaf5"/><path d="M30 24 L18 4 H26 L46 23 Z M30 28 L18 48 H26 L46 29 Z" fill="#1f8f9d"/><path d="M8 25 L2 14 H8 L16 24 Z" fill="#1f8f9d"/></symbol>
+  </svg>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/logo.png" alt="" width="40" height="40">@dutchlearning</a>
+      <nav class="top-nav" id="topNav" aria-label="Main">
+        <div class="nav-group" id="resourcesGroup">
+          <button type="button" class="nav-drop" id="resourcesBtn" aria-expanded="false" aria-controls="resourcesMenu">Resources<svg aria-hidden="true" viewBox="0 0 12 8" width="10" height="7"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+          <div class="nav-menu" id="resourcesMenu">
+            <a href="../#finder">Find resources</a>
+            <a href="../#suggest">Suggest a resource</a>
+            <a href="./" aria-current="page">Resources I use</a>
+          </div>
+        </div>
+        <a href="../#about">About</a>
+      </nav>
+      <a class="kofi" href="https://ko-fi.com/inka31" target="_blank" rel="noopener">Support this website</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="topNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="wrap">
+      <h1>My Dutch quest</h1>
+      <p class="lead">Who knew that I'd start with my first Dutch class in Taipei, and that now the quest would be to build a family in the Netherlands? Life is unpredictable! Follow along on my Dutch quest to see what I used at each level, which skills it trained, and the detours real life put in my way.</p>
+      <p class="disclosure"><span aria-hidden="true">❗</span> This is my authentic experience, and there are affiliate links on this page. They cost you nothing extra, but they could support my work on this website and my content creation.</p>
+      <details class="persona">
+        <summary class="persona-head">
+          <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="Inka, drawn as the traveller on the map">
+            <circle cx="60" cy="60" r="60" fill="#fdf3ed"/>
+            <clipPath id="avatarClip"><circle cx="60" cy="60" r="60"/></clipPath>
+            <g clip-path="url(#avatarClip)">
+              <!-- braids -->
+              <path d="M36 58 C30 76 28 90 27 104" stroke="#f26b2a" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <path d="M84 58 C90 76 92 90 93 104" stroke="#f26b2a" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <path d="M31 72 l-7 4 M29 84 l-7 4 M89 72 l7 4 M91 84 l7 4" stroke="#c94d12" stroke-width="2.4" stroke-linecap="round"/>
+              <!-- shoulders and collar -->
+              <path d="M24 120 C26 98 42 90 60 90 C78 90 94 98 96 120 Z" fill="#2fa5b3"/>
+              <path d="M50 90 L60 102 L70 90 Z" fill="#fffaf5"/>
+              <path d="M40 94 L44 120 M80 94 L76 120" stroke="#f3c86a" stroke-width="5" stroke-linecap="round"/>
+              <!-- bows -->
+              <path d="M27 104 l-9 -6 v12 z M27 104 l9 -6 v12 z" fill="#f26b2a"/><circle cx="27" cy="104" r="3" fill="#c94d12"/>
+              <path d="M93 104 l-9 -6 v12 z M93 104 l9 -6 v12 z" fill="#f26b2a"/><circle cx="93" cy="104" r="3" fill="#c94d12"/>
+              <!-- neck and face -->
+              <rect x="53" y="76" width="14" height="16" rx="6" fill="#f2c4a6"/>
+              <ellipse cx="60" cy="60" rx="21" ry="23" fill="#f2c4a6"/>
+              <path d="M39 52 C44 40 76 40 81 52 C73 47 67 48 60 54 C53 48 47 47 39 52 Z" fill="#f26b2a"/>
+              <circle cx="52" cy="62" r="2.4" fill="#2b2420"/><circle cx="68" cy="62" r="2.4" fill="#2b2420"/>
+              <circle cx="47" cy="69" r="3.5" fill="#ee8e76" opacity=".45"/><circle cx="73" cy="69" r="3.5" fill="#ee8e76" opacity=".45"/>
+              <path d="M54 71 Q60 76 66 71" stroke="#c94d12" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <!-- Dutch bonnet -->
+              <path d="M8 48 C22 47 32 42 38 35 L55 13 C57.5 10 62.5 10 65 13 L82 35 C88 42 98 47 112 48 C101 57 88 55 81 49 C70 44 50 44 39 49 C32 55 19 57 8 48 Z" fill="#fffaf5" stroke="#f26b2a" stroke-width="2.6" stroke-linejoin="round"/>
+            </g>
+          </svg>
+          <span class="persona-label">Quest character</span>
+          <div class="persona-title">
+            <h2>Inka</h2>
+            <p class="persona-job">Taiwanese living in the Netherlands</p>
+          </div>
+          <span class="persona-toggle"><span class="closed-text">About me</span><span class="open-text">Close</span></span>
+        </summary>
+        <dl class="persona-facts">
+          <div><dt>Languages</dt><dd><ul class="langs">
+            <li><b>Mandarin</b> native</li>
+            <li><b>English</b> fluent</li>
+            <li><b>Dutch</b> working towards fluent</li>
+          </ul></dd></div>
+          <div><dt>Learns best</dt><dd>In-person classes</dd></div>
+          <div><dt>Barriers</dt><dd>A full-time job in English, and no Dutch learning budget from my company.</dd></div>
+          <div><dt>Opportunities</dt><dd>Married to a Dutch partner, so I can practise Dutch with his family.</dd></div>
+          <div class="wide"><dt>Personality</dt><dd>If I have a goal, I make a plan to reach it with the least budget and time.</dd></div>
+        </dl>
+        <div class="persona-goal">
+          <span class="flag" aria-hidden="true">🏰</span>
+          <div><strong>Goal: B2/C1</strong><span>Able to work in Dutch and speak fluently in daily life.</span></div>
+        </div>
+      </details>
+      <details class="map-key">
+        <summary>
+          <span class="roll-label">Read the manual</span>
+          <span class="roll-hint"><span class="closed-text">Unroll</span><span class="open-text">Roll up</span></span>
+        </summary>
+        <div class="paper">
+          <p class="paper-hint"><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#backpack"/></svg><span>Tip: on the map, tap the backpack button at the bottom right to filter by any of these tags and see every resource I used for it.</span></p>
+          <p class="paper-hint"><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#bulb"/></svg><span><b>How I learned</b>, <b>Resource type</b> and <b>Skills</b> are the same filters as in the <a href="../">main resource finder</a>, so you can find more resources like these there. <b>Focus</b> tags come from my personal experience.</span></p>
+          <div id="legend"></div>
+        </div>
+        <div class="roll-bottom" aria-hidden="true"></div>
+      </details>
+    </div>
+  </section>
+
+  <main class="quest" id="quest" aria-label="My Dutch learning journey">
+    <svg class="trail" id="trail" aria-hidden="true"></svg>
+    <div class="wrap">
+      <ol class="stops" id="stops"></ol>
+    </div>
+    <div class="walker" id="walker" aria-hidden="true">
+      <svg viewBox="0 0 50 70">
+        <!-- Inka: white Dutch bonnet with an orange outline, orange braids with bows, like the logo -->
+        <g class="leg-a"><path d="M22 47 L20 63" stroke="#1d4e5f" stroke-width="5" stroke-linecap="round"/><ellipse cx="19" cy="64.5" rx="4.6" ry="2.4" fill="#2b2420"/></g>
+        <g class="leg-b"><path d="M28 47 L30 63" stroke="#173f4d" stroke-width="5" stroke-linecap="round"/><ellipse cx="31" cy="64.5" rx="4.6" ry="2.4" fill="#2b2420"/></g>
+        <rect x="16" y="24" width="18" height="16" rx="5" fill="#f3c86a"/>
+        <path d="M17.5 25 C17.5 21.5 32.5 21.5 32.5 25 L37 48 H13 Z" fill="#2fa5b3"/>
+        <path d="M20 23.5 L21 35 M30 23.5 L29 35" stroke="#f3c86a" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M18 26 L13.5 38" stroke="#2fa5b3" stroke-width="4.5" stroke-linecap="round"/><circle cx="13" cy="39.5" r="2.4" fill="#f2c4a6"/>
+        <path d="M32 26 L36.5 38" stroke="#2fa5b3" stroke-width="4.5" stroke-linecap="round"/><circle cx="37" cy="39.5" r="2.4" fill="#f2c4a6"/>
+        <path d="M18.5 16 C16 21 15 26 14.5 31" stroke="#f26b2a" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+        <path d="M31.5 16 C34 21 35 26 35.5 31" stroke="#f26b2a" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+        <path d="M16.2 22 l-2.4 1.6 M15.4 26.5 l-2.4 1.4 M33.8 22 l2.4 1.6 M34.6 26.5 l2.4 1.4" stroke="#c94d12" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M14.5 32 l-4 -2.6 v5.2 z M14.5 32 l4 -2.6 v5.2 z" fill="#f26b2a"/>
+        <path d="M35.5 32 l-4 -2.6 v5.2 z M35.5 32 l4 -2.6 v5.2 z" fill="#f26b2a"/>
+        <rect x="22.5" y="19" width="5" height="5" rx="2" fill="#f2c4a6"/>
+        <ellipse cx="25" cy="15.5" rx="7.2" ry="7.6" fill="#f2c4a6"/>
+        <path d="M18 13.5 C20 9.5 30 9.5 32 13.5 C29 12 27 12.5 25 14 C23 12.5 21 12 18 13.5 Z" fill="#f26b2a"/>
+        <path d="M7 12.5 C12 12 15.5 10.5 17.5 8 L23.5 1.2 C24.3 0.3 25.7 0.3 26.5 1.2 L32.5 8 C34.5 10.5 38 12 43 12.5 C39 15.5 34.5 14.8 32.2 12.6 C28 10.6 22 10.6 17.8 12.6 C15.5 14.8 11 15.5 7 12.5 Z" fill="#fffaf5" stroke="#f26b2a" stroke-width="1.2" stroke-linejoin="round"/>
+        <circle cx="22.4" cy="16.4" r="1" fill="#2b2420"/><circle cx="27.6" cy="16.4" r="1" fill="#2b2420"/>
+        <path d="M23.2 19 Q25 20.4 26.8 19" stroke="#c94d12" stroke-width="1" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </main>
+
+  <button type="button" class="pack-btn" id="packBtn" aria-expanded="false" aria-controls="hud" aria-label="Open my toolkit">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#backpack"/></svg>
+    <span class="pack-tip">My toolkit</span>
+  </button>
+  <aside class="hud" id="hud" aria-label="My toolkit" hidden>
+    <div class="hud-head"><strong><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#backpack"/></svg>My toolkit</strong><button type="button" class="toolkit-close" id="hudClose" aria-label="Close my toolkit">×</button></div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="hudSkills" role="tabpanel"></div>
+    <p class="tab-hint" id="tabHint">Pick one to see everything I used for it, and at which level.</p>
+    <div class="toolkit" id="toolkit" hidden>
+      <div class="toolkit-head"><strong id="toolkitTitle"></strong><button type="button" class="toolkit-close" id="toolkitClose" aria-label="Close">×</button></div>
+      <ul class="toolkit-list" id="toolkitList"></ul>
+    </div>
+  </aside>
+
+  <section class="outro">
+    <div class="wrap">
+      <h2>Plan your own route</h2>
+      <p>Every resource on my journey, and many more, is in the finder. Filter by your level, budget and the time you have.</p>
+      <a class="btn" href="../#finder">Find resources for your level</a>
+    </div>
+  </section>
+
+  <script>
+  // Header menus: the Resources dropdown and, on phones, the menu button.
+  (function () {
+    var group = document.getElementById("resourcesGroup"), dropBtn = document.getElementById("resourcesBtn");
+    var nav = document.getElementById("topNav"), menuBtn = document.getElementById("menuBtn");
+    function setDrop(open) { group.classList.toggle("open", open); dropBtn.setAttribute("aria-expanded", String(open)); }
+    function setMenu(open) { nav.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open)); menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu"); }
+    dropBtn.addEventListener("click", function () { setDrop(!group.classList.contains("open")); });
+    menuBtn.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest("#resourcesGroup")) setDrop(false);
+      if (!e.target.closest(".top")) setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { setDrop(false); setMenu(false); } });
+  })();
+  </script>
+  <script>
+  (function () {
+    "use strict";
+
+    // Tag groups. Format, type and skills use the main resource finder's names; focus is only on this page.
+    var GROUPS = [
+      { key: "format", title: "How I learned", items: { self: "Self-paced", inperson: "In-person class", online: "Live online class" } },
+      { key: "type", title: "Resource type", items: {
+        school: "Schools and universities", government: "Government", tutors: "Online tutors", courses: "Online courses",
+        practice: "Practice groups", instagram: "Instagram", youtube: "YouTube", app: "Apps", dictionary: "Dictionaries", tv: "TV" } },
+      { key: "skills", title: "Skills", items: { speaking: "Speaking", listening: "Listening", reading: "Reading", writing: "Writing", exam: "Exam prep" } },
+      { key: "focus", title: "Focus", items: { pronunciation: "Pronunciation", vocabulary: "Vocabulary", grammar: "Grammar", verbs: "Verbs", confidence: "Confidence" } }
+    ];
+    function tagLabel(tag) { var p = tag.split(":"); return GROUPS.filter(function (g) { return g.key === p[0]; })[0].items[p[1]]; }
+    // A tool can have one type or several.
+    function typesOf(t) { return !t.type ? [] : Array.isArray(t.type) ? t.type : [t.type]; }
+    // All tags of one tool, as "group:key".
+    function tagsOf(t) {
+      var out = [];
+      (t.format || []).forEach(function (k) { out.push("format:" + k); });
+      typesOf(t).forEach(function (k) { out.push("type:" + k); });
+      (t.skills || []).forEach(function (k) { out.push("skills:" + k); });
+      (t.focus || []).forEach(function (k) { out.push("focus:" + k); });
+      return out;
+    }
+
+    // The journey. kind: chapter | detour (a setback or pause) | spark (a turning point) | goal
+    var STOPS = [
+      {
+        kind: "chapter", marker: "A0", level: "A0 → A1", when: "2014–2017", where: "National Taiwan University, Taipei", country: "TW",
+        title: "Where it began",
+        story: "I first met Dutch at university in Taiwan, as my second foreign language. My teacher taught from the textbook Totaal, and that's where I learned the alphabet, how Dutch sounds, and the basics of grammar.",
+        tools: [
+          { name: "Totaal: Basiscursus Nederlands", note: "textbook", url: "https://partner.bol.com/click/click?p=2&t=url&s=1541805&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftotaal%2F1001004002491941%2F&name=Totaal%20-%20Basiscursus%20Nederlands%20voor%20anderstalige%20volwassenen%20met%20cd-rom", affiliate: true, format: ["self"], type: null, skills: ["listening", "reading", "writing"], focus: ["grammar", "vocabulary"],
+            info: "For medium and highly educated non-Dutch speakers who understand English, German or French. For beginners, it gives a good vocabulary list and the grammar basics." },
+          { name: "University Dutch classes", note: "second foreign language", format: ["inperson"], type: "school", skills: ["speaking", "listening", "reading", "writing"], focus: ["pronunciation", "vocabulary", "confidence"],
+            info: "Taught by a native Dutch speaker who understands Mandarin and English. An interactive small class that lit up my interest in the Netherlands." }
+        ],
+        milestones: ["Set a good base of alphabet and pronunciation.", "Qualified for a half-year exchange programme at Leiden University."],
+        scenery: [["mountains", 8, 18, 170], ["tower", 66, 4, 40], ["palm", 74, 52, 56], ["cloud", 30, 0, 90]]
+      },
+      {
+        kind: "chapter", marker: "A1", level: "A1", when: "Sep 2016 – Jan 2017", where: "Exchange semester at Leiden University",
+        title: "My first taste of Dutch life",
+        story: "I came to the Netherlands as an exchange student. During orientation week I met a Dutch girl who was helping the new exchange students, and we started a language exchange: my first real conversations, and my first time hearing everyday Dutch around me.",
+        tools: [
+          { name: "Language exchange partner", note: "met during orientation week", format: [], type: "practice", skills: ["speaking", "listening"], focus: ["confidence"] }
+        ],
+        scenery: [["tulips", 10, 62, 150], ["windmill", 56, 4, 80], ["cloud", 8, 6, 80]]
+      },
+      {
+        kind: "detour", marker: "☁", level: "Pause", when: "2018", where: "Back in Taiwan", country: "TW",
+        title: "Starting @dutchlearning",
+        story: "I created my Instagram account @dutchlearning to keep Dutch in my life. But I wasn't actively studying.",
+        tools: [
+          { name: "@dutchlearning on Instagram", level: "A1 → A2", url: "https://www.instagram.com/dutchlearning/", format: ["self"], type: "instagram", skills: [], focus: ["vocabulary"] }
+        ],
+        setbacks: ["No classes and no study routine"],
+        milestones: ["Admitted to a master's programme in the Netherlands, starting in September 2019."],
+        scenery: [["bench", 30, 56, 90], ["palm", 8, 6, 60], ["tower", 70, 8, 36]]
+      },
+      {
+        kind: "chapter", marker: "A2", level: "A1 → A2", when: "2019 – mid 2021", where: "Master's in the Netherlands",
+        title: "Living here, learning by ear",
+        story: "I came back for an English-taught master's, hoping to gain work experience here. Most of my Dutch came from simply living here and a few apps on my phone. I didn't take courses or study on my own.",
+        tools: [
+          { name: "De Het app", level: "All levels", note: "de or het?", url: "https://apps.apple.com/nl/app/de-het-nederlands-leren/id548051159", format: ["self"], type: "app", skills: [], focus: ["grammar"] },
+          { name: "Linguee", level: "All levels", note: "Dutch–English dictionary", url: "https://www.linguee.com/english-dutch/", format: ["self"], type: ["app", "dictionary"], skills: [], focus: ["vocabulary"] },
+          { name: "DeepL", level: "All levels", note: "whole sentences and listening to them", url: "https://www.deepl.com/translator", format: ["self"], type: ["app", "dictionary"], skills: ["writing"], focus: ["pronunciation"] }
+        ],
+        setbacks: ["Finishing my master study in English", "Finding a job before my search-year visa ran out"],
+        scenery: [["books", 18, 40, 80], ["bike", 58, 58, 76], ["tree", 70, 6, 66]]
+      },
+      {
+        kind: "chapter", marker: "A2", level: "A2 ✓", when: "Jul 2021 – 2022", where: "First job, Amsterdam",
+        title: "The inburgering exam",
+        story: "I started my first full-time job in Amsterdam and settled into life here. To pass the inburgering exam (A2), needed for citizenship, I did the official practice exams and wrote a diary in Dutch every day. My reading and writing improved a lot.",
+        tools: [
+          { name: "Official practice exams", note: "inburgeren.nl", url: "https://www.inburgeren.nl/examen-doen/oefenen.jsp", format: ["self"], type: "government", skills: ["exam"], focus: [] },
+          { name: "A daily diary in Dutch", format: ["self"], type: null, skills: ["writing"], focus: [],
+            info: "I kept this up for 30 days right before the exam, to train my writing." },
+          { name: "Learn Dutch with Kim: A2 video course", note: "bought in 2021 to prepare for the exam", url: "https://courses.learndutchwithkim.com?affcode=410617_e0zlv-ky", affiliate: true, format: ["self"], type: "courses", skills: ["listening", "reading"], focus: ["grammar", "verbs", "vocabulary"],
+            info: "Very engaging and informative videos made by Kim. Besides her free videos on YouTube, buying this course gives you extra PDF materials explaining the grammar, more examples, exercises, quizzes, and extra stories with audio and transcripts. It suits learners on a smaller budget who enjoy self-paced study with videos and PDFs." },
+          { name: "Learn Dutch with Kim", level: "A1 → A2", note: "YouTube channel", url: "https://www.youtube.com/@learndutchwithkim", format: ["self"], type: "youtube", skills: ["listening"], focus: ["grammar"] },
+          { name: "Heb je zin?", note: "Bart de Pau's series on YouTube", url: "https://www.youtube.com/playlist?list=PLUOa-qvvZolDuuM9Kb7-4OG7ed1c1Yadz", format: ["self"], type: "youtube", skills: ["listening"], focus: [] }
+        ],
+        setbacks: ["Busy settling into a new job and a new life"],
+        milestones: ["2022: passed the inburgering exam and got my certificate."],
+        scenery: [["houses", 8, 20, 150], ["canal", 0, 70, 220]]
+      },
+      {
+        kind: "detour", marker: "☁", level: "Plateau", when: "2022–2023", where: "Amsterdam", plateau: true,
+        title: "Stuck on a plateau",
+        story: "Day to day I still used English and only simple Dutch. I even stopped posting on Instagram for a while. I bought Nederlands in actie to study on my own, but couldn't keep it going.",
+        tools: [
+          { name: "Nederlands in actie", note: "self-study book", level: "A2 → B1", url: "https://partner.bol.com/click/click?p=2&t=url&s=1541805&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fnederlands-in-actie%2F9300000098839335%2F&name=Nederlands%20in%20actie", affiliate: true, format: ["self"], type: null, skills: ["reading"], focus: ["grammar", "vocabulary"],
+            info: "Suitable if you like lots of reading material and enjoy looking up vocabulary yourself. Not the most engaging textbook. Each chapter has many assignments, and the appendix brings all the grammar rules together in a clearer way. It suits learners who are used to theoretical self-study." }
+        ],
+        setbacks: ["Not enough self-discipline to study alone", "English for almost everything"],
+        scenery: [["storm", 22, 10, 110], ["tree", 12, 56, 60], ["tree", 64, 50, 54]]
+      },
+      {
+        kind: "spark", marker: "✦", level: "Turning point", when: "2023", where: "My first own apartment",
+        title: "A home worth investing in",
+        story: "Moving into my own first apartment made me want to put real effort into Dutch again.",
+        tools: [],
+        scenery: [["heart-house", 30, 26, 90], ["tulips", 8, 76, 120]]
+      },
+      {
+        kind: "chapter", marker: "A2", level: "A2 → B1", when: "End of 2024 – 2025", where: "Dutch in Utrecht",
+        title: "Back to the classroom",
+        story: "I signed up with Dutch in Utrecht: the studio was close to home, the price was affordable, and my neighbour recommended the teacher. Sometimes we went to class together, which made it fun. In class I practised speaking a lot, and with the book De Sprong I reviewed grammar in a short time.",
+        tools: [
+          { name: "Dutch in Utrecht", note: "private in-person lessons", url: "http://dutchinutrecht.nl/", format: ["inperson"], type: "tutors", skills: ["speaking", "listening"], focus: ["pronunciation", "grammar", "confidence"],
+            info: "Private lessons where I could practise speaking and pronunciation a lot, review the grammar I had forgotten, and quickly learn anything I wanted." },
+          { name: "De Sprong", level: "A2 → B1", note: "textbook", url: "https://partner.bol.com/click/click?p=2&t=url&s=1541805&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fde-sprong%2F9300000151899387%2F&name=De%20sprong", affiliate: true, format: ["self"], type: null, skills: ["listening", "reading", "writing"], focus: ["grammar", "vocabulary"],
+            info: "Colourful pages and a good mix of listening, reading, writing and speaking exercises if you use it in a class. It takes more space to explain the grammar rules than Nederlands in actie. Really good self-study material for levels A2 to B1." },
+          { name: "A study buddy", note: "my neighbour", format: [], type: "practice", skills: ["speaking"], focus: [],
+            info: "She has a similar Dutch level to mine, so luckily we could join the private lessons together, pay a cheaper rate, and have interesting conversations with the teacher." },
+          { name: "Duolingo", level: "All levels", note: "at least one session every day since 2025", url: "https://www.duolingo.com/course/nl/en/Learn-Dutch", format: ["self"], type: "app", skills: [], focus: ["pronunciation", "vocabulary"],
+            info: "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it." }
+        ],
+        milestones: ["2025: got Dutch citizenship, bought a house with my Dutch partner, and wanted to invest even more in my Dutch."],
+        scenery: [["houses", 6, 30, 130], ["bike", 60, 10, 70], ["sheep", 64, 68, 60]]
+      },
+      {
+        kind: "chapter", marker: "A2", level: "B1", when: "Oct 2025 – 2026", where: "A new city with my partner",
+        title: "All in: an intensive course",
+        story: "I moved in with my partner in a new city. We plan to build a family in the Netherlands, so I decided to really invest time in Dutch. I joined NL Training's free, intensive, in-person course with the book Wind Mee. I learned many verbs in different tenses, more grammar, and found the courage to speak Dutch in daily life again. I also started a 365-day speaking challenge on Instagram, practising with my Dutch partner.",
+        tools: [
+          { name: "NL Training", level: "A2 ✓", note: "free intensive course", url: "https://www.nltraining.nl/cursussen", format: ["inperson"], type: "school", skills: ["speaking", "listening", "writing"], focus: ["grammar", "verbs", "confidence"],
+            info: "It offers free in-person courses under certain conditions. You can't choose your teacher, and your class depends on your level test and which groups have places left. It suits A1\u2013A2 learners who want to progress further, because all communication is in Dutch." },
+          { name: "Wind Mee", note: "textbook", level: "A1 → A2", url: "https://partner.bol.com/click/click?p=2&t=url&s=1541805&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fwind-mee%2F9200000130647502%2F&name=Wind%20mee%20NT2%20-%20Basismethode%20Nederlands%20als%20tweede%20taal%20voor%20volwassenen", affiliate: true, format: ["self"], type: null, skills: ["listening", "reading", "writing"], focus: ["grammar", "verbs", "vocabulary"],
+            info: "A colourful, engaging self-study book for levels A1 to A2, with a good mix of reading, writing, listening and speaking exercises. The content is practical for everyday conversations, too." },
+          { name: "365-day speaking challenge", level: "A2 → B2", note: "on Instagram", url: "https://www.instagram.com/dutchlearning/", format: ["self"], type: "instagram", skills: ["speaking", "listening"], focus: ["confidence"] },
+          { name: "Duolingo", level: "All levels", note: "at least one session every day", url: "https://www.duolingo.com/course/nl/en/Learn-Dutch", format: ["self"], type: "app", skills: [], focus: ["pronunciation", "vocabulary"],
+            info: "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it." },
+          { name: "Dutch TV and series", level: "A2 → B2", note: "First Dates, Lang Leve de Liefde, De Eetclub, Love Is Blind: Nederland", format: ["self"], type: "tv", skills: ["listening", "reading"], focus: [],
+            info: "I watched with Dutch subtitles so I could follow along." }
+        ],
+        scenery: [["windmill", 20, 0, 84], ["tulips", 4, 74, 160], ["cloud", 60, 6, 80]]
+      },
+      {
+        kind: "chapter", marker: "B1", level: "B1 → B2", when: "Oct 2026 – now", where: "Maternity leave", current: true,
+        title: "Seize the free time to progress further",
+        story: "During maternity leave, I joined a small A2–B1 group at ABC Dutch, again with De Sprong. I learned quite a lot of new grammar from the book and felt very engaged speaking Dutch in every lesson.",
+        tools: [
+          { name: "ABC Dutch", level: "B1 ✓", note: "small group", url: "https://www.abcdutch.com/", format: ["inperson"], type: "school", skills: ["speaking", "listening", "reading", "writing"], focus: ["pronunciation", "vocabulary", "grammar", "verbs", "confidence"],
+            info: "Small groups of fewer than 10 people. You can't choose your teacher, but all the teachers are certified and creative in how they teach. They often bring extra materials to make the class even more engaging. They also offer courses specifically for exam preparation." },
+          { name: "De Sprong", level: "A2 → B1", note: "textbook", url: "https://partner.bol.com/click/click?p=2&t=url&s=1541805&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fde-sprong%2F9300000151899387%2F&name=De%20sprong", affiliate: true, format: ["self"], type: null, skills: ["listening", "reading", "writing"], focus: ["grammar", "vocabulary"],
+            info: "Colourful pages and a good mix of listening, reading, writing and speaking exercises if you use it in a class. It takes more space to explain the grammar rules than Nederlands in actie. Really good self-study material for levels A2 to B1." },
+          { name: "365-day speaking challenge", level: "A2 → B2", note: "still going, on Instagram", url: "https://www.instagram.com/dutchlearning/", format: ["self"], type: "instagram", skills: ["speaking", "listening"], focus: ["confidence"] },
+          { name: "Duolingo", level: "All levels", note: "still at least one session every day", url: "https://www.duolingo.com/course/nl/en/Learn-Dutch", format: ["self"], type: "app", skills: [], focus: ["pronunciation", "vocabulary"],
+            info: "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it." }
+        ],
+        scenery: [["baby", 30, 30, 90], ["tree", 10, 4, 64], ["tree", 70, 60, 58]]
+      },
+      {
+        kind: "goal", marker: "🔒", level: "B2/C1", when: "Next", where: "The goal",
+        title: "Working in Dutch, fluent in daily life",
+        story: "The next part of the road. I'll update this map as I go.",
+        tools: [],
+        scenery: [["castle", 18, 0, 170], ["key", 70, 60, 46]]
+      }
+    ];
+
+    function el(tag, attrs, children) {
+      var n = document.createElement(tag);
+      Object.keys(attrs || {}).forEach(function (k) {
+        if (k === "text") n.textContent = attrs[k];
+        else if (k === "class") n.className = attrs[k];
+        else n.setAttribute(k, attrs[k]);
+      });
+      (children || []).forEach(function (c) { if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+      return n;
+    }
+    function skillChip(s, small) {
+      var key = s.split(":")[1], group = s.split(":")[0];
+      return el("li", { class: "skill" + (small ? " small" : "") + (group === "format" || group === "type" ? " neutral" : "") + (group === "focus" ? " focus" : ""), "data-skill": key },
+        [el("span", { class: "dot" }), el("span", { class: "label", text: tagLabel(s) })]);
+    }
+    function sprite(name, x, y, w) {
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      var use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      use.setAttribute("href", "#" + name);
+      svg.appendChild(use);
+      var vb = document.getElementById(name).getAttribute("viewBox").split(" ").map(Number);
+      svg.setAttribute("viewBox", vb.join(" "));
+      svg.style.left = x + "%"; svg.style.top = y + "%"; svg.style.width = w + "px";
+      svg.style.height = (w * vb[3] / vb[2]) + "px";
+      return svg;
+    }
+
+    // Legend
+    // Tags that appear somewhere on the journey, in group order.
+    var USED = {};
+    STOPS.forEach(function (st) { st.tools.forEach(function (t) { tagsOf(t).forEach(function (k) { USED[k] = true; }); }); });
+    function usedIn(g) { return Object.keys(g.items).map(function (k) { return g.key + ":" + k; }).filter(function (k) { return USED[k]; }); }
+    var legend = document.getElementById("legend");
+    GROUPS.forEach(function (g) {
+      var row = el("ul", { class: "skills" });
+      usedIn(g).forEach(function (k) { row.appendChild(skillChip(k)); });
+      legend.appendChild(el("div", { class: "tag-group" }, [el("span", { class: "tag-group-title", text: g.title }), row]));
+    });
+
+    // Stops
+    var list = document.getElementById("stops");
+    STOPS.forEach(function (st, i) {
+      var side = i % 2 === 0 ? "left" : "right";
+      var li = el("li", { id: "stop-" + i, class: "stop" + (st.current ? " current" : "") + (st.kind === "detour" || st.kind === "spark" ? " compact" : ""), "data-side": side, "data-kind": st.kind });
+      // Scenery fills the half of the row the card doesn't use.
+      var scenery = el("div", { class: "scenery", "aria-hidden": "true" });
+      var zone = el("div", { style: "position:absolute;top:0;bottom:0;" + (side === "left" ? "left:66%;right:0" : "left:0;right:66%") });
+      (st.scenery || []).forEach(function (s) { zone.appendChild(sprite(s[0], s[1], s[2], s[3])); });
+      scenery.appendChild(zone);
+      li.appendChild(scenery);
+      if (st.current) li.appendChild(el("span", { class: "here-flag", text: "You are here" }));
+      li.appendChild(el("span", { class: "marker", "aria-hidden": "true", text: st.marker }));
+
+      var card = el("article", { class: "card" });
+      card.appendChild(el("div", { class: "eyebrow" }, [el("span", { class: "when", text: st.when }), el("span", { text: st.where })]));
+      card.appendChild(el("h2", { text: st.title }));
+      card.appendChild(el("p", null, [el("span", { class: "level-badge", text: st.level })]));
+      card.appendChild(el("p", { text: st.story }));
+      if (st.tools.length) {
+        card.appendChild(el("h3", { text: "In my backpack" }));
+        var ul = el("ul", { class: "tools" });
+        st.tools.forEach(function (t) {
+          var name = t.url
+            ? el("a", { href: t.url, target: "_blank", rel: "noopener" + (t.affiliate ? " sponsored" : ""), text: t.name })
+            : el("span", { text: t.name });
+          var head = el("div", { class: "tool-name" }, [name, t.note ? el("small", { text: " · " + t.note }) : null,
+            t.affiliate ? el("span", { class: "affiliate", text: " (affiliate link)" }) : null]);
+          var meta = (t.level ? [/^All/.test(t.level) ? t.level : "Level " + t.level] : []).concat((t.format || []).map(function (k) { return tagLabel("format:" + k); })).concat(typesOf(t).map(function (k) { return tagLabel("type:" + k); }));
+          var chips = el("ul", { class: "skills" });
+          tagsOf(t).filter(function (k) { return /^(skills|focus):/.test(k); }).forEach(function (k) { chips.appendChild(skillChip(k, true)); });
+          var info = t.info ? el("details", { class: "tool-info" }, [el("summary", { text: "More info" }), el("p", { text: t.info })]) : null;
+          ul.appendChild(el("li", { class: "tool" }, [head, meta.length ? el("div", { class: "tool-meta", text: meta.join(" · ") }) : null, chips, info]));
+        });
+        card.appendChild(ul);
+      }
+      if (st.setbacks && st.setbacks.length) {
+        card.appendChild(el("h3", { text: "Setbacks" }));
+        var sb = el("ul", { class: "setbacks" });
+        st.setbacks.forEach(function (s) { sb.appendChild(el("li", null, [el("span", { "aria-hidden": "true", text: "⛰️" }), s])); });
+        card.appendChild(sb);
+      }
+      if (st.milestones && st.milestones.length) {
+        card.appendChild(el("h3", { text: "Milestones" }));
+        var ms = el("ul", { class: "milestones" });
+        st.milestones.forEach(function (m) { ms.appendChild(el("li", { class: "milestone" }, [el("span", { "aria-hidden": "true", text: "🏆" }), m])); });
+        card.appendChild(ms);
+      }
+      li.appendChild(card);
+      list.appendChild(li);
+    });
+
+    /* ---------- The road ---------- */
+    var quest = document.getElementById("quest");
+    var trail = document.getElementById("trail");
+    var walker = document.getElementById("walker");
+    var NS = "http://www.w3.org/2000/svg";
+    var points = [], seas = [], walkedPath = null, currentIndex = STOPS.findIndex(function (s) { return s.current; });
+
+    function svgEl(tag, attrs) { var n = document.createElementNS(NS, tag); Object.keys(attrs).forEach(function (k) { n.setAttribute(k, attrs[k]); }); return n; }
+    function curve(pts) {
+      var d = "M" + pts[0].x + " " + pts[0].y;
+      for (var i = 1; i < pts.length; i++) {
+        var a = pts[i - 1], b = pts[i], dy = (b.y - a.y) / 2;
+        d += " C" + a.x + " " + (a.y + dy) + " " + b.x + " " + (b.y - dy) + " " + b.x + " " + b.y;
+      }
+      return d;
+    }
+
+    function drawRoad() {
+      var qr = quest.getBoundingClientRect();
+      var w = quest.clientWidth, h = quest.scrollHeight, narrow = w <= 760;
+      trail.setAttribute("viewBox", "0 0 " + w + " " + h);
+      trail.innerHTML = "";
+      points = Array.prototype.map.call(document.querySelectorAll(".stop .marker"), function (m) {
+        var r = m.getBoundingClientRect();
+        return { x: r.left + r.width / 2 - qr.left, y: r.top + r.height / 2 - qr.top };
+      });
+      var start = { x: points[0].x, y: 0 };
+      var roadW = narrow ? 18 : 34;
+
+      var COUNTRY = { TW: "Taiwan", NL: "The Netherlands" };
+      function countryOf(i) { return STOPS[i].country || "NL"; }
+      document.querySelectorAll(".place-sign").forEach(function (n) { n.remove(); });
+
+      // A sea wherever the road moves between countries, crossed by plane.
+      seas = [];
+      for (var i = 0; i < points.length - 1; i++) {
+        if (countryOf(i) === countryOf(i + 1)) continue;
+        var seaTop = points[i].y + (narrow ? 150 : 170), seaBottom = points[i + 1].y - (narrow ? 70 : 90);
+        if (seaBottom - seaTop < 80) { var midY = (points[i].y + points[i + 1].y) / 2; seaTop = midY - 50; seaBottom = midY + 50; }
+        trail.appendChild(svgEl("path", { d: "M0 " + seaTop + " C" + w * .3 + " " + (seaTop - 24) + " " + w * .7 + " " + (seaTop + 24) + " " + w + " " + seaTop + " V" + seaBottom + " C" + w * .7 + " " + (seaBottom + 24) + " " + w * .3 + " " + (seaBottom - 24) + " 0 " + seaBottom + " Z", fill: "#cfe8ee" }));
+        for (var k = 0; k < 6; k++) {
+          var wy = seaTop + (seaBottom - seaTop) * (k + .5) / 6, wx = (k % 2 ? .62 : .18) * w;
+          trail.appendChild(svgEl("path", { d: "M" + wx + " " + wy + " q12 -6 24 0 q12 6 24 0", stroke: "#fff", "stroke-width": 2.5, fill: "none", "stroke-linecap": "round", opacity: .8 }));
+        }
+        seas.push({ from: i, top: seaTop, bottom: seaBottom });
+        // Signs sit beside the road: where you start (first crossing only) and where you land.
+        if (seas.length === 1) quest.appendChild(el("span", { class: "place-sign", style: "left:" + points[i].x + "px;top:" + (seaTop - 34) + "px", text: COUNTRY[countryOf(i)] }));
+        quest.appendChild(el("span", { class: "place-sign", style: "left:" + points[i + 1].x + "px;top:" + (seaBottom + 10) + "px", text: COUNTRY[countryOf(i + 1)] }));
+      }
+      function flightD(i) {
+        var p = points[i], q = points[i + 1];
+        return "M" + p.x + " " + p.y + " C" + p.x + " " + (p.y + 160) + " " + q.x + " " + (q.y - 160) + " " + q.x + " " + q.y;
+      }
+
+      function road(d, future) {
+        trail.appendChild(svgEl("path", { d: d, stroke: "#e8d3a8", "stroke-width": roadW + 6, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round", opacity: future ? .55 : 1 }));
+        trail.appendChild(svgEl("path", { d: d, stroke: "#f6e7c8", "stroke-width": roadW, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round", opacity: future ? .6 : 1 }));
+        trail.appendChild(svgEl("path", { d: d, stroke: future ? "#b9afa8" : "#ee8e76", "stroke-width": 3, "stroke-dasharray": future ? "2 10" : "10 10", fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      }
+      // A plateau stop sits on a flat-topped hill: the road climbs onto it, runs level past the marker, then goes down.
+      var flat = narrow ? 0 : 110;
+      STOPS.forEach(function (st, i) {
+        if (!st.plateau || i === 0) return;
+        var p = points[i];
+        var x1 = p.x - flat - (narrow ? 22 : 36), x2 = p.x + flat + (narrow ? 22 : 36);
+        var top = p.y - (narrow ? 14 : 24), base = p.y + (narrow ? 70 : 110), lean = narrow ? 18 : 40;
+        trail.appendChild(svgEl("path", { d: "M" + (x1 - lean) + " " + base + " L" + x1 + " " + top + " H" + x2 + " L" + (x2 + lean) + " " + base + " Z", fill: "#dcc59b" }));
+        trail.appendChild(svgEl("path", { d: "M" + ((x1 + x2) / 2) + " " + top + " H" + x2 + " L" + (x2 + lean) + " " + base + " H" + ((x1 + x2) / 2 + lean * .4) + " Z", fill: "#cdb282" }));
+        for (var r = 1; r <= 2; r++) {
+          var ly = top + (base - top) * r / 3, inset = lean * r / 3;
+          trail.appendChild(svgEl("path", { d: "M" + (x1 - inset + 6) + " " + ly + " H" + (x2 + inset - 6), stroke: "#c4a675", "stroke-width": 2, "stroke-linecap": "round", opacity: .7 }));
+        }
+        trail.appendChild(svgEl("path", { d: "M" + (x1 - 4) + " " + top + " H" + (x2 + 4), stroke: "#b5d39c", "stroke-width": narrow ? 8 : 12, "stroke-linecap": "round" }));
+      });
+      // Stops from..to as road points, with the level stretch added before each plateau.
+      function roadPoints(from, to) {
+        var out = [];
+        for (var i = from; i <= to; i++) {
+          var level = flat && STOPS[i].plateau && i > from && i < to;
+          var dir = i > 0 && points[i - 1].x > points[i].x ? 1 : -1;
+          if (level) out.push({ x: points[i].x - dir * flat, y: points[i].y });
+          out.push(points[i]);
+          if (level) out.push({ x: points[i].x + dir * flat, y: points[i].y });
+        }
+        return out;
+      }
+
+      // Roads run between stops in the same country: walked up to "you are here", faint after it.
+      var cur = currentIndex, walkD = "", runStart = 0;
+      for (var j = 1; j <= points.length; j++) {
+        if (j < points.length && countryOf(j) === countryOf(runStart)) continue;
+        var a0 = runStart, b0 = j - 1, pre = a0 === 0 ? [start] : [];
+        if (a0 <= cur) {
+          var done = pre.concat(roadPoints(a0, Math.min(b0, cur)));
+          if (done.length > 1) { road(curve(done), false); walkD += curve(done); }
+        }
+        if (b0 > cur) road(curve(roadPoints(Math.max(a0, cur), b0)), true);
+        if (j < points.length) {
+          // The flight to the next country: a dotted arc with a plane facing the way it flies.
+          var flight = svgEl("path", { d: flightD(b0), stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round" });
+          trail.appendChild(flight);
+          var mid = flight.getPointAtLength(flight.getTotalLength() / 2);
+          var plane = svgEl("use", { href: "#plane", x: mid.x - 28, y: mid.y - 18, width: 56, height: 35 });
+          if (points[j].x < points[b0].x) plane.setAttribute("transform", "translate(" + 2 * mid.x + " 0) scale(-1 1)");
+          trail.appendChild(plane);
+          if (b0 < cur) walkD += " " + flightD(b0);
+        }
+        runStart = j;
+      }
+      walkedPath = svgEl("path", { d: walkD, fill: "none", stroke: "none" });
+      trail.appendChild(walkedPath);
+      placeWalker();
+    }
+
+    /* ---------- The traveller follows your scrolling ---------- */
+    var lastY = 0, walkTimer;
+    function pointAtY(path, y) {
+      var lo = 0, hi = path.getTotalLength();
+      for (var i = 0; i < 22; i++) { var midL = (lo + hi) / 2; if (path.getPointAtLength(midL).y < y) lo = midL; else hi = midL; }
+      return lo;
+    }
+    function placeWalker() {
+      if (!walkedPath) return;
+      var qr = quest.getBoundingClientRect();
+      var target = window.innerHeight * 0.55 - qr.top;
+      var total = walkedPath.getTotalLength();
+      var end = walkedPath.getPointAtLength(total);
+      var len = target >= end.y ? total : Math.max(0, pointAtY(walkedPath, target));
+      var p = walkedPath.getPointAtLength(len), ahead = walkedPath.getPointAtLength(Math.min(total, len + 4));
+      walker.style.left = p.x + "px"; walker.style.top = p.y + "px";
+      walker.style.opacity = seas.some(function (sea) { return p.y > sea.top - 10 && p.y < sea.bottom + 10; }) ? 0 : 1;
+      walker.classList.toggle("flip", ahead.x < p.x - .3);
+      if (Math.abs(len - lastY) > 1 && len < total) {
+        walker.classList.add("walking");
+        clearTimeout(walkTimer); walkTimer = setTimeout(function () { walker.classList.remove("walking"); }, 180);
+      }
+      lastY = len;
+      updateHud();
+    }
+
+    /* ---------- Toolkit by skill ---------- */
+    var hud = document.getElementById("hud");
+    var toolkit = document.getElementById("toolkit");
+    var openSkill = null;
+
+    // Every tool with a tag, merged by name, with each stop where I used it.
+    function toolsFor(tag) {
+      var byName = {}, order = [];
+      STOPS.forEach(function (st, i) {
+        st.tools.forEach(function (t) {
+          if (tagsOf(t).indexOf(tag) < 0) return;
+          if (!byName[t.name]) { byName[t.name] = { tool: t, uses: [] }; order.push(t.name); }
+          var level = t.level || st.level;
+          // One label per level: a tool used at several stops with the same level links to the first.
+          if (byName[t.name].uses.some(function (u) { return u.level === level; })) return;
+          byName[t.name].uses.push({ stop: i, level: level, when: st.when });
+        });
+      });
+      return order.map(function (n) { return byName[n]; });
+    }
+
+    function renderToolkit() {
+      document.querySelectorAll("#hudSkills .skill").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-tag") === openSkill));
+      });
+      toolkit.hidden = !openSkill;
+      document.getElementById("tabHint").hidden = !!openSkill;
+      if (!openSkill) return;
+      var items = toolsFor(openSkill);
+      var title = document.getElementById("toolkitTitle");
+      title.textContent = tagLabel(openSkill);
+      title.appendChild(el("small", { text: items.length + (items.length === 1 ? " resource" : " resources") }));
+      var list = document.getElementById("toolkitList");
+      list.innerHTML = "";
+      items.forEach(function (it) {
+        var t = it.tool;
+        var name = t.url
+          ? el("a", { href: t.url, target: "_blank", rel: "noopener" + (t.affiliate ? " sponsored" : ""), text: t.name })
+          : el("span", { text: t.name });
+        var uses = el("div", { class: "uses" });
+        it.uses.forEach(function (u) {
+          var btn = el("button", { type: "button", class: "use", title: "Go to this stop (" + u.when + ")" }, [el("b", { text: u.level })]);
+          btn.addEventListener("click", function () {
+            document.getElementById("stop-" + u.stop).scrollIntoView({ behavior: "smooth", block: "start" });
+            if (window.matchMedia("(max-width: 760px)").matches) setPack(false);
+          });
+          uses.appendChild(btn);
+        });
+        list.appendChild(el("li", { class: "toolkit-item" }, [
+          el("div", { class: "tool-name" }, [name, t.note ? el("small", { text: " · " + t.note }) : null,
+            t.affiliate ? el("span", { class: "affiliate", text: " (affiliate link)" }) : null]),
+          uses
+        ]));
+      });
+      list.scrollTop = 0;
+    }
+
+    // Four category tabs; the open tab shows its tags.
+    var packBtn = document.getElementById("packBtn");
+    var tabs = document.getElementById("tabs");
+    var hudSkills = document.getElementById("hudSkills");
+    var activeGroup = "skills";
+
+    function renderTabs() {
+      tabs.innerHTML = "";
+      GROUPS.forEach(function (g) {
+        var tab = el("button", { type: "button", class: "tab", role: "tab", "aria-selected": String(g.key === activeGroup) },
+          [g.title, el("small", { text: String(usedIn(g).length) })]);
+        tab.addEventListener("click", function () {
+          if (activeGroup === g.key) return;
+          activeGroup = g.key; openSkill = null; renderTabs(); renderToolkit();
+        });
+        tabs.appendChild(tab);
+      });
+      var g = GROUPS.filter(function (x) { return x.key === activeGroup; })[0];
+      var row = el("ul", { class: "skills" });
+      usedIn(g).forEach(function (tag) {
+        var neutral = g.key === "format" || g.key === "type";
+        var btn = el("button", { type: "button", class: "skill" + (neutral ? " neutral" : "") + (g.key === "focus" ? " focus" : ""), "data-skill": tag.split(":")[1], "data-tag": tag,
+          "aria-pressed": "false", "aria-controls": "toolkit" }, [el("span", { class: "dot" }), el("span", { class: "label", text: tagLabel(tag) })]);
+        btn.addEventListener("click", function () { openSkill = openSkill === tag ? null : tag; renderToolkit(); });
+        row.appendChild(el("li", null, [btn]));
+      });
+      hudSkills.innerHTML = "";
+      hudSkills.appendChild(row);
+    }
+
+    function setPack(open) {
+      hud.hidden = !open;
+      packBtn.setAttribute("aria-expanded", String(open));
+      packBtn.setAttribute("aria-label", open ? "Close my toolkit" : "Open my toolkit");
+      if (open) { renderTabs(); renderToolkit(); }
+      updateHud();
+    }
+    packBtn.addEventListener("click", function () { setPack(hud.hidden); });
+    document.getElementById("hudClose").addEventListener("click", function () { setPack(false); packBtn.focus(); });
+    document.getElementById("toolkitClose").addEventListener("click", function () { openSkill = null; renderToolkit(); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" || hud.hidden) return;
+      if (openSkill) { openSkill = null; renderToolkit(); } else { setPack(false); packBtn.focus(); }
+    });
+    document.addEventListener("click", function (e) {
+      // Tabs redraw on click, so ignore clicks on elements that were just removed.
+      if (!e.target.isConnected) return;
+      if (!hud.hidden && !hud.contains(e.target) && !packBtn.contains(e.target)) setPack(false);
+    });
+
+    function updateHud() {
+      var mid = window.innerHeight * 0.55, active = -1;
+      document.querySelectorAll(".stop .marker").forEach(function (m, i) { if (m.getBoundingClientRect().top < mid) active = i; });
+      var qr = quest.getBoundingClientRect();
+      packBtn.classList.toggle("show", !hud.hidden || (active >= 0 && qr.bottom > window.innerHeight * 0.6));
+    }
+
+    // Cards rise into view as you reach them.
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); } });
+      }, { rootMargin: "0px 0px -12% 0px" });
+      document.querySelectorAll(".stop").forEach(function (s) { io.observe(s); });
+    } else {
+      document.querySelectorAll(".stop").forEach(function (s) { s.classList.add("seen"); });
+    }
+
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () { ticking = false; placeWalker(); });
+    }, { passive: true });
+    var resizeTimer;
+    window.addEventListener("resize", function () { clearTimeout(resizeTimer); resizeTimer = setTimeout(drawRoad, 120); });
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(drawRoad);
+    drawRoad();
+  })();
+  </script>
+</body>
+</html>

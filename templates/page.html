@@ -23,8 +23,14 @@
         <svg class="brand-caret" aria-hidden="true" viewBox="0 0 12 8" width="12" height="8"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
       </a>
       <nav class="nav" id="mainNav" aria-label="Main">
-        <a href="#finder" data-i18n="nav.find">Find resources</a>
-        <a href="#suggest" data-i18n="nav.suggest">Suggest a resource</a>
+        <div class="nav-group" id="resourcesGroup">
+          <button type="button" class="nav-drop" id="resourcesBtn" aria-expanded="false" aria-controls="resourcesMenu"><span data-i18n="nav.resources">Resources</span><svg aria-hidden="true" viewBox="0 0 12 8" width="10" height="7"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+          <div class="nav-menu" id="resourcesMenu">
+            <a href="#finder" data-i18n="nav.find">Find resources</a>
+            <a href="#suggest" data-i18n="nav.suggest">Suggest a resource</a>
+            <a href="{{root}}journey/" data-i18n="nav.journey">Resources I use</a>
+          </div>
+        </div>
         <a href="#about" data-i18n="nav.about">About</a>
       </nav>
       <div class="header-actions">

@@ -255,6 +255,8 @@ function llmsTxt(data) {
     const formats = r.formats.map(f => t("format." + f)).join(", ");
     lines.push(`- [${r.name}](${r.url}): ${r.note.en} Levels ${r.levels[0]}–${r.levels[1]}. ${where}. ${formats}. Price: ${r.price ? r.price.en : priceText(r, t) + "."}`);
   });
+  lines.push("", "## Inka's own journey", "",
+    `- [Resources I use](${SITE_URL}journey/): Inka's Dutch learning journey from A0 in Taiwan (2014) to B1 in the Netherlands, with the courses, textbooks, apps and teachers she used at each level, the skills each one trained, and her setbacks. This page contains affiliate links, which are labelled.`);
   lines.push("", "## Optional", "", `- [Suggest a resource](${pageUrl("en")}#suggest)`, `- [Instagram @dutchlearning](${data.config.instagram})`, "");
   return lines.join("\n");
 }
@@ -268,11 +270,23 @@ function sitemapXml(data) {
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrl("en")}"/>`,
     "  </url>"
   ].join("\n"));
+  // Hand-written English page about Inka's own journey (not built from the template).
+  urls.push(["  <url>", `    <loc>${SITE_URL}journey/</loc>`, `    <lastmod>${journeyDate()}</lastmod>`, "  </url>"].join("\n"));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.join("\n")}
 </urlset>
 `;
+}
+
+// Date the journey page last changed: its last commit, or today if it has uncommitted edits.
+function journeyDate() {
+  try {
+    const dirty = execSync("git status --porcelain -- journey/index.html", { cwd: ROOT }).toString().trim();
+    const last = execSync("git log -1 --format=%cs -- journey/index.html", { cwd: ROOT }).toString().trim();
+    if (last && !dirty) return last;
+  } catch (e) { /* not a git checkout */ }
+  return new Date().toISOString().slice(0, 10);
 }
 
 function robotsTxt() {

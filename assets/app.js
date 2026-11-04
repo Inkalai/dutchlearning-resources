@@ -269,6 +269,11 @@
 
   var mobile = window.matchMedia("(max-width: 860px)");
 
+  function setResources(open) {
+    $("resourcesGroup").classList.toggle("open", open);
+    $("resourcesBtn").setAttribute("aria-expanded", String(open));
+  }
+
   function setMenu(open) {
     $("mainNav").classList.toggle("open", open);
     $("brand").setAttribute("aria-expanded", String(open));
@@ -309,14 +314,17 @@
       setMenu(!$("mainNav").classList.contains("open"));
     });
     $("mainNav").addEventListener("click", function (e) {
-      if (e.target.closest("a")) setMenu(false);
+      if (e.target.closest("a")) { setMenu(false); setResources(false); }
     });
+    $("resourcesBtn").addEventListener("click", function () { setResources(!$("resourcesGroup").classList.contains("open")); });
+    document.addEventListener("click", function (e) { if (!e.target.closest("#resourcesGroup")) setResources(false); });
     document.addEventListener("click", function (e) {
       if (!e.target.closest(".site-header")) setMenu(false);
     });
     document.addEventListener("keydown", function (e) {
       if (e.key !== "Escape") return;
       if ($("mainNav").classList.contains("open")) { setMenu(false); $("brand").focus(); }
+      if ($("resourcesGroup").classList.contains("open")) { setResources(false); $("resourcesBtn").focus(); }
       if ($("filters").classList.contains("open") && mobile.matches) setFilterSheet(false, true);
     });
     $("filtersClose").addEventListener("click", function () { setFilterSheet(false, true); });
