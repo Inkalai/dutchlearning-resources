@@ -18,7 +18,7 @@ window.JOURNEY_TEXT = {
     "lang.aria": "Language",
 
     "intro.title": "My Dutch journey: from A0 – B1",
-    "intro.lead": "Who knew that I'd start with my first Dutch class in Taipei, and that now the quest would be to build a family in the Netherlands? Life is unpredictable! Follow along on my Dutch quest to see what I used at each level, which skills it trained, and the detours real life put in my way.",
+    "intro.lead": "Who knew that a Dutch class at university would lead to me preparing to build a family in the Netherlands? Life is unpredictable! Join me as I level up in Dutch, and see what I used at each level, which skills it trained, and the real-life obstacles that slowed my learning.",
     "intro.disclosure": "This is my authentic experience, and there are affiliate links on this page. They cost you nothing extra, but they could support my work on this website and my content creation.",
 
     "persona.avatar": "Inka, drawn as the traveller on the map",
