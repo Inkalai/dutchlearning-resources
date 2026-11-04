@@ -1,23 +1,23 @@
-// Page text for "Resources I use" in English and Traditional Chinese.
+// Page text for "My Dutch Journey" in English and Traditional Chinese.
 // Keys used in templates/journey.html (data-t, data-t-html, data-t-aria) and in the page script.
 // After editing, run: node tools/build.js
 window.JOURNEY_TEXT = {
   en: {
-    "meta.title": "Resources I use | @dutchlearning",
+    "meta.title": "My Dutch Learning Journey: Resources, Tips & Progress",
     "meta.description": "Inka's Dutch learning journey from Taiwan to the Netherlands: the courses, books, apps and teachers she used at each level from A0 to B1, the skills each one trained, and the setbacks along the way.",
     "meta.ogDescription": "My Dutch quest: what I used at each level, which skills it trained, and the detours real life put in my way.",
 
     "nav.resources": "Resources",
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
-    "nav.journey": "Resources I use",
+    "nav.journey": "My Dutch Journey",
     "nav.about": "About",
     "kofi": "Support this website",
     "menu.open": "Open menu",
     "menu.close": "Close menu",
     "lang.aria": "Language",
 
-    "intro.title": "My Dutch quest",
+    "intro.title": "My Dutch Journey: from A0 – B1",
     "intro.lead": "Who knew that I'd start with my first Dutch class in Taipei, and that now the quest would be to build a family in the Netherlands? Life is unpredictable! Follow along on my Dutch quest to see what I used at each level, which skills it trained, and the detours real life put in my way.",
     "intro.disclosure": "This is my authentic experience, and there are affiliate links on this page. They cost you nothing extra, but they could support my work on this website and my content creation.",
 
@@ -86,21 +86,21 @@ window.JOURNEY_TEXT = {
   },
 
   zh: {
-    "meta.title": "我用過的資源 | @dutchlearning",
+    "meta.title": "我的荷語學習旅程：資源、技巧與進度",
     "meta.description": "Inka 從台灣到荷蘭的荷語學習旅程：從 A0 到 B1，每個程度用過的課程、書籍、App 和老師，各自訓練了哪些能力，以及一路上遇到的挫折。",
     "meta.ogDescription": "我的荷語冒險：每個程度用了什麼、訓練了哪些能力，以及現實生活帶來的各種繞路。",
 
     "nav.resources": "資源",
     "nav.find": "找資源",
     "nav.suggest": "推薦資源",
-    "nav.journey": "我用過的資源",
+    "nav.journey": "我的荷語旅程",
     "nav.about": "關於我",
     "kofi": "贊助我",
     "menu.open": "開啟選單",
     "menu.close": "關閉選單",
     "lang.aria": "語言",
 
-    "intro.title": "我的荷語冒險",
+    "intro.title": "我的荷語旅程：從 A0 到 B1",
     "intro.lead": "誰想得到，我在台北上了第一堂荷語課，而現在的任務是在荷蘭成家？人生真是難以預料！跟著我的荷語冒險，看看我在每個程度用了哪些資源、它們訓練了哪些能力，以及現實生活帶來的各種繞路。",
     "intro.disclosure": "這是我真實的經驗分享，本頁含有聯盟行銷連結。你不需要多付任何費用，但它們可以支持我經營這個網站和創作內容。",
 

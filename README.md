@@ -13,7 +13,7 @@ A trilingual (English / 繁體中文 / simple Nederlands) finder for free and pa
 | `assets/app.js` | Filtering, the level route and the suggestion form. |
 | `templates/page.html` | The page layout. The published pages are built from it. |
 | `tools/build.js` | Builds `index.html`, `zh/index.html`, `nl/index.html`, `journey/index.html`, `zh/journey/index.html`, `sitemap.xml`, `robots.txt` and `llms.txt`. |
-| `templates/journey.html` | Layout of "Resources I use", Inka's own Dutch learning journey. |
+| `templates/journey.html` | Layout of "My Dutch Journey", Inka's own Dutch learning journey. |
 | `journey/data.js` | The stops on that journey and the resources at each one, in English and Traditional Chinese. |
 | `journey/text.js` | All other text on that page, in English and Traditional Chinese. It contains labelled affiliate links. |
 

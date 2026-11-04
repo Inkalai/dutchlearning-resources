@@ -1,4 +1,4 @@
-// The stops on "Resources I use" (my Dutch learning journey), in English and Traditional Chinese.
+// The stops on "My Dutch Journey", in English and Traditional Chinese.
 // Text fields are either a plain string (same in every language) or { en, zh }.
 // kind: chapter | detour (a setback or pause) | spark (a turning point) | goal
 // country: "TW" for stops in Taiwan; others are in the Netherlands. Seas and flights are drawn between countries.
