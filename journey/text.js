@@ -10,7 +10,7 @@ window.JOURNEY_TEXT = {
     "nav.resources": "Resources",
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
-    "nav.journey": "My Dutch Journey",
+    "nav.journey": "My Dutch journey",
     "nav.about": "About",
     "kofi": "Support this website",
     "menu.open": "Open menu",

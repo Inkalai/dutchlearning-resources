@@ -4,7 +4,7 @@ window.I18N = {
     "meta.title": "Dutch learning resources | @dutchlearning",
     "meta.description": "Free and paid ways to learn Dutch in the Netherlands, Belgium and online, filtered by budget, level, time and the way you like to learn.",
     "nav.resources": "Resources",
-    "nav.journey": "My Dutch Journey",
+    "nav.journey": "My Dutch journey",
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
     "nav.about": "About",
