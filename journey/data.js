@@ -424,7 +424,7 @@ window.JOURNEY_STOPS = [
         "focus": [],
         "info": {
           "en": "I kept this up for 30 days right before the exam, to train my writing.",
-          "zh": "考試前 30 天我每天都寫，用來練習寫作。"
+          "zh": "用來練習寫作。"
         }
       },
       {
@@ -501,7 +501,7 @@ window.JOURNEY_STOPS = [
     "milestones": [
       {
         "en": "2022: passed the inburgering exam and got my certificate.",
-        "zh": "2022：通過融入考試，拿到證書。"
+        "zh": "2022：通過融入考試，拿到 A2 證書。"
       }
     ],
     "scenery": [
