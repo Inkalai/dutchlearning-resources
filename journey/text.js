@@ -7,7 +7,7 @@ window.JOURNEY_TEXT = {
     "meta.description": "Inka's Dutch learning journey from Taiwan to the Netherlands: the courses, books, apps and teachers she used at each level from A0 to B1, the skills each one trained, and the setbacks along the way.",
     "meta.ogDescription": "My Dutch quest: what I used at each level, which skills it trained, and the detours real life put in my way.",
 
-    "nav.resources": "Resources",
+    "nav.resources": "Dutch Resources",
     "nav.find": "Find resources",
     "nav.suggest": "Suggest a resource",
     "nav.journey": "My Dutch journey",
@@ -90,7 +90,7 @@ window.JOURNEY_TEXT = {
     "meta.description": "Inka 從台灣到荷蘭的荷語學習旅程：從 A0 到 B1，每個程度用過的課程、書籍、App 和老師，各自訓練了哪些能力，以及一路上遇到的阻力。",
     "meta.ogDescription": "我的荷語冒險：每個程度用了什麼、訓練了哪些能力，以及現實生活帶來的各種繞路。",
 
-    "nav.resources": "資源",
+    "nav.resources": "荷語資源",
     "nav.find": "找資源",
     "nav.suggest": "推薦資源",
     "nav.journey": "我的荷語旅程",

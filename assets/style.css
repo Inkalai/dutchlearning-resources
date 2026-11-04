@@ -114,6 +114,12 @@ p { margin: 0 0 1em; }
 .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
 .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu, .nav-group.open .nav-menu { display: grid; }
 .nav-menu a { border-radius: 10px; padding: 10px 12px; white-space: nowrap; }
+.nav > a, .nav-drop, .header-actions > * { white-space: nowrap; }
+/* Narrow laptops: drop the name next to the logo so the menu stays on one line. */
+@media (min-width: 861px) and (max-width: 1080px) {
+  .brand-name { display: none; }
+  .header-inner { gap: 14px; }
+}
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .lang-toggle {
   font: 500 14px var(--body); color: var(--ink); background: none;
