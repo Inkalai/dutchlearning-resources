@@ -276,7 +276,8 @@
 
   function setMenu(open) {
     $("mainNav").classList.toggle("open", open);
-    $("brand").setAttribute("aria-expanded", String(open));
+    $("menuBtn").setAttribute("aria-expanded", String(open));
+    $("menuBtn").setAttribute("aria-label", t(open ? "nav.menuClose" : "nav.menu"));
   }
 
   function setFilterSheet(open, returnToResults) {
@@ -292,27 +293,17 @@
   }
 
   function syncMobileMode() {
-    var brand = $("brand");
-    if (mobile.matches) {
-      brand.setAttribute("aria-controls", "mainNav");
-      brand.setAttribute("aria-label", t("nav.menu"));
-      brand.setAttribute("aria-expanded", String($("mainNav").classList.contains("open")));
-    } else {
+    if (!mobile.matches) {
       setMenu(false);
       setFilterSheet(false);
-      brand.removeAttribute("aria-controls");
-      brand.removeAttribute("aria-expanded");
-      brand.setAttribute("aria-label", "@dutchlearning");
+    } else {
+      setMenu($("mainNav").classList.contains("open"));
     }
   }
 
   function setupMobile() {
-    // On phones the logo opens the menu instead of jumping to the top.
-    $("brand").addEventListener("click", function (e) {
-      if (!mobile.matches) return;
-      e.preventDefault();
-      setMenu(!$("mainNav").classList.contains("open"));
-    });
+    // On phones the menu button (☰) opens the menu, the same as on the journey page.
+    $("menuBtn").addEventListener("click", function () { setMenu(!$("mainNav").classList.contains("open")); });
     $("mainNav").addEventListener("click", function (e) {
       if (e.target.closest("a")) { setMenu(false); setResources(false); }
     });
@@ -323,7 +314,7 @@
     });
     document.addEventListener("keydown", function (e) {
       if (e.key !== "Escape") return;
-      if ($("mainNav").classList.contains("open")) { setMenu(false); $("brand").focus(); }
+      if ($("mainNav").classList.contains("open")) { setMenu(false); $("menuBtn").focus(); }
       if ($("resourcesGroup").classList.contains("open")) { setResources(false); $("resourcesBtn").focus(); }
       if ($("filters").classList.contains("open") && mobile.matches) setFilterSheet(false, true);
     });
