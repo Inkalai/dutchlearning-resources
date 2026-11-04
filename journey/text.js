@@ -120,7 +120,7 @@ window.JOURNEY_TEXT = {
     "persona.opportunities": "機會",
     "persona.opportunitiesText": "嫁給荷蘭人，可以和他的家人練習荷語。",
     "persona.personality": "個性",
-    "persona.personalityText": "只要有目標，我就會規劃用最少的預算和時間達成。",
+    "persona.personalityText": "只要有了目標，我就會想辦法用最少的預算和時間達成。",
     "persona.goal": "目標：B2/C1",
     "persona.goalText": "能用荷語工作，在日常生活中流利溝通。",
 
