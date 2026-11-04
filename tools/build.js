@@ -354,7 +354,7 @@ function llmsTxt(data) {
     lines.push(`- [${r.name}](${r.url}): ${r.note.en} Levels ${r.levels[0]}–${r.levels[1]}. ${where}. ${formats}. Price: ${r.price ? r.price.en : priceText(r, t) + "."}`);
   });
   lines.push("", "## Inka's own journey", "",
-    `- [My Dutch Journey](${journeyUrl("en")}) (also in Traditional Chinese: ${journeyUrl("zh")}): Inka's Dutch learning journey from A0 in Taiwan (2014) to B1 in the Netherlands, with the courses, textbooks, apps and teachers she used at each level, the skills each one trained, and her setbacks. This page contains affiliate links, which are labelled.`);
+    `- [My Dutch journey](${journeyUrl("en")}) (also in Traditional Chinese: ${journeyUrl("zh")}): Inka's Dutch learning journey from A0 in Taiwan (2014) to B1 in the Netherlands, with the courses, textbooks, apps and teachers she used at each level, the skills each one trained, and her setbacks. This page contains affiliate links, which are labelled.`);
   lines.push("", "## Optional", "", `- [Suggest a resource](${pageUrl("en")}#suggest)`, `- [Instagram @dutchlearning](${data.config.instagram})`, "");
   return lines.join("\n");
 }
