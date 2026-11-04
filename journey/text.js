@@ -45,7 +45,7 @@ window.JOURNEY_TEXT = {
     "manual.unroll": "Unroll",
     "manual.rollUp": "Roll up",
     "manual.tipBackpack": "Tip: on the map, tap the backpack button at the bottom right to filter by any of these tags and see every resource I used for it. Then you can see which resources helped me with which skills or focus areas.",
-    "manual.tipFinder": "<b>How I learned</b>, <b>Resource type</b> and <b>Skills</b> are the same filters as in the <a href=\"../\">main resource finder</a>, so you can find more resources like these there. <b>Focus</b> tags come from my personal experience.",
+    "manual.tipFinder": "<b>How I learned</b>, <b>Resource type</b> and <b>Skills</b> are the same filters as in <a href=\"../#finder\">Find resources</a>, so you can find more resources like these there. <b>Focus</b> tags come from my personal experience.",
 
     "quest.aria": "My Dutch learning journey",
     "pack.open": "Open my toolkit",
@@ -128,7 +128,7 @@ window.JOURNEY_TEXT = {
     "manual.unroll": "展開",
     "manual.rollUp": "收起",
     "manual.tipBackpack": "小提示：在地圖上點右下角的背包按鈕，就能依任何標籤篩選，看到我用過的所有相關資源。這樣你就能知道，哪些資源幫助我加強了哪些能力或重點。",
-    "manual.tipFinder": "<b>學習方式</b>、<b>資源類型</b>和<b>能力</b>的篩選條件和<a href=\"../\">主要的資源搜尋器</a>相同，你可以在那裡找到更多類似的資源。<b>重點</b>標籤則來自我的個人經驗。",
+    "manual.tipFinder": "<b>學習方式</b>、<b>資源類型</b>和<b>能力</b>的篩選條件和主頁的<a href=\"../#finder\">「找資源」</a>相同，你可以在那裡找到更多類似的資源。<b>重點</b>標籤則來自我的個人經驗。",
 
     "quest.aria": "我的荷語學習旅程",
     "pack.open": "打開我的工具包",
