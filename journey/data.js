@@ -645,7 +645,7 @@ window.JOURNEY_STOPS = [
     "where": "Dutch in Utrecht",
     "title": {
       "en": "Back to the classroom",
-      "zh": "重回教室"
+      "zh": "重新拾起學習"
     },
     "story": {
       "en": "I signed up with Dutch in Utrecht: the studio was close to home, the price was affordable, and my neighbour recommended the teacher. Sometimes we went to class together, which made it fun. In class I practised speaking a lot, and with the book De Sprong I reviewed grammar in a short time.",
