@@ -780,10 +780,18 @@
         return "M" + p.x + " " + p.y + " C" + p.x + " " + (p.y + 160) + " " + q.x + " " + (q.y - 160) + " " + q.x + " " + q.y;
       }
 
-      function road(d, future) {
-        trail.appendChild(svgEl("path", { d: d, stroke: "#e8d3a8", "stroke-width": roadW + 6, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round", opacity: future ? .55 : 1 }));
-        trail.appendChild(svgEl("path", { d: d, stroke: "#f6e7c8", "stroke-width": roadW, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round", opacity: future ? .6 : 1 }));
-        trail.appendChild(svgEl("path", { d: d, stroke: future ? "#b9afa8" : "#ee8e76", "stroke-width": 3, "stroke-dasharray": future ? "2 10" : "10 10", fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      function road(d, future, clip) {
+        var extra = clip ? { "clip-path": "url(#" + clip + ")" } : {};
+        function layer(attrs) { trail.appendChild(svgEl("path", Object.assign({ d: d, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, attrs, extra))); }
+        layer({ stroke: "#e8d3a8", "stroke-width": roadW + 6, opacity: future ? .55 : 1 });
+        layer({ stroke: "#f6e7c8", "stroke-width": roadW, opacity: future ? .6 : 1 });
+        layer({ stroke: future ? "#b9afa8" : "#ee8e76", "stroke-width": 3, "stroke-dasharray": future ? "2 10" : "10 10" });
+      }
+      // Clip regions for a crossing: the land on either side of the sea, and the sea itself.
+      function clipRects(id, rects) {
+        var cp = svgEl("clipPath", { id: id });
+        rects.forEach(function (r) { cp.appendChild(svgEl("rect", { x: 0, y: r[0], width: w, height: Math.max(0, r[1] - r[0]) })); });
+        trail.appendChild(cp);
       }
       // A plateau stop sits on a flat-topped hill: the road climbs onto it, runs level past the marker, then goes down.
       var flat = narrow ? 0 : 110;
@@ -824,14 +832,19 @@
         }
         if (b0 > cur) road(curve(roadPoints(Math.max(a0, cur), b0)), true);
         if (j < points.length) {
-          // The flight to the next country: a dotted arc, and a plane that waits halfway until Inka flies it.
-          var flight = svgEl("path", { d: flightD(b0), stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round" });
+          // To the next country: a road to the coast, a dotted flight across the sea, a road from the far shore.
+          var sea = seas.filter(function (x) { return x.from === b0; })[0];
+          clipRects("land" + b0, [[0, sea.top], [sea.bottom, h]]);
+          clipRects("sea" + b0, [[sea.top, sea.bottom]]);
+          road(flightD(b0), b0 >= cur, "land" + b0);
+          var flight = svgEl("path", { d: flightD(b0), stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round", "clip-path": "url(#sea" + b0 + ")" });
           trail.appendChild(flight);
-          var mid = flight.getPointAtLength(flight.getTotalLength() / 2);
+          // Until Inka reaches the sea, her plane waits in the middle of it.
+          var mid = flight.getPointAtLength(pointAtY(flight, (sea.top + sea.bottom) / 2));
           var flyer = el("div", { class: "flyer", "aria-hidden": "true" });
           flyer.innerHTML = document.getElementById("flyerArt").innerHTML;
           quest.appendChild(flyer);
-          flights.push({ from: b0, to: j, path: flight, mid: mid, dir: points[j].x < points[b0].x ? -1 : 1, el: flyer });
+          flights.push({ from: b0, to: j, top: sea.top, bottom: sea.bottom, mid: mid, dir: points[j].x < points[b0].x ? -1 : 1, el: flyer });
           if (b0 < cur) walkD += " " + flightD(b0);
         }
         runStart = j;
@@ -856,28 +869,19 @@
       var end = walkedPath.getPointAtLength(total);
       var len = target >= end.y ? total : Math.max(0, pointAtY(walkedPath, target));
       var p = walkedPath.getPointAtLength(len), ahead = walkedPath.getPointAtLength(Math.min(total, len + 4));
-      // Between two countries: Inka waits at the stop for a moment, flies the plane along the
-      // dotted route (tilting with it), and lands at the next stop before walking on.
-      var flying = null, pos = p;
+      // Between two countries Inka walks to the coast, boards the plane over the sea (it follows
+      // the dotted route, tilting with it), and walks on again from the far shore.
+      var flying = null;
       flights.forEach(function (f) {
-        var A = points[f.from], B = points[f.to], pad = Math.min(160, (B.y - A.y) * 0.22), on = false, at = f.mid, tilt = 0;
-        if (len < total && p.y > A.y && p.y < B.y) {
-          if (p.y < A.y + pad) pos = A;
-          else if (p.y > B.y - pad) pos = B;
-          else {
-            on = true; flying = f;
-            var y = A.y + (p.y - A.y - pad) / (B.y - A.y - 2 * pad) * (B.y - A.y);
-            var fl = pointAtY(f.path, y);
-            at = f.path.getPointAtLength(fl);
-            var nx = f.path.getPointAtLength(Math.min(f.path.getTotalLength(), fl + 6));
-            tilt = Math.max(-28, Math.min(28, Math.atan2(nx.y - at.y, Math.abs(nx.x - at.x) + .001) * 180 / Math.PI));
-          }
-        }
+        var on = len < total && p.y > f.top - 8 && p.y < f.bottom + 8;
+        var at = on ? p : f.mid;
+        var tilt = on ? Math.max(-28, Math.min(28, Math.atan2(ahead.y - p.y, Math.abs(ahead.x - p.x) + .001) * 180 / Math.PI)) : 0;
+        if (on) flying = f;
         f.el.classList.toggle("active", on);
         f.el.style.left = at.x + "px"; f.el.style.top = at.y + "px";
         f.el.style.transform = "translate(-50%, -60%) scaleX(" + f.dir + ") rotate(" + tilt + "deg)";
       });
-      walker.style.left = pos.x + "px"; walker.style.top = pos.y + "px";
+      walker.style.left = p.x + "px"; walker.style.top = p.y + "px";
       walker.style.opacity = flying ? 0 : 1;
       walker.classList.toggle("flip", ahead.x < p.x - .3);
       if (Math.abs(len - lastY) > 1 && len < total) {
