@@ -644,7 +644,7 @@ window.JOURNEY_STOPS = [
     },
     "where": "Dutch in Utrecht",
     "title": {
-      "en": "Back to the classroom",
+      "en": "Picking up learning again",
       "zh": "重新拾起學習"
     },
     "story": {
