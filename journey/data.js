@@ -500,7 +500,7 @@ window.JOURNEY_STOPS = [
     ],
     "milestones": [
       {
-        "en": "2022: passed the inburgering exam and got my certificate.",
+        "en": "2022: passed the inburgering exam and got my A2 certificate.",
         "zh": "2022：通過融入考試，拿到 A2 證書。"
       }
     ],
