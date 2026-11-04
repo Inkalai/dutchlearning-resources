@@ -107,7 +107,7 @@ window.JOURNEY_TEXT = {
     "persona.avatar": "Inka，地圖上那位旅人的模樣",
     "persona.label": "冒險角色",
     "persona.sub": "住在荷蘭的台灣人",
-    "persona.open": "關於我",
+    "persona.open": "展開",
     "persona.close": "收起",
     "persona.languages": "語言",
     "persona.langMandarin": "<b>中文</b> 母語",
@@ -124,7 +124,7 @@ window.JOURNEY_TEXT = {
     "persona.goal": "目標：B2/C1",
     "persona.goalText": "能用荷語工作，在日常生活中流利溝通。",
 
-    "manual.title": "使用說明",
+    "manual.title": "使用說明書",
     "manual.unroll": "展開",
     "manual.rollUp": "收起",
     "manual.tipBackpack": "小提示：在地圖上點右下角的背包按鈕，就能依任何標籤篩選，看到我用過的所有相關資源。這樣你就能知道，哪些資源幫助我加強了哪些能力或重點。",

@@ -273,6 +273,11 @@
     /* The traveller walking along the road */
     .walker { position: absolute; z-index: 1; width: 54px; height: 76px; left: 0; top: 0; transform: translate(-50%, -88%); transition: transform .1s linear, opacity .25s; will-change: left, top; pointer-events: none; }
     .walker svg { width: 100%; height: 100%; }
+    .flyer { position: absolute; z-index: 1; width: 92px; height: 58px; left: 0; top: 0; pointer-events: none; transition: transform .15s linear; }
+    .flyer svg { width: 100%; height: 100%; overflow: visible; }
+    .flyer .pilot { opacity: 0; transition: opacity .25s; }
+    .flyer.active .pilot { opacity: 1; }
+    .flyer.active { z-index: 4; filter: drop-shadow(0 6px 6px rgba(31,143,157,.25)); }
     .walker.flip svg { transform: scaleX(-1); }
     .walker.walking .leg-a { animation: stepA .5s ease-in-out infinite alternate; transform-origin: 25px 47px; }
     .walker.walking .leg-b { animation: stepB .5s ease-in-out infinite alternate; transform-origin: 25px 47px; }
@@ -352,6 +357,7 @@
       .tab { font-size: 12px; padding: 7px 2px; }
       .hud .skills { gap: 5px; }
       .walker { width: 38px; height: 53px; }
+      .flyer { width: 64px; height: 40px; }
       .place-sign { display: none; }
       .brand { font-size: 0; gap: 0; }
       .lang-pick { margin-left: auto; padding: 7px 24px 7px 10px; font-size: 13px; background-position: right 8px center; }
@@ -370,10 +376,8 @@
       .persona-facts { grid-template-columns: 1fr; }
       .avatar { width: 64px; height: 64px; }
       .persona-head { gap: 12px; }
-      .persona-toggle { width: 32px; height: 32px; padding: 0; justify-content: center; }
+      .persona-toggle { padding: 5px 10px; font-size: 12.5px; }
       .persona[open] .persona-toggle { align-self: flex-start; }
-      .persona-toggle .closed-text, .persona-toggle .open-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-      .persona-toggle::after { font-size: 13px; }
       .persona h2 { font-size: 26px; }
       .map-key summary { padding: 0 22px; }
       .roll-label { font-size: 16px; }
@@ -476,7 +480,7 @@
             <h2>Inka</h2>
             <p class="persona-job" data-t="persona.sub">住在荷蘭的台灣人</p>
           </div>
-          <span class="persona-toggle"><span class="closed-text" data-t="persona.open">關於我</span><span class="open-text" data-t="persona.close">收起</span></span>
+          <span class="persona-toggle"><span class="closed-text" data-t="persona.open">展開</span><span class="open-text" data-t="persona.close">收起</span></span>
         </summary>
         <dl class="persona-facts">
           <div><dt data-t="persona.languages">語言</dt><dd><ul class="langs">
@@ -496,7 +500,7 @@
       </details>
       <details class="map-key">
         <summary>
-          <span class="roll-label" data-t="manual.title">使用說明</span>
+          <span class="roll-label" data-t="manual.title">使用說明書</span>
           <span class="roll-hint"><span class="closed-text" data-t="manual.unroll">展開</span><span class="open-text" data-t="manual.rollUp">收起</span></span>
         </summary>
         <div class="paper">
@@ -508,6 +512,20 @@
       </details>
     </div>
   </section>
+
+  <template id="flyerArt">
+    <svg viewBox="0 0 80 50">
+      <g class="pilot">
+        <path d="M45 15 C43.5 18 43 21 43 24 M55 15 C56.5 18 57 21 57 24" stroke="#f26b2a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="50" cy="17.5" r="5.6" fill="#f2c4a6"/>
+        <path d="M45 15.5 C46.5 12.5 53.5 12.5 55 15.5 C53 14.6 51.5 14.8 50 16 C48.5 14.8 47 14.6 45 15.5 Z" fill="#f26b2a"/>
+        <path d="M40.5 14.5 C43.5 14.3 45.5 13.4 46.6 11.8 L49 8.6 C49.5 8 50.5 8 51 8.6 L53.4 11.8 C54.5 13.4 56.5 14.3 59.5 14.5 C57 16.3 54.6 16 53.4 14.8 C51.3 13.8 48.7 13.8 46.6 14.8 C45.4 16 43 16.3 40.5 14.5 Z" fill="#fffaf5" stroke="#f26b2a" stroke-width=".9" stroke-linejoin="round"/>
+        <circle cx="48.2" cy="18" r=".75" fill="#2b2420"/><circle cx="51.8" cy="18" r=".75" fill="#2b2420"/>
+        <path d="M48.6 20.2 Q50 21.2 51.4 20.2" stroke="#c94d12" stroke-width=".7" fill="none" stroke-linecap="round"/>
+      </g>
+      <use href="#plane"/>
+    </svg>
+  </template>
 
   <main class="quest" id="quest" data-t-aria="quest.aria" aria-label="我的荷語學習旅程">
     <svg class="trail" id="trail" aria-hidden="true"></svg>
@@ -562,7 +580,7 @@
     </div>
   </section>
 
-  <script src="../../journey/text.js?v=a1ab9becfb"></script>
+  <script src="../../journey/text.js?v=3058f4f704"></script>
   <script src="../../journey/data.js?v=bc4159764d"></script>
   <script>
   // Header menus: the Resources dropdown and, on phones, the menu button.
@@ -725,7 +743,7 @@
     var trail = document.getElementById("trail");
     var walker = document.getElementById("walker");
     var NS = "http://www.w3.org/2000/svg";
-    var points = [], seas = [], walkedPath = null, currentIndex = STOPS.findIndex(function (s) { return s.current; });
+    var points = [], seas = [], flights = [], walkedPath = null, currentIndex = STOPS.findIndex(function (s) { return s.current; });
 
     function svgEl(tag, attrs) { var n = document.createElementNS(NS, tag); Object.keys(attrs).forEach(function (k) { n.setAttribute(k, attrs[k]); }); return n; }
     function curve(pts) {
@@ -751,13 +769,16 @@
 
       var COUNTRY = { TW: T("country.TW"), NL: T("country.NL") };
       function countryOf(i) { return STOPS[i].country || "NL"; }
-      document.querySelectorAll(".place-sign").forEach(function (n) { n.remove(); });
+      document.querySelectorAll(".place-sign, .flyer").forEach(function (n) { n.remove(); });
+      flights = [];
 
       // A sea wherever the road moves between countries, crossed by plane.
       seas = [];
       for (var i = 0; i < points.length - 1; i++) {
         if (countryOf(i) === countryOf(i + 1)) continue;
-        var seaTop = points[i].y + (narrow ? 150 : 170), seaBottom = points[i + 1].y - (narrow ? 70 : 90);
+        // A short band just before landing, so the departure stop keeps its own land around it.
+        var seaBottom = points[i + 1].y - (narrow ? 70 : 90);
+        var seaTop = Math.max(points[i].y + (narrow ? 150 : 170), seaBottom - (narrow ? 130 : 170));
         if (seaBottom - seaTop < 80) { var midY = (points[i].y + points[i + 1].y) / 2; seaTop = midY - 50; seaBottom = midY + 50; }
         trail.appendChild(svgEl("path", { d: "M0 " + seaTop + " C" + w * .3 + " " + (seaTop - 24) + " " + w * .7 + " " + (seaTop + 24) + " " + w + " " + seaTop + " V" + seaBottom + " C" + w * .7 + " " + (seaBottom + 24) + " " + w * .3 + " " + (seaBottom - 24) + " 0 " + seaBottom + " Z", fill: "#cfe8ee" }));
         for (var k = 0; k < 6; k++) {
@@ -818,13 +839,14 @@
         }
         if (b0 > cur) road(curve(roadPoints(Math.max(a0, cur), b0)), true);
         if (j < points.length) {
-          // The flight to the next country: a dotted arc with a plane facing the way it flies.
+          // The flight to the next country: a dotted arc, and a plane that waits halfway until Inka flies it.
           var flight = svgEl("path", { d: flightD(b0), stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round" });
           trail.appendChild(flight);
           var mid = flight.getPointAtLength(flight.getTotalLength() / 2);
-          var plane = svgEl("use", { href: "#plane", x: mid.x - 28, y: mid.y - 18, width: 56, height: 35 });
-          if (points[j].x < points[b0].x) plane.setAttribute("transform", "translate(" + 2 * mid.x + " 0) scale(-1 1)");
-          trail.appendChild(plane);
+          var flyer = el("div", { class: "flyer", "aria-hidden": "true" });
+          flyer.innerHTML = document.getElementById("flyerArt").innerHTML;
+          quest.appendChild(flyer);
+          flights.push({ from: b0, to: j, path: flight, mid: mid, dir: points[j].x < points[b0].x ? -1 : 1, el: flyer });
           if (b0 < cur) walkD += " " + flightD(b0);
         }
         runStart = j;
@@ -849,8 +871,29 @@
       var end = walkedPath.getPointAtLength(total);
       var len = target >= end.y ? total : Math.max(0, pointAtY(walkedPath, target));
       var p = walkedPath.getPointAtLength(len), ahead = walkedPath.getPointAtLength(Math.min(total, len + 4));
-      walker.style.left = p.x + "px"; walker.style.top = p.y + "px";
-      walker.style.opacity = seas.some(function (sea) { return p.y > sea.top - 10 && p.y < sea.bottom + 10; }) ? 0 : 1;
+      // Between two countries: Inka waits at the stop for a moment, flies the plane along the
+      // dotted route (tilting with it), and lands at the next stop before walking on.
+      var flying = null, pos = p;
+      flights.forEach(function (f) {
+        var A = points[f.from], B = points[f.to], pad = Math.min(160, (B.y - A.y) * 0.22), on = false, at = f.mid, tilt = 0;
+        if (len < total && p.y > A.y && p.y < B.y) {
+          if (p.y < A.y + pad) pos = A;
+          else if (p.y > B.y - pad) pos = B;
+          else {
+            on = true; flying = f;
+            var y = A.y + (p.y - A.y - pad) / (B.y - A.y - 2 * pad) * (B.y - A.y);
+            var fl = pointAtY(f.path, y);
+            at = f.path.getPointAtLength(fl);
+            var nx = f.path.getPointAtLength(Math.min(f.path.getTotalLength(), fl + 6));
+            tilt = Math.max(-28, Math.min(28, Math.atan2(nx.y - at.y, Math.abs(nx.x - at.x) + .001) * 180 / Math.PI));
+          }
+        }
+        f.el.classList.toggle("active", on);
+        f.el.style.left = at.x + "px"; f.el.style.top = at.y + "px";
+        f.el.style.transform = "translate(-50%, -60%) scaleX(" + f.dir + ") rotate(" + tilt + "deg)";
+      });
+      walker.style.left = pos.x + "px"; walker.style.top = pos.y + "px";
+      walker.style.opacity = flying ? 0 : 1;
       walker.classList.toggle("flip", ahead.x < p.x - .3);
       if (Math.abs(len - lastY) > 1 && len < total) {
         walker.classList.add("walking");
