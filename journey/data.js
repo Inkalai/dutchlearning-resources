@@ -412,7 +412,7 @@ window.JOURNEY_STOPS = [
       {
         "name": {
           "en": "A daily diary in Dutch",
-          "zh": "每天用荷語寫日記"
+          "zh": "考前 30 天每天用荷語寫日記"
         },
         "format": [
           "self"
