@@ -265,11 +265,11 @@ window.JOURNEY_STOPS = [
     },
     "title": {
       "en": "Living here, learning by ear",
-      "zh": "住在這裡，用耳朵學荷語"
+      "zh": "回到荷蘭，從生活中學荷語"
     },
     "story": {
       "en": "I came back for an English-taught master's, hoping to gain work experience here. Most of my Dutch came from simply living here and a few apps on my phone. I didn't take courses or study on my own.",
-      "zh": "我回到荷蘭讀英語授課的碩士，希望能在這裡累積工作經驗。我的荷語大多來自在這裡生活，以及手機上的幾個 App。我沒有上課，也沒有自學。"
+      "zh": "我回到荷蘭讀英語授課的碩士，希望能在這裡累積工作經驗。我的學習輸入大多來自生活環境，以及手機上的幾個 App。我沒有上課，也沒有自學。"
     },
     "tools": [
       {
