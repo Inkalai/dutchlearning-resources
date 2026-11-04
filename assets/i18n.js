@@ -176,7 +176,7 @@ window.I18N = {
     "meta.title": "荷語學習資源 | @dutchlearning",
     "meta.description": "整理荷蘭、比利時與線上的免費和付費荷語學習資源，可依預算、程度、時間與學習方式篩選。",
     "nav.resources": "資源",
-    "nav.journey": "我用過的資源（英文）",
+    "nav.journey": "我用過的資源",
     "nav.find": "找資源",
     "nav.suggest": "推薦資源",
     "nav.about": "關於我",

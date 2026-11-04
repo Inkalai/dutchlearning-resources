@@ -12,8 +12,10 @@ A trilingual (English / 繁體中文 / simple Nederlands) finder for free and pa
 | `assets/style.css` | Colours, fonts and layout. |
 | `assets/app.js` | Filtering, the level route and the suggestion form. |
 | `templates/page.html` | The page layout. The published pages are built from it. |
-| `tools/build.js` | Builds `index.html`, `zh/index.html`, `nl/index.html`, `sitemap.xml`, `robots.txt` and `llms.txt`. |
-| `journey/index.html` | "Resources I use": Inka's own Dutch learning journey (English only). A hand-written page, not built from the template; edit it directly. It contains labelled affiliate links. |
+| `tools/build.js` | Builds `index.html`, `zh/index.html`, `nl/index.html`, `journey/index.html`, `zh/journey/index.html`, `sitemap.xml`, `robots.txt` and `llms.txt`. |
+| `templates/journey.html` | Layout of "Resources I use", Inka's own Dutch learning journey. |
+| `journey/data.js` | The stops on that journey and the resources at each one, in English and Traditional Chinese. |
+| `journey/text.js` | All other text on that page, in English and Traditional Chinese. It contains labelled affiliate links. |
 
 ## Build the pages
 
@@ -23,7 +25,7 @@ After any change to the template, data, text, styles or scripts, run:
 node tools/build.js
 ```
 
-Then commit the generated files too. Don't edit `index.html`, `zh/index.html` or `nl/index.html` by hand: the next build overwrites them. The build also stamps every CSS and JavaScript link with a content hash, so visitors' browsers pick up changes straight away. It needs Playwright (`npm install -g playwright`) to draw the resource cards.
+Then commit the generated files too. Don't edit `index.html`, `zh/index.html`, `nl/index.html`, `journey/index.html` or `zh/journey/index.html` by hand: the next build overwrites them. The build also stamps every CSS and JavaScript link with a content hash, so visitors' browsers pick up changes straight away. It needs Playwright (`npm install -g playwright`) to draw the resource cards.
 
 ## Add or edit a resource
 

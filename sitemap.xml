@@ -27,5 +27,15 @@
   <url>
     <loc>https://www.dutchlearningresources.com/journey/</loc>
     <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchlearningresources.com/journey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.dutchlearningresources.com/zh/journey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dutchlearningresources.com/journey/"/>
+  </url>
+  <url>
+    <loc>https://www.dutchlearningresources.com/zh/journey/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dutchlearningresources.com/journey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.dutchlearningresources.com/zh/journey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dutchlearningresources.com/journey/"/>
   </url>
 </urlset>
