@@ -3,7 +3,7 @@
 // After editing, run: node tools/build.js
 window.JOURNEY_TEXT = {
   en: {
-    "meta.title": "My Dutch learning journey: resources, tips & progress",
+    "meta.title": "My Dutch Learning Journey: resources, experience and progress",
     "meta.description": "Inka's Dutch learning journey from Taiwan to the Netherlands: the courses, books, apps and teachers she used at each level from A0 to B1, the skills each one trained, and the setbacks along the way.",
     "meta.ogDescription": "My Dutch quest: what I used at each level, which skills it trained, and the detours real life put in my way.",
 
