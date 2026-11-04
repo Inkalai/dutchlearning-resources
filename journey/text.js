@@ -87,7 +87,7 @@ window.JOURNEY_TEXT = {
 
   zh: {
     "meta.title": "我的荷語學習旅程：資源、經驗與進度",
-    "meta.description": "Inka 從台灣到荷蘭的荷語學習旅程：從 A0 到 B1，每個程度用過的課程、書籍、App 和老師，各自訓練了哪些能力，以及一路上遇到的挫折。",
+    "meta.description": "Inka 從台灣到荷蘭的荷語學習旅程：從 A0 到 B1，每個程度用過的課程、書籍、App 和老師，各自訓練了哪些能力，以及一路上遇到的阻力。",
     "meta.ogDescription": "我的荷語冒險：每個程度用了什麼、訓練了哪些能力，以及現實生活帶來的各種繞路。",
 
     "nav.resources": "資源",
@@ -143,7 +143,7 @@ window.JOURNEY_TEXT = {
 
     "card.here": "你在這裡",
     "card.backpack": "我的背包",
-    "card.setbacks": "挫折",
+    "card.setbacks": "阻力",
     "card.milestones": "里程碑",
     "card.moreInfo": "更多資訊",
     "card.affiliate": "（聯盟連結）",
