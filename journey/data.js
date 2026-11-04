@@ -198,7 +198,7 @@ window.JOURNEY_STOPS = [
     },
     "story": {
       "en": "I created my Instagram account @dutchlearning to keep Dutch in my life. But I wasn't actively studying.",
-      "zh": "我開了 Instagram 帳號 @dutchlearning，讓荷語留在我的生活裡。不過，那時我並沒有積極學習。"
+      "zh": "我開了 Instagram 帳號 @dutchlearning，讓我對荷蘭還留有一絲懸念。不過，我並沒有契機繼續學習。"
     },
     "tools": [
       {
