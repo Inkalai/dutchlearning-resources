@@ -731,7 +731,7 @@ window.JOURNEY_STOPS = [
           "zh": "所有程度"
         },
         "note": {
-          "en": "at least one session every day since 2025",
+          "en": "one unit every day since 2025",
           "zh": "2025 年起每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
@@ -745,7 +745,7 @@ window.JOURNEY_STOPS = [
           "vocabulary"
         ],
         "info": {
-          "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
+          "en": "I only use the free version. One unit a day (about five minutes) doesn't take much effort, and sometimes you still learn something new from it.",
           "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       }
@@ -883,7 +883,7 @@ window.JOURNEY_STOPS = [
           "zh": "所有程度"
         },
         "note": {
-          "en": "at least one session every day",
+          "en": "one unit every day",
           "zh": "每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
@@ -897,7 +897,7 @@ window.JOURNEY_STOPS = [
           "vocabulary"
         ],
         "info": {
-          "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
+          "en": "I only use the free version. One unit a day (about five minutes) doesn't take much effort, and sometimes you still learn something new from it.",
           "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       },
@@ -1053,7 +1053,7 @@ window.JOURNEY_STOPS = [
           "zh": "所有程度"
         },
         "note": {
-          "en": "still at least one session every day",
+          "en": "still one unit every day",
           "zh": "仍然每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
@@ -1067,7 +1067,7 @@ window.JOURNEY_STOPS = [
           "vocabulary"
         ],
         "info": {
-          "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
+          "en": "I only use the free version. One unit a day (about five minutes) doesn't take much effort, and sometimes you still learn something new from it.",
           "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       }
