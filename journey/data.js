@@ -959,7 +959,7 @@ window.JOURNEY_STOPS = [
     "current": true,
     "title": {
       "en": "Seize the free time to progress further",
-      "zh": "把握空檔，再往前進"
+      "zh": "把握空檔，繼續前進"
     },
     "story": {
       "en": "During maternity leave, I joined a small A2–B1 group at ABC Dutch, again with De Sprong. I learned quite a lot of new grammar from the book and felt very engaged speaking Dutch in every lesson.",
