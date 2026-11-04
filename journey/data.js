@@ -732,7 +732,7 @@ window.JOURNEY_STOPS = [
         },
         "note": {
           "en": "at least one session every day since 2025",
-          "zh": "2025 年起每天至少一課"
+          "zh": "2025 年起每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
         "format": [
@@ -746,7 +746,7 @@ window.JOURNEY_STOPS = [
         ],
         "info": {
           "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
-          "zh": "我只用免費版。每天一課不太費力，有時還是能學到新東西。"
+          "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       }
     ],
@@ -884,7 +884,7 @@ window.JOURNEY_STOPS = [
         },
         "note": {
           "en": "at least one session every day",
-          "zh": "每天至少一課"
+          "zh": "每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
         "format": [
@@ -898,7 +898,7 @@ window.JOURNEY_STOPS = [
         ],
         "info": {
           "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
-          "zh": "我只用免費版。每天一課不太費力，有時還是能學到新東西。"
+          "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       },
       {
@@ -1054,7 +1054,7 @@ window.JOURNEY_STOPS = [
         },
         "note": {
           "en": "still at least one session every day",
-          "zh": "仍然每天至少一課"
+          "zh": "仍然每天完成一單元"
         },
         "url": "https://www.duolingo.com/course/nl/en/Learn-Dutch",
         "format": [
@@ -1068,7 +1068,7 @@ window.JOURNEY_STOPS = [
         ],
         "info": {
           "en": "I only use the free version. One session a day doesn't take much effort, and sometimes you still learn something new from it.",
-          "zh": "我只用免費版。每天一課不太費力，有時還是能學到新東西。"
+          "zh": "我只用免費版。每天一單元（大約五分鐘）不太費力，有時還是能學到新東西。"
         }
       }
     ],
