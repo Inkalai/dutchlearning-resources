@@ -789,18 +789,28 @@
         return "M" + p.x + " " + p.y + " C" + p.x + " " + (p.y + 160) + " " + q.x + " " + (q.y - 160) + " " + q.x + " " + q.y;
       }
 
-      function road(d, future, clip) {
-        var extra = clip ? { "clip-path": "url(#" + clip + ")" } : {};
-        function layer(attrs) { trail.appendChild(svgEl("path", Object.assign({ d: d, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, attrs, extra))); }
+      function road(d, future) {
+        function layer(attrs) { trail.appendChild(svgEl("path", Object.assign({ d: d, fill: "none", "stroke-linecap": "round", "stroke-linejoin": "round" }, attrs))); }
         layer({ stroke: "#e8d3a8", "stroke-width": roadW + 6, opacity: future ? .55 : 1 });
         layer({ stroke: "#f6e7c8", "stroke-width": roadW, opacity: future ? .6 : 1 });
         layer({ stroke: future ? "#b9afa8" : "#ee8e76", "stroke-width": 3, "stroke-dasharray": future ? "2 10" : "10 10" });
       }
-      // Clip regions for a crossing: the land on either side of the sea, and the sea itself.
-      function clipRects(id, rects) {
-        var cp = svgEl("clipPath", { id: id });
-        rects.forEach(function (r) { cp.appendChild(svgEl("rect", { x: 0, y: r[0], width: w, height: Math.max(0, r[1] - r[0]) })); });
-        trail.appendChild(cp);
+      // Split a route into the part above the sea, the part over it and the part below it, as
+      // separate paths (no clip masks: iOS Safari drops masks when the map is redrawn).
+      function splitAtSea(d, sea) {
+        var probe = svgEl("path", { d: d, fill: "none", stroke: "none" });
+        trail.appendChild(probe);
+        var total = probe.getTotalLength(), parts = { before: [], over: [], after: [] };
+        for (var l = 0; l <= total + 2; l += 3) {
+          var pt = probe.getPointAtLength(Math.min(l, total));
+          var key = pt.y < sea.top ? "before" : pt.y > sea.bottom ? "after" : "over";
+          parts[key].push(pt);
+        }
+        // Let the pieces meet at the coast.
+        if (parts.before.length && parts.over.length) parts.over.unshift(parts.before[parts.before.length - 1]);
+        if (parts.after.length && parts.over.length) parts.after.unshift(parts.over[parts.over.length - 1]);
+        function toD(pts) { return pts.length < 2 ? "" : "M" + pts.map(function (q) { return q.x.toFixed(1) + " " + q.y.toFixed(1); }).join(" L"); }
+        return { probe: probe, before: toD(parts.before), over: toD(parts.over), after: toD(parts.after) };
       }
       // A plateau stop sits on a flat-topped hill: the road climbs onto it, runs level past the marker, then goes down.
       var flat = narrow ? 0 : 110;
@@ -843,13 +853,12 @@
         if (j < points.length) {
           // To the next country: a road to the coast, a dotted flight across the sea, a road from the far shore.
           var sea = seas.filter(function (x) { return x.from === b0; })[0];
-          clipRects("land" + b0, [[0, sea.top], [sea.bottom, h]]);
-          clipRects("sea" + b0, [[sea.top, sea.bottom]]);
-          road(flightD(b0), b0 >= cur, "land" + b0);
-          var flight = svgEl("path", { d: flightD(b0), stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round", "clip-path": "url(#sea" + b0 + ")" });
-          trail.appendChild(flight);
+          var split = splitAtSea(flightD(b0), sea);
+          if (split.before) road(split.before, b0 >= cur);
+          if (split.after) road(split.after, b0 >= cur);
+          if (split.over) trail.appendChild(svgEl("path", { d: split.over, stroke: "#1f8f9d", "stroke-width": 3, "stroke-dasharray": "3 9", fill: "none", "stroke-linecap": "round" }));
           // Until Inka reaches the sea, her plane waits in the middle of it.
-          var mid = flight.getPointAtLength(pointAtY(flight, (sea.top + sea.bottom) / 2));
+          var mid = split.probe.getPointAtLength(pointAtY(split.probe, (sea.top + sea.bottom) / 2));
           var flyer = el("div", { class: "flyer", "aria-hidden": "true" });
           flyer.innerHTML = document.getElementById("flyerArt").innerHTML;
           quest.appendChild(flyer);
