@@ -19,8 +19,10 @@
   function loadAnalytics() {
     if (loaded) return;
     loaded = true;
+    // Google's own snippet from Google Analytics, run only after consent.
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
     var s = document.createElement("script");
     s.async = true;
     s.src = "https://www.googletagmanager.com/gtm.js?id=" + GTM_ID;
