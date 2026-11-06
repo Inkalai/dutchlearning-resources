@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{htmlLang}}" data-lang="{{lang}}">
 <head>
+  <script src="{{root}}assets/consent.js?v={{v:assets/consent.js}}"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Template for "My Dutch Journey". Edit this file, journey/data.js or journey/text.js, then run: node tools/build.js -->
@@ -321,6 +322,7 @@
     .outro { background: var(--peach); padding: 44px 0 56px; text-align: center; }
     .outro h2 { font-size: 30px; margin-bottom: 8px; }
     .outro p { color: var(--muted); max-width: 56ch; margin: 0 auto 18px; }
+    .outro .cookie-link { margin: 22px auto 0; font-size: 14px; }
     .btn { display: inline-block; font: 700 16px var(--body); color: #fff; background: var(--orange); border-radius: 999px; padding: 12px 22px; text-decoration: none; }
     .btn:hover { color: #fff; background: var(--orange-ink); }
 
@@ -571,6 +573,7 @@
       <h2 data-t="outro.title">Plan your own route</h2>
       <p data-t="outro.text"></p>
       <a class="btn" href="../#finder" data-t="outro.button">Find resources for your level</a>
+      <p class="cookie-link"><button type="button" data-cookie-settings>Cookie settings</button></p>
     </div>
   </section>
 
