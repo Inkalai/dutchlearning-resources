@@ -9,7 +9,7 @@
   kind        optional label: library | government | school | university | app | course |
               tutors | creator | ai | media | podcast | community | dictionary
   categories  quick-filter tags, any of: library, government, school, instagram,
-              youtube, app, tutors, courses, practice, news, tv, dictionary
+              youtube, podcast, app, tutors, courses, practice, news, tv, dictionary
   region      "NL", "BE", "TW", "online", or several joined with + (e.g. "NL+BE")
   variants    "nl" (Netherlands Dutch), "be" (Belgian Dutch / Flemish) or both
   cities      cities with in-person sessions, [] if none
@@ -772,7 +772,7 @@ window.RESOURCES = [
     id: "dutchpod101",
     name: "DutchPod101",
     kind: "podcast",
-    categories: ["app"],
+    categories: ["podcast", "app"],
     region: "online",
     variants: ["nl"],
     cities: [],
@@ -954,7 +954,7 @@ window.RESOURCES = [
     id: "easy-dutch",
     name: "Easy Dutch",
     kind: "creator",
-    categories: ["youtube"],
+    categories: ["youtube", "podcast"],
     region: "online",
     variants: ["nl"],
     cities: [],
@@ -1315,7 +1315,7 @@ window.RESOURCES = [
     id: "hart-voor-nederlands",
     name: "Hart voor Nederlands",
     kind: "creator",
-    categories: ["instagram", "courses", "practice"],
+    categories: ["instagram", "podcast", "courses", "practice"],
     region: "online",
     variants: ["nl", "be"],
     cities: [],
@@ -1420,7 +1420,7 @@ window.RESOURCES = [
     id: "dutch-today",
     name: "Dutch Today (Martijn)",
     kind: "creator",
-    categories: ["youtube"],
+    categories: ["youtube", "podcast"],
     region: "online",
     variants: ["nl"],
     cities: [],
@@ -1858,7 +1858,7 @@ window.RESOURCES = [
     id: "dutch-fluency",
     name: "Dutch Fluency",
     kind: "app",
-    categories: ["app", "courses"],
+    categories: ["podcast", "app", "courses"],
     region: "online",
     variants: ["nl"],
     cities: [],
