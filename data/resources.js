@@ -1853,5 +1853,30 @@ window.RESOURCES = [
       zh: "免費的線上字典，提供荷語與英文及其他語言的對照，例句取自真實的翻譯文本、文章和電影字幕。可以聽母語者的發音。",
       nl: "Een gratis woordenboek op internet: Nederlands en Engels, en ook andere talen. Met voorbeeldzinnen uit echte teksten, artikelen en ondertitels van films. Je kunt luisteren hoe Nederlanders een woord uitspreken."
     }
+  },
+  {
+    id: "dutch-fluency",
+    name: "Dutch Fluency",
+    kind: "app",
+    categories: ["app", "courses"],
+    region: "online",
+    variants: ["nl"],
+    cities: [],
+    formats: ["self"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "B2"],
+    cost: [0, 19],
+    hours: [2, 15],
+    url: "https://www.dutchfluency.com/",
+    note: {
+      en: "An online platform built only for Dutch: interactive podcasts in native Dutch voices with transcripts and translations, apps for grammar, verbs and de/het, a journal (Dagboek) that an AI tutor called Rick corrects, speaking practice with Rick, and mock exams for inburgering, Staatsexamen NT2 and CNaVT. Starts with a free level test and a 7-day plan.",
+      zh: "專為荷語打造的線上學習平台：由荷語母語者錄製的互動 Podcast（附逐字稿與翻譯）、文法、動詞和 de/het 練習 App，可由 AI 家教 Rick 批改的荷語日記（Dagboek）、與 Rick 的口說練習，以及入籍考試（inburgering）、Staatsexamen NT2 和 CNaVT 的模擬考。先做免費的程度測驗，並取得 7 天學習計畫。",
+      nl: "Een website en apps alleen voor Nederlands. Er zijn podcasts met echte Nederlandse stemmen, met de tekst en een vertaling erbij. Er zijn apps voor grammatica, werkwoorden en de of het. Je schrijft in een dagboek (Dagboek) en een AI-docent, Rick, verbetert je tekst. Je kunt ook hardop met Rick praten. Er zijn proefexamens voor inburgering, Staatsexamen NT2 en CNaVT. Je begint met een gratis niveautest en een plan voor 7 dagen."
+    },
+    price: {
+      en: "Free plan: level test, 10 chats with Rick and 10 app puzzles a day, 1 journal entry a day, 1 dictation and 1 mock exam a week. Pro: €19 a month (3 days free) or €171 a year (7 days free), with all podcasts, apps and mock exams and 20 minutes a week of speaking with Rick (extra 60 minutes €9). Pro Family for up to 6 people: €249 a year. November 2026 deal: €9.50 a month for the first 3 months if you join before 1 December.",
+      zh: "免費方案：程度測驗、每天與 Rick 聊天 10 則和 10 題 App 練習、每天寫 1 篇日記，每週 1 次聽寫和 1 次模擬考。Pro：每月 €19（免費試用 3 天）或每年 €171（免費試用 7 天），可使用所有 Podcast、App 和模擬考，每週並有 20 分鐘與 Rick 口說練習（加購 60 分鐘 €9）。Pro 家庭方案最多 6 人：每年 €249。2026 年 11 月優惠：12 月 1 日前加入，前 3 個月每月 €9.50。",
+      nl: "Gratis: niveautest, elke dag 10 berichten met Rick, 10 puzzels in de apps en 1 stukje in je dagboek. Elke week 1 dictee en 1 proefexamen. Pro: €19 per maand (3 dagen gratis) of €171 per jaar (7 dagen gratis). Dan heb je alle podcasts, apps en proefexamens, en elke week 20 minuten praten met Rick (60 minuten extra: €9). Pro Family voor maximaal 6 mensen: €249 per jaar. Actie in november 2026: €9,50 per maand voor de eerste 3 maanden, als je voor 1 december begint."
+    }
   }
 ];
