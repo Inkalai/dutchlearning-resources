@@ -1879,5 +1879,30 @@ window.RESOURCES = [
       zh: "免費方案：程度測驗、每天與 Rick 聊天 10 則和 10 題 App 練習、每天寫 1 篇日記，每週 1 次聽寫和 1 次模擬考。Pro：每月 €19（免費試用 3 天）或每年 €171（免費試用 7 天），可使用所有 Podcast、App 和模擬考，每週並有 20 分鐘與 Rick 口說練習（加購 60 分鐘 €9）。Pro 家庭方案最多 6 人：每年 €249。2026 年 11 月優惠：12 月 1 日前加入，前 3 個月每月 €9.50。",
       nl: "Gratis: niveautest, elke dag 10 berichten met Rick, 10 puzzels in de apps en 1 stukje in je dagboek. Elke week 1 dictee en 1 proefexamen. Pro: €19 per maand (3 dagen gratis) of €171 per jaar (7 dagen gratis). Dan heb je alle podcasts, apps en proefexamens, en elke week 20 minuten praten met Rick (60 minuten extra: €9). Pro Family voor maximaal 6 mensen: €249 per jaar. Actie in november 2026: €9,50 per maand voor de eerste 3 maanden, als je voor 1 december begint."
     }
+  },
+  {
+    id: "dutch-online-academy",
+    name: "The Dutch Online Academy",
+    kind: "course",
+    categories: ["podcast", "app", "courses"],
+    region: "online",
+    variants: ["nl"],
+    cities: [],
+    formats: ["self", "online"],
+    focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
+    levels: ["A0", "C1"],
+    cost: [0, 200],
+    hours: [2, 15],
+    url: "https://thedutchonlineacademy.com/en",
+    note: {
+      en: "Free grammar guides explained in English, a Learn Dutch podcast (A1–B2, 150+ episodes with transcripts), vocabulary flashcards with audio and a daily Dutch Wordle. The Learn Dutch app has guided paths from A0 to B2 and for Inburgering A2/B1 and Staatsexamen NT2 I/II, with practice exams. Small live group courses on Zoom with a Dutch teacher, from A2 conversation to B2/C1.",
+      zh: "免費的英文文法解說、Learn Dutch Podcast（A1–B2，超過 150 集，附逐字稿）、附發音的單字卡，以及每日荷語 Wordle 猜字遊戲。Learn Dutch App 提供 A0 到 B2 的學習路線，以及入籍考試 A2/B1 和 Staatsexamen NT2 I/II 的路線與模擬考。另有由荷語老師在 Zoom 上授課的小班團體課，從 A2 會話到 B2/C1。",
+      nl: "Gratis uitleg over grammatica in het Engels, een podcast (A1–B2, meer dan 150 afleveringen met de tekst erbij), woordkaarten met geluid en elke dag een Nederlandse Wordle. In de app Learn Dutch volg je een route van A0 tot B2, of voor Inburgering A2/B1 en Staatsexamen NT2 I/II, met proefexamens. Er zijn ook kleine groepslessen via Zoom met een docent, van A2 (praten) tot B2/C1."
+    },
+    price: {
+      en: "Free: grammar guides, free podcast episodes, flashcards, Wordle and the first steps in the app. Pro: €10 a month or €80 a year (7 days free), with the full app, practice exams, Pro podcasts with word lists and the video courses. Live group courses €88–€198 per course (4–8 lessons), reading club €13 a session. Private lessons €89 per lesson or 5 for €390, but there is a waiting list for new students.",
+      zh: "免費：文法解說、免費 Podcast 單集、單字卡、Wordle 和 App 的入門部分。Pro：每月 €10 或每年 €80（免費試用 7 天），包含完整 App、模擬考、附單字表的 Pro Podcast 和影片課程。線上團體課每期 €88–€198（4–8 堂），讀書會每次 €13。一對一課每堂 €89 或 5 堂 €390，但目前新學生需要排隊候補。",
+      nl: "Gratis: uitleg over grammatica, gratis afleveringen van de podcast, woordkaarten, Wordle en het begin van de app. Pro: €10 per maand of €80 per jaar (7 dagen gratis). Dan heb je de hele app, proefexamens, Pro-podcasts met woordenlijsten en de videocursussen. Groepscursus online: €88–€198 per cursus (4–8 lessen). Leesclub: €13 per keer. Privéles: €89 per les of 5 lessen voor €390. Nieuwe studenten moeten nu wel wachten."
+    }
   }
 ];
