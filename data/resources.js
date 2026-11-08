@@ -1250,9 +1250,9 @@ window.RESOURCES = [
     instagram: "https://www.instagram.com/jedutchy/",
     youtube: "https://www.youtube.com/playlist?list=PL7drhxb9NXujvRqecL7D9R4qFHiTp6FnQ",
     note: {
-      en: "A certified Dutch teacher offering online group courses, private lessons, a conversation-training subscription and an inburgering masterclass. Her free podcast Slow Dutch with JeDutchy on YouTube has short listening episodes at A1–A2 level about daily life, Dutch culture and fairy tales, spoken slowly.",
-      zh: "合格荷語教師，提供線上團體課、一對一課程、會話訓練訂閱與融入考試大師班。她在 YouTube 上的免費 Podcast「Slow Dutch with JeDutchy」提供 A1–A2 程度的短篇聽力單元，以慢速荷語介紹日常生活、荷蘭文化和童話故事。",
-      nl: "Een bevoegde docent Nederlands. Online groepscursussen, privélessen, een abonnement om te oefenen met praten en een masterclass inburgering. Op YouTube heeft ze ook een gratis podcast: Slow Dutch with JeDutchy. Korte afleveringen op niveau A1–A2 over het dagelijks leven, Nederland en sprookjes. Ze praat langzaam."
+      en: "A native Dutch teacher offering online group courses, private lessons, a conversation-training subscription and an inburgering masterclass. The free podcast Slow Dutch with JeDutchy on YouTube has short listening episodes at A1–A2 level about daily life, Dutch culture and fairy tales, spoken slowly.",
+      zh: "以荷語為母語的老師，提供線上團體課、一對一課程、會話訓練訂閱與融入考試大師班。YouTube 上的免費 Podcast「Slow Dutch with JeDutchy」提供 A1–A2 程度的短篇聽力單元，以慢速荷語介紹日常生活、荷蘭文化和童話故事。",
+      nl: "Een docent met Nederlands als moedertaal. Online groepscursussen, privélessen, een abonnement om te oefenen met praten en een masterclass inburgering. Op YouTube is er ook een gratis podcast: Slow Dutch with JeDutchy. Korte afleveringen op niveau A1–A2 over het dagelijks leven, Nederland en sprookjes. Er wordt langzaam gepraat."
     },
     price: {
       en: "Slow Dutch podcast free. Group courses €650. Private lessons 5 × 1 h €395 or 10 × 1 h €575, trial lesson €25. Conversation training €100 a month (8 sessions). Inburgering masterclass €100.",
