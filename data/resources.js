@@ -1328,14 +1328,14 @@ window.RESOURCES = [
     url: "https://hartvoornederlands.com/",
     instagram: "https://www.instagram.com/hartvoornederlands/",
     note: {
-      en: "A Dutch teacher offering private and duo lessons, B2 group courses, an online book club, conversation clubs and a podcast.",
-      zh: "荷語教師，提供一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。",
-      nl: "Een docent Nederlands met privélessen en duolessen, groepscursussen B2, een online leesclub, praatclubs en een podcast."
+      en: "A Dutch teacher offering 1-on-1 coaching programmes (Taaltraject) for people who already speak Dutch but want to speak naturally and confidently, plus private and duo lessons, B2 group courses, an online book club, conversation clubs and a podcast.",
+      zh: "荷語教師，提供一對一口說教練課程（Taaltraject），適合已經會說荷語、但想說得更自然、更有自信的人；另有一對一與雙人課程、B2 團體課、線上讀書會、會話俱樂部與 Podcast。",
+      nl: "Een docent Nederlands met taaltrajecten: 1-op-1-begeleiding voor wie al Nederlands spreekt, maar natuurlijker en met meer zelfvertrouwen wil praten. Ook privélessen en duolessen, groepscursussen B2, een online leesclub, praatclubs en een podcast."
     },
     price: {
-      en: "Private lessons: 10 h €737, 15 h €981, 20 h €1,190 (book extra). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
-      zh: "一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。",
-      nl: "Privéles: 10 uur €737, 15 uur €981, 20 uur €1.190 (boek extra). Duoles €320–450 per persoon. Groepscursus B2 €450 zonder btw. Leesclub €200 voor 8 online keren. Praatclub €90–120."
+      en: "1-on-1 coaching (90-minute sessions with feedback and assignments in between): 3 months with 7 sessions €1,295, 5 months with 10 sessions €2,095, 6 months with 12 sessions €2,995. Private lessons: 10 h €737, 15 h €981, 20 h €1,190 (book extra). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
+      zh: "一對一口說教練課程（每次 90 分鐘，課與課之間有回饋與作業）：3 個月 7 次 €1,295、5 個月 10 次 €2,095、6 個月 12 次 €2,995。一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。",
+      nl: "Taaltraject (1-op-1, sessies van 90 minuten, met feedback en opdrachten tussendoor): 3 maanden met 7 sessies €1.295, 5 maanden met 10 sessies €2.095, 6 maanden met 12 sessies €2.995. Privéles: 10 uur €737, 15 uur €981, 20 uur €1.190 (boek extra). Duoles €320–450 per persoon. Groepscursus B2 €450 zonder btw. Leesclub €200 voor 8 online keren. Praatclub €90–120."
     }
   },
   {
