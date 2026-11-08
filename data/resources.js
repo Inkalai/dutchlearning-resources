@@ -984,7 +984,7 @@ window.RESOURCES = [
     region: "online",
     variants: ["nl"],
     cities: [],
-    formats: ["self"],
+    formats: ["self", "online"],
     focus: ["exam", "reading", "listening", "grammar"],
     levels: ["A0", "B2"],
     cost: [0, 65],
@@ -992,9 +992,9 @@ window.RESOURCES = [
     url: "https://learndutchnow.shop/",
     instagram: "https://www.instagram.com/learn_dutch_now/",
     note: {
-      en: "A large Instagram account (130K+ followers) with bite-sized vocabulary posts, plus downloadable courses and exam packs for the inburgering exam (A2) and Staatsexamen NT2 (B1).",
-      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。",
-      nl: "Een groot Instagram-account (meer dan 130.000 volgers) met korte posts over woorden. Ook cursussen en oefenpakketten om te downloaden, voor het inburgeringsexamen (A2) en het Staatsexamen NT2 (B1)."
+      en: "A large Instagram account (130K+ followers) with bite-sized vocabulary posts, plus downloadable courses and exam packs for the inburgering exam (A2) and Staatsexamen NT2 (B1). Also some live online classes and an A2 speaking exam masterclass.",
+      zh: "大型 Instagram 帳號（超過 13 萬追蹤），提供精簡的單字貼文，另販售可下載的課程，以及融入考試（A2）和國家考試 NT2（B1）的備考包。另有部分線上直播課，以及 A2 口說考試大師班。",
+      nl: "Een groot Instagram-account (meer dan 130.000 volgers) met korte posts over woorden. Ook cursussen en oefenpakketten om te downloaden, voor het inburgeringsexamen (A2) en het Staatsexamen NT2 (B1). Er zijn ook live lessen online en een masterclass voor het A2-spreekexamen."
     },
     price: {
       en: "One-time, lifetime access: Starter course €75, B1 course €75, both €135, Starter course + A2 exam package €199, single exam parts from €24.99.",
@@ -1294,7 +1294,7 @@ window.RESOURCES = [
     region: "online",
     variants: ["nl"],
     cities: [],
-    formats: ["self"],
+    formats: ["self", "online"],
     focus: ["speaking", "listening", "reading", "grammar", "exam"],
     levels: ["A0", "C1"],
     cost: [0, 200],
@@ -1302,9 +1302,9 @@ window.RESOURCES = [
     url: "https://easydutchlearning.nl/",
     instagram: "https://www.instagram.com/easydutchlearning/",
     note: {
-      en: "Sanne shares Dutch tips on Instagram (42K followers) and sells self-paced online courses for every level from A1 to C1, including NT2 and inburgering exam preparation, with a students' Instagram community.",
-      zh: "Sanne 在 Instagram（4.2 萬追蹤）分享荷語技巧，並販售 A1 到 C1 各級自學線上課程，包含 NT2 與融入考試準備，學員可加入 Instagram 學習社群。",
-      nl: "Sanne deelt tips op Instagram (42.000 volgers). Ze verkoopt online cursussen in je eigen tempo, van A1 tot C1, ook voor NT2 en het inburgeringsexamen. Met een Instagram-groep voor studenten."
+      en: "Sanne shares Dutch tips on Instagram (42K followers) and sells self-paced online courses for every level from A1 to C1, including NT2 and inburgering exam preparation, with a students' Instagram community. There are also small live online groups with a native Dutch teacher, recorded so you never miss a class.",
+      zh: "Sanne 在 Instagram（4.2 萬追蹤）分享荷語技巧，並販售 A1 到 C1 各級自學線上課程，包含 NT2 與融入考試準備，學員可加入 Instagram 學習社群。另有由荷語母語老師帶領的線上直播小班課，每堂課都會錄影，不怕錯過。",
+      nl: "Sanne deelt tips op Instagram (42.000 volgers). Ze verkoopt online cursussen in je eigen tempo, van A1 tot C1, ook voor NT2 en het inburgeringsexamen. Met een Instagram-groep voor studenten. Er zijn ook kleine groepen met live les online, met een docent met Nederlands als moedertaal. Elke les wordt opgenomen, dus je mist niets."
     },
     price: {
       en: "One-time per level: €397. All five levels together €1,985. Kids' courses €397. No subscription.",
