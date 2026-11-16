@@ -417,9 +417,9 @@ window.RESOURCES = [
       nl: "Het talencentrum van de Universiteit van Amsterdam. Iedereen mag meedoen. Cursussen van beginner tot B2, online leren, schrijven, vloeiend spreken en voorbereiding op het Staatsexamen."
     },
     price: {
-      en: "Per course: e-learning from €195, Staatsexamen prep and Fluency Skills from €485, Writing Skills from €710, Beginners intensive (A0–A2) from €815. Materials €30–48 extra.",
-      zh: "每期課程：線上自學 €195 起，國家考試準備班與流利度課程 €485 起，寫作課 €710 起，入門密集班（A0–A2）€815 起。教材另計 €30–48。",
-      nl: "Per cursus: online leren vanaf €195. Staatsexamen en Fluency Skills vanaf €485. Writing Skills vanaf €710. Beginners intensief (A0–A2) vanaf €815. Boeken €30–48 extra."
+      en: "Per course: e-learning from €195, Staatsexamen prep and Fluency Skills from €485, Writing Skills from €710, Beginners intensive (A0–A2) from €815. Materials €40–51.50 extra.",
+      zh: "每期課程：線上自學 €195 起，國家考試準備班與流利度課程 €485 起，寫作課 €710 起，入門密集班（A0–A2）€815 起。教材另計 €40–51.50。",
+      nl: "Per cursus: online leren vanaf €195. Staatsexamen en Fluency Skills vanaf €485. Writing Skills vanaf €710. Beginners intensief (A0–A2) vanaf €815. Boeken €40–51,50 extra."
     }
   },
   {
@@ -508,9 +508,9 @@ window.RESOURCES = [
       nl: "Het talencentrum van de KU Leuven. Nederlands in 6 niveaus, in kleine groepen. Ook lessen uitspraak, online schrijven en een zomercursus. Ook voor volwassenen die niet aan de universiteit studeren."
     },
     price: {
-      en: "Per module: €300 (levels 1–3) or €320 (levels 4–6) for external students, €175–195 for KU Leuven students and staff, syllabus included. Summer course €460–480. Free for Erasmus students.",
-      zh: "每個模組：校外學員 €300（1–3 級）或 €320（4–6 級），KU Leuven 學生與教職員 €175–195，含講義。暑期課程 €460–480。Erasmus 學生免費。",
-      nl: "Per module: €300 (niveau 1–3) of €320 (niveau 4–6). Studenten en personeel van de KU Leuven: €175–195. Boek inbegrepen. Zomercursus €460–480. Gratis voor Erasmusstudenten."
+      en: "Per module: €300 (levels 1–3) or €320 (levels 4–6) for external students, €175–195 for KU Leuven students and staff. Syllabus included at levels 4–6; at levels 1–3 the book is extra (€35–68). Summer course €460–480. Free for Erasmus students (textbook €29–38).",
+      zh: "每個模組：校外學員 €300（1–3 級）或 €320（4–6 級），KU Leuven 學生與教職員 €175–195。4–6 級含講義；1–3 級課本另計（€35–68）。暑期課程 €460–480。Erasmus 學生免費（課本 €29–38）。",
+      nl: "Per module: €300 (niveau 1–3) of €320 (niveau 4–6). Studenten en personeel van de KU Leuven: €175–195. Niveau 4–6: boek inbegrepen. Niveau 1–3: boek extra (€35–68). Zomercursus €460–480. Gratis voor Erasmusstudenten (boek €29–38)."
     }
   },
   {
@@ -524,7 +524,7 @@ window.RESOURCES = [
     formats: ["inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar", "exam"],
     levels: ["A1", "C1"],
-    cost: [200, 588],
+    cost: [200, 676],
     hours: [16, 40],
     url: "https://www.uct.ugent.be/en",
     note: {
@@ -533,9 +533,9 @@ window.RESOURCES = [
       nl: "Het talencentrum van de Universiteit Gent. Nederlands van niveau 1 (A1) tot niveau 6 (C1). Intensief overdag of in de avond. Ook voor mensen die in Gent wonen."
     },
     price: {
-      en: "Per course: €588 standard, €520 for UGent staff and PhD students, €400 for UGent students.",
-      zh: "每期課程：一般學員 €588、UGent 教職員與博士生 €520、UGent 學生 €400。",
-      nl: "Per cursus: €588. Personeel en doctoraatsstudenten van de UGent: €520. Studenten van de UGent: €400."
+      en: "Per course: €588 standard, €520 for UGent staff and PhD students, €400 for UGent students. Level 1 costs more: €676 standard, €598 staff and PhD students, €463 UGent students.",
+      zh: "每期課程：一般學員 €588、UGent 教職員與博士生 €520、UGent 學生 €400。1 級較貴：一般學員 €676、教職員與博士生 €598、UGent 學生 €463。",
+      nl: "Per cursus: €588. Personeel en doctoraatsstudenten van de UGent: €520. Studenten van de UGent: €400. Niveau 1 kost meer: €676, €598 voor personeel en doctoraatsstudenten, €463 voor studenten."
     }
   },
   {
@@ -679,9 +679,9 @@ window.RESOURCES = [
       nl: "Het talencentrum van de TU Delft. Cursussen van beginner tot gevorderd, een zomerschool, voorbereiding op het Staatsexamen NT2 en een gratis online cursus voor beginners. Ook voor mensen die geen student zijn."
     },
     price: {
-      en: "Online beginners course free. Semi-intensive courses €445–€485, advanced intensive €910, summer school €550 per level (materials extra). Some levels free for TU Delft students in English-taught programmes.",
-      zh: "線上入門課程免費。半密集課程 €445–€485，高級密集班 €910，暑期班每級 €550（教材另計）。就讀英語授課學程的 TU Delft 學生部分級別免費。",
-      nl: "Online cursus voor beginners: gratis. Halfintensieve cursussen €445–485, intensief voor gevorderden €910, zomerschool €550 per niveau (boeken extra). Sommige niveaus gratis voor studenten van de TU Delft in Engelstalige opleidingen."
+      en: "Online beginners course free. Semi-intensive courses €455–€485, intensive courses €910, summer school €560 per level (materials extra). Some levels free for TU Delft students in English-taught programmes.",
+      zh: "線上入門課程免費。半密集課程 €455–€485，密集班 €910，暑期班每級 €560（教材另計）。就讀英語授課學程的 TU Delft 學生部分級別免費。",
+      nl: "Online cursus voor beginners: gratis. Halfintensieve cursussen €455–485, intensieve cursussen €910, zomerschool €560 per niveau (boeken extra). Sommige niveaus gratis voor studenten van de TU Delft in Engelstalige opleidingen."
     }
   },
   {
@@ -935,7 +935,7 @@ window.RESOURCES = [
     formats: ["self"],
     focus: ["listening", "speaking", "grammar"],
     levels: ["A0", "B1"],
-    cost: [0, 35],
+    cost: [0, 40],
     hours: [4, 15],
     url: "https://www.learndutchwithkim.com/course/courses",
     youtube: "https://www.youtube.com/@learndutchwithkim",
@@ -945,9 +945,9 @@ window.RESOURCES = [
       nl: "Kim speelt grappige scènes uit het dagelijks leven. Daarna legt ze de grammatica uit. Gratis video's op YouTube. Ook cursussen van 3 maanden per niveau, in je eigen tempo, en je mag ze altijd blijven gebruiken."
     },
     price: {
-      en: "One-time: A1 or A2 course €79, B1 €99, A2 + B1 €159, A0–B1 package €199. Online community membership about €15–17 a month (billed in US dollars). Live lessons not included.",
-      zh: "一次付清：A1 或 A2 課程 €79、B1 €99、A2＋B1 €159、A0–B1 全套 €199。線上社群會員約每月 €15–17（以美元計費）。不含直播課。",
-      nl: "Eén keer betalen: A1 of A2 €79, B1 €99, A2 + B1 €159, pakket A0–B1 €199. Online groep: ongeveer €15–17 per maand (in dollars). Live lessen zitten er niet bij."
+      en: "One-time (sale prices, normally €119–139): A1 or A2 course €89, B1 €109, A0–B1 package €299. Online community €39.99 a month or €99.50 for 3 months. Live lessons not included.",
+      zh: "一次付清（優惠價，原價 €119–139）：A1 或 A2 課程 €89、B1 €109、A0–B1 全套 €299。線上社群每月 €39.99，或 3 個月 €99.50。不含直播課。",
+      nl: "Eén keer betalen (nu in de aanbieding, normaal €119–139): A1 of A2 €89, B1 €109, pakket A0–B1 €299. Online groep: €39,99 per maand of €99,50 voor 3 maanden. Live lessen zitten er niet bij."
     }
   },
   {
@@ -1013,9 +1013,9 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["speaking", "grammar"],
     levels: ["A0", "C2"],
-    cost: [0, 140],
+    cost: [0, 160],
     hours: [4, 12],
-    url: "https://learndutchwithyas.com/learn-dutch/dutch-mastery-group-classes",
+    url: "https://learndutchwithyas.com/learn-dutch/group-classes-a0-a2",
     instagram: "https://www.instagram.com/learndutchwithyas/",
     note: {
       en: "Yasmine teaches all levels: 13-week live online group classes (max 6 students), B2+ conversation classes, self-paced courses and private packages of 8 one-hour lessons.",
@@ -1023,9 +1023,9 @@ window.RESOURCES = [
       nl: "Yasmine geeft les op alle niveaus: online groepslessen van 13 weken (maximaal 6 mensen), praatlessen vanaf B2, cursussen in je eigen tempo en privélessen (8 lessen van 1 uur)."
     },
     price: {
-      en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €350 excl. VAT paid at once, or 3 × €130 or 6 × €70 in instalments.",
-      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €350（未稅），或分期 3 × €130、6 × €70。",
-      nl: "Tips op Instagram zijn gratis. Groepslessen van 13 weken met toegang tot de Dutch Mastery Academy: €350 zonder btw in één keer, of 3 × €130, of 6 × €70."
+      en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €425 incl. VAT paid at once, or 3 × €159 or 6 × €85 in instalments.",
+      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €425（含稅），或分期 3 × €159、6 × €85。",
+      nl: "Tips op Instagram zijn gratis. Groepslessen van 13 weken met toegang tot de Dutch Mastery Academy: €425 met btw in één keer, of 3 × €159, of 6 × €85."
     }
   },
   {
@@ -1175,9 +1175,9 @@ window.RESOURCES = [
       nl: "Cursussen in kleine groepen, van beginner tot B2. Online en in de klas in Amsterdam, Eindhoven, Taipei en Tainan. Per niveau 10 lessen van 2 uur, één keer per week. Ook voorbereiding op het CNaVT-examen. Uitleg in het Engels en Chinees, goed voor mensen uit Taiwan."
     },
     price: {
-      en: "€339 per 10-week course, plus €30.50 for textbook and website. In Taiwan about €270 per course (NT$9,900). Check the course pages for the current term.",
-      zh: "每期 10 週課程 €339，另加課本與網站費 €30.50。台灣課程每期約 €270（NT$9,900）。最新學期資訊請見各課程頁面。",
-      nl: "€339 per cursus van 10 weken, plus €30,50 voor boek en website. In Taiwan ongeveer €270 per cursus (NT$9.900). Kijk op de website voor de nieuwe cursussen."
+      en: "€339 per 10-week course, plus €30.50 for textbook and website. In Taiwan about €300 per course (NT$10,900), plus NT$1,250 for textbook and website. Check the course pages for the current term.",
+      zh: "每期 10 週課程 €339，另加課本與網站費 €30.50。台灣課程每期約 €300（NT$10,900），另加課本與網站費 NT$1,250。最新學期資訊請見各課程頁面。",
+      nl: "€339 per cursus van 10 weken, plus €30,50 voor boek en website. In Taiwan ongeveer €300 per cursus (NT$10.900), plus NT$1.250 voor boek en website. Kijk op de website voor de nieuwe cursussen."
     }
   },
   {
@@ -1244,7 +1244,7 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["speaking", "listening", "grammar", "writing", "exam"],
     levels: ["A0", "C1"],
-    cost: [0, 650],
+    cost: [0, 750],
     hours: [4, 15],
     url: "https://jedutchy.com/",
     instagram: "https://www.instagram.com/jedutchy/",
@@ -1255,9 +1255,9 @@ window.RESOURCES = [
       nl: "Een docent met Nederlands als moedertaal. Online groepscursussen, privélessen, een abonnement om te oefenen met praten en een masterclass inburgering. Op YouTube is er ook een gratis podcast: Slow Dutch with JeDutchy. Korte afleveringen op niveau A1–A2 over het dagelijks leven, Nederland en sprookjes. Er wordt langzaam gepraat."
     },
     price: {
-      en: "Slow Dutch podcast free. Group courses €650. Private lessons 5 × 1 h €395 or 10 × 1 h €575, trial lesson €25. Conversation training €100 a month (8 sessions). Inburgering masterclass €100.",
-      zh: "Slow Dutch Podcast 免費。團體課 €650。一對一課 5 × 1 小時 €395 或 10 × 1 小時 €575，試聽課 €25。會話訓練每月 €100（8 堂）。融入考試大師班 €100。",
-      nl: "Podcast Slow Dutch: gratis. Groepscursus €650. Privélessen: 5 × 1 uur €395 of 10 × 1 uur €575. Proefles €25. Praattraining €100 per maand (8 keer). Masterclass inburgering €100."
+      en: "Slow Dutch podcast free. Group courses €650. Private lesson bundles: 1 month with 4 × 60 min €495 or 4 × 90 min €749, 2 months with 8 × 60 min €975 or 8 × 90 min €1,099. Trial lesson €50 (with a €25 discount code for a course). Conversation training €100 a month (8 sessions). Inburgering masterclass €100.",
+      zh: "Slow Dutch Podcast 免費。團體課 €650。一對一套裝課：1 個月 4 × 60 分鐘 €495 或 4 × 90 分鐘 €749，2 個月 8 × 60 分鐘 €975 或 8 × 90 分鐘 €1,099。試聽課 €50（附 €25 課程折扣碼）。會話訓練每月 €100（8 堂）。融入考試大師班 €100。",
+      nl: "Podcast Slow Dutch: gratis. Groepscursus €650. Privélessen: 1 maand met 4 × 60 minuten €495 of 4 × 90 minuten €749. 2 maanden met 8 × 60 minuten €975 of 8 × 90 minuten €1.099. Proefles €50 (je krijgt €25 korting op een cursus). Praattraining €100 per maand (8 keer). Masterclass inburgering €100."
     }
   },
   {
@@ -1333,9 +1333,9 @@ window.RESOURCES = [
       nl: "Een docent Nederlands met taaltrajecten: 1-op-1-begeleiding voor wie al Nederlands spreekt, maar natuurlijker en met meer zelfvertrouwen wil praten. Ook privélessen en duolessen, groepscursussen B2, een online leesclub, praatclubs en een podcast."
     },
     price: {
-      en: "1-on-1 coaching (90-minute sessions with feedback and assignments in between): 3 months with 7 sessions €1,295, 5 months with 10 sessions €2,095, 6 months with 12 sessions €2,995. Private lessons: 10 h €737, 15 h €981, 20 h €1,190 (book extra). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
-      zh: "一對一口說教練課程（每次 90 分鐘，課與課之間有回饋與作業）：3 個月 7 次 €1,295、5 個月 10 次 €2,095、6 個月 12 次 €2,995。一對一課：10 小時 €737、15 小時 €981、20 小時 €1,190（教材另計）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。",
-      nl: "Taaltraject (1-op-1, sessies van 90 minuten, met feedback en opdrachten tussendoor): 3 maanden met 7 sessies €1.295, 5 maanden met 10 sessies €2.095, 6 maanden met 12 sessies €2.995. Privéles: 10 uur €737, 15 uur €981, 20 uur €1.190 (boek extra). Duoles €320–450 per persoon. Groepscursus B2 €450 zonder btw. Leesclub €200 voor 8 online keren. Praatclub €90–120."
+      en: "1-on-1 coaching (90-minute sessions with feedback and assignments in between): 3 months with 7 sessions €1,295, 5 months with 10 sessions €2,095, 6 months with 12 sessions €2,995. Private lessons incl. VAT: 10 h €1,028 (use within 3 months), 15 h €1,306 (6 months), 20 h €1,573 (9 months). Duo lessons €320–450 per person. B2 group course €450 excl. VAT. Book club €200 for 8 online sessions. Conversation club €90–120.",
+      zh: "一對一口說教練課程（每次 90 分鐘，課與課之間有回饋與作業）：3 個月 7 次 €1,295、5 個月 10 次 €2,095、6 個月 12 次 €2,995。一對一課（含稅）：10 小時 €1,028（3 個月內用完）、15 小時 €1,306（6 個月）、20 小時 €1,573（9 個月）。雙人課每人 €320–450。B2 團體課 €450（未稅）。讀書會 8 堂線上課 €200。會話俱樂部 €90–120。",
+      nl: "Taaltraject (1-op-1, sessies van 90 minuten, met feedback en opdrachten tussendoor): 3 maanden met 7 sessies €1.295, 5 maanden met 10 sessies €2.095, 6 maanden met 12 sessies €2.995. Privéles met btw: 10 uur €1.028 (binnen 3 maanden), 15 uur €1.306 (6 maanden), 20 uur €1.573 (9 maanden). Duoles €320–450 per persoon. Groepscursus B2 €450 zonder btw. Leesclub €200 voor 8 online keren. Praatclub €90–120."
     }
   },
   {
@@ -1349,20 +1349,20 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["speaking", "listening", "grammar"],
     levels: ["A0", "B2"],
-    cost: [69, 290],
+    cost: [95, 325],
     hours: [4, 24],
     url: "https://www.sociataal.com/",
     instagram: "https://www.instagram.com/sociataal/",
     youtube: "https://www.youtube.com/c/LearnDutchOfficial",
     note: {
-      en: "Interactive online group courses in small groups (4–6 students, two 2-hour live classes a week for 6 weeks), flexible courses and self-study grammar and vocabulary courses.",
-      zh: "互動式線上小班課（4–6 人，每週兩堂 2 小時直播課，為期 6 週）、彈性課程，以及文法和單字自學課程。",
-      nl: "Online groepscursussen in kleine groepen (4–6 mensen). Twee live lessen van 2 uur per week, 6 weken lang. Ook flexibele cursussen en zelfstudie voor grammatica en woorden."
+      en: "Interactive online group courses in small groups (4–6 students, one 2-hour live class a week for 6 weeks, morning or evening), plus self-paced courses for levels 1–4 (A0–A2+).",
+      zh: "互動式線上小班課（4–6 人，每週一堂 2 小時直播課，為期 6 週，早上或晚上），另有 1–4 級（A0–A2+）自學課程。",
+      nl: "Online groepscursussen in kleine groepen (4–6 mensen). Eén live les van 2 uur per week, 6 weken lang, in de ochtend of de avond. Ook cursussen in je eigen tempo voor niveau 1–4 (A0–A2+)."
     },
     price: {
-      en: "Group course €289 all-in. Flexible course €149. Grammar Essentials A1 €89 or A2 €69. Vocabulary course A1 €69.",
-      zh: "團體課全包 €289。彈性課程 €149。文法精華 A1 €89、A2 €69。A1 單字課程 €69。",
-      nl: "Groepscursus €289, alles inbegrepen. Flexibele cursus €149. Grammar Essentials A1 €89 of A2 €69. Woordencursus A1 €69."
+      en: "Group course €325 per level. Self-paced course €95 per level, or €295 for all 4 levels (one-time, lifetime access).",
+      zh: "團體課每級 €325。自學課程每級 €95，4 級全套 €295（一次付清，終身使用）。",
+      nl: "Groepscursus €325 per niveau. Cursus in je eigen tempo €95 per niveau, of €295 voor alle 4 niveaus (één keer betalen, je mag hem altijd blijven gebruiken)."
     }
   },
   {
@@ -1412,9 +1412,9 @@ window.RESOURCES = [
       nl: "Nederlands voor expats in Alphen aan den Rijn en online. Een groepscursus voor beginners, privélessen en de praatclub Keep Talking Dutch. Ook een gratis proefles en een gratis spreekchallenge van 5 dagen."
     },
     price: {
-      en: "Beginners' group course €635 plus book. Keep Talking Dutch €145 for a month (4 sessions), €250 for 2 months, €350 for 3. Private lessons 10 × 90 min €1,200.",
-      zh: "入門團體課 €635，教材另計。Keep Talking Dutch 1 個月（4 堂）€145、2 個月 €250、3 個月 €350。一對一課 10 堂 × 90 分鐘 €1,200。",
-      nl: "Groepscursus voor beginners €635 plus boek. Keep Talking Dutch: €145 voor 1 maand (4 keer), €250 voor 2 maanden, €350 voor 3. Privéles 10 × 90 minuten €1.200."
+      en: "Beginners' group course €900 for 12 weeks (€850 early bird), plus book (€51.95). Keep Talking Dutch €145 for a month (4 sessions), €250 for 2 months, €350 for 3. Private lessons 10 × 90 min €1,200.",
+      zh: "入門團體課 12 週 €900（早鳥價 €850），教材另計（€51.95）。Keep Talking Dutch 1 個月（4 堂）€145、2 個月 €250、3 個月 €350。一對一課 10 堂 × 90 分鐘 €1,200。",
+      nl: "Groepscursus voor beginners €900 voor 12 weken (vroeg boeken: €850), plus boek (€51,95). Keep Talking Dutch: €145 voor 1 maand (4 keer), €250 voor 2 maanden, €350 voor 3. Privéles 10 × 90 minuten €1.200."
     }
   },
   {
@@ -1531,7 +1531,7 @@ window.RESOURCES = [
     formats: ["online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A1", "B2"],
-    cost: [300, 645],
+    cost: [300, 575],
     hours: [10, 12],
     url: "https://betterunderstanding.nl/",
     instagram: "https://www.instagram.com/betterunderstandingnl/",
@@ -1541,9 +1541,9 @@ window.RESOURCES = [
       nl: "Online groepscursussen van A1 tot B2, in groepen van 3–6 mensen (9 weken, twee lessen van 1,5 uur per week). Ook privélessen, duolessen en lessen op je werk."
     },
     price: {
-      en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €645 for 10 one-hour lessons (€322.50 each for a duo).",
-      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €645（雙人課每人 €322.50）。",
-      nl: "Groepscursus €595 voor 27 uur, plus €48,50 voor het boek. Privéles €645 voor 10 lessen van 1 uur (€322,50 per persoon voor een duo)."
+      en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €575 for 10 one-hour lessons (€60 for one). Duo lessons €645 for 10 (€322.50 per person).",
+      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €575（單堂 €60）。雙人課 10 堂 €645（每人 €322.50）。",
+      nl: "Groepscursus €595 voor 27 uur, plus €48,50 voor het boek. Privéles €575 voor 10 lessen van 1 uur (1 les €60). Duoles €645 voor 10 lessen (€322,50 per persoon)."
     }
   },
   {
@@ -1557,19 +1557,19 @@ window.RESOURCES = [
     formats: ["online"],
     focus: ["speaking", "listening", "grammar"],
     levels: ["A0", "B2"],
-    cost: [100, 160],
+    cost: [100, 700],
     hours: [4, 6],
     url: "https://tidycal.com/hallonederlandszonderstress",
     instagram: "https://www.instagram.com/dutchwithoutstress/",
     note: {
-      en: "A Dutch teacher offering private lessons for B1–B2 learners and an 8-week intensive small-group course for beginners. Book directly through the online calendar.",
-      zh: "荷語老師，提供 B1–B2 一對一課程，以及給初學者的 8 週密集小班課。可直接透過線上行事曆預約。",
-      nl: "Een docent Nederlands met privélessen voor B1–B2 en een intensieve cursus van 8 weken in een kleine groep voor beginners. Boek direct in de online agenda."
+      en: "A Dutch teacher offering online one-to-one lessons of 60 minutes: a 10-week speaking course, a flexible package and a premium intensive. Book directly through the online calendar.",
+      zh: "荷語老師，提供每堂 60 分鐘的線上一對一課程：10 週口說課程、彈性套裝和進階密集課。可直接透過線上行事曆預約。",
+      nl: "Een docent Nederlands met online privélessen van 60 minuten: een spreekcursus van 10 weken, een flexpakket en een intensief pakket. Boek direct in de online agenda."
     },
     price: {
-      en: "Private lessons B1–B2 €160 a month (4 bookings). Intensive beginners' small-group course €195 for 8 weeks of 1.5-hour classes.",
-      zh: "B1–B2 一對一課每月 €160（4 堂）。初學者密集小班課 8 週、每堂 1.5 小時，共 €195。",
-      nl: "Privéles B1–B2: €160 per maand (4 lessen). Intensieve cursus voor beginners in een kleine groep: €195 voor 8 weken, lessen van 1,5 uur."
+      en: "Trial lesson €25 (30 min). Flex package €195 for 4 private lessons. 10-week speaking course €499 for 10 private lessons (the FAQ says €449). Premium intensive €1,395 for 20 private lessons. The group course is no longer offered.",
+      zh: "試聽課 €25（30 分鐘）。彈性套裝 4 堂一對一課 €195。10 週口說課程 10 堂一對一課 €499（常見問題頁寫 €449）。進階密集課 20 堂一對一課 €1,395。已不再開設團體課。",
+      nl: "Proefles €25 (30 minuten). Flexpakket: €195 voor 4 privélessen. Spreekcursus van 10 weken: €499 voor 10 privélessen (bij de vragen staat €449). Intensief pakket: €1.395 voor 20 privélessen. De groepscursus is er niet meer."
     }
   },
   {
@@ -1583,7 +1583,7 @@ window.RESOURCES = [
     formats: ["online", "inperson"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A1", "B2"],
-    cost: [475, null],
+    cost: [250, 500],
     hours: [3, 8],
     url: "https://www.diveintodutch.nl/",
     instagram: "https://www.instagram.com/diveintodutch/",
@@ -1593,9 +1593,9 @@ window.RESOURCES = [
       nl: "Rustige, duidelijke coaching van 4 maanden, alleen met de docent: 14 online lessen van 50 minuten (of 12, plus 2 keer koffie in Den Haag, Leiden, Delft of Alphen aan den Rijn). Met huiswerk, elke week een check-in, bijeenkomsten met andere studenten, het boek Taalcompleet met website, en de Dive into Dutch Club. Ook lessen in kleine groepen."
     },
     price: {
-      en: "1:1 programme: 4 months from €1,899, including book and club access. Coffee sessions cost extra. Small-group prices on request.",
-      zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課價格請洽詢。",
-      nl: "Coaching: 4 maanden vanaf €1.899, met boek en club. De koffieafspraken kosten extra. Prijs voor kleine groepen: vraag het."
+      en: "1:1 programme: 4 months from €1,899, including book and club access. Coffee sessions cost extra. Group programme €999 for 4 months (14 online sessions of 75 minutes).",
+      zh: "一對一課程：4 個月 €1,899 起，含課本與俱樂部資格。咖啡課需另付費。小班課程 4 個月 €999（14 次線上課，每次 75 分鐘）。",
+      nl: "Coaching: 4 maanden vanaf €1.899, met boek en club. De koffieafspraken kosten extra. Groepsprogramma: €999 voor 4 maanden (14 online lessen van 75 minuten)."
     }
   },
   {
@@ -1689,9 +1689,9 @@ window.RESOURCES = [
       nl: "Een taalschool voor hoogopgeleiden in Utrecht, Rotterdam en online. Cursussen van A0 tot C1. Kies intensief (6 weken), half-intensief (9 weken) of \"Nederlands in de praktijk\" (13 weken, één keer per week): Nederlands voor werk en vrije tijd. Ook examentraining NT2 en privéles vanaf B1."
     },
     price: {
-      en: "Nederlands in de praktijk €795 (13 weeks, once a week). Intensive (6 weeks) or semi-intensive (9 weeks) courses €1,099; evening programme or Summer School €1,045. NT2 exam training €875. Private lessons from €130 per lesson hour (at least 10 sessions of 1.5 hours, €1,950). €50 off each follow-up course, up to €150. Books extra.",
-      zh: "Nederlands in de praktijk 實用課 €795（13 週，每週一次）。密集班（6 週）或半密集班（9 週）€1,099；晚間班或暑期班 €1,045。NT2 考試訓練 €875。一對一課每堂課時 €130 起（至少 10 次、每次 1.5 小時，€1,950）。每報名下一期課程折 €50，最多折 €150。教材另計。",
-      nl: "Nederlands in de praktijk: €795 (13 weken, één keer per week). Intensief (6 weken) of half-intensief (9 weken): €1.099. Avondprogramma of Summer School: €1.045. Examentraining NT2: €875. Privéles vanaf €130 per lesuur (minimaal 10 lessen van 1,5 uur, €1.950). €50 korting op elke volgende cursus, tot €150. Boeken betaal je zelf."
+      en: "Nederlands in de praktijk €795 (13 weeks, once a week). Intensive (6 weeks) or semi-intensive (9 weeks) courses €1,099; evening programme or Summer School also €1,099. NT2 exam training €875. Private lessons from €130 per lesson hour (at least 10 sessions of 1.5 hours, €1,950). €50 off each follow-up course, up to €150. Books extra.",
+      zh: "Nederlands in de praktijk 實用課 €795（13 週，每週一次）。密集班（6 週）或半密集班（9 週）€1,099；晚間班或暑期班同樣 €1,099。NT2 考試訓練 €875。一對一課每堂課時 €130 起（至少 10 次、每次 1.5 小時，€1,950）。每報名下一期課程折 €50，最多折 €150。教材另計。",
+      nl: "Nederlands in de praktijk: €795 (13 weken, één keer per week). Intensief (6 weken) of half-intensief (9 weken): €1.099. Avondprogramma of Summer School: ook €1.099. Examentraining NT2: €875. Privéles vanaf €130 per lesuur (minimaal 10 lessen van 1,5 uur, €1.950). €50 korting op elke volgende cursus, tot €150. Boeken betaal je zelf."
     }
   },
   {
