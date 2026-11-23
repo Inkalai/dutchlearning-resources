@@ -263,9 +263,9 @@ window.RESOURCES = [
       nl: "Een Vlaamse krant in duidelijke, makkelijke taal. Goed om elke week te lezen als je in België woont of Vlaamse woorden wilt leren."
     },
     price: {
-      en: "Digital subscription €20 a year, covering Wablieft and Wablieft Start. Paper copies can no longer be ordered.",
-      zh: "數位訂閱每年 €20，含 Wablieft 與 Wablieft Start。紙本已停止訂購。",
-      nl: "Online abonnement: €20 per jaar, voor Wablieft en Wablieft Start. Een papieren krant kun je niet meer bestellen."
+      en: "Digital subscription €20 for access until 18 December 2026, covering Wablieft and Wablieft Start. Paper copies can no longer be ordered. A new offer has not been announced yet.",
+      zh: "數位訂閱 €20，可使用到 2026 年 12 月 18 日，含 Wablieft 與 Wablieft Start。紙本已停止訂購。新方案尚未公布。",
+      nl: "Online abonnement: €20 tot 18 december 2026, voor Wablieft en Wablieft Start. Een papieren krant kun je niet meer bestellen. Het nieuwe aanbod is nog niet bekend."
     }
   },
   {
@@ -387,7 +387,7 @@ window.RESOURCES = [
     formats: ["inperson", "online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A0", "B2"],
-    cost: [100, 270],
+    cost: [130, 180],
     hours: [10, 16],
     url: "https://www.volksuniversiteit.nl/",
     note: {
@@ -395,7 +395,7 @@ window.RESOURCES = [
       zh: "由各地非營利機構開設的平價晚間團體班，荷蘭大多數城市都有。價格和時間依城市而異。",
       nl: "Goedkope groepscursussen in de avond, in de meeste Nederlandse steden. Prijzen en lestijden zijn per stad anders."
     },
-    price: { en: "Den Haag A1: €265 for 8 × 3 h (autumn 2026). Amsterdam A0–A1: €528.", zh: "海牙 A1：8 堂 × 3 小時共 €265（2026 秋季）。阿姆斯特丹 A0–A1：€528。", nl: "Den Haag A1: €265 voor 8 lessen van 3 uur (najaar 2026). Amsterdam A0–A1: €528." }
+    price: { en: "Den Haag A1: €265 for 8 × 3 h (autumn 2026). Amsterdam A0–A1 (January 2027, 12 × 2.5 h): €542.50 in class, €423.50 online.", zh: "海牙 A1：8 堂 × 3 小時共 €265（2026 秋季）。阿姆斯特丹 A0–A1（2027 年 1 月，12 堂 × 2.5 小時）：實體 €542.50，線上 €423.50。", nl: "Den Haag A1: €265 voor 8 lessen van 3 uur (najaar 2026). Amsterdam A0–A1 (januari 2027, 12 lessen van 2,5 uur): €542,50 in de klas, €423,50 online." }
   },
   {
     id: "uva-talen",
@@ -633,9 +633,9 @@ window.RESOURCES = [
       nl: "Een taalschool in Amsterdam. Kleine groepen (5–12 mensen), een praatcursus en intensieve weken (maximaal 6 mensen)."
     },
     price: {
-      en: "Morning or evening group course €525 (8 lessons + 2 field trips over 4 weeks). Conversation course (A2–B1) €320. Intensive week €975 (33 hours in 6 days). Discount when you prepay 3 courses.",
-      zh: "早上或晚上團體班 €525（4 週內 8 堂課＋2 次校外教學）。會話課（A2–B1）€320。一週密集班 €975（6 天共 33 小時）。一次預付 3 期有折扣。",
-      nl: "Groepscursus in de ochtend of avond: €525 (8 lessen en 2 uitjes in 4 weken). Praatcursus (A2–B1): €320. Intensieve week: €975 (33 uur in 6 dagen). Korting als je 3 cursussen tegelijk betaalt."
+      en: "Morning group course €525 (8 lessons + 2 field trips in 4 weeks). Evening group course €525 (10 lessons + 2 field trips in 5 weeks). Online evening course €420 (25 hours in 5 weeks). Conversation course (A2–B1) €320. Intensive week €975 (33 hours in 6 days). Discount when you prepay 3 courses.",
+      zh: "早上團體班 €525（4 週內 8 堂課＋2 次校外教學）。晚上團體班 €525（5 週內 10 堂課＋2 次校外教學）。線上晚間班 €420（5 週共 25 小時）。會話課（A2–B1）€320。一週密集班 €975（6 天共 33 小時）。一次預付 3 期有折扣。",
+      nl: "Groepscursus in de ochtend: €525 (8 lessen en 2 uitjes in 4 weken). Groepscursus in de avond: €525 (10 lessen en 2 uitjes in 5 weken). Online cursus in de avond: €420 (25 uur in 5 weken). Praatcursus (A2–B1): €320. Intensieve week: €975 (33 uur in 6 dagen). Korting als je 3 cursussen tegelijk betaalt."
     }
   },
   {
@@ -945,9 +945,9 @@ window.RESOURCES = [
       nl: "Kim speelt grappige scènes uit het dagelijks leven. Daarna legt ze de grammatica uit. Gratis video's op YouTube. Ook cursussen van 3 maanden per niveau, in je eigen tempo, en je mag ze altijd blijven gebruiken."
     },
     price: {
-      en: "One-time (sale prices, normally €119–139): A1 or A2 course €89, B1 €109, A0–B1 package €299. Online community €39.99 a month or €99.50 for 3 months. Live lessons not included.",
-      zh: "一次付清（優惠價，原價 €119–139）：A1 或 A2 課程 €89、B1 €109、A0–B1 全套 €299。線上社群每月 €39.99，或 3 個月 €99.50。不含直播課。",
-      nl: "Eén keer betalen (nu in de aanbieding, normaal €119–139): A1 of A2 €89, B1 €109, pakket A0–B1 €299. Online groep: €39,99 per maand of €99,50 voor 3 maanden. Live lessen zitten er niet bij."
+      en: "One-time (sale prices, normally €119–139): A1 or A2 course €89, B1 €109, A0–B1 package €299. Online community €39.99 a month. Live lessons not included.",
+      zh: "一次付清（優惠價，原價 €119–139）：A1 或 A2 課程 €89、B1 €109、A0–B1 全套 €299。線上社群每月 €39.99。不含直播課。",
+      nl: "Eén keer betalen (nu in de aanbieding, normaal €119–139): A1 of A2 €89, B1 €109, pakket A0–B1 €299. Online groep: €39,99 per maand. Live lessen zitten er niet bij."
     }
   },
   {
@@ -1013,19 +1013,19 @@ window.RESOURCES = [
     formats: ["self", "online"],
     focus: ["speaking", "grammar"],
     levels: ["A0", "C2"],
-    cost: [0, 160],
+    cost: [0, 340],
     hours: [4, 12],
     url: "https://learndutchwithyas.com/learn-dutch/group-classes-a0-a2",
     instagram: "https://www.instagram.com/learndutchwithyas/",
     note: {
-      en: "Yasmine teaches all levels: 13-week live online group classes (max 6 students), B2+ conversation classes, self-paced courses and private packages of 8 one-hour lessons.",
-      zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 8 堂一小時的一對一套裝課。",
-      nl: "Yasmine geeft les op alle niveaus: online groepslessen van 13 weken (maximaal 6 mensen), praatlessen vanaf B2, cursussen in je eigen tempo en privélessen (8 lessen van 1 uur)."
+      en: "Yasmine teaches all levels: 13-week live online group classes (max 6 students), B2+ conversation classes, self-paced courses and private packages of 10 one-hour lessons.",
+      zh: "Yasmine 教授各級程度：13 週線上直播團體課（最多 6 人）、B2+ 會話課、自學課程，以及 10 堂一小時的一對一套裝課。",
+      nl: "Yasmine geeft les op alle niveaus: online groepslessen van 13 weken (maximaal 6 mensen), praatlessen vanaf B2, cursussen in je eigen tempo en privélessen (10 lessen van 1 uur)."
     },
     price: {
-      en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €425 incl. VAT paid at once, or 3 × €159 or 6 × €85 in instalments.",
-      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €425（含稅），或分期 3 × €159、6 × €85。",
-      nl: "Tips op Instagram zijn gratis. Groepslessen van 13 weken met toegang tot de Dutch Mastery Academy: €425 met btw in één keer, of 3 × €159, of 6 × €85."
+      en: "Instagram tips are free. 13-week group classes with Dutch Mastery Academy access: €425 incl. VAT paid at once, or 3 × €159 or 6 × €85 in instalments. Private package of 10 one-hour lessons: €679 incl. VAT.",
+      zh: "Instagram 內容免費。13 週團體課＋Dutch Mastery Academy：一次付清 €425（含稅），或分期 3 × €159、6 × €85。一對一套裝課 10 堂一小時：€679（含稅）。",
+      nl: "Tips op Instagram zijn gratis. Groepslessen van 13 weken met toegang tot de Dutch Mastery Academy: €425 met btw in één keer, of 3 × €159, of 6 × €85. Privéles: 10 lessen van 1 uur voor €679 met btw."
     }
   },
   {
@@ -1228,9 +1228,9 @@ window.RESOURCES = [
       nl: "Vivian is sinds 2015 bevoegd docent en was examinator voor het inburgeringsexamen. Ze deelt gratis lessen op Instagram (60.000 volgers) en YouTube. Ze heeft online cursussen van 10 weken voor A1, A2 en B1."
     },
     price: {
-      en: "Online course per level: DIY €187, DIY Plus €237, Premium with live classes €357 (excl. VAT, 3 installments possible). Colloquial Dutch course €37.",
-      zh: "每級線上課程：DIY €187、DIY Plus €237、含直播課的 Premium €357（未稅，可分 3 期）。口語荷語課程 €37。",
-      nl: "Online cursus per niveau: DIY €187, DIY Plus €237, Premium met live lessen €357 (zonder btw, betalen in 3 keer kan). Cursus spreektaal: €37."
+      en: "Online course per level: DIY €197, DIY Plus €247, Premium with live classes €357 (excl. VAT, 3 installments possible). Colloquial Dutch course €37.",
+      zh: "每級線上課程：DIY €197、DIY Plus €247、含直播課的 Premium €357（未稅，可分 3 期）。口語荷語課程 €37。",
+      nl: "Online cursus per niveau: DIY €197, DIY Plus €247, Premium met live lessen €357 (zonder btw, betalen in 3 keer kan). Cursus spreektaal: €37."
     }
   },
   {
@@ -1454,7 +1454,7 @@ window.RESOURCES = [
     formats: ["online"],
     focus: ["speaking", "grammar"],
     levels: ["A1", "B2"],
-    cost: [15, 480],
+    cost: [35, 480],
     hours: [6, 20],
     url: "https://masterdutch.com/group-classes/",
     instagram: "https://www.instagram.com/master_dutch_/",
@@ -1464,9 +1464,9 @@ window.RESOURCES = [
       nl: "Kees geeft les met zijn Three Pillar Method, op drie manieren: groepslessen (A1 tot B+, maximaal 8 mensen, 8 lessen van 90 minuten, één keer per week), pakketten privélessen en een abonnement met alles erin."
     },
     price: {
-      en: "Group classes €255 per 8-week course. 1-on-1 lessons: 4-hour pack €260, 16-hour pack €960. All-in-one subscription €14.95 a month.",
-      zh: "團體課每期 8 週 €255。一對一課：4 小時套裝 €260、16 小時套裝 €960。全方位訂閱方案每月 €14.95。",
-      nl: "Groepslessen €255 per cursus van 8 weken. Privéles: 4 uur €260, 16 uur €960. Abonnement met alles: €14,95 per maand."
+      en: "Group classes €255 per 8-week course. 1-on-1 lessons: 4-hour pack €260, 16-hour pack €960. All-in-one subscription €34.95 a month.",
+      zh: "團體課每期 8 週 €255。一對一課：4 小時套裝 €260、16 小時套裝 €960。全方位訂閱方案每月 €34.95。",
+      nl: "Groepslessen €255 per cursus van 8 weken. Privéles: 4 uur €260, 16 uur €960. Abonnement met alles: €34,95 per maand."
     }
   },
   {
@@ -1531,19 +1531,19 @@ window.RESOURCES = [
     formats: ["online"],
     focus: ["speaking", "listening", "reading", "writing", "grammar"],
     levels: ["A1", "B2"],
-    cost: [300, 575],
+    cost: [320, 600],
     hours: [10, 12],
     url: "https://betterunderstanding.nl/",
     instagram: "https://www.instagram.com/betterunderstandingnl/",
     note: {
-      en: "Online Dutch group courses from A1 to B2 in groups of 3–6 (9 weeks, two 1.5-hour classes a week), private and duo lessons, and in-company training.",
-      zh: "A1 到 B2 的線上荷語小班課，每班 3–6 人（9 週、每週兩堂 1.5 小時），另有一對一、雙人課程與企業內訓。",
-      nl: "Online groepscursussen van A1 tot B2, in groepen van 3–6 mensen (9 weken, twee lessen van 1,5 uur per week). Ook privélessen, duolessen en lessen op je werk."
+      en: "Online Dutch group courses from A1 to B2 in groups of 4–8 (9 weeks, two 1.5-hour classes a week), private and duo lessons, and in-company training.",
+      zh: "A1 到 B2 的線上荷語小班課，每班 4–8 人（9 週、每週兩堂 1.5 小時），另有一對一、雙人課程與企業內訓。",
+      nl: "Online groepscursussen van A1 tot B2, in groepen van 4–8 mensen (9 weken, twee lessen van 1,5 uur per week). Ook privélessen, duolessen en lessen op je werk."
     },
     price: {
-      en: "Group course €595 for 27 hours plus €48.50 for the textbook. Private lessons €575 for 10 one-hour lessons (€60 for one). Duo lessons €645 for 10 (€322.50 per person).",
-      zh: "團體課 27 小時 €595，課本另計 €48.50。一對一課 10 堂一小時 €575（單堂 €60）。雙人課 10 堂 €645（每人 €322.50）。",
-      nl: "Groepscursus €595 voor 27 uur, plus €48,50 voor het boek. Privéles €575 voor 10 lessen van 1 uur (1 les €60). Duoles €645 voor 10 lessen (€322,50 per persoon)."
+      en: "Group course €675 for 27 hours plus €50.50 for the textbook. Private lessons €600 for 10 one-hour lessons (€62.50 for one). Duo lessons €670 for 10 (€335 per person).",
+      zh: "團體課 27 小時 €675，課本另計 €50.50。一對一課 10 堂一小時 €600（單堂 €62.50）。雙人課 10 堂 €670（每人 €335）。",
+      nl: "Groepscursus €675 voor 27 uur, plus €50,50 voor het boek. Privéles €600 voor 10 lessen van 1 uur (1 les €62,50). Duoles €670 voor 10 lessen (€335 per persoon)."
     }
   },
   {
@@ -1739,9 +1739,9 @@ window.RESOURCES = [
       nl: "Een taalschool in Den Haag. Groepscursussen van beginner tot gevorderd: in de klas (maximaal 10), online (maximaal 8) of allebei. Eén keer per week of twee keer per week (half-intensief). Ook een gratis toolkit met woorden, tips over grammatica, werkbladen en links om te oefenen."
     },
     price: {
-      en: "Free toolkit. Once-a-week group course €420 for 24 hours (€450 from 1 January 2027), book extra (about €48.50). A0–A2 in two courses €840. Basic Dutch for au pairs €380. Students and au pairs get €40 off some courses. Semi-intensive courses (48 hours) are listed at €720, but that page shows old dates, so check with the school.",
-      zh: "學習工具包免費。每週一次的團體班 24 小時 €420（2027 年 1 月 1 日起調漲為 €450），教材另計（約 €48.50）。A0–A2 兩期合購 €840。互惠生（au pair）基礎荷語班 €380。部分課程學生與互惠生可折 €40。半密集班（48 小時）標價 €720，但該頁面日期已過時，請向學校確認。",
-      nl: "Toolkit gratis. Groepscursus één keer per week: €420 voor 24 uur (€450 vanaf 1 januari 2027), boek extra (ongeveer €48,50). A0–A2 in twee cursussen: €840. Basiscursus voor au pairs: €380. Studenten en au pairs krijgen bij sommige cursussen €40 korting. Half-intensief (48 uur) staat op €720, maar met oude data. Vraag het aan de school."
+      en: "Free toolkit. Once-a-week group course €420 for 24 hours (€450 from 1 January 2027), book extra (about €50). A0–A2 in two courses €840. Basic Dutch for au pairs €380 with materials (€410 from 1 January 2027). Students and au pairs get €40 off some courses. Semi-intensive courses (48 hours) are listed at €720, but that page shows old dates, so check with the school.",
+      zh: "學習工具包免費。每週一次的團體班 24 小時 €420（2027 年 1 月 1 日起調漲為 €450），教材另計（約 €50）。A0–A2 兩期合購 €840。互惠生（au pair）基礎荷語班 €380，含教材（2027 年 1 月 1 日起 €410）。部分課程學生與互惠生可折 €40。半密集班（48 小時）標價 €720，但該頁面日期已過時，請向學校確認。",
+      nl: "Toolkit gratis. Groepscursus één keer per week: €420 voor 24 uur (€450 vanaf 1 januari 2027), boek extra (ongeveer €50). A0–A2 in twee cursussen: €840. Basiscursus voor au pairs: €380, met boek (€410 vanaf 1 januari 2027). Studenten en au pairs krijgen bij sommige cursussen €40 korting. Half-intensief (48 uur) staat op €720, maar met oude data. Vraag het aan de school."
     }
   },
   {
